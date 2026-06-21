@@ -119,21 +119,29 @@ Part II = The System (Ch 6-10, capped by Ch 10 "The Indifference of Description"
 The Self (Ch 11-15, closing on the held cut: a header-less coda, address "Stay.", Camus's *must*
 literal, the adequacy-doubt named).
 
-**Status:** Phase A (the lore bible) is authored. Phase B (the manuscript port) is pending: copy
-`../the-library/chapters/` here and apply the reframes in spec section 7 (title and metadata, the
-spine line in Ch 2, the finitude guardrail in Ch 4-5, the (c) ontology and the dissolved moves in
-Ch 6-9, the Ch 10 retitle, Ch 14 as the convergence, Ch 15 as the held cut, the two-to-three part
-split), then port `kdp/`, the build files, and the citation metadata, then build and validate.
+**Status (2026-06-21): the re-foundation is complete and on `main`.** The lore bible is
+authored, the manuscript is ported from `../the-library/chapters/` and reframed onto the new
+spine (all 15 chapters, three parts), a five-agent review fixed all surfaced relics and
+inconsistencies, and the print PDF carries warm Libertinus typography (recorded in
+`docs/superpowers/specs/2026-06-21-typography-design.md`). The build produces
+`the-library.pdf` (116 pages) and a clean-validating `the-library.epub`. Remaining work,
+neither blocking: regenerate the cover for the *Description* subtitle (it still shows
+*Enumeration*) and the release (DOI mint + repo push, for which the metadata is primed). See
+`HANDOFF.md` for the live working-state summary.
 
 ---
 
 ## 6. Build and conventions
 
-The manuscript is not yet present in this directory (Phase B). When it lands it follows the
-`literature/` conventions and the prior repo's build pattern (LaTeX, 6x9 `book` class, a `MAIN`
-source `\include`-ing `chapters/NN_name.tex`, `make` producing the PDF and EPUB, a `kdp/`
-pipeline). See `../the-library/CLAUDE.md` section 7 for the full build and prose conventions; read
-it as reference only, since its identity sections describe the old subtitle.
+The manuscript is present and builds. It follows the `literature/` conventions and the
+standard pattern: LaTeX, 6x9 `book` class, `the-library.tex` `\include`-ing
+`chapters/NN_name.tex`. `make` produces `the-library.pdf` (Libertinus text + Libertinus Math;
+`amssymb` is intentionally not loaded, since no amssymb-only symbols are used), and `make epub`
+produces `the-library.epub` via pandoc and the `kdp/` assets. The EPUB styles from
+`kdp/kindle.css` and the reader's own fonts, so the print font choice does not affect it. Print
+typography decisions are recorded in `docs/superpowers/specs/2026-06-21-typography-design.md`.
+The old `../the-library/CLAUDE.md` section 7 remains useful as background, but read it as
+reference only, since its identity sections describe the old subtitle.
 
 **Prose and house-style rules (these apply to every file written here, including this one):**
 

@@ -41,18 +41,34 @@ someone, and to care). The reasoning skeleton is bedrock (settled math) to the p
 consequence of Kraft, not a theorem) to consequences. The landing is the *held cut*: warmth
 between cuts, the book itself the holding performed.
 
-## State (2026-06-20)
+## State (2026-06-21)
 
-- Spec approved (brainstorming complete).
-- Lore: **not yet authored.** This is the next work, lore-first, starting with `lore/foundations.md`.
-- Manuscript: **not yet ported.** Chapters mostly survive from `../the-library/chapters/` with
-  reframing (per the spec); this comes after the lore.
-- A propagation plan will sequence the authoring; see `docs/superpowers/plans/` when it exists.
+The re-foundation is complete and on `main`:
+- **Lore bible:** authored (`lore/`; `foundations.md` is canonical).
+- **Manuscript:** ported from `../the-library/chapters/` and reframed onto the new spine; all
+  15 chapters, three parts (The Index / The System / The Self).
+- **Reviewed:** a five-agent audit for relics, undefined terms, and inconsistencies; all
+  findings fixed (see the `review:` commits).
+- **Typography:** warm print design on Libertinus (font + matched math, old-style figures,
+  quiet small-caps chapter/part openers, polished title page). Print PDF only; EPUB unaffected.
+- **Build:** `make` -> `the-library.pdf` (116 pages); `make epub` -> `the-library.epub`
+  (passes `epubcheck`).
+
+**Remaining work (neither blocking):**
+- **Cover:** `kdp/the-library-cover-ebook.jpg` still shows the old subtitle *The Indifference
+  of Enumeration*; regenerate for *Description* before release (KDP cover tools).
+- **Release:** DOI mint + repo push when ready. Metadata points at
+  `queelius/the-library-description` and the stale (old-repo) DOI was removed, so it is primed.
+
+Governing docs: `docs/superpowers/specs/` (the re-foundation spec and the typography design)
+and `docs/superpowers/plans/` (the lore-bible and manuscript-port plans).
 
 ## Conventions
 
 House style carries over from the old repo unchanged: **no em-dashes**; math in math mode
 (no raw Unicode math); no CJK; figures as arguments, not decoration; second-person, plain,
-companionate voice; *Worldlines* is a companion, not a prerequisite. For the full build and
-prose conventions until this directory has its own CLAUDE.md, see `../the-library/CLAUDE.md`
-§7 (read it as reference only; its identity sections describe the *old* subtitle).
+companionate voice; *Worldlines* is a companion, not a prerequisite. This directory has its
+own `CLAUDE.md` (the governing identity and conventions); read it first. The old
+`../the-library/CLAUDE.md` is reference only (its identity sections describe the *old*
+subtitle). Print typography decisions are recorded in
+`docs/superpowers/specs/2026-06-21-typography-design.md`.
