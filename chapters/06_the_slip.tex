@@ -37,60 +37,40 @@ The mathematics is the same. The metaphysical commitment is different.
   \node[draw, thick, rounded corners, fill=gray!5, font=\normalsize] (top) at (5, 5) {$M(x) = \sum_{p\,:\,U(p) = x*} 2^{-|p|}$};
 
   % Left box: epistemic
-  \node[draw, thick, fill=blue!10, rounded corners, font=\small, text width=4cm, align=center, anchor=north] (left) at (2.3, 3.6) {\textbf{Epistemic reading} \\[0.3em] $M(x)$ is the probability \\you should assign \\to seeing $x$. \\[0.3em] \footnotesize\itshape\textcolor{gray}{No extra moves.}};
+  \node[draw, thick, fill=blue!10, rounded corners, font=\small, text width=4cm, align=center, anchor=north] (left) at (2.3, 3.6) {\textbf{Epistemic reading} \\[0.3em] $M(x)$ is the probability \\you should assign \\to seeing $x$. \\[0.3em] \footnotesize\itshape\textcolor{gray}{Bedrock only.}};
 
   % Right box: ontic
-  \node[draw, thick, fill=red!10, rounded corners, font=\small, text width=4cm, align=center, anchor=north] (right) at (7.7, 3.6) {\textbf{Ontic reading} \\[0.3em] $M(x)$ is the measure \\of realities \\producing $x$. \\[0.3em] \footnotesize\itshape\textcolor{gray}{Requires Moves I and II.}};
+  \node[draw, thick, fill=red!10, rounded corners, font=\small, text width=4cm, align=center, anchor=north] (right) at (7.7, 3.6) {\textbf{Ontic reading} \\[0.3em] $M(x)$ is the measure \\of realities \\producing $x$. \\[0.3em] \footnotesize\itshape\textcolor{gray}{Requires the postulate.}};
 
   % Arrows
   \draw[->, thick] (top.south) -- (left.north);
   \draw[->, thick] (top.south) -- (right.north);
 \end{tikzpicture}
-\caption{The slip. The same equation, $M(x)$, can be read in two ways. The epistemic reading needs only the bedrock from Part I. The ontic reading requires two further commitments, labeled Move I and Move II below. This chapter takes the ontic reading and tracks what each commitment costs.}
+\caption{The slip. The same equation, $M(x)$, can be read in two ways. The epistemic reading needs only the bedrock from Part I. The ontic reading requires one further commitment, the postulate, labeled below. This chapter takes the ontic reading and tracks what it costs.}
 \label{fig:slip}
 \end{figure}
 
-This chapter takes the second reading. The next two sections label the moves the second reading requires.
+This chapter takes the second reading. The next section labels the one commitment it requires.
 
-\section*{Move I: Church-Turing applied to reality}
+\section*{The one move: no cut is privileged}
 
-The first commitment.
+To read $M$ as a measure over what is, rather than over what you should believe, takes one step. Naming it precisely is the work of this chapter, because once it is named you can see how small it is, and you can refuse it.
 
-The Church-Turing thesis, stated for algorithms: any function that can be computed by an effective procedure can be computed by a Turing machine. This is settled. Every reasonable model of computation has been shown equivalent to the Turing machine. Ninety years of testing, no counterexamples.
+Start with the language. To speak of reality in terms of $M$ at all is to describe the world as a computable structure, a thing some program produces. This is the physical reading of the Church-Turing thesis: any process physically realizable can be computed by a Turing machine. It is not the original thesis (that one, about algorithms, has been settled and tested for ninety years without a counterexample); it is a claim about what physics is doing. The empirical case is strong. Every physical process ever measured falls within the Turing-computable class; every framework that has survived experimental test, from Newtonian mechanics through quantum field theory, fits inside it; the claim that physics does some genuinely uncomputable thing in a load-bearing way has no experimental support. But notice what this step is and is not. It fixes the \emph{language} in which descriptions are written, the medium in which we cut. It is not yet a claim about which descriptions are real. Computability is the frame within which we cut, not a privileged fact about a world standing behind the descriptions.
 
-Move I extends this from algorithms to physics: \emph{any function physically computable by any physical process can be computed by a Turing machine}. The world is computable. The laws of nature are algorithmic.
+Now the step itself. The naive reading says there is one world, and $M$ tells you how to reason about it. But ``there is one world, and it is this one'' is not the cheap default it feels like. It is a cut, and, as the next section shows, the single most expensive thing you could specify, because you must say \emph{which} world is the real one. The step this chapter takes is to decline that cut. Not to add worlds: to stop privileging one.
 
-This is not the original Church-Turing thesis. It is the \emph{physical} Church-Turing thesis, and it is not provable in the same way the original is. It is a claim about what physics is doing. If the laws of nature involve genuinely uncomputable processes (real-valued precision in a load-bearing way, oracle-like cosmological constants, closed timelike curves with continuous parameters), Move I fails.
+\begin{quote}
+\textbf{The postulate: no cut is privileged.} The totality of computable structures has no decomposition that is the correct one, and no element that is the one that is real. Every carving, including the carving that says only this world exists, is a cut an observer makes, and the structure ranks none above the others.
+\end{quote}
 
-What Move I buys. The bedrock applies to reality, not just to hypotheses. The universal prior is the right prior over the physical world, not just over an agent's mental world. The dominance theorem says optimal learning catches up to whatever the world is doing, when the world is computable. Move I says: the world is computable, so the theorem applies.
+This is the book's one interpretive commitment, and it is a refusal, not an addition. The Library of Babel from Chapter 2 is not a metaphor; but the postulate does not announce that ``all computable structures exist'' as some new and lavish fact. It says the opposite in spirit: the reason you took only one of them to be real was a cut you were making without noticing, and the cut is not forced. What is left when you stop making it is the uncut totality.
 
-What Move I costs. A substantive metaphysical position. Most physicists accept Move I implicitly, few defend it explicitly. The acceptance is reasonable but provisional. If a robust experimental demonstration of uncomputable physics surfaces, Move I dies, and with it the right to apply the universal prior to reality.
+Be careful how far this reaches. ``No cut is privileged'' is not ``every structure is equally, robustly real.'' The leap from declining to privilege one world to asserting that all of them exist in the full-blooded sense is \emph{itself} a cut, and the book does not make it either. Whether the totality ``exists'' is a question the book holds open; Chapter 8 shows why it has no view-independent answer. For now the commitment is only the refusal: no carving is the true one.
 
-The empirical case for Move I is stronger than its provisional status suggests. Every physical process humans have measured has fallen within the Turing-computable class. Every theoretical framework that has survived experimental test, from Newtonian mechanics through quantum field theory, fits inside that class. The negative claim, that physics involves some genuinely uncomputable process in a load-bearing way, has no experimental support. The default empirical position is Move I. Refusing it requires positive evidence, not just possibility.
+What the postulate buys. Multiplicity, first: many structures are consistent with any partial data, so your observations restrict you to a region of the Library, never to a point. And a cleaner account of the simplicity bias: you expect short descriptions not because the structure prefers them, but because you are a finite cutter, and a finite cutter is forced toward cheap cuts. Chapter 4 showed why; Kraft makes short descriptions scarce, so finite belief has to spend itself on them. The bias is yours, not the world's.
 
-The book takes Move I. It labels it.
-
-\section*{Move II: The Library is real}
-
-The second commitment.
-
-Move I makes the universal prior applicable to reality. It is the right prior over computable physical processes. But \emph{which} computable physical process?
-
-The naive answer: the one we inhabit. There is one world; the universal prior tells us how to reason about it.
-
-Move II is the stronger answer. The universal prior is not a measure on one world. It is a measure on \emph{all} computable structures. The Library of Babel from Chapter 2 is not a metaphor. It is the ontological substrate. Every entry in the Library corresponds to a real structure. Every program, when interpreted as describing a universe, produces a real history.
-
-This is the \emph{Computable Universe Hypothesis} (CUH). Its unrestricted cousin, Tegmark's Mathematical Universe Hypothesis, says all mathematical structures exist. CUH restricts that claim to the computable ones, which is what makes the ontology well-defined and the measure (the universal prior) natural. Mathematical structures that are not computable, if there are any in the load-bearing sense, are not in the Library.
-
-What Move II buys. A natural account of why we observe a simple universe. Observers in low-$K$ universes have higher measure under the universal prior. We expect to find ourselves in a universe with short laws, because that is where the measure concentrates. The simplicity bias becomes ontologically grounded rather than epistemically chosen.
-
-It also buys multiplicity. The Library contains many universes consistent with any partial data. Your observations restrict you to a subset of the Library; the measure on that subset describes which universe is yours, weighted by frequency.
-
-What Move II costs. A vastly larger ontology than ordinary realism. Realities you do not inhabit are as real as the one you do. The version of you that turned left at the bakery this morning exists at her coordinates, in her universe, with her structure. So does the version that turned right. So does the version that did not exist at all because the bakery had a different owner whose daughter never met yours.
-
-This is more than most metaphysical positions ask. The book takes Move II.
-
-It is worth asking, before going further, which of the two ontologies on the table is the informationally more demanding one. The standard intuition is that CUH is the more demanding position. The chapter's tools suggest the answer is the other one.
+What the postulate costs. A picture far larger than ordinary realism. The version of you that turned left at the bakery this morning is a carving as good as the one that turned right, and the structure prefers neither. That is a great deal to take on. The surprise of the next section is that it is also, by the only measure the book trusts, the \emph{cheaper} thing to take on.
 
 \section*{Information is in the cut}
 
@@ -136,19 +116,19 @@ Apply the principle to ontology. Two competing positions on what exists.
   \node[font=\scriptsize, anchor=north, text width=5.5cm, align=center] at (10, -0.4) {Specification: the generator (enumerate all programs).};
   \node[font=\scriptsize\itshape, anchor=north, gray] at (10, -2.2) {short description};
 \end{tikzpicture}
-\caption{Two ontologies side by side. The single-universe view (left) requires specifying \emph{which} universe is real: a cut from the Library that takes information proportional to the description length of our particular universe. The CUH view (right) requires only the generator, which is a few lines. By description length, the second is the informationally simpler ontology.}
+\caption{Two ontologies side by side. The single-universe view (left) requires specifying \emph{which} universe is real: a cut from the Library that takes information proportional to the description length of our particular universe. The uncut view (right) requires only the generator, which is a few lines. By description length, the second is the informationally simpler ontology.}
 \label{fig:cut-argument}
 \end{figure}
 
 \emph{Position One: only this universe exists.} To assert this position, one must specify which universe is real. The specification is a long string. It must include the laws of dynamics, the values of every physical constant, the initial conditions of the universe, and the address of our universe within the Library of all possibilities. The information cost is the Kolmogorov complexity of our particular universe, which is large.
 
-\emph{Position Two: all computable structures exist.} To assert this position, one must specify the generator. The generator is a few lines of pseudocode: \emph{enumerate all programs of increasing length, and let each compute its output}.\footnote{``Generator'' is metaphor. The Library is not produced by an algorithm running in time; it is a static object, the set of all programs runnable on a universal Turing machine. The few lines of pseudocode are our way of indexing the Library, not its constitution. This mirrors the treatment of physical spacetime in \textit{Worldlines}: a static four-dimensional manifold that we traverse via our worldlines. The Library, like the manifold, is timeless. Our use of words like ``generation'' reflects how we encounter the Library, not what it is.} The information cost is the description length of the generator, which is small.\footnote{The generator's own description is a bit string of finite length, so it is itself one of the programs in the enumeration. The Library contains its own description. In Move II's reading, the universe containing the algorithm that enumerates all universes is also in the Library. The self-reference is structural and harmless.}
+\emph{Position Two: no world is privileged.} To decline the first position, one specifies only the generator. The generator is a few lines of pseudocode: \emph{enumerate all programs of increasing length, and let each compute its output}.\footnote{``Generator'' is metaphor. The Library is not produced by an algorithm running in time; it is a static object, the set of all programs runnable on a universal Turing machine. The few lines of pseudocode are our way of indexing the Library, not its constitution. This mirrors the treatment of physical spacetime in \textit{Worldlines}: a static four-dimensional manifold that we traverse via our worldlines. The Library, like the manifold, is timeless. Our use of words like ``generation'' reflects how we encounter the Library, not what it is.} The information cost is the description length of the generator, which is small.\footnote{The generator's own description is a bit string of finite length, so it is itself one of the programs in the enumeration. The Library contains its own description. Under the postulate, the universe containing the algorithm that enumerates all universes is also in the Library. The self-reference is structural and harmless.}
 
 By description length, the second position is the simpler ontology. The first specifies which universe is real; the second specifies nothing beyond the rule that generates the Library.
 
-This does not prove Move II. Applying a description-length principle to existence itself is a further step the bedrock does not force, and simplicity is one input among many to a metaphysical commitment. But the dialectic is reframed. The intuition that ``just one world'' is simpler is, by the cut principle, backwards. The single-universe view requires more information to specify, not less.
+This does not prove the postulate. Applying a description-length principle to existence itself is a further step the bedrock does not force, and simplicity is one input among many to a metaphysical commitment. But the dialectic is reframed. The intuition that ``just one world'' is simpler is, by the cut principle, backwards. The single-universe view requires more information to specify, not less.
 
-The book takes Move II partly for this reason. It is the move that requires the least cut.
+The book takes the postulate partly for this reason. It is the reading that requires the least cut.
 
 \section*{Where this leaves you}
 
