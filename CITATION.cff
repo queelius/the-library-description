@@ -2,7 +2,6 @@ cff-version: 1.2.0
 title: "The Library: The Indifference of Description"
 message: "If you reference this book in academic or critical work, please cite it using these metadata."
 type: software
-doi: "10.5281/zenodo.20747069"
 authors:
   - given-names: Alexander
     family-names: Towell
@@ -30,7 +29,6 @@ keywords:
   - meaning
   - compassion
 license: CC-BY-NC-SA-4.0
-repository-code: "https://github.com/queelius/the-library"
-url: "https://github.com/queelius/the-library"
-date-released: "2026-06-18"
+repository-code: "https://github.com/queelius/the-library-description"
+url: "https://github.com/queelius/the-library-description"
 version: "0.1.0"

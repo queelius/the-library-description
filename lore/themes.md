@@ -35,7 +35,7 @@ line of code, and it has no shape of its own. Generation is trivial. The cut is 
 and the cut is yours.
 
 Once the reader feels this, the rest falls out. The simplicity bias is what finitude forces
-on a finite cutter, not a preference of the structure. The universal distribution is the
+on a finite cutter, not a preference of the structure. The universal prior is the
 bookkeeping of cuts. The dominance theorem says all reasonable cuts agree asymptotically for
 prediction. Bayesian inference is cutting under uncertainty. "One world exists" is itself a
 cut, and so is the question of whether the uncut totality is real. The book asks the reader to

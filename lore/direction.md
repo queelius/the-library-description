@@ -69,7 +69,7 @@ reader feel better. It would try to make them see.
 
 Worldlines made diagrams central: a Minkowski diagram is not an illustration of time dilation, it
 is the proof. This book is less diagrammatic because the territory does not visualize the same
-way; program space, the universal distribution, and the cut are not pictures the way spacetime is.
+way; program space, the universal prior, and the cut are not pictures the way spacetime is.
 The book uses diagrams where they help and short formulas and thought experiments for the heavier
 work. Every figure must earn its place by letting the reader derive or verify something. No
 decorative figures, no "artist's impression of the multiverse."
@@ -79,7 +79,7 @@ carving privileged. Candidate diagrams:
 
 - A prefix-free code tree (Kraft made visible), with the scarcity of short codewords shown
   directly (finitude).
-- The universal distribution as a stacked measure over programs of increasing length.
+- The universal prior as a stacked measure over programs of increasing length.
 - The totality as a uniform tape; the index as a cut; two different cuts on the same tape.
 - Branching diagrams (the quantum tree, the decision tree, the computational tree) shown as the
   same shape, to make multiplicity feel ordinary.
@@ -88,7 +88,7 @@ carving privileged. Candidate diagrams:
 - The same region described two ways (the self as one boundary among many possible), for Ch 14.
 
 Candidate formulas: $\sum_i 2^{-\ell_i} \leq 1$ (Kraft); $M(x) = \sum_{p:U(p)=x*} 2^{-|p|}$ (the
-universal distribution); $M(x) \geq c_\mu \mu(x)$ (dominance); $K(x)$ and its relation to the cut.
+universal prior); $M(x) \geq c_\mu \mu(x)$ (dominance); $K(x)$ and its relation to the cut.
 Each appears where its meaning is being established, with prose interpretation alongside.
 
 ### Mathematical Notation

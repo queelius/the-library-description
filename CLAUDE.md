@@ -56,7 +56,7 @@ Replaces the old "bedrock + labeled moves + cascade" architecture. Every conclus
 one of these, and the trace is always kept visible (this is the book's integrity).
 
 1. **Bedrock** (settled mathematics, stated as theorems, unchanged): Bayes (Cox), Kraft, the
-   universal distribution and the dominance theorem (Solomonoff), the invariance theorem.
+   universal prior and the dominance theorem (Solomonoff), the invariance theorem.
 2. **The postulate** (the single interpretive commitment, asked once, refusable): **no cut is
    privileged.** The totality has no decomposition that is the correct one. "Only this world is
    real" is itself a cut. This replaces both old moves (which were *additions*; the postulate is
@@ -69,7 +69,7 @@ one of these, and the trace is always kept visible (this is the book's integrity
 **The ontology is (c): realism is itself a cut.** The book declines to assert the multiverse
 exists or does not; the existence question is undecidable from inside and is held open. This
 shifts the book's central claim: it no longer owes "explain the Born measure," but shows the
-"why" presupposes a joint there is none of. The Born measure and the universal distribution are
+"why" presupposes a joint there is none of. The Born measure and the universal prior are
 the same kind of object (the bookkeeping of cuts); this is the seam to *Multitudes* (Vol II).
 
 **The landing is the held cut:** both the cold and the warmth are cuts at the same level, and

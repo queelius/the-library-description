@@ -31,7 +31,7 @@
   "version": "0.1.0",
   "related_identifiers": [
     {
-      "identifier": "https://github.com/queelius/the-library",
+      "identifier": "https://github.com/queelius/the-library-description",
       "relation": "isSupplementTo",
       "scheme": "url"
     }

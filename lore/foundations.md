@@ -17,7 +17,7 @@ consequence.
 The book earns its bedrock the way Worldlines earned the constancy of the speed of light:
 through everyday inquiry that ends somewhere the reader did not start. Chapter 1 begins with
 ordinary induction. You observe data; you predict. By the end of Part I the reader has, with
-nothing imposed from above, arrived at the universal distribution, the dominance theorem,
+nothing imposed from above, arrived at the universal prior, the dominance theorem,
 and the recognition that the index, the system, and the self were all the same move all
 along. The mathematics is not asserted. It is the resolution of a puzzle the reader has been
 led to feel.
@@ -60,9 +60,9 @@ encoding the sum diverges. Prefix-free is exactly the structure of self-delimiti
 computation: a program that knows when it has finished reading its input. Kraft is also the
 hinge of finitude (see below): it makes short descriptions necessarily scarce.
 
-### 3. The universal distribution (Solomonoff)
+### 3. The universal prior (Solomonoff)
 
-Given a universal prefix Turing machine $U$, the universal distribution is
+Given a universal prefix Turing machine $U$, the universal prior is
 
 $$M(x) = \sum_{p\, :\, U(p) = x*} 2^{-|p|},$$
 
@@ -81,7 +81,7 @@ $$M(x) \geq c_\mu \cdot \mu(x) \quad \text{for all } x.$$
 
 Whatever computable distribution is generating your data, $M$ catches up to it; its
 predictions converge to the truth at the same asymptotic rate, up to a multiplicative
-constant. The universal distribution is contained inside every reasonable distribution, up to
+constant. The universal prior is contained inside every reasonable distribution, up to
 a constant. For prediction, you cannot do better.
 
 ### 5. The invariance theorem (machine-independence)
@@ -92,7 +92,7 @@ between them:
 
 $$M_1(x) \asymp M_2(x).$$
 
-Asymptotically the choice of machine does not matter. "The universal distribution" is
+Asymptotically the choice of machine does not matter. "The universal prior" is
 well-defined up to a constant, and the constant becomes negligible as data accumulate.
 
 ---
@@ -190,7 +190,7 @@ the world's joint and not a privileged cut. It is the cut a finite cutter cannot
 The bias is real for the observer and never in the structure.
 
 This is the guardrail for everything that follows. Whenever the book leans on simplicity, on
-the universal distribution, on the optimality of Solomonoff, it is leaning on what finitude
+the universal prior, on the optimality of Solomonoff, it is leaning on what finitude
 forces, never on a claim that the structure prefers the simple. The discipline of the book is
 to keep that distinction visible at every step.
 
@@ -214,10 +214,10 @@ is *groundlessness*: nothing in the structure, and no possible vantage, settles 
 do, and you are the kind of thing that cannot stop asking.
 
 It also changes what the book promises. Earlier framing asked "why the Born measure, why this
-system?" and offered the universal distribution as the answer. Under the postulate the book
+system?" and offered the universal prior as the answer. Under the postulate the book
 gives a different and more honest answer: the *why* presupposes a joint, a privileged cut from
 which "this and not that" would have a determinate sense, and there is none. The Born measure
-and the universal distribution are the same kind of object because both are the bookkeeping of
+and the universal prior are the same kind of object because both are the bookkeeping of
 cuts (what a carving costs), and the question "but are the carved things real?" is itself a
 cut. This is the clean seam to *Multitudes* (Volume II): that book postulates the Born measure
 and hands forward "why this measure"; this book answers that the question was a cut. The shift
@@ -317,7 +317,7 @@ The re-foundation changes the frame, not the book's integrity rules.
    postulate. The source is always visible.
 5. **Never claim the math supports more than it does.** "No view from the top" follows from the
    postulate, not from a strained argument about the limits of computation; the central
-   identification (Born measure and universal distribution) is cut-bookkeeping, not a
+   identification (Born measure and universal prior) is cut-bookkeeping, not a
    derivation of one from the other.
 6. **Never project emotional properties onto the structure.** It does not care, prefer, or
    punish. It has no joints to care with. The measure is not benevolent.

@@ -50,7 +50,7 @@ named:** indexing is conditioning, the verb sense of the cut.
 
 ### Chapter 4: The Prior
 
-Kraft's inequality; prefix-free codes turn length into probability; the universal distribution
+Kraft's inequality; prefix-free codes turn length into probability; the universal prior
 $M(x) = \sum 2^{-|p|}$; $K(x)$ as the shortest description. The simplicity bias was mathematical
 structure all along. **The cut, and finitude:** this is the natural home for the guardrail. The
 prior is not the structure's preference; a finite cutter is *forced* toward cheap cuts because
@@ -60,14 +60,14 @@ Kraft makes short descriptions scarce. State this plainly here.
 
 ### Chapter 5: The Optimality
 
-Solomonoff's dominance theorem: the universal distribution catches up to any computable
+Solomonoff's dominance theorem: the universal prior catches up to any computable
 distribution. The invariance theorem: the choice of machine is asymptotically irrelevant. The
 math of prediction is now closed. **The cut:** optimality is for prediction, and it is what
 finitude buys; reiterate that the bias is forced on the observer, never in the structure (hedge
 any scaling-law analogy as an echo, not a proof). The chapter ends by turning toward reality: what
 happens when we read this not as how to learn but as what is?
 
-**Epigraph (candidate):** Hutter, on the universal distribution dominating every computable
+**Epigraph (candidate):** Hutter, on the universal prior dominating every computable
 distribution up to a constant.
 
 ---
