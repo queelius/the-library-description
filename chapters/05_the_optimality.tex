@@ -22,7 +22,7 @@ The reason to use $M$ is a theorem.
 
 \section*{The dominance theorem}
 
-Let $\mu$ be any computable probability distribution on output strings: any distribution that an algorithm can sample from, or compute the probability of. Most distributions of practical interest are computable. Gaussian, exponential, geometric. Every distribution a statistician has written down. Every distribution a physics calculation can produce.
+Let $\mu$ be any computable probability distribution on output strings: any distribution that an algorithm can sample from, or compute the probability of.\footnote{The theorem in fact holds for the wider class of lower-semicomputable semimeasures, which is the natural home of $M$ itself; ``computable distribution'' is the friendly special case, and the one every example below belongs to.} Most distributions of practical interest are computable. Gaussian, exponential, geometric. Every distribution a statistician has written down. Every distribution a physics calculation can produce.
 
 The dominance theorem says: there is a constant $c_\mu$ such that
 
@@ -124,7 +124,7 @@ The bound on the total error comes directly from the dominance theorem. Take log
 
 $$\log_2 \mu(x) - \log_2 M(x) \leq K(\mu).$$
 
-By the chain rule for log-probabilities, the left side equals the cumulative gap between $\mu$ and $M$ summed over every step of the sequence. So the total excess log-loss of using $M$ in place of $\mu$, over a sequence of any length, is bounded by $K(\mu)$ bits.
+By the chain rule for log-probabilities, the left side is the total log-loss gap between $\mu$ and $M$ accumulated over the whole sequence. So the total excess log-loss of using $M$ in place of $\mu$, over a sequence of any length, is bounded by $K(\mu)$ bits.
 
 The bound does not depend on the length of the sequence. No matter how many observations you make, the total cost of using $M$ instead of $\mu$ never exceeds $K(\mu)$. The per-observation cost, then, goes to zero as the sequence grows. Solomonoff catches up. Figure~\ref{fig:dominance} shows the convergence.
 

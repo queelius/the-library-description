@@ -15,7 +15,7 @@ argument is traceable to one of those.
 ## Part I: The Index (the cut for prediction)
 
 *The reader meets the mathematics through ordinary observation, arrives at the universal
-distribution by Chapter 4, sees the inversion in Chapter 2, and learns that to predict is to
+prior by Chapter 4, sees the inversion in Chapter 2, and learns that to predict is to
 cut. The index is the first instance of the move.*
 
 ### Chapter 1: The Question
