@@ -15,17 +15,17 @@ abstract: >-
   trivial: the totality of all computable structures, the Library of every
   possible book, is the output of a one-line program. What is hard is locating
   yourself inside it. Built on settled mathematics (Bayes' theorem, Kraft's
-  inequality, Solomonoff's universal prior) plus two clearly labeled
-  interpretive moves, the book traces the consequences for continuation,
-  mortality, love, memory, and the self, and arrives at the indifference of the
-  measure and the warmth we choose to provide each other inside it. Volume III
+  inequality, Solomonoff's universal prior) plus a single labeled postulate (no carving
+  of the totality is privileged), the book traces the consequences for continuation,
+  mortality, love, memory, and the self, and arrives at the indifference of
+  description and the warmth we choose to provide each other inside it. Volume III
   of the Indifference suite, after Worldlines and Multitudes.
 keywords:
   - Solomonoff induction
   - universal prior
   - Kolmogorov complexity
   - algorithmic information theory
-  - computable universe hypothesis
+  - computable multiverse
   - eternalism
   - meaning
   - compassion
