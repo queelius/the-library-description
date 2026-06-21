@@ -1,0 +1,149 @@
+/* The Library: The Indifference of Enumeration -- EPUB Stylesheet */
+
+/* -- Title page -- */
+.titlepage {
+    text-align: center;
+    margin-top: 4em;
+}
+.titlepage .title {
+    font-size: 1.8em;
+    margin-bottom: 1.5em;
+    line-height: 1.3;
+}
+.titlepage .author {
+    font-size: 1.1em;
+    letter-spacing: 0.1em;
+    text-indent: 0;
+    text-align: center;
+}
+
+/* -- Dedication -- */
+.dedication {
+    text-align: center;
+    margin-top: 6em;
+    page-break-before: always;
+    page-break-after: always;
+}
+.dedication p {
+    text-indent: 0;
+    text-align: center;
+}
+
+/* -- Book-level epigraph (Borges, "The Library of Babel") -- */
+.book-epigraph {
+    text-align: center;
+    margin-top: 6em;
+    page-break-before: always;
+    page-break-after: always;
+}
+.book-epigraph p:first-child {
+    font-style: italic;
+    font-size: 1.1em;
+    text-indent: 0;
+    line-height: 1.8;
+}
+.book-epigraph p:last-child {
+    font-style: normal;
+    font-size: 0.85em;
+    margin-top: 1em;
+    text-indent: 0;
+    letter-spacing: 0.05em;
+}
+
+/* -- Chapter epigraphs -- */
+.chapter-epigraph {
+    margin: 0.5em 0 1.5em 0;
+    display: table;
+    width: 100%;
+}
+.chapter-epigraph .epigraph-text {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: right;
+    padding-right: 0.8em;
+}
+.chapter-epigraph .quote p {
+    font-style: italic;
+    font-size: 0.9em;
+    margin: 0;
+    text-indent: 0;
+}
+.chapter-epigraph .attribution p {
+    font-size: 0.8em;
+    margin: 0.3em 0 0 0;
+    text-indent: 0;
+}
+.chapter-epigraph .chapter-image {
+    display: table-cell;
+    vertical-align: middle;
+    width: 2.5em;
+}
+.chapter-epigraph .chapter-image p {
+    margin: 0;
+    text-indent: 0;
+}
+.chapter-epigraph .chapter-image img {
+    max-width: 2.5em;
+    max-height: 2.5em;
+}
+
+/* -- Part headings -- */
+h1 {
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: 2em;
+}
+.part-label {
+    font-size: 0.6em;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+/* -- Chapter headings -- */
+h2 {
+    margin-top: 1.5em;
+    margin-bottom: 0.8em;
+}
+
+/* -- Section headings -- */
+h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* -- Body text -- */
+p {
+    text-indent: 1.5em;
+    margin: 0.3em 0;
+    line-height: 1.6;
+}
+
+/* First paragraph after heading or epigraph: no indent */
+h2 + p, h3 + p,
+.chapter-epigraph + p {
+    text-indent: 0;
+}
+
+/* -- Diagram descriptions (TikZ figures without images) -- */
+.diagram-description {
+    margin: 1em 1.5em;
+    font-size: 0.85em;
+    color: #555;
+}
+.diagram-description p {
+    text-indent: 0;
+}
+
+/* -- Footnotes -- */
+.footnote-ref {
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+aside.footnotes {
+    font-size: 0.85em;
+    margin-top: 2em;
+    border-top: 1px solid #ccc;
+    padding-top: 0.5em;
+}

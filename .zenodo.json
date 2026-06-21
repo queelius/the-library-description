@@ -1,0 +1,39 @@
+{
+  "title": "The Library: The Indifference of Description",
+  "description": "A nonfiction book that follows the algorithmic information theory of the 1960s to a cold conclusion and a chosen response. Generating everything is trivial: the totality of all computable structures, the Library of every possible book, is the output of a one-line program. What is hard is locating yourself inside it. Built on settled mathematics (Bayes' theorem, Kraft's inequality, Solomonoff's universal prior and the dominance theorem) plus two clearly labeled interpretive moves (the physical Church-Turing thesis and the Computable Universe Hypothesis), the book traces the consequences for continuation, mortality, love, memory, and the self, and arrives at the indifference of the measure and the warmth we choose to provide each other inside it. Volume III of the Indifference suite, after Worldlines (geometry) and Multitudes (measure).",
+  "upload_type": "publication",
+  "publication_type": "book",
+  "creators": [
+    {
+      "name": "Towell, Alexander",
+      "orcid": "0000-0001-6443-9897",
+      "affiliation": "Southern Illinois University Edwardsville"
+    }
+  ],
+  "keywords": [
+    "Solomonoff induction",
+    "universal prior",
+    "Kolmogorov complexity",
+    "algorithmic information theory",
+    "computable universe hypothesis",
+    "Bayesian inference",
+    "eternalism",
+    "philosophy of mathematics",
+    "meaning",
+    "compassion",
+    "nonfiction"
+  ],
+  "license": {
+    "id": "CC-BY-NC-SA-4.0"
+  },
+  "access_right": "open",
+  "language": "eng",
+  "version": "0.1.0",
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/queelius/the-library",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}

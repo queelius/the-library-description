@@ -1,0 +1,143 @@
+---
+# === Book Identity ===================================================
+title: "The Library"
+subtitle: "The Indifference of Enumeration"
+author: "Alex Towell"
+lang: en-US
+edition: "First Edition"
+publication_year: 2026
+series: "The Indifference of (Volume III)"
+
+# === License =========================================================
+# Suite convention: nonfiction/technical uses CC-BY-NC-SA-4.0
+# (allows pedagogical adaptation). See repo CITATION.cff / .zenodo.json.
+license: "CC-BY-NC-SA-4.0"
+
+# === Formats & Pricing ===============================================
+formats:
+  ebook:
+    price_usd: "2.99"
+    royalty: "70%"
+    kdp_select: true            # 90-day Amazon exclusivity -> Kindle Unlimited
+    file: "the-library.epub"
+    cover: "kdp/the-library-cover-ebook.jpg"
+  paperback:
+    price_usd: "9.99"
+    trim: "6in x 9in"
+    paper: "white"              # white paper keeps the TikZ diagrams sharp
+    binding: "paperback"
+    ink: "black"
+    file: "the-library.pdf"
+    pages: 120
+    cover: "TBD (full-wrap via KDP Cover Calculator once spine width is known)"
+    isbn: "KDP-assigned (free)"
+
+# === Amazon Listing: Blurb ===========================================
+# Max 4,000 chars; aim for ~1,200-1,800 for readability.
+description: |
+  Generating everything is trivial. The totality of all computable
+  structures, the Library of every possible book, is the output of a
+  one-line program. What is hard, what is the whole of the problem, is
+  finding yourself inside it. You are not a single observer with a single
+  history. You are a pattern instantiated at many indices, in many systems,
+  under many possible laws, and a measure weights all of it and singles out
+  none of it. Not which index is you. Not which system is real.
+
+  *The Library: The Indifference of Enumeration* takes the algorithmic
+  information theory of the 1960s, results about probability, description,
+  and computation settled for sixty years, and follows them, through one
+  inversion of intuition, to a cold conclusion and a chosen response. The
+  bedrock is mathematics a careful reader can follow: Bayes' theorem,
+  Kraft's inequality, and Solomonoff's universal prior. On top of it the
+  book takes two clearly labeled interpretive moves, and no more, and traces
+  what the picture does to continuation, mortality, love, memory, and the
+  self.
+
+  This is the third of three books built the same way. *Worldlines* took
+  relativity literally and arrived at a four-dimensional structure
+  indifferent to the lives threaded through it. *Multitudes* took quantum
+  mechanics literally and found the same indifference one level deeper, in
+  the measure on the branches. This book goes one level further out, to the
+  measure on everything that can be computed, and finds the indifference
+  there too, at the bottom, with nothing under it.
+
+  The enumeration is indifferent. We are not. The structure does not care
+  which index is yours, and there is no one above it who does. The only
+  warmth the Library contains is the warmth we show each other inside it,
+  here, at the coordinates we actually occupy. The same chosen response as
+  *Worldlines*, in a colder room.
+
+  For readers of Max Tegmark's *Our Mathematical Universe*, David Deutsch's
+  *The Fabric of Reality*, and Derek Parfit's *Reasons and Persons*, who
+  want the implications followed all the way down. No speculative physics
+  beyond two labeled moves. No reassurance that isn't earned.
+
+# === Amazon Listing: Categories ======================================
+# KDP allows 3 categories. Leaf-level placement matters for ranking.
+categories:
+  - "Science & Math > Mathematics > History & Philosophy"
+  - "Philosophy > Metaphysics"
+  - "Computers & Technology > Computer Science > AI & Machine Learning"
+
+# === Amazon Listing: Keywords ========================================
+# 7 slots, max 50 chars each. Long-tail phrases beat single words.
+keywords:
+  - "Solomonoff induction universal prior"
+  - "computable multiverse Tegmark"
+  - "algorithmic information philosophy"
+  - "Kolmogorov complexity general readers"
+  - "Bayesian inference and reality"
+  - "existential meaning indifference grace"
+  - "simulation hypothesis personal identity"
+
+# === Author Bio (Amazon Author Central) ==============================
+author_bio: |
+  Alex Towell is a mathematician and computer scientist completing a PhD
+  at Southern Illinois University Edwardsville, where he also earned
+  master's degrees in mathematics and computer science. His research is in
+  information retrieval and Bayesian statistics, which is to say in
+  indexing, and in the weighting of possibilities, which is to say in the
+  subject of this book.
+
+  In 2020 he was diagnosed with stage 3 cancer; in 2024 it progressed to
+  stage 4. He has spent the years since in chemotherapy, surgeries, and the
+  particular kind of uncertainty that comes from not knowing which index you
+  are about to find yourself at.
+
+  He did not write this book because he is dying. Everyone is dying. He
+  wrote it because the measure is real, and the people inside it deserve to
+  be seen, and the finite stretch where his pattern runs alongside theirs is
+  the stretch he has. He lives in Illinois with the people he loves.
+
+# === Publishing Rights & Metadata ====================================
+rights: "worldwide"
+adult_content: false
+ai_content_disclosure: "Text generated without AI authorship. AI was used for editorial feedback and review."
+reading_age: "16+"    # accessible to motivated lay readers
+
+# === Status ==========================================================
+status:
+  ebook:
+    state: "Not submitted (pre-release)"
+    asin: "TBD"
+  paperback:
+    state: "Not submitted (pre-release)"
+    isbn: "TBD (KDP-assigned free)"
+    trim: "6 x 9 in"
+    pages: 120
+    paper: "white"
+    bleed: "no"
+    finish: "matte"
+
+# === Pre-upload Checklist ============================================
+checklist:
+  - [x] Copyright page present
+  - [x] PDF metadata populated (title/author/keywords)
+  - [x] Trim size set to 6x9 in PDF
+  - [x] Crisis-resources note (front) and Resources page (back) present
+  - [ ] Ebook cover at 1600x2560 (1.6:1), saved to kdp/the-library-cover-ebook.jpg
+  - [ ] EPUB validates with embedded cover
+  - [ ] Paperback full-wrap cover generated (KDP Cover Calculator, spine for 120 pages)
+  - [ ] CITATION.cff and .zenodo.json present at repo root (for DOI on release)
+  - [ ] KDP ebook submitted
+  - [ ] Author Central profile created at authorcentral.amazon.com

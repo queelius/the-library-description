@@ -1,0 +1,147 @@
+\chapter{The Observer}
+
+\vspace{1em}
+\hfill
+\begin{minipage}[c]{0.55\textwidth}
+\raggedleft
+\small\itshape
+Every quantum transition taking place on every star, in every galaxy, in every remote corner of the universe, is splitting our local world into myriads of copies of itself.\\[0.5em]
+\upshape\footnotesize Bryce DeWitt, ``Quantum Mechanics and Reality'' (1970)
+\end{minipage}%
+\hspace{0.5em}
+\begin{minipage}[c]{0.12\textwidth}
+% \includegraphics[width=\textwidth]{figures/ch08_observer.png}
+\end{minipage}
+\vspace{1.5em}
+
+\noindent Chapter 7 left the Library read ontologically: the universal prior is a measure on realities, and you exist at many indices in it. That picture rests on the two moves of Chapter 6, Church-Turing and the Computable Universe Hypothesis, and on nothing further.
+
+Before we settle into that picture, this chapter pauses on a reassurance. You do not have to travel all the way to the Library to meet a multiplicity of realities. The physics you already accept contains a smaller one, on the plainest reading of its own equations. That is the work of the first section. The chapter then says what an observer is, and asks the question the picture makes sharp.
+
+\section*{Quantum mechanics already branches}
+
+There is a multiplicity of realities much closer to hand than the Library, and it arrives with no philosophical move at all. It is in quantum mechanics, on the plainest reading of the equations.
+
+Quantum mechanics is the most experimentally confirmed theory in the history of science, accurate in some predictions to one part in $10^{12}$. Its mathematics is not in question. What has been argued about since the 1920s is what the mathematics is \emph{about}. Take the wave function literally and add no collapse postulate, and the answer is hard to avoid: when you measure a quantum system, the wave function of you-plus-system keeps evolving and splits into branches, one in which you saw outcome $A$, another in which you saw outcome $B$, each equally real, each unable to interfere with the others once decoherence has done its work.\footnote{Decoherence is established mathematics, independent of any interpretation: it explains why definite outcomes are observed without a collapse postulate. The reading that takes the decoherent branches as ontologically real is the Everett, or Many-Worlds, interpretation, abbreviated MWI (Everett, 1957; DeWitt, 1970). This book does not argue the case for it; that is the work of \emph{Multitudes}. Here it is enough that this is the reading that adds nothing to the equations.} From inside any one branch, the result looks definite. From outside, every result happened.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.85]
+  % Trunk
+  \draw[thick, blue] (0, 1) -- (2, 1);
+
+  % First branch at t1
+  \draw[thick, blue] (2, 1) -- (4, 2);
+  \draw[thick, blue] (2, 1) -- (4, 0);
+
+  % Second branches at t2
+  \draw[thick, blue] (4, 2) -- (6, 2.6);
+  \draw[thick, blue] (4, 2) -- (6, 1.6);
+  \draw[thick, blue] (4, 0) -- (6, 0.6);
+  \draw[thick, blue] (4, 0) -- (6, -0.4);
+
+  % Continuation
+  \node[font=\scriptsize, blue] at (6.4, 2.6) {$\cdots$};
+  \node[font=\scriptsize, blue] at (6.4, 1.6) {$\cdots$};
+  \node[font=\scriptsize, blue] at (6.4, 0.6) {$\cdots$};
+  \node[font=\scriptsize, blue] at (6.4, -0.4) {$\cdots$};
+
+  % Time axis
+  \draw[->, gray] (0, -1.2) -- (7, -1.2);
+  \node[font=\scriptsize, gray, anchor=north] at (3.5, -1.3) {time / quantum events};
+
+  % "You" annotation on one branch
+  \node[font=\small, red, anchor=west] at (6.5, 1.6) {you};
+\end{tikzpicture}
+\caption{MWI branching. At each quantum event, the wave function splits into decoherent branches corresponding to each possible outcome. Branches do not interfere at macroscopic scales. Each branch contains a version of every observer present at the event. ``You'' are in one branch; copies of ``you'' inhabit the others.}
+\label{fig:mwi-branching}
+\end{figure}
+
+This is corroboration, not a move. The book does not ask the reader to adopt an interpretation of quantum mechanics, and nothing in the argument depends on it. The point is narrower, and for our purposes it is enough: a multiplicity of realities is not an exotic thing the Library forces on us. The most literal reading of our best-confirmed physics already has it. If the equations we trust most, read without an extra ingredient, already split the world into branches, then the far larger multiplicity of the computable Library should feel less like a leap and more like the same thing seen whole.
+
+The branches of one wave function are, in fact, a small neighborhood of that Library. The Library that Chapter 2 introduced as a Borges thought experiment, and that Chapter 6 made into an ontology of computable structures, already contains the quantum branches as one of its regions: every decoherent outcome is a computable structure like any other. So quantum multiplicity is not a second, independent route to the picture. It is the picture, glimpsed in the one place physics has already taken us.
+
+There is a deeper reason quantum mechanics belongs in this book, and it is not the branching. It is the measure. The branches do not carry equal weight. Quantum mechanics assigns each the Born weight, the squared amplitude $|\psi|^2$, and why \emph{that} weight rather than a flat count of branches is one of the genuinely open problems of the subject. The companion volume, \emph{Multitudes}, postulates the Born measure without explaining it, the way \emph{Worldlines} postulated a low-entropy past without explaining it. This book makes a wager about it. The Born weight and the universal prior of Chapter 4 are the same kind of object: a measure over possibilities (Figure~\ref{fig:born-prior}). If physical reality is a computable region of the Library, the Born rule is the indexing measure specialized to that region, not a separate mystery at all. This does not close the question so much as move it one level down: why a measure structure at all, and why simplicity as its shape. The book does not pretend to answer that. But naming the Born measure and the universal prior as one object is the bridge between this book and its companion, and a reason this book exists.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.95]
+  % Left panel: Born weights on quantum branches
+  \node[font=\scriptsize, anchor=south] at (1.5,2.15) {quantum branches};
+  \draw[->, gray] (0,0) -- (3.1,0);
+  \foreach \x/\h/\w in {0.6/1.8/0.28, 1.5/1.0/0.17, 2.4/0.5/0.10} {
+    \draw[draw=blue!60!black, fill=blue!22] (\x-\w,0) rectangle (\x+\w,\h);
+  }
+  \node[font=\scriptsize, anchor=north] at (1.5,-0.1) {weight $|\psi|^2$};
+
+  % similarity sign
+  \node[font=\large] at (3.85,0.9) {$\sim$};
+
+  % Right panel: universal prior on programs
+  \node[font=\scriptsize, anchor=south] at (6.2,2.15) {programs};
+  \draw[->, gray] (4.7,0) -- (7.8,0);
+  \foreach \x/\h/\w in {5.3/1.8/0.28, 6.2/1.0/0.17, 7.1/0.5/0.10} {
+    \draw[draw=teal!55!black, fill=teal!22] (\x-\w,0) rectangle (\x+\w,\h);
+  }
+  \node[font=\scriptsize, anchor=north] at (6.2,-0.1) {weight $2^{-|p|}$};
+\end{tikzpicture}
+\caption{One object, two faces. Quantum mechanics weights branches by the Born measure $|\psi|^2$; algorithmic information theory weights programs by the universal prior $2^{-|p|}$. Both are measures over possibilities, putting heavy weight on a few cases and a thin tail on the rest. This book's wager is that they are the same object, seen from two sides: the Born rule is the universal prior restricted to a computable physical region.}
+\label{fig:born-prior}
+\end{figure}
+
+\section*{What an observer is}
+
+The chapter has used the word \emph{observer} without saying what one is. The framework needs a working definition before the next question makes sense.
+
+An observer is a substructure of the multiverse: a local region of some $U(p)$, with internal organization, a sensorium, a memory, a capacity to model. (A quantum branch is one such region, so the definition does not change if you prefer to picture the wave function.) Nothing in the framework makes observers different in kind from any other substructure. They are computable patterns, like everything else.
+
+But not every substructure is an observer, and among those that are, a distinction matters. An observer-moment, a configuration that merely \emph{matches} an observer-state for an instant, can occur almost anywhere. An observer whose inference \emph{works}, who can model its surroundings, persist, and do science, needs something specific from the universe it is in.
+
+\emph{Hierarchical decomposability.} An observer's predictions, models, and actions all rely on isolating subsystems. The cell can be modeled without the quarks. The apple's fall can be predicted without the wave function of every electron. For this to work at all, the universe (whether $U(p)$ or the relevant branch of the wave function) must have a hierarchical structure: at each scale, local short programs approximate local substructures well enough for the observer to reason. Without this, no observer could build a model that reliably tracks anything.
+
+This is a strong restriction on which programs support observers of that kind. The multiverse contains every program. The vast majority do not have local decomposability. Their $U(p)$ is locally chaotic, globally entangled, or perfectly homogeneous with no local features. None of these admit observers who can do reliable science.
+
+A caveat the rest of the chapter will sharpen: none of this says observer-\emph{states} cannot occur in the lawless majority. They can. In a large enough chaotic or high-entropy structure, a configuration matching your exact observer-state can fluctuate into being for a moment, carrying all your apparent memories and none of the lawful past they seem to record. That is the Boltzmann brain, one of the uncomfortable things the framework permits, and we return to it below. The decomposability requirement is not a condition for an observer-state to \emph{exist}; it is what an observer needs for its inference to \emph{work}, for its models to track its world, for it to persist past the instant.
+
+We appear to exist in programs whose $U(p)$ is locally decomposable at multiple scales, and the measure for observers who can do science is concentrated there. This is anthropic: we observe what supports observation. But it is more substantive than the usual anthropic move. It is not just that we are in a universe with us in it. It is that the universe has compositional structure across scales, and the existence of effective theories at every scale we have probed is direct evidence of this.
+
+\emph{Local inference.} The observer's epistemic activity, science, is not a search for the global program. The shortest program that produces the full universe is uncomputable to find, and an observer with finite resources could never carry out the search even as approximation. What the observer does instead is build a collection of short local programs $p_s$, each approximating a local substructure $s$. These are the effective theories of physics, the laws of biology, the heuristics of everyday cognition. Together they form the observer's working model of its local region.
+
+The observer never has access to the global program. The observer has access to a prefix of its local substructure, restricted to whatever its sensorium can resolve. From this, it infers local $p_s$'s and predicts forward. The relevant ensemble is not a posterior over global programs; it is the collection of local effective theories the observer maintains.
+
+This is what science is, in this framework. Not the discovery of \emph{the} program. The construction of a library of local approximations, scale by scale, each anchored to a substructure the observer can probe.
+
+\emph{The self as a local model.} The same picture extends to the observer's self-representation. The brain's model of itself is a short local program approximating the substructure the observer occupies. $I$ is one of the local theories. The dissolution of the self in Chapter 14 follows from this: the self-model is not different in kind from the other local effective theories the observer maintains. The self is a $p_{\text{self}}$, useful, finite, approximate, and like every other $p_s$, not the structure it describes.
+
+With these in place, the question of the next section sharpens. The observer is a local substructure of the multiverse, doing local inference, with no access to global structure. So: which substructure is the observer? Which version, in which branch, is \emph{you}?
+
+\section*{Where am I?}
+
+With many realities (or many branches) on the table, a sharp question emerges. Among all the observers in the multiverse who match your current self-description (your memories, your sensory state, your moment of reading this), which one is you? (Figure~\ref{fig:where-am-i}.)
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.95]
+  % data prefix (left)
+  \foreach \i/\b in {0/1, 1/0, 2/1, 3/1} {
+    \draw[thick, fill=gray!18] (\i*0.42,0.9) rectangle (\i*0.42+0.42,1.35);
+    \node[font=\scriptsize] at (\i*0.42+0.21,1.125) {\b};
+  }
+  \node[font=\scriptsize, anchor=north] at (0.84,0.8) {your data};
+  % candidate worlds (right)
+  \foreach \y/\lbl in {2.5/{embedded observer, long lawful past}, 1.5/{same laws, a different history}, 0.5/{stranger laws, same prefix}, -0.5/{a momentary fluctuation}} {
+    \node[font=\scriptsize, anchor=west, draw=blue!45, rounded corners, inner sep=2.5pt, fill=blue!7, text width=4.1cm] at (3.4,\y) {\lbl};
+    \draw[->, gray!70] (1.9,1.125) to[out=0,in=180] (3.35,\y);
+  }
+  \node[font=\scriptsize, anchor=north west, text width=5.0cm] at (3.4,-1.15) {All output the same prefix. The measure weights them; no data picks out one as \emph{you}.};
+\end{tikzpicture}
+\caption{The underdetermination of the index. A finite stretch of data (left) is the output prefix of many different programs (right): an embedded observer with a long lawful past, one under the same laws with a different history, one under stranger laws that happen to produce the same prefix, a momentary fluctuation. The universal prior assigns each a weight, but no amount of data collapses the set to a single answer. ``Where am I?'' has a posterior, never a point.}
+\label{fig:where-am-i}
+\end{figure}
+
+The literature has attempted to answer this with specific indexical assumptions. The \emph{Self-Sampling Assumption} (SSA) says reason as if you are a random sample from some reference class of observers. The \emph{Self-Indication Assumption} (SIA) says your existence is evidence for universes with many observers. These assumptions disagree about the Sleeping Beauty problem, the doomsday argument, and the Boltzmann brain problem. Neither is forced. Both are defensible. Both have known difficulties.
+
+The book does not commit to any specific indexical assumption. The question \emph{where am I?} is one of the questions the framework permits us to pose but does not give a unique answer to. This is not a hole in the bedrock. It is an honest acknowledgment that not every question the framework lets us ask has a sharp formal answer.
+
+This is the question the observer cannot settle for itself. One hope remains before Part I closes: that someone could settle it, even if you cannot, a greater mind with a vantage you lack. The next chapter follows that hope upward, and finds no one at the top.
+
