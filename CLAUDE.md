@@ -143,6 +143,24 @@ typography decisions are recorded in `docs/superpowers/specs/2026-06-21-typograp
 The old `../the-library/CLAUDE.md` section 7 remains useful as background, but read it as
 reference only, since its identity sections describe the old subtitle.
 
+**Commands** (run from the repo root; the `Makefile` is the source of truth):
+
+```bash
+make            # default: full PDF via latexmk (reruns until TOC + \Cref converge)
+make check      # fast inner loop: single-pass pdflatex, no convergence reruns
+make epub       # the-library.epub via pandoc + kdp/ assets (validate with epubcheck)
+make wordcount  # detex | wc -w (falls back to raw chapter word count)
+make clean      # remove aux files, preserve the PDF/EPUB outputs
+make distclean  # also remove the-library.pdf and the-library.epub
+make help       # list all targets
+```
+
+There is no per-chapter isolated build (chapters are `\include`d and share one cross-reference
+namespace), so `make check` is the "compile this one edit" loop and `make` is the
+release-quality build. The canonical chapter list and include order live in `the-library.tex`
+(do not maintain a second copy here). A build needs LaTeX (`latexmk`, `pdflatex`), `pandoc`
+(EPUB), and the Libertinus + `libertinust1math` fonts; `detex` is optional for `make wordcount`.
+
 **Prose and house-style rules (these apply to every file written here, including this one):**
 
 - **No em-dashes.** Use commas, colons, semicolons, parentheses, or sentence breaks. (A write
