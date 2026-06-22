@@ -24,6 +24,9 @@
   pdfsubject={The cut and the indifference of description: optimal learning, the inversion that the joints are ours, and a single postulate. Volume III of the Indifference suite, after Worldlines and Multitudes.},
   pdfkeywords={Solomonoff induction, Bayesian inference, Kraft inequality, universal prior, computable multiverse, many-worlds, Born measure, personal identity, eternalism}
 }
+% Load after hyperref: supplies \bookmarksetup{startatroot}, used at \backmatter so
+% the end matter sits at the PDF-outline root, not nested under Part III.
+\usepackage{bookmark}
 \usepackage{xurl}  % load after hyperref: lets \url{} break at any character (no margin bleed)
 
 % Math
@@ -174,6 +177,10 @@
 \include{chapters/15_the_pattern_describing_itself}
 
 \backmatter
+% Detach the end matter from Part III: reset the PDF-outline level to root so
+% Resources / Further Reading / About / Also by are siblings of the Parts, not
+% children of "The Self." (book class leaves the last \part open across \backmatter.)
+\bookmarksetup{startatroot}
 \include{chapters/97_resources}
 \include{chapters/98_reading}
 \include{chapters/99_about}
