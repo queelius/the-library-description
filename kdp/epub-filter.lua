@@ -1,4 +1,4 @@
--- EPUB filter for The Library: The Indifference of Enumeration
+-- EPUB filter for The Library: The Indifference of Description
 -- Two-pass filter:
 --   Pass 1: Strip raw LaTeX junk, rename frontmatter divs
 --   Pass 2: Detect chapter epigraph+image patterns, wrap in styled divs
