@@ -124,9 +124,10 @@ authored, the manuscript is ported from `../the-library/chapters/` and reframed 
 spine (all 15 chapters, three parts), a five-agent review fixed all surfaced relics and
 inconsistencies, and the print PDF carries warm Libertinus typography (recorded in
 `docs/superpowers/specs/2026-06-21-typography-design.md`). The build produces
-`the-library.pdf` (116 pages) and a clean-validating `the-library.epub`. Remaining work,
-neither blocking: regenerate the cover for the *Description* subtitle (it still shows
-*Enumeration*) and the release (DOI mint + repo push, for which the metadata is primed). See
+`the-library.pdf` (116 pages) and a clean-validating `the-library.epub`. The cover is
+regenerated for the *Description* subtitle and the repo is pushed to the public
+`queelius/the-library-description`. The one remaining, non-blocking item is the DOI mint
+(needs the Zenodo GitHub webhook enabled for the repo, then a GitHub Release). See
 `HANDOFF.md` for the live working-state summary.
 
 ---

@@ -54,11 +54,20 @@ The re-foundation is complete and on `main`:
 - **Build:** `make` -> `the-library.pdf` (116 pages); `make epub` -> `the-library.epub`
   (passes `epubcheck`).
 
-**Remaining work (neither blocking):**
-- **Cover:** `kdp/the-library-cover-ebook.jpg` still shows the old subtitle *The Indifference
-  of Enumeration*; regenerate for *Description* before release (KDP cover tools).
-- **Release:** DOI mint + repo push when ready. Metadata points at
-  `queelius/the-library-description` and the stale (old-repo) DOI was removed, so it is primed.
+**Done since (2026-06-22):**
+- **Cover:** regenerated for the *Description* subtitle. The subtitle line was re-set in place
+  (EB Garamond caps matched to the title; the corridor/braid art is untouched), so only the
+  one stale word changed. Passes `kdp_validate_cover` (1600x2560, ratio 1.6, sRGB JPEG); the
+  EPUB embeds it. Stale *Enumeration* comment headers in `kdp/kindle.css` and
+  `kdp/epub-filter.lua` were fixed too.
+- **Repo:** pushed. Public at `queelius/the-library-description`; `main` tracks `origin/main`.
+
+**Remaining work (one item, non-blocking):**
+- **Release / DOI:** `CITATION.cff` and `.zenodo.json` point at the new repo and carry no
+  stale DOI, so the metadata is primed. Minting needs the Zenodo GitHub webhook enabled for
+  the repo (a one-time manual toggle at `zenodo.org/account/settings/github`), after which a
+  GitHub Release triggers the DOI. Note: Zenodo only archives releases created *after* it is
+  enabled, so enable it first, then cut the release.
 
 Governing docs: `docs/superpowers/specs/` (the re-foundation spec and the typography design)
 and `docs/superpowers/plans/` (the lore-bible and manuscript-port plans).
