@@ -4,7 +4,7 @@ Volume III of the "Indifference of" suite, after *Worldlines: The Indifference o
 
 A nonfiction book that takes the reader from optimal learning to the indifference of description: from the everyday act of induction to the realization that the joints you navigate by, the index, the world, the self, are cuts you make in a structure that has none of its own. It takes up the question the previous volume left open, why the Born measure, why any particular system at all, and answers that the question presupposes a privileged cut there is none of.
 
-**Status:** Re-foundation. This repository derives from an earlier draft (kept read-only as a sibling, originally subtitled *The Indifference of Enumeration*) and rebuilds it around a single spine: *there are no joints, only the cuts you make.* The lore bible is authored and the manuscript is ported and reframed: fifteen chapters, three parts, building to PDF and a clean-validating EPUB. See `CLAUDE.md` for the governing frame and `docs/superpowers/` for the design spec and plans.
+**Status:** Re-foundation complete, on `main`. This repository re-founds an earlier draft (originally subtitled *The Indifference of Enumeration*, since superseded and consolidated into this one) around a single spine: *there are no joints, only the cuts you make.* The lore bible is authored and the manuscript ported and reframed: fifteen chapters, three parts, building to a 116-page PDF and a clean-validating EPUB. The one remaining step is the DOI mint (see `CLAUDE.md`). See `CLAUDE.md` for the governing frame and `docs/superpowers/` for the design spec and plans.
 
 ## What This Book Is
 
@@ -62,7 +62,6 @@ the-library-description/
 ├── images/                # Bitmap images
 ├── kdp/                   # KDP build: metadata.yaml, EPUB css/filter/postprocess, cover
 ├── CLAUDE.md              # Guidance for Claude Code sessions (the governing frame)
-├── HANDOFF.md             # Working state and the read-only-reference rule
 └── Makefile               # Build system
 ```
 
@@ -79,7 +78,7 @@ make clean      # Remove auxiliary files (outputs preserved)
 make distclean  # Remove the-library.pdf and the-library.epub
 ```
 
-The EPUB validates cleanly with `epubcheck`. The cover image (`kdp/the-library-cover-ebook.jpg`, 1600x2560) is carried from the prior draft and still shows the old subtitle; it is regenerated for "Description" before release. `make epub` builds with whatever cover is present.
+The EPUB validates cleanly with `epubcheck`. The cover (`kdp/the-library-cover-ebook.jpg`, 1600x2560) is set for the *Description* subtitle, passes `kdp_validate_cover`, and is embedded in the EPUB. `make epub` builds with whatever cover is present.
 
 ## Pairing with the Suite
 

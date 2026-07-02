@@ -5,8 +5,8 @@ repository.
 
 > Also read the parent conventions: `../../CLAUDE.md` (the `literature/` cross-project
 > conventions: manuscript format, build patterns, lore-first workflow, license, author
-> identity). This file covers what is specific to *this* book. For live working state (what is
-> drafted, what is next), read `HANDOFF.md`.
+> identity). This file covers what is specific to *this* book. For current working state and
+> the remaining release step, see section 5.
 
 ---
 
@@ -21,10 +21,11 @@ down to a single claim. The book takes settled mathematics as bedrock, follows i
 structural conclusion, and answers that cold with the same chosen human response as its siblings
 (grace). It stands alone; it pairs most directly with *Worldlines* (Vol I).
 
-This is a re-foundation of an earlier draft. The prior draft lives, intact and read-only, at
-`../the-library/` under its old subtitle, *The Indifference of Enumeration*, with an older
-"two labeled moves + cascade" framing. **Do not edit `../the-library/`.** Author here, fresh,
-deriving from the old lore and manuscript as source material. See §3.
+This is a re-foundation of an earlier draft subtitled *The Indifference of Enumeration*, which
+used an older "two labeled moves + cascade" framing. That predecessor has been superseded: it is
+no longer a live sibling directory, and this book was re-founded from it, taking its lore and
+manuscript as *source material* (the manuscript was ported in and then reframed onto the new
+spine; see the `port:` commits). Treat *this* directory as the single source of truth. See §3.
 
 ---
 
@@ -78,13 +79,17 @@ we make anyway, and the making is the whole point. The book itself is the holdin
 
 ---
 
-## 3. Relationship to `../the-library/` (read-only)
+## 3. Relationship to the earlier draft (superseded)
 
-The prior draft is kept intact as a reference so the new lore is not a confused mix of old and
-new identity. Read it for source material (`../the-library/lore/`, `../the-library/chapters/`);
-never edit it. When you need the old argument, read it there and write the new version here. The
-old identity files describe the retired subtitle (*The Indifference of Enumeration*) and the old
-"moves" framing; trust *this* directory for current identity.
+This book re-founds an earlier draft subtitled *The Indifference of Enumeration* (the old "two
+labeled moves + cascade" framing). That draft was authored in a separate directory and has since
+been superseded and consolidated into this one; it is no longer present at `../the-library/`
+(that path now resolves to *this* directory). Its lore and manuscript were the source material
+for the re-foundation: the manuscript was carried in through the `port:` commits and then
+reframed onto the new spine. There is nothing separate to avoid editing and nothing separate to
+read; *this* directory is the current and only identity. If you need the pre-refoundation
+argument and what changed, read the `port:` commits and the design spec
+(`docs/superpowers/specs/2026-06-20-the-library-respine-design.md`).
 
 ---
 
@@ -120,15 +125,17 @@ The Self (Ch 11-15, closing on the held cut: a header-less coda, address "Stay."
 literal, the adequacy-doubt named).
 
 **Status (2026-06-21): the re-foundation is complete and on `main`.** The lore bible is
-authored, the manuscript is ported from `../the-library/chapters/` and reframed onto the new
+authored, the manuscript is ported in from the earlier draft and reframed onto the new
 spine (all 15 chapters, three parts), a five-agent review fixed all surfaced relics and
 inconsistencies, and the print PDF carries warm Libertinus typography (recorded in
 `docs/superpowers/specs/2026-06-21-typography-design.md`). The build produces
 `the-library.pdf` (116 pages) and a clean-validating `the-library.epub`. The cover is
 regenerated for the *Description* subtitle and the repo is pushed to the public
-`queelius/the-library-description`. The one remaining, non-blocking item is the DOI mint
-(needs the Zenodo GitHub webhook enabled for the repo, then a GitHub Release). See
-`HANDOFF.md` for the live working-state summary.
+`queelius/the-library-description`. The one remaining, non-blocking item is the DOI mint.
+`CITATION.cff` and `.zenodo.json` already point at the new repo and carry no stale DOI, so the
+metadata is primed; to mint, enable the Zenodo GitHub webhook for the repo (a one-time toggle at
+`zenodo.org/account/settings/github`) *first*, then cut a GitHub Release, since Zenodo only
+archives releases created after it is enabled.
 
 ---
 
@@ -141,8 +148,6 @@ standard pattern: LaTeX, 6x9 `book` class, `the-library.tex` `\include`-ing
 produces `the-library.epub` via pandoc and the `kdp/` assets. The EPUB styles from
 `kdp/kindle.css` and the reader's own fonts, so the print font choice does not affect it. Print
 typography decisions are recorded in `docs/superpowers/specs/2026-06-21-typography-design.md`.
-The old `../the-library/CLAUDE.md` section 7 remains useful as background, but read it as
-reference only, since its identity sections describe the old subtitle.
 
 **Commands** (run from the repo root; the `Makefile` is the source of truth):
 
@@ -179,5 +184,5 @@ release-quality build. The canonical chapter list and include order live in `the
 - *Worldlines* is a **companion, not a prerequisite**: gloss any borrowed concept (block
   universe, worldline, the braid) inline.
 
-This CLAUDE.md is the authoritative statement of what the book *is*; `HANDOFF.md` tracks where the
+This CLAUDE.md is the authoritative statement of what the book *is*; section 5 records where the
 work *is*.
