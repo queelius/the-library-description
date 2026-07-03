@@ -11,3 +11,5 @@
 # Build outputs (release assets, not committed)
 *.pdf
 *.epub
+# Subagent-driven-development scratch (execution ledger)
+.superpowers/

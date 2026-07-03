@@ -110,6 +110,7 @@ manuscript; when changing a fact, update the lore doc first, then propagate.
 | `apokatastasis.md` | The universalist moral spine; the refusal as a chosen orientation-cut; the crux-4 resolution. |
 | `implications.md` | Each human concept (free will, death, love, self) re-derived as a cut. |
 | `information_hazards.md` | Reader-harm analysis re-audited under (c): quantum-immortality demoted, groundlessness raised, with mitigations. |
+| `appendices.md` | The appendix set (A to E) and the Notes: purpose, per-appendix source mapping, the marker-free endnotes policy, and the discipline. Governs the back-matter depth. |
 
 Governing documents under `docs/superpowers/`: the design spec
 (`specs/2026-06-20-the-library-respine-design.md`, the authoritative frame for the

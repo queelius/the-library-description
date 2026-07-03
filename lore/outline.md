@@ -214,6 +214,10 @@ unsure. A header-less coda; the address is the single word "Stay."; Camus's *mus
 
 ## Backmatter
 
+- Appendices (A to E): the deferred technical and discursive material. A The Bedrock,
+  Formally; B The Born Measure and the Universal Prior; C Anthropic Assumptions; D
+  Refusing the Postulate; E Objections and Replies. (Canonical in `appendices.md`.)
+- Notes (marker-free keyed endnotes, per chapter).
 - Resources (hotlines; "Stay at this index.")
 - Further reading
 - About the author; Also by Alex Towell.
