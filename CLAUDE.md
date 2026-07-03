@@ -120,7 +120,8 @@ re-foundation) and the lore-authoring plan (`plans/2026-06-20-lore-bible-authori
 
 ## 5. Structure and status
 
-Three parts, fifteen chapters, target ~20,000 to 25,000 words. Part I = The Index (Ch 1-5),
+Three parts, fifteen chapters, target ~20,000 to 25,000 words, plus a back-matter
+Appendices section (A to E) and marker-free keyed Notes. Part I = The Index (Ch 1-5),
 Part II = The System (Ch 6-10, capped by Ch 10 "The Indifference of Description"), Part III =
 The Self (Ch 11-15, closing on the held cut: a header-less coda, address "Stay.", Camus's *must*
 literal, the adequacy-doubt named).
@@ -130,13 +131,22 @@ authored, the manuscript is ported in from the earlier draft and reframed onto t
 spine (all 15 chapters, three parts), a five-agent review fixed all surfaced relics and
 inconsistencies, and the print PDF carries warm Libertinus typography (recorded in
 `docs/superpowers/specs/2026-06-21-typography-design.md`). The build produces
-`the-library.pdf` (116 pages) and a clean-validating `the-library.epub`. The cover is
+`the-library.pdf` (138 pages) and a clean-validating `the-library.epub`. The cover is
 regenerated for the *Description* subtitle and the repo is pushed to the public
 `queelius/the-library-description`. The one remaining, non-blocking item is the DOI mint.
 `CITATION.cff` and `.zenodo.json` already point at the new repo and carry no stale DOI, so the
 metadata is primed; to mint, enable the Zenodo GitHub webhook for the repo (a one-time toggle at
 `zenodo.org/account/settings/github`) *first*, then cut a GitHub Release, since Zenodo only
 archives releases created after it is enabled.
+
+**Appendices (2026-07-02):** a back-matter Appendices section (A The Bedrock, Formally;
+B The Born Measure and the Universal Prior; C Anthropic Assumptions; D Refusing the
+Postulate; E Objections and Replies) and marker-free keyed Notes were drafted
+(subagent-driven), reviewed, math-audited (Appendix A), and integrated. They add about
+5,200 words; the build is now 138 pages and the EPUB revalidates (`epubcheck` clean).
+Governing docs: `lore/appendices.md`, the design spec
+(`docs/superpowers/specs/2026-07-02-appendices-design.md`), and the plan
+(`docs/superpowers/plans/2026-07-02-appendices.md`). The DOI release now waits on this.
 
 ---
 
@@ -153,7 +163,7 @@ typography decisions are recorded in `docs/superpowers/specs/2026-06-21-typograp
 **Commands** (run from the repo root; the `Makefile` is the source of truth):
 
 ```bash
-make            # default: full PDF via latexmk (reruns until TOC + \Cref converge)
+make            # default: full PDF via latexmk (reruns until TOC and cross-references converge)
 make check      # fast inner loop: single-pass pdflatex, no convergence reruns
 make epub       # the-library.epub via pandoc + kdp/ assets (validate with epubcheck)
 make wordcount  # detex | wc -w (falls back to raw chapter word count)
