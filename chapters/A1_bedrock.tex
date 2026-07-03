@@ -1,0 +1,71 @@
+\chapter{The Bedrock, Formally}\label{app:bedrock}
+
+The body used four mathematical results and stated each once, in plain words, so the argument never had to stall on formalism. Here they are precisely, each with a short sketch where a sketch rewards the reader, and a pointer to Li and Vit\'anyi, \textit{An Introduction to Kolmogorov Complexity and Its Applications}, or to Hutter, \textit{Universal Artificial Intelligence}, for the full proofs. Nothing in this appendix is new. It is the same bedrock, written for the reader who would rather see the joints of the mathematics than take them on trust, and it keeps the book's one discipline: each statement claims exactly what it claims, and no more.
+
+\section*{Bayes and Cox}
+
+For a hypothesis $H$ and data $D$ with $P(D) > 0$,
+$$P(H \mid D) = \frac{P(D \mid H)\, P(H)}{P(D)}.$$
+As Chapter~3 showed, this is not a deep theorem. It is a rearrangement of the definition of conditional probability, bookkeeping that rewrites a count in a restricted subset in terms of the prior and the likelihood. The depth is in the next result, which says the calculus that Bayes lives inside was never a choice.
+
+\begin{theorem}[Cox]
+Let the plausibility of a proposition, given what is known, be measured by a real number, and require: (i)~plausibilities are real numbers, ordered by strength of belief; (ii)~the calculus agrees with Boolean algebra, so that the plausibility of a proposition fixes the plausibility of its negation, and the plausibility of a conjunction is built consistently from its parts; (iii)~equivalent states of knowledge receive equal plausibility, so that two valid routes to the same conclusion agree. Then any such measure is isomorphic to a probability, and the sum and product rules follow.
+\end{theorem}
+
+\emph{Sketch.} The desiderata become functional equations. Requiring that the plausibility of a conjunction depend consistently on its parts forces an associativity equation whose general solution, after a rescaling, is the product rule; the negation requirement forces a second equation whose solution is the sum rule. The rescaling that solves both is what we name probability. Cox's original argument (1946) has technical gaps that later authors closed, but the conclusion is robust; Jaynes, \textit{Probability Theory: The Logic of Science}, gives the modern treatment.
+
+So the sum and product rules, and Bayes with them, are not one modeling choice among many. They are the only real-valued calculus of belief that does not contradict itself. What the theorem does not supply is the prior $P(H)$. That silence is the problem the next result answers.
+
+\section*{Kraft and the Universal Prior}
+
+\begin{theorem}[Kraft]
+For any prefix-free binary code with codeword lengths $\ell_1, \ell_2, \ldots$,
+$$\sum_i 2^{-\ell_i} \le 1.$$
+Conversely, any lengths $\ell_1, \ell_2, \ldots$ satisfying this inequality are the codeword lengths of some prefix-free code.
+\end{theorem}
+
+\emph{Sketch.} Read the codewords as leaves of the infinite binary tree. A codeword at depth $\ell$ owns the fraction $2^{-\ell}$ of the unit interval spanned by the strings that extend it. Prefix-freeness means no codeword lies on the path to another, so these fractions are disjoint, and disjoint fractions of one unit interval sum to at most one. The converse packs the required intervals from the shortest length upward, and Kraft's inequality is precisely the room to do so. Chapter~4 draws the tiling.
+
+The inequality is what lets code length be read as probability. Fix a universal prefix machine $U$: one whose halting inputs form a prefix-free set, so a program knows where its input ends without external punctuation.
+
+\begin{definition}[Universal prior and Kolmogorov complexity]
+$$M(x) = \sum_{p\, :\, U(p) = x} 2^{-|p|}, \qquad K(x) = \min\{\, |p| : U(p) = x \,\}.$$
+$M(x)$ is the total weight of every program that outputs $x$; $K(x)$, the Kolmogorov complexity of $x$, is the length of the shortest such program.\footnote{The body wrote $U(p) = x{*}$, meaning $x$ as a prefix of the output; that monotone reading is the one used for sequence prediction below. The exact-output form here, the discrete universal semimeasure, is the one for which the coding theorem holds with an $O(1)$ term. These are the two standard faces of Solomonoff's construction; they agree up to well-understood lower-order terms that do not affect the book's arguments, and Li and Vit\'anyi separate them carefully.}
+\end{definition}
+
+Because that shortest program is one of the terms in the sum, $M(x) \ge 2^{-K(x)}$, and Levin's coding theorem gives the matching bound in the other direction:
+$$-\log_2 M(x) = K(x) + O(1).$$
+Description length and prior probability are one object in two units, related by a logarithm: short description, high prior.
+
+Two cautions the body carried. First, $M$ is a semimeasure, not a measure: because some programs never halt, $\sum_x M(x) \le 1$ rather than $=1$. And $M$ is not computable; it is only lower-semicomputable, approximable from below but never to a known accuracy, while $K$ is not computable at all. Second, and this one is load-bearing: the simplicity bias that $M$ encodes is not a preference of the structure. It is \emph{finitude}. A cutter with one unit of probability mass to spend, facing Kraft's verdict that short descriptions are scarce, is forced to spend most of that mass on them. This is a consequence of Kraft, not a separate theorem, and the book never treats it as one.
+
+\section*{Solomonoff Dominance}
+
+\begin{theorem}[Dominance]
+For every computable measure $\mu$, and more generally every lower-semicomputable semimeasure, there is a constant $c_\mu > 0$, independent of $x$, with
+$$M(x) \ge c_\mu\, \mu(x) \quad \text{for all } x, \qquad c_\mu = 2^{-K(\mu)}$$
+up to an additive $O(1)$ in the exponent for the machine's overhead.
+\end{theorem}
+
+\emph{Sketch.} $M$ is a mixture over all programs, and a mixture is at least any one of its weighted components. The program that samples $\mu$ has length $K(\mu) + O(1)$ and so contributes weight $2^{-K(\mu)}$ (up to that $O(1)$) times $\mu(x)$ to the sum defining $M(x)$; every other program only adds to the total. Chapter~5 draws the two bars.
+
+The prediction consequence is the reason the book leans on $M$ at all. Write $\mu(a \mid x_{<t})$ and $M(a \mid x_{<t})$ for the probabilities each assigns to the next symbol $a$ after the prefix $x_{<t} = x_1 \cdots x_{t-1}$. Then the total expected squared prediction error, summed over all of time, is finite and bounded by the description length of the source:
+$$\sum_{t=1}^{\infty} \mathbf{E}_\mu\!\left[\, \sum_{a} \big(M(a \mid x_{<t}) - \mu(a \mid x_{<t})\big)^2 \,\right] \;\le\; D_\infty(\mu \,\|\, M) \;\le\; K(\mu)\,\ln 2 + O(1).$$
+
+\emph{Sketch.} Dominance gives $\mu(x_{1:n}) / M(x_{1:n}) \le 2^{K(\mu) + O(1)}$, so the relative entropy $D_n(\mu \,\|\, M)$, the expected log-loss gap over the first $n$ symbols, is at most $K(\mu)\ln 2 + O(1)$ uniformly in $n$; the factor $\ln 2$ is the conversion from the bits in which $K$ is measured to the nats of relative entropy. By the chain rule $D_n$ telescopes into a sum of per-step expected gaps, and each per-step gap bounds the corresponding expected squared error, so the summed squared error is bounded by the same constant. A bound that does not grow with $n$ forces the per-step error to zero: $M$ catches up to any computable $\mu$. This is Solomonoff's convergence theorem; Hutter, \textit{Universal Artificial Intelligence}, gives the precise statement and constants, and Li and Vit\'anyi give the complexity-theoretic route.
+
+Two honest limits. The bound is asymptotic and up to a constant: it says the \emph{total} lifetime error is finite, not that any one finite prediction is good, and $K(\mu)$ can be large for a complicated source. And it is a statement about prediction, nothing else; the reason to prefer the simple is that, for predicting computable data, nothing computable does better, and that is the whole of the claim.
+
+\section*{Invariance}
+
+$M$ and $K$ were built through one particular machine $U$. A different universal prefix machine $V$ gives a different complexity $K_V$. The invariance theorem bounds how far the two can disagree.
+
+\begin{theorem}[Invariance]
+For any two universal prefix machines $U$ and $V$ there is a constant $c_{U,V}$, independent of $x$, with
+$$|K_U(x) - K_V(x)| \le c_{U,V} \quad \text{for all } x.$$
+Equivalently, the priors satisfy $M_U(x) \asymp M_V(x)$: each lies within a fixed constant factor of the other.
+\end{theorem}
+
+\emph{Sketch.} Fix, once and for all, an interpreter for $V$ written as a $U$-program; it has some finite length $c$. Prepend it to any shortest $V$-program for $x$, and you have a $U$-program for $x$ that is only $c$ bits longer, so $K_U(x) \le K_V(x) + c$. The same argument with the roles exchanged bounds the other direction. Li and Vit\'anyi give the standard proof.
+
+The discipline the theorem demands is the one the book insists on everywhere. The constant $c_{U,V}$ does not depend on $x$, but it can be large, and invariance is only asymptotic: it says the choice of machine washes out as data accumulate, not that it vanishes for a finite observer holding finite data. So there is no absolute, machine-free complexity, and no absolute fact of the matter about which strings are simple. Simplicity is real \emph{for the observer}, because finitude makes it unavoidable, and it is well-defined \emph{up to a constant}, because invariance makes it nearly machine-independent, but it is never a property of the structure itself. That is the line the whole book is built to keep visible.

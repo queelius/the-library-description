@@ -178,7 +178,20 @@
 
 \appendix
 \bookmarksetup{startatroot}
+% Under \appendix, the numbered-chapter opener must read "Appendix A", not the
+% main-matter "Chapter One". The main titleformat labels with \chaptername +
+% \Numberstring{chapter} (word form), but \appendix changes \@chapapp (not
+% \chaptername) and makes \thechapter a letter, so re-point the label at
+% \appendixname + \thechapter. Same shape otherwise; \chapter* (Appendices)
+% suppresses the label and is unaffected.
+\titleformat{\chapter}[display]
+  {\normalfont}
+  {\large\scshape\textls[120]{\appendixname\ \thechapter}}
+  {0.5em}
+  {\LARGE}
+  [\vspace{4pt}\titlerule]
 \include{chapters/A0_appendices}
+\include{chapters/A1_bedrock}
 
 \backmatter
 % Detach the end matter from Part III: reset the PDF-outline level to root so
