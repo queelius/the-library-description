@@ -179,17 +179,16 @@
 \appendix
 \bookmarksetup{startatroot}
 % Under \appendix, the numbered-chapter opener must read "Appendix A", not the
-% main-matter "Chapter One". The main titleformat labels with \chaptername +
-% \Numberstring{chapter} (word form), but \appendix changes \@chapapp (not
-% \chaptername) and makes \thechapter a letter, so re-point the label at
-% \appendixname + \thechapter. Same shape otherwise; \chapter* (Appendices)
-% suppresses the label and is unaffected.
-\titleformat{\chapter}[display]
-  {\normalfont}
-  {\large\scshape\textls[120]{\appendixname\ \thechapter}}
-  {0.5em}
-  {\LARGE}
-  [\vspace{4pt}\titlerule]
+% main-matter "Chapter One". The preamble titleformat labels chapters with
+% \chaptername\ \Numberstring{chapter} (word form). Rather than re-issue a second
+% \titleformat here (which the pandoc/EPUB build cannot parse), reuse the preamble
+% format and relabel its two pieces: point \chaptername at \appendixname, and make
+% \Numberstring yield the letter \thechapter. These \renewcommands build cleanly
+% under both pdflatex and pandoc. \chapter* (Appendices, Notes) carries no label
+% and is unaffected. After \appendix, \Numberstring is used only by the chapter
+% opener (all \part openers are in the main matter), so overriding it is safe.
+\renewcommand{\chaptername}{\appendixname}
+\renewcommand{\Numberstring}[1]{\thechapter}
 \include{chapters/A0_appendices}
 \include{chapters/A1_bedrock}
 \include{chapters/A2_born_measure}
