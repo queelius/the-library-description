@@ -15,6 +15,7 @@
 \usepackage{setspace}
 \usepackage{fmtcount}   % \Numberstring{chapter} -> "One" for the chapter/part openers
 \usepackage{fancyhdr}
+\usepackage{emptypage}  % suppress running heads and folios on inserted blank verso pages
 \usepackage{titlesec}
 \usepackage{tocloft}
 \usepackage[hidelinks]{hyperref}
@@ -37,6 +38,7 @@
 % Figure/table captions: small, italic label ("Figure 1.1.")
 \usepackage{caption}
 \captionsetup{font=small,labelfont=it,labelsep=period}
+\usepackage{placeins}  % local \FloatBarrier commands keep figures with their argument
 
 % Diagrams
 \usepackage{tikz}
@@ -149,7 +151,7 @@
 % The Library: The Indifference of Description.
 % Volume III of the "Indifference of" suite, after Worldlines and Multitudes.
 % Three parts. Part I (The Index) = chapters 1-5; Part II (The System) = 6-10; Part III (The Self) = 11-15. All fifteen chapters are
-% drafted (full first draft, unrevised). Canonical chapter structure and
+% drafted and under revision. Canonical chapter structure and
 % cascade discipline in lore/outline.md.
 
 \part{The Index}

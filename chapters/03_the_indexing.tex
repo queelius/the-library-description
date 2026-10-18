@@ -22,7 +22,7 @@ This chapter is about what probability actually is.
 
 Probability is not a special science about gambling or radioactive decay. It is the structure of how you update beliefs in the face of evidence.
 
-You hold beliefs with degrees. You are more confident that the sun will rise tomorrow than that your favorite team will win on Sunday. You are more confident that there is coffee in the cup in front of you than that the recipe in your head will taste right when you make it. Each belief is held with a strength that responds to evidence. A weather forecast adjusts your beliefs about Saturday. A friend's text changes your beliefs about what they think. The movement is not arbitrary. If you are a careful reasoner, the movement is determined by a rule.
+You hold beliefs with degrees. You are more confident that the sun will rise tomorrow than that your favorite team will win on Sunday. You are more confident that there is coffee in the cup in front of you than that the recipe in your head will taste right when you make it. Each belief is held with a strength that responds to evidence. A weather forecast adjusts your beliefs about Saturday. A friend's text changes your beliefs about what they think. The movement is not arbitrary. A careful reasoner needs rules that fit together.
 
 The rule is the simplest thing in the world. It is counting.
 
@@ -136,23 +136,23 @@ After five heads, the probability that the coin is a trick coin has jumped from 
 
 That is the entire Bayesian calculation. Counted, not derived. The formula of Bayes' theorem gives the same answer through different bookkeeping. The data did not prove anything. It restricted you to a subset, and within that subset, the proportions tell you what you should now believe.
 
-\section*{The unique calculus}
+\section*{A coherent calculus}
 
-You could in principle use other rules for combining degrees of belief. Many have been proposed. Almost none are consistent.
+Why use probability rather than some other calculus for combining degrees of belief? A family of results associated with R.\ T.\ Cox gives a conditional answer.
 
 Consider what consistency rules out. Suppose your rule combines two pieces of evidence by adding their strengths instead of multiplying likelihoods. You see one piece of evidence that supports $H$ to degree $0.6$. You see a second, independent piece, also supporting $H$ to degree $0.6$. Adding gives $1.2$. But a degree of belief should be bounded by certainty; it cannot exceed $1$. The rule produces nonsense at the edges, and a rule that miscounts at the edges was miscounting everywhere; the edge is just where the error becomes impossible to ignore.
 
 Or suppose your rule gives different posteriors depending on the order in which evidence arrives. You see $D_1$ and then $D_2$ and conclude $P(H) = 0.8$. You see $D_2$ and then $D_1$ and conclude $P(H) = 0.6$. The evidence is the same. A consistent agent should reach the same conclusion either way; the order in which two pages of a letter are read should not change what the letter says.
 
-In 1946, the physicist R.\ T.\ Cox proved that the rules required to avoid these and similar pathologies, taken together, force your calculus to be (isomorphic to) probability theory.\footnote{Cox required only modest consistency desiderata: degrees of belief are real numbers; two paths to the same conclusion give the same answer; the calculus reduces to classical logic in the limit of certainty. The original proof has loose ends that have been tightened by later authors, but the conclusion is robust.} The desiderata are short and hard to argue against. The conclusion is that Bayesian updating is the unique calculus of belief that does not contradict itself.
+Suppose degrees of plausibility can be ordered and represented by real numbers; suppose equivalent ways of reaching the same proposition agree; suppose conjunction and negation are combined consistently; and suppose the domain is rich enough and the rules regular enough. Under assumptions of this kind, a Cox-style representation theorem says that the scale can be regraded so that it obeys the sum and product rules of probability.\footnote{The qualifications matter. Different versions of Cox's result use different richness, continuity, differentiability, or extension assumptions. Without enough structure, especially on small finite domains, the conclusion need not follow. The theorem is a representation result under stated conditions, not a proof that every conceivable logic of uncertainty is probability.}
 
-This means any agent that is internally consistent, that does not contradict itself in repeated applications, and that respects classical logic where logic suffices, is doing Bayesian inference. Whether they know it or not. Whether they have read this chapter or not. Whether they call it Bayesian or not.
+This earns probability as a particularly coherent calculus for the setting we need. It does not make it the only formalism anyone could invent. Within the probability calculus, however, conditionalization and Bayes' theorem follow exactly.
 
 You have been doing this your whole life. The mathematics is just the explicit form.
 
 \section*{The missing piece}
 
-Bayes' theorem is precise. Cox's theorem says it is unique. Together they specify how you should update beliefs in the presence of evidence.
+Bayes' theorem is precise. Cox-style results explain why the probability calculus is a natural representation under familiar coherence assumptions. Together they specify an update once a probability model is in place.
 
 What they do not specify is where you should start.
 
@@ -170,10 +170,10 @@ This is the problem of induction returning, in a different form. Hume said there
 
 \section*{Where this leaves you}
 
-You have a procedure for updating beliefs. The procedure is unique. It is also incomplete: it requires an input the procedure itself cannot supply.
+You have a coherent procedure for updating beliefs. It is also incomplete: it requires an input the procedure itself cannot supply.
 
 For two and a half centuries, this gap was treated as a fact about the limits of pure reason. Priors are subjective. They reflect agent-specific commitments that mathematics cannot dictate. Different reasonable agents may end with different posteriors, and there is no principled way to declare one of them right.
 
 That was the consensus until the 1960s.
 
-The next chapter shows the prior is not, after all, free. The measure a finite reasoner is forced toward is the prior. It comes from a counting argument on prefix-free codes that fits in one page.
+The next chapter builds one remarkable answer: a universal prior from self-delimiting programs and fair random bits. It is not the only coherent prior. Its claim on us comes from the results it supports, not from uniqueness by definition.

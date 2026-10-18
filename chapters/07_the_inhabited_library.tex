@@ -14,49 +14,49 @@ The world is everything that is the case.\\[0.5em]
 \end{minipage}
 \vspace{1.5em}
 
-\noindent \textsc{Chapter 6 made the slip.} The universal prior is now a measure on realities, not just on hypotheses. The Library contains every computable structure as a real thing.
+\noindent \textsc{Chapter 6 exposed the slip.} The universal semimeasure weights candidate programs and output prefixes. Turning those weights into a measure on realities would require an additional ontological choice, and the book holds that choice open.
 
-What follows is the picture the slip gives you, an older question the picture sharpens, and the honest limits of any of it.
+What follows are the two pictures now available, an older question they sharpen, and the honest limits of either.
 
-\section*{What the postulate gives}
+\section*{What the postulate gives, and does not}
 
-With the postulate taken, the picture becomes:
+With the postulate taken, no decomposition is view-independently privileged. From there, two pictures remain.
 
-The Library contains every computable reality. The universal prior $M$ is a measure on it. Your data restricts you to the subset of realities consistent with what you have observed. The measure on that subset describes which reality is yours, weighted by how plausible each candidate is.
+In Picture A, program-output space is contemplated as a total object. In Picture B, you are situated with finite data and a posterior over candidate programs. In both pictures, $M$ weights programs whose outputs begin with your data. It does not establish that every output is a real world.
 
-You exist at many indices in the Library, in this picture. The pattern that constitutes your situation is instantiated wherever the structure of your situation occurs. Most of those instantiations are in universes with simple laws. A vanishingly small number are in universes whose laws are pathological. The universal prior tells you the proportions.
+Your current data can be compatible with many programs: some encode simple lawful histories, some stranger continuations, some a momentary matching state. That is ordinary Bayesian underdetermination. It does not yet follow that each match is an observer occurrence, that each occurrence exists, or that $M$ gives proportions among occurrences.
 
 \begin{figure}[h]
 \centering
 \begin{tikzpicture}[scale=0.55]
-  % The Library: large grid of universes
+  % Schematic candidate descriptions
   \foreach \x in {0,1,...,11} {
     \foreach \y in {0,1,...,7} {
       \draw[gray!30, fill=gray!10] (\x, \y) rectangle ({\x+1}, {\y+1});
     }
   }
 
-  % Subset consistent with your data (blue cells)
+  % Candidate descriptions consistent with your data (blue cells)
   \foreach \x/\y in {4/3, 5/3, 6/3, 4/4, 5/4, 6/4, 7/4, 5/5, 6/5, 7/5} {
     \draw[thick, blue!70, fill=blue!25] (\x, \y) rectangle ({\x+1}, {\y+1});
   }
 
-  % Mark "you" at several positions within subset
+  % Mark possible observer occurrences without weights
   \foreach \x/\y in {4/3, 5/4, 7/5} {
     \node[font=\small\bfseries, red] at ({\x+0.5}, {\y+0.5}) {$\star$};
   }
 \end{tikzpicture}
-\caption{What the postulate gives. Gray cells: the Library of all computable realities. Blue cells: the subset of realities consistent with your data. Red stars: indices at which the pattern that constitutes ``you'' is instantiated. The indexing question becomes measure-theoretic. The universal prior gives proportions, not a unique answer.}
+\caption{Membership only. Gray cells schematically represent candidate program descriptions; blue cells are consistent with your data; red stars mark possible observer occurrences under an ontic reading. Equal cell sizes carry no counting or probability claim. $M$ weights candidate programs, not the stars. A distribution over occurrences requires an additional self-location rule.}
 \label{fig:multiplicity}
 \end{figure}
 
-The question \emph{where am I?} becomes measure-theoretic. It does not have a unique answer. It has a distribution.
+The question \emph{where am I?} now splits. Which programs best predict my next data? $M$ supplies a posterior answer, relative to $U$. Which observer occurrence is me? The framework has not yet defined the sample space or a distribution. That second question is open, not merely diffuse.
 
 \section*{A note on time}
 
-A reader will want to ask about time. The Library is static, a timeless totality (Chapter 6); but the universe you inhabit plainly has time in it, change, before and after, a present that seems to move. How does a static structure account for that?
+A reader will want to ask about time. Picture A presents program-output space statically; but the universe you inhabit plainly has time in it, change, before and after, a present that seems to move. How can a static description represent that?
 
-The same way the block universe does. Computation does not require a flowing time any more than spacetime does. A program's execution is not a happening; it is a static object, the full trace of its configurations, indexed by a step counter. Step $5$ does not \emph{become} step $6$; both are present in the trace, immutable, the way every moment of a worldline is present in the manifold. ``Running'' is how an observer embedded in the trace reads it, not something the trace does. Time inside a computation is a logical index over static configurations, a coordinate, not a current. And the time you feel passing is, as in \textit{Worldlines}, a feature of your vantage from inside one of those configurations, not a motion of the whole. The Library holds the index and every structure it labels at once, unmoving. We will not linger on this; it is the same eternalism, one level out.
+One can represent an execution by its complete trace, indexed by a step counter. Step $5$ and step $6$ are both parts of that mathematical object. On the block-universe analogy, ``running'' is the embedded order in which configurations relate, not a motion of the whole representation. This is a feature of Picture A, not a result that settles the metaphysics of time.
 
 \section*{An older question}
 
@@ -103,7 +103,7 @@ What does favor something: we observe it.
 
 You are reading these words. Something exists. This is not a metaphysical assumption; it is the data. Any theory of reality that predicts no existence at all is immediately falsified by the existence of the observer. The nothing-hypothesis is excluded by induction on the only sample available, which is the entirety of what anyone has ever observed.
 
-The induction operates one level above the within-universe inductions of earlier chapters. We are not asking which universe is ours within the Library. We are asking which kind of generator generates realities at all. The nothing-generator generates none. We are in a reality. The nothing-generator is empirically excluded.
+This is thinner than the inductions of earlier chapters. The fact of experience contradicts the proposition that there is no experience at all. It does not identify a generator, select Picture A, or supply a probability distribution over ontologies.
 
 There is also a coherence question. Is \emph{nothing} a position one could coherently hold?
 
@@ -117,21 +117,21 @@ The book does not resolve this. The note is here because it is honest. The cut p
 
 There is a harder question hiding behind the first, and it is the one that actually drives people to theology. Grant that something exists. Why \emph{this}? Why these laws, this universe, this arrangement and not another? For any particular system there is no answer from inside it. Its existence is a brute fact, contingent, resting on nothing further. That is hard to accept, harder than it first looks, and the mind reaches for a necessary ground: a reason the world had to be as it is. Historically the reach has landed on a necessary being: something that exists of itself and accounts for the rest.
 
-The Library does not supply a necessary being, but it does change the question. \emph{Why this and not that?} is a question about a selection, and the all-realities ontology makes no selection. It is the universal set, the option that takes everything, the complement of the empty set. There is no chosen system whose choosing needs explaining, because nothing was chosen. The contingency that felt unbearable, \emph{why these laws and not others}, simply dissolves: every system is in the Library, and you are at one index, for no reason the structure can give.
+The Library does not supply a necessary being, but Picture A changes the question. \emph{Why this and not that?} becomes a question about why one described system is selected as actual. An all-realities ontology would decline that selection, but the postulate does not prove such an ontology. Picture B leaves the ordinary empirical question intact: why do these data follow these laws, and which candidate program will continue to fit them?
 
-This is not a resolution. It is a relocation, and a shrinking. A particular universe is radically contingent, a brute fact the size of a world. The totality is the least contingent thing on offer, because it selects nothing, and, as the coherence note just suggested, it may be the one option that cannot be coherently denied. The contingency does not vanish. It contracts to the thinnest residue: that there is a space of possibility at all. The weighting over that space is not a further mystery; for a finite predictor it is what Kraft forces (Chapter 4), and reading it as a fact about reality rather than about the predictor is the one postulate the previous chapter named, that no cut is privileged. What does not dissolve is that there is anything to weight at all, a brute fact even the totality cannot talk its way out of, and the book does not pretend that it can.
+This is not a resolution. Under Picture A it relocates contingency from a selected world to the status of the whole possibility space. Under Picture B it leaves a situated observer comparing fallible models. The weighting does not close the question: fair bits and a reference machine construct $M$, Kraft makes its weights admissible, and the postulate does not turn them into facts about existence. What remains is both the old empirical question and the deeper fact that there is anything to describe at all.
 
-So where theology offered a necessary mind, the framework offers something colder and smaller: a near-necessary structure that chose nothing and is no one. That substitution is the whole of this book in miniature. Not a someone at the ground of things who meant it, but a measure, indifferent, that did not.
+So where theology offered a necessary mind, this framework offers no substitute with comparable authority. It offers a space of computable descriptions, a powerful predictor over them, and an interpretive postulate about cuts. None is a someone at the ground of things, and none closes the question of why there is this world.
 
 \section*{What if you refuse}
 
 The book takes the postulate. The reader does not have to.
 
-Refuse it, and the universal prior remains exactly what Part I built: the right epistemic prior. Cox's theorem, Kraft's inequality, Solomonoff's dominance theorem all still apply, and the mathematics of optimal learning is unchanged. What you give up is only the ontological reading. The prior tells you how to believe, not what exists; there is one world, and $M$ is how a finite reasoner should bet on it. Everything in Part I stands. (If you go further and doubt even the computability frame, the claim that physical reality is the kind of thing $M$ describes at all, you keep less still, but the bedrock as a theory of belief is untouched, because it never needed the world to be computable to be the right way to reason.)
+Refuse it, and Part I remains: Bayes' theorem, the fair-bit universal construction, Kraft's inequality, dominance, convergence, and machine-relative invariance, each with its stated scope. What you give up is the postulate's challenge to privileged decomposition. $M$ remains one distinguished epistemic prior, not the uniquely required one. Refusal does not force one-world realism either; many metaphysical positions remain available. If you also doubt the physical computability frame, the mathematical results still hold as mathematics, while their application to nature becomes more limited.
 
 Many of the implications in Part III survive the refusal. The temporal dissolution of the unitary self (the way \textit{Worldlines} treated it) does not need the postulate. The discipline of attention, the practice of care, the response to indifference: all of these survive without the larger picture.
 
-What does need the postulate is the multiplicity itself: quantum immortality, the dissolution of the self \emph{across} carvings, the Boltzmann problem. These rest on the refusal to privilege one world, and a reader who keeps that one world is free of them.
+Ontic multiplicity needs more than the postulate: it needs Picture A or another ontology. Quantum immortality also needs Everett and an indexical continuation rule. Boltzmann-observer conclusions need a cosmology, reference class, and occurrence measure. The book will keep those dependencies visible.
 
 The book marks which conclusions rest on which footing. The cascade can always be unwound: a claim that needs the postulate is flagged as such, a claim that follows from bedrock alone is unmarked because it is settled, and the reader can trace any conclusion to its footing and refuse the footing if the conclusion is unwelcome.
 
@@ -139,8 +139,6 @@ This is the structure of honesty the book commits to.
 
 \section*{Where this leaves you}
 
-The slip has been made and its picture has been drawn. The Library has been read ontologically. Multiplicity, in this picture, is a structural fact rather than a thought experiment.
+The slip has been exposed and two pictures have been drawn. Picture A permits an ontological multiplicity; Picture B remains a posterior over candidate programs. The book does not declare either the view from nowhere.
 
-The next chapter pauses on a reassurance before the book turns to what the picture means. Quantum mechanics, on its plainest reading, already branches: a smaller multiplicity sitting inside the larger one, in physics we have already confirmed. It is not a second, independent route, since the quantum branches are themselves a region of the Library. It is the same picture met in the one place physics has already taken us, and it is where the Born measure enters, the measure this book reads as the universal prior in other clothes, the same bookkeeping of cuts.
-
-The Library, already inside our own physics.
+The next chapter turns to a nearby interpretive landmark. In Everettian quantum mechanics, unitary evolution and decoherence support talk of effectively autonomous branches. Other interpretations read the same tested formalism differently. The Born measure and universal prior arise from different mathematics and weight different domains; comparing their roles can illuminate the cut without deriving either from the other.

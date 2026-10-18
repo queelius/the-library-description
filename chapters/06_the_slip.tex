@@ -14,19 +14,19 @@ It from bit. Every it derives its function, its meaning, its very existence from
 \end{minipage}
 \vspace{1.5em}
 
-\noindent \textsc{Chapter 5 ended with a small phrase.} \emph{What remains is interpretation.} This chapter takes the first step the mathematics does not force.
+\noindent \textsc{Chapter 5 ended with a small phrase.} \emph{What remains is interpretation.} This chapter examines the first step the mathematics does not force.
 
-So far, the universal prior $M$ has been a distribution on hypotheses. A way of weighting candidate explanations of the data you have. A prior over the theories you might hold about the world.
+So far, the universal semimeasure $M$ has weighted candidate programs whose outputs begin with the data you have. It is a prior for sequential prediction.
 
-The step is to read $M$ differently. Not as a measure over what you might believe. As a measure over what is.
+The temptation is to read $M$ differently. Not as a measure over candidate descriptions, but as a measure over what is.
 
 \section*{Two readings}
 
 The equation $M(x) = \sum_{p\,:\,U(p) = x*} 2^{-|p|}$ does not say what $M(x)$ \emph{means}. It says how to compute it. Two interpretations are available, and they are not the same thing.
 
-The first reading is epistemic. $M(x)$ is the probability that a careful reasoner should assign to observing $x$, given no prior data. The universal prior describes optimal belief. It tells you how to weight your hypotheses about the world. Nothing in this reading commits to anything about the world itself; the universal prior is a fact about reasoning, not about reality.
+The first reading is epistemic. $M(x)$ is the weight assigned to seeing a prefix $x$ before further data. The universal construction tells you how to weight candidate programs. Nothing in this reading commits to anything about the world itself.
 
-The second reading is ontic. $M(x)$ is the measure of \emph{realities} that produce $x$. The universal prior describes the frequency with which $x$ appears among the things that exist. Under this reading, $M$ is a fact about reality, not about reasoning.
+The second reading is ontic. It proposes that programs describe realities and that $M(x)$ somehow measures the realities producing $x$. But that ``somehow'' contains extra work. The formula weights programs and output prefixes. It does not tell us which outputs exist, how many observer occurrences an output contains, or how program weight should become ontic weight.
 
 The mathematics is the same. The metaphysical commitment is different.
 
@@ -40,41 +40,41 @@ The mathematics is the same. The metaphysical commitment is different.
   \node[draw, thick, fill=blue!10, rounded corners, font=\small, text width=4cm, align=center, anchor=north] (left) at (2.3, 3.6) {\textbf{Epistemic reading} \\[0.3em] $M(x)$ is the probability \\you should assign \\to seeing $x$. \\[0.3em] \footnotesize\itshape\textcolor{gray}{Bedrock only.}};
 
   % Right box: ontic
-  \node[draw, thick, fill=red!10, rounded corners, font=\small, text width=4cm, align=center, anchor=north] (right) at (7.7, 3.6) {\textbf{Ontic reading} \\[0.3em] $M(x)$ is the measure \\of realities \\producing $x$. \\[0.3em] \footnotesize\itshape\textcolor{gray}{Requires the postulate.}};
+  \node[draw, thick, fill=red!10, rounded corners, font=\small, text width=4cm, align=center, anchor=north] (right) at (7.7, 3.6) {\textbf{Ontic proposal} \\[0.3em] Programs describe realities; \\$M(x)$ supplies their weight. \\[0.3em] \footnotesize\itshape\textcolor{gray}{Requires extra ontology and a measure mapping.}};
 
   % Arrows
   \draw[->, thick] (top.south) -- (left.north);
   \draw[->, thick] (top.south) -- (right.north);
 \end{tikzpicture}
-\caption{The slip. The same equation, $M(x)$, can be read in two ways. The epistemic reading needs only the bedrock from Part I. The ontic reading requires one further commitment, the postulate, labeled below. This chapter takes the ontic reading and tracks what it costs.}
+\caption{The slip. The epistemic use is defined by the construction in Part I. The ontic proposal adds two claims the equation does not contain: which outputs exist and why program weights should measure them. The postulate below addresses privileged cuts; it does not supply an observer-occurrence measure.}
 \label{fig:slip}
 \end{figure}
 
-This chapter takes the second reading. The next section labels the one commitment it requires.
+This chapter exposes the second reading without quietly installing it. The next section labels the commitment the book does make.
 
 \section*{The one move: no cut is privileged}
 
-To read $M$ as a measure over what is, rather than over what you should believe, takes one step. Naming it precisely is the work of this chapter, because once it is named you can see how small it is, and you can refuse it.
+To deny that one decomposition is uniquely correct takes one step. Naming it precisely is the work of this chapter, because once it is named you can see its reach and refuse it.
 
-Start with the language. To speak of reality in terms of $M$ at all is to describe the world as a computable structure, a thing some program produces. This is the physical reading of the Church-Turing thesis: any process physically realizable can be computed by a Turing machine. It is not the original thesis (that one, about algorithms, has been settled and tested for ninety years without a counterexample); it is a claim about what physics is doing. The empirical case is strong. Every physical process ever measured falls within the Turing-computable class; every framework that has survived experimental test, from Newtonian mechanics through quantum field theory, fits inside it; the claim that physics does some genuinely uncomputable thing in a load-bearing way has no experimental support. But notice what this step is and is not. It fixes the \emph{language} in which descriptions are written, the medium in which we cut. It is not yet a claim about which descriptions are real. Computability is the frame within which we cut, not a privileged fact about a world standing behind the descriptions.
+Start with the language. The original Church-Turing thesis concerns what counts as an effective procedure. A stronger \emph{physical} Church-Turing thesis says that physically realizable processes can be simulated by Turing computation. That stronger claim is not a theorem of computer science, and physics has not closed it. This book therefore uses computable descriptions as its chosen frame. The frame is broad enough to express the theories used here, but choosing it neither proves that nature is computable nor says which descriptions are real.
 
-Now the step itself. The naive reading says there is one world, and $M$ tells you how to reason about it. But ``there is one world, and it is this one'' is not the cheap default it feels like. It is a cut, and, as the next section shows, the single most expensive thing you could specify, because you must say \emph{which} world is the real one. The step this chapter takes is to decline that cut. Not to add worlds: to stop privileging one.
+Now the step itself. ``There is one world, decomposed in exactly this way'' is not a neutral description. It selects a system and a boundary. The postulate declines to call that decomposition view-independently correct.
 
 \begin{quote}
-\textbf{The postulate: no cut is privileged.} The totality of computable structures has no decomposition that is the correct one, and no element that is the one that is real. Every carving, including the carving that says only this world exists, is a cut an observer makes, and the structure ranks none above the others.
+\textbf{The postulate: no cut is privileged.} No decomposition of the describable totality is view-independently correct. Every carving into worlds, systems, and selves is a cut an observer makes; none comes labeled as the structure's own.
 \end{quote}
 
-This is the book's one interpretive commitment, and it is a refusal, not an addition. The Library of Babel from Chapter 2 is not a metaphor; but the postulate does not announce that ``all computable structures exist'' as some new and lavish fact. It says the opposite in spirit: the reason you took only one of them to be real was a cut you were making without noticing, and the cut is not forced. What is left when you stop making it is the uncut totality.
+This is the book's one interpretive commitment, and it is a refusal, not an addition. It does not announce that all computable structures exist. Under Picture A, one may contemplate the totality of descriptions as an object. Under Picture B, a situated observer retains a posterior over candidate descriptions. The postulate does not choose which picture is real.
 
 Be careful how far this reaches. ``No cut is privileged'' is not ``every structure is equally, robustly real.'' The leap from declining to privilege one world to asserting that all of them exist in the full-blooded sense is \emph{itself} a cut, and the book does not make it either. Whether the totality ``exists'' is a question the book holds open; Chapter 8 shows why it has no view-independent answer. For now the commitment is only the refusal: no carving is the true one.
 
-What the postulate buys. Multiplicity, first: many structures are consistent with any partial data, so your observations restrict you to a region of the Library, never to a point. And a cleaner account of the simplicity bias: you expect short descriptions not because the structure prefers them, but because you are a finite cutter, and a finite cutter is forced toward cheap cuts. Chapter 4 showed why; Kraft makes short descriptions scarce, so finite belief has to spend itself on them. The bias is yours, not the world's.
+What the postulate buys is underdetermination. Many structures are consistent with partial data, and no decomposition arrives already crowned. Finitude explains why an observer must use bounded local models. The fair-bit construction, Kraft, dominance, and convergence explain why $M$ is a powerful ideal predictor. None of those claims makes simplicity the world's preference.
 
-What the postulate costs. A picture far larger than ordinary realism. The version of you that turned left at the bakery this morning is a carving as good as the one that turned right, and the structure prefers neither. That is a great deal to take on. The surprise of the next section is that it is also, by the only measure the book trusts, the \emph{cheaper} thing to take on.
+What the postulate costs is groundlessness. It withholds a view-independent answer to which decomposition is the real one. Picture A makes the cost vivid by contemplating many alternatives; Picture B keeps the uncertainty situated. The next section explains why the language of information tempts us toward Picture A, and why that temptation is not proof.
 
 \section*{Information is in the cut}
 
-The standard objection to an ontology this large is the one Occam's razor is usually summoned for: it multiplies entities. By declining to privilege one world, the postulate leaves countless realities un-excluded, inflating the ontology far beyond the single universe we observe.\footnote{In the literature the nearest named position is Tegmark's Mathematical Universe Hypothesis, restricted to the computable structures. The book arrives there not as a hypothesis to adopt but as what is left when the one-world cut is declined, so it needs no name of its own here.} Occam's razor, the usual simplicity heuristic, seems to forbid such inflation. \emph{Do not multiply entities beyond necessity.}
+A standard objection to Picture A is the one Occam's razor is usually summoned for: it multiplies entities. If every computable output is taken as a reality, the ontology is far larger than the single universe we observe.\footnote{A nearby position in the literature is Tegmark's Mathematical Universe Hypothesis, here restricted to computable structures. This book does not adopt it as a consequence of Solomonoff induction.} Occam's razor seems to forbid such inflation. \emph{Do not multiply entities beyond necessity.}
 
 The objection rests on a confusion the Library makes visible.
 
@@ -85,8 +85,8 @@ Apply the principle to ontology. Two competing positions on what exists.
 \begin{figure}[h]
 \centering
 \begin{tikzpicture}
-  % LEFT: Only this universe
-  \node[font=\small\bfseries, anchor=south] at (3, 4.6) {``Only this universe''};
+  % LEFT: Select one candidate
+  \node[font=\small\bfseries, anchor=south] at (3, 4.6) {``Select this candidate''};
 
   % Faded grid of universes (Library, mostly grayed)
   \foreach \x in {0,1,2,3,4,5} {
@@ -99,11 +99,11 @@ Apply the principle to ontology. Two competing positions on what exists.
   \node[font=\scriptsize, red] at (2.5, 2.5) {this};
 
   % Label below
-  \node[font=\scriptsize, anchor=north, text width=5.5cm, align=center] at (3, -0.4) {Specification: which universe is real (laws, constants, initial conditions, address).};
+  \node[font=\scriptsize, anchor=north, text width=5.5cm, align=center] at (3, -0.4) {Specification: a program or address identifying this output.};
   \node[font=\scriptsize\itshape, anchor=north, gray] at (3, -2.2) {large description};
 
-  % RIGHT: All computable structures
-  \node[font=\small\bfseries, anchor=south] at (10, 4.6) {``All computable structures''};
+  % RIGHT: Enumerate program space
+  \node[font=\small\bfseries, anchor=south] at (10, 4.6) {``Enumerate program space''};
 
   % Fully lit grid
   \foreach \x in {7,8,9,10,11,12} {
@@ -116,22 +116,22 @@ Apply the principle to ontology. Two competing positions on what exists.
   \node[font=\scriptsize, anchor=north, text width=5.5cm, align=center] at (10, -0.4) {Specification: the generator (enumerate all programs).};
   \node[font=\scriptsize\itshape, anchor=north, gray] at (10, -2.2) {short description};
 \end{tikzpicture}
-\caption{Two ontologies side by side. The single-universe view (left) requires specifying \emph{which} universe is real: a cut from the Library that takes information proportional to the description length of our particular universe. The uncut view (right) requires only the generator, which is a few lines. By description length, the second is the informationally simpler ontology.}
+\caption{Two descriptions side by side. Selecting one candidate (left) requires information that identifies it. Describing the whole program space (right) requires only an enumerator. This compares code lengths in a chosen language; it does not establish which ontology is true.}
 \label{fig:cut-argument}
 \end{figure}
 
-\emph{Position One: only this universe exists.} To assert this position, one must specify which universe is real. The specification is a long string. It must include the laws of dynamics, the values of every physical constant, the initial conditions of the universe, and the address of our universe within the Library of all possibilities. The information cost is the Kolmogorov complexity of our particular universe, which is large.
+\emph{Description One: select this candidate.} Within the Library metaphor, identifying a particular complete output requires a program or address. Its cost is relative to the chosen machine. We do not know the Kolmogorov complexity of our universe, and a metaphysical claim is not literally a codeword, but selection carries descriptive information that ``enumerate all'' does not.
 
-\emph{Position Two: no world is privileged.} To decline the first position, one specifies only the generator. The generator is a few lines of pseudocode: \emph{enumerate all programs of increasing length, and let each compute its output}.\footnote{``Generator'' is metaphor. The Library is not produced by an algorithm running in time; it is a static object, the set of all programs runnable on a universal Turing machine. The few lines of pseudocode are our way of indexing the Library, not its constitution. This mirrors the treatment of physical spacetime in \textit{Worldlines}: a static four-dimensional manifold that we traverse via our worldlines. The Library, like the manifold, is timeless. Our use of words like ``generation'' reflects how we encounter the Library, not what it is.} The information cost is the description length of the generator, which is small.\footnote{The generator's own description is a bit string of finite length, so it is itself one of the programs in the enumeration. The Library contains its own description. Under the postulate, the universe containing the algorithm that enumerates all universes is also in the Library. The self-reference is structural and harmless.}
+\emph{Description Two: enumerate every program.} An enumerator can be written compactly: \emph{dovetail all programs and record their outputs}.\footnote{``Generator'' is metaphor. Program space is a mathematical object; the pseudocode is our compact description of it, not evidence that a cosmic computer runs it in time.} Its description is short on ordinary reference machines.
 
-By description length, the second position is the simpler ontology. The first specifies which universe is real; the second specifies nothing beyond the rule that generates the Library.
+As descriptions, ``enumerate all'' can be shorter than ``select this exact member.'' That is an observation about code length, not a theorem that the larger ontology is true or probable.
 
-This does not prove the postulate. Applying a description-length principle to existence itself is a further step the bedrock does not force, and simplicity is one input among many to a metaphysical commitment. But the dialectic is reframed. The intuition that ``just one world'' is simpler is, by the cut principle, backwards. The single-universe view requires more information to specify, not less.
+This does not prove the postulate. Applying description length to existence is a further step, and the comparison depends on the language in which the positions are encoded. It does reframe one intuition: an unrestricted generator may have a shorter description than an exact selection. Ontological parsimony and program length are not automatically the same thing.
 
-The book takes the postulate partly for this reason. It is the reading that requires the least cut.
+The book takes the postulate because it refuses a view-independent decomposition. The compactness of the generator motivates the picture but does not establish it.
 
 \section*{Where this leaves you}
 
-The slip has been made. The universal prior, which started as a way to weight hypotheses, is now a way to weight realities. The Library has been read ontologically.
+The slip has been exposed. The universal semimeasure weights candidate programs and prefixes. Reading it as a measure on realities requires additional ontology, and reading it as a measure over observer occurrences requires more again. The postulate denies privileged cuts without supplying either measure.
 
-The picture this gives, the older question it sharpens, and the limits of any of it are the subjects of the next chapter.
+The two pictures this leaves open, the older question they sharpen, and their limits are the subjects of the next chapter.
