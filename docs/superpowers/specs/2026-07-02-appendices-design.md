@@ -5,6 +5,12 @@
 **Governs:** the new back-matter Appendices section and the endnotes ("Notes")
 apparatus for *The Library: The Indifference of Description*.
 
+> **Correction (2026-07-15).** This is a historical implementation design. Current
+> `lore/appendices.md` and `lore/foundations.md` govern. Appendix A must distinguish sequential
+> $M$ from exact-output $m$, state Cox-style assumptions, and deny that Kraft or finitude forces
+> a unique prior. Appendix B treats Born/program weighting only as a limited analogy. Appendix C
+> separates program priors from observer-occurrence measures.
+
 ---
 
 ## 1. Motivation

@@ -17,7 +17,8 @@ This directory is **Volume III** of the "Indifference of" nonfiction suite by Al
 **\*The Library: The Indifference of Description.\***
 
 Its subject is algorithmic information theory (Bayes, Kraft, Solomonoff), followed all the way
-down to a single claim. The book takes settled mathematics as bedrock, follows it to a cold
+down to a single claim. The book distinguishes theorem, universal construction, practical limit,
+and interpretation, then follows them to a cold
 structural conclusion, and answers that cold with the same chosen human response as its siblings
 (grace). It stands alone; it pairs most directly with *Worldlines* (Vol I).
 
@@ -54,24 +55,26 @@ of the self in Part III is the same operation as the dissolution of the index.
 ## 2. The reasoning skeleton
 
 Replaces the old "bedrock + labeled moves + cascade" architecture. Every conclusion traces to
-one of these, and the trace is always kept visible (this is the book's integrity).
+one of these layers, and the trace is always kept visible.
 
-1. **Bedrock** (settled mathematics, stated as theorems, unchanged): Bayes (Cox), Kraft, the
-   universal prior and the dominance theorem (Solomonoff), the invariance theorem.
-2. **The postulate** (the single interpretive commitment, asked once, refusable): **no cut is
+1. **Theorems:** Bayes; conditional Cox-style representation results; Kraft; Solomonoff
+   dominance and convergence; invariance. State hypotheses and machine dependence.
+2. **Construction:** fair random bits and a chosen universal prefix machine define sequential
+   $M$. Kraft makes the length weights admissible; it does not force them. Exact-output $m$ is
+   distinct and is the quantity used in the coding theorem with $K$.
+3. **The postulate** (the single interpretive commitment, asked once, refusable): **no cut is
    privileged.** The totality has no decomposition that is the correct one. "Only this world is
-   real" is itself a cut. This replaces both old moves (which were *additions*; the postulate is
-   a *refusal to privilege*).
-3. **Finitude** (the guardrail against relativism, a *consequence of Kraft, never a theorem*): a
-   finite cutter is forced toward cheap cuts. Simplicity is real for the observer, never in the
-   structure.
-4. **Consequences:** everything in Parts II and III.
+   real" is itself a cut. The postulate does not prove that all described worlds exist or turn
+   $M$ into an ontic or observer-occurrence measure.
+4. **Finitude:** a finite observer must use bounded local models. Finitude does not force one
+   unique prior.
+5. **Consequences:** everything in Parts II and III, with optional premises labeled.
 
 **The ontology is (c): realism is itself a cut.** The book declines to assert the multiverse
-exists or does not; the existence question is undecidable from inside and is held open. This
-shifts the book's central claim: it no longer owes "explain the Born measure," but shows the
-"why" presupposes a joint there is none of. The Born measure and the universal prior are
-the same kind of object (the bookkeeping of cuts); this is the seam to *Multitudes* (Vol II).
+exists or does not; the existence question is underdetermined by $M$ and held open. The Born
+rule and universal prior can be compared as weighting schemes, but their domains and warrants
+differ. The postulate neither derives nor closes the Born question. $M$ weights programs and
+prefixes, not observer occurrences; any self-location distribution is an additional rule.
 
 **The landing is the held cut:** both the cold and the warmth are cuts at the same level, and
 neither is the ground; care is the cut we choose to keep, with no floor under it. "We" is a cut
@@ -100,7 +103,7 @@ manuscript; when changing a fact, update the lore doc first, then propagate.
 
 | Doc | Role |
 |---|---|
-| `foundations.md` | **Canonical.** Bedrock, the postulate, finitude, the cut at three depths, the ontology (c), the recast cascade, what the bedrock does not provide, the discipline. Upstream of all. |
+| `foundations.md` | **Canonical.** Theorem/construction distinctions, the postulate, finitude, $M$ versus $m$, the missing indexical measure, the ontology (c), and discipline. Upstream of all. |
 | `themes.md` | Core vision, the inversion, the seven themes (theme 6 = the indifference of description), the suite table, "What This Book Is NOT." |
 | `index.md` | Supporting detail: Picture A vs Picture B (and that choosing between them is a cut), local inference, hierarchical decomposability. |
 | `outline.md` | The three parts as three cuts; per-chapter cut notes; Ch 10 = "The Indifference of Description"; word targets; pedagogical sequencing. |
@@ -112,9 +115,10 @@ manuscript; when changing a fact, update the lore doc first, then propagate.
 | `information_hazards.md` | Reader-harm analysis re-audited under (c): quantum-immortality demoted, groundlessness raised, with mitigations. |
 | `appendices.md` | The appendix set (A to E) and the Notes: purpose, per-appendix source mapping, the marker-free endnotes policy, and the discipline. Governs the back-matter depth. |
 
-Governing documents under `docs/superpowers/`: the design spec
-(`specs/2026-06-20-the-library-respine-design.md`, the authoritative frame for the
-re-foundation) and the lore-authoring plan (`plans/2026-06-20-lore-bible-authoring.md`).
+The dated documents under `docs/superpowers/` record design history. Where they conflict with the
+current mathematical corrections, `lore/foundations.md` governs. In particular, the June 20
+re-spine spec is no longer authoritative for claims that Kraft forces a prior, that Cox is
+assumption-free, or that $M$ is an observer measure.
 
 ---
 
@@ -126,18 +130,11 @@ Part II = The System (Ch 6-10, capped by Ch 10 "The Indifference of Description"
 The Self (Ch 11-15, closing on the held cut: a header-less coda, address "Stay.", Camus's *must*
 literal, the adequacy-doubt named).
 
-**Status (2026-06-21): the re-foundation is complete and on `main`.** The lore bible is
-authored, the manuscript is ported in from the earlier draft and reframed onto the new
-spine (all 15 chapters, three parts), a five-agent review fixed all surfaced relics and
-inconsistencies, and the print PDF carries warm Libertinus typography (recorded in
-`docs/superpowers/specs/2026-06-21-typography-design.md`). The build produces
-`the-library.pdf` (138 pages) and a clean-validating `the-library.epub`. The cover is
-regenerated for the *Description* subtitle and the repo is pushed to the public
-`queelius/the-library-description`. The one remaining, non-blocking item is the DOI mint.
-`CITATION.cff` and `.zenodo.json` already point at the new repo and carry no stale DOI, so the
-metadata is primed; to mint, enable the Zenodo GitHub webhook for the repo (a one-time toggle at
-`zenodo.org/account/settings/github`) *first*, then cut a GitHub Release, since Zenodo only
-archives releases created after it is enabled.
+**Status (2026-07-15): technical and safety revision in progress.** A Worldsmith review found
+systemic overclaims in the Kraft-to-prior step, machine invariance, Cox, Everett/decoherence,
+Turing jumps, and observer self-location, plus a crisis-resources defect. Canonical lore and the
+manuscript have been revised to keep theorem, construction, postulate, and interpretation apart.
+Do not restore categorical multiverse or observer-measure language from older commits or specs.
 
 **Appendices (2026-07-02):** a back-matter Appendices section (A The Bedrock, Formally;
 B The Born Measure and the Universal Prior; C Anthropic Assumptions; D Refusing the
@@ -187,8 +184,9 @@ release-quality build. The canonical chapter list and include order live in `the
 - **Figures are arguments, not decoration.** The recurring figure is the cut.
 - **Voice:** second-person, plain, companionate, unflinching, never hype (the Worldlines voice);
   the care is present as tone from the preface, long before it is argued in Part III.
-- **Discipline:** never claim the math supports more than it does (finitude is a consequence of
-  Kraft; "no view from the top" follows from the postulate); never project emotional properties
+- **Discipline:** never claim the math supports more than it does (Kraft permits fair-bit length
+  weights but does not force a prior; finitude forces approximation; "no privileged view" follows
+  from the postulate, not from a Turing-jump ladder); never project emotional properties
   onto the structure; never console with what is not true; never engineer away what the framework
   permits; keep the moral spine in the structure, never in citations (no Origen, Hart, Gregory of
   Nyssa, the bodhisattva vow, Levinas; and under (c), no Nagarjuna, Pyrrho, or "emptiness").

@@ -12,6 +12,14 @@ word. The two dated decision docs (`2026-06-16-qm-as-corroboration-design.md`,
 
 House style applies to this document too: no em-dashes; math in math mode; no CJK.
 
+> **Correction (2026-07-15).** This is a historical design record. Current
+> `lore/foundations.md` supersedes its mathematical claims wherever they conflict. In
+> particular, Cox-style representation results require richness and regularity assumptions;
+> Kraft makes fair-bit length weights admissible but does not force a unique prior or most mass
+> toward short descriptions; finitude forces bounded modeling, not Solomonoff induction; $M$
+> weights programs and output prefixes, not observer occurrences; and Everettian branching is an
+> interpretation, not independent corroboration.
+
 ---
 
 ## 0. What this is and why

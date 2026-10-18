@@ -13,3 +13,7 @@
 *.epub
 # Subagent-driven-development scratch (execution ledger)
 .superpowers/
+# Repository-local Codex port of the worldsmith plugin (tooling, not book content;
+# canonical source lives in claude-anvil / alex-claude-plugins)
+plugins/
+.agents/
