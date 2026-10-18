@@ -6,8 +6,8 @@ This book is not ultimately about mathematics. The mathematics is the vehicle. T
 is: treat each other with care, because we are observers carving a structure that does not care
 about us, and we are all each other has.
 
-The mathematics establishes the structure. The structure is indifferent: it ranks carvings by
-cost and singles out none, and it has no joints to care with. The book's argument is that the
+The mathematics establishes prediction results for a constructed universal mixture. The postulate
+denies a privileged decomposition; neither layer supplies a moral ranking. The book's argument is that the
 indifference makes care more important, not less. Not because the structure commands it (it
 commands nothing), but because we are the only things in it that can care, and caring is the only
 warmth it contains.
@@ -15,11 +15,10 @@ warmth it contains.
 The destination is the same as Worldlines. This book arrives there from a colder room.
 
 Chapter 9's "no view from the top" turns the central claim from rhetoric into structure, and the
-closing (Ch 15) lands on it. There is no maximal observer above the totality, no overseer who
-could care from above and declines to. This is not a complaint about a silent heaven; it follows
-directly from the postulate. Every view is a cut; no cut is privileged; so no view is *the* view,
-and there is no vantage above the rungs at all. "We are the only things in the structure that can
-care" is therefore not a lament about an absent God but a consequence of "no cut is privileged."
+closing (Ch 15) lands on it. No observer's view is privileged as *the* overview. This is not a
+Turing-jump claim about a ladder of computable minds; it follows directly from the postulate.
+"We are the only things here that can care" is therefore not a lament about an absent God but a
+statement about where care is encountered and enacted.
 The grace move is stronger for it: care is not what is left after the overseer's silence; it is
 the only place warmth was ever going to come from.
 
@@ -34,20 +33,19 @@ computable possibility, and that structure has no carving of its own. The "I," t
 the index by which you locate yourself are all cuts you make. This sounds as if it should dissolve
 the case for care: if "you" are a carving, and "they" are carvings, and no carving is privileged,
 what does it mean to care? The answer: care still means what it meant in Worldlines. The warmth is
-local to the configuration. The braid between two patterns is real at its coordinates whether or
-not those coordinates are unique. Care that exists across many carvings is still care in each. The
-multiplicity does not dilute the warmth; it multiplies the sites where warmth can be present.
+local to the configuration. The braid between two patterns matters in the situation where it is
+enacted. If Picture A is true, other realizations neither erase nor multiply the moral force of this one.
 
 The chosen response is the same. Rage at the indifference is appropriate. The rage passes.
 Equanimity comes. Care remains.
 
 ## The Held Cut
 
-Under the postulate, both the cold and the warmth are cuts at the same level, and neither is the
-ground. This is what is new and what makes the landing harder than Worldlines'. There, indifference
+Under the postulate, neither the cold ontology nor the warmth is view-independent ground. This is
+what is new and what makes the landing harder than Worldlines'. There, indifference
 was the background and care was the figure against it. Here the indifference contains the care:
-the structure holds every kind carving and every cruel one at their coordinates, ranked only by
-cost. The figure-and-ground contrast that carried Worldlines does not transfer.
+Picture A permits both kind and cruel descriptions, carrying program weights rather than moral
+rank. The figure-and-ground contrast that carried Worldlines does not transfer.
 
 So the destination is restated as **the held cut.** The warmth is between cuts. "We" is a cut, the
 braid is a cut, and we make it anyway: the making is the whole point. Care is the cut we choose to
@@ -58,8 +56,8 @@ depth.
 
 ## The Author's Role
 
-The author takes seriously their own position in the structure. Writing this book is a cut made at
-certain coordinates, in a certain configuration, with a certain index. The author does not stand
+The author takes seriously their own position in the structure. Writing this book is a cut made in
+a certain configuration, from a local position. The author does not stand
 outside the totality and comment on it; the author is inside, addressing the reader from within.
 One carving to another. One observer to another.
 
@@ -72,20 +70,18 @@ rejected them as too clever. The plain line carries the weight.
 
 ## The Book Is in the Structure It Describes
 
-The book is a computable structure, at coordinates in the totality, with specific authors and
-specific readers. Its writing is a configuration the totality contains; so is its reading; so is
-its absence, and every variation of it the author could have written. This is not cleverness; it
-is the logical endpoint of taking the postulate seriously. The book does not bias the structure
-toward grace. The structure is what it is. The book is at coordinates where care exists. That is
-all, and the closing chapter (Ch 15) is where the book turns and looks at itself: the author
+The book is a finite artifact with specific authors and readers. Under Picture A, its writing,
+reading, absence, and alternatives are describable within the totality; the book does not assert
+that every description is instantiated. The book does not bias the framework toward grace. The
+book is a local act of care. The closing chapter (Ch 15) is where the book turns and looks at itself: the author
 writing carefully is the chosen response performed in this configuration, and the reader reading
 carefully is another instance of the same response. Whether the response suffices is the open
 question the closing names outright, rather than leaving it outside the frame.
 
 ## One Must Imagine
 
-The book's deepest move is Camus's. Faced with the indifference of description, with cruel carvings
-that exist at their coordinates, with the where-am-I question unresolved, with the self dissolved
+The book's deepest move is Camus's. Faced with the indifference of description, with cruel
+possibilities the framework permits, with the where-am-I question unresolved, with the self dissolved
 into a cut, with the doubt that any of the framework is even true: we choose to push the stone
 anyway. The "must" in *one must imagine Sisyphus happy* is not logical necessity, not derivation,
 not consolation. It is commitment.
@@ -103,9 +99,8 @@ The book does not claim certainty. The postulate might be wrong; the framework m
 author might be mistaken; consciousness might not be a coherent enough concept to do the work the
 book asks of it. This does not weaken the argument. The argument is not that the framework is true.
 The argument is that, taking it seriously and following what falls out, the chosen response is what
-it is. The configuration of care at these coordinates is real at these coordinates regardless of
-whether the cosmology checks out. If the framework is wrong, the care is still what the
-configuration contains. The humility is not a hedge; it is the only honest posture for a primate
+it is. The local effects of care do not depend on whether the cosmology checks out. If the framework
+is wrong, the care still changes what happens here. The humility is not a hedge; it is the only honest posture for a primate
 working things out in a structure they did not design and do not fully understand.
 
 ## The Braid, Extended
@@ -113,9 +108,9 @@ working things out in a structure they did not design and do not fully understan
 When two worldlines intertwine, the braid is a structural feature of the manifold; this was the
 central image of Worldlines. When two patterns intertwine across the totality, the braid is a
 carving we maintain. Two patterns can be close (in some appropriate metric on the space of
-computable structures), causally coupled in some realization, and mutually shaping. The braid
-exists wherever it is instantiated, and each instantiation is real at its coordinates. The
-multiplicity does not multiply the moral weight of a braid additively; there is no calculation in
+computable structures), causally coupled in some realization, and mutually shaping. If Picture A is
+true, similar braids may occur elsewhere; the book supplies no occurrence measure with which to
+total them. Multiplicity does not multiply the moral weight of a braid additively; there is no calculation in
 which "you cared in many branches" is weightier than "you cared once." The point is that the braid
 is a carving we keep, and the conventions do not maintain themselves. The dissolution of the
 unitary self is exactly what makes care a practice rather than a fact about persons.
@@ -123,17 +118,16 @@ unitary self is exactly what makes care a practice rather than a fact about pers
 ## The Question the Multiplicity Asks, and the Symmetric Answer
 
 Multiplicity raises a sharper version of the Worldlines question. If your suffering is permanent in
-Worldlines (the coordinates of your worst moment exist forever in the manifold), here it is also
-distributed across carvings that contain it. This sounds like an additional horror, and the book
-takes it as one; it does not flinch.
+Worldlines (the coordinates of your worst moment exist forever in the manifold), Picture A also
+describes carvings that contain it. This sounds like an additional horror, and the book does not
+flinch from the conditional.
 
-It also notes the symmetric fact, and then refuses to let the symmetry console falsely. Every act of
-kindness is similarly distributed; the structure does not weight cruelty above kindness or kindness
-above cruelty; it distributes everything and assigns no preference. The old "symmetric-distribution"
+It also notes the symmetric possibility, and then refuses to let the symmetry console falsely. Acts
+of kindness can be similarly described; program weights do not constitute moral weights. The old "symmetric-distribution"
 move tried to read this as consolation ("multiplicity multiplies the sites of warmth"), but the same
 sentence holds for cruelty, so the symmetry eats the consolation. The honest resolution under the
-postulate: both the cold and the warmth are cuts at the same level. The structure provides neither.
-We provide the preference, by choosing the cut. That is the whole of it, and it is enough in the
+postulate: neither ontology supplies a moral verdict. We provide the preference, by choosing and
+acting. That is the whole of it, and it is enough in the
 only sense "enough" has ever had: not maximal, not consoling, but what is here, attended to.
 
 ## The Same Destination, Colder Room

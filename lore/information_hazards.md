@@ -93,10 +93,17 @@ It can sit at the end of the preface or as a short note after it.
 
 ### Resources at the end
 
-The Reading or Resources back-matter can hold a short subsection with a hotline number, an
-organization (Samaritans, Crisis Text Line, the IASP international list), and a sentence or two
-acknowledging some readers may need them. The voice can absorb this without breaking. Close it on
-"Stay at this index."
+The Resources back-matter must route action in this order:
+
+1. If the reader may act soon or is in immediate physical danger, call the local emergency number
+   or go to the nearest emergency department, and ask another person to stay with them.
+2. Give direct call and text options for the United States and Canada, Samaritans in the United
+   Kingdom and Ireland, and an international directory.
+3. Offer one plain disclosure script: "I am thinking about suicide and need help staying safe."
+
+The copy must be unconditional and non-metaphysical. Do not argue from the Library, tell the reader
+what their continued life means to loved ones, or turn staying alive into an obligation. The purpose
+of the page is immediate connection to human help.
 
 ### Calibrated framing on the sharpest moves
 
@@ -110,12 +117,10 @@ tighten it at the sharpest points.
 
 Because the re-foundation raises the derealization risk (risk 1), give it the same treatment the old
 draft reserved for quantum immortality. Near the self-dissolution (Ch 14) and the limits (Ch 9),
-state plainly that "the self is a cut" is a claim about the boundary, not about the reality of the
-region: the region is real, the person is real, the love is real; what dissolves is the claim that
-the boundary was in the structure. The footing the reader can stand on is named explicitly: finitude
-(you are a finite cutter, so the cut you call yourself is the one you cannot avoid making and have
-every reason to keep making) and the held cut (care is real wherever it is made). The framework
-permits the derealized reading; it does not require it.
+state plainly that "the self is a cut" is a claim about a model and boundary, not a claim that a
+person or an experience is unreal. The footing the reader can stand on is local and practical:
+whatever the global ontology, this person is here, effects are felt here, and care changes what
+happens here. Do not recruit the postulate or a metaphysical claim as crisis intervention.
 
 ### Quantum immortality (now lower priority)
 

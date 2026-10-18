@@ -17,26 +17,28 @@ words total), and they keep the book's voice and discipline.
 
 ### A. The Bedrock, Formally (math)
 
-Precise statements and short proof sketches of the four results the body uses
-informally: Bayes and Cox's uniqueness; Kraft's inequality and the universal prior
-$M(x)=\sum 2^{-|p|}$ with $K(x)$; Solomonoff's dominance theorem; the invariance
+Precise statements and short proof sketches of the results the body uses
+informally: Bayes and conditional Cox-style representation results; Kraft's inequality;
+the sequential universal semimeasure $M(x)=\sum 2^{-|p|}$; the distinct exact-output
+algorithmic probability $m(x)$ used with $K(x)$; Solomonoff's dominance and convergence; the invariance
 theorem. Pointers to Li and Vitanyi and to Hutter for full rigor. Derives from
 `foundations.md` (the bedrock). Discipline: each statement is honest about scope.
-Finitude is a consequence of Kraft, not a theorem; dominance is asymptotic and up to a
-constant; $M$ is uncomputable.
+Kraft makes fair-bit length weights admissible but does not force a prior; finitude forces
+approximation, not Solomonoff induction; dominance is up to a source- and machine-dependent
+constant; machine choice matters at finite scales; $M$ is uncomputable.
 
 ### B. The Born Measure and the Universal Prior (ideas)
 
-Expands the Chapter 8 identification: the Born measure and the universal distribution
-are the same kind of object, the bookkeeping of cuts, a measure over descriptions.
-States the precise sense of the identification and the precise sense in which the book
-relocates rather than derives the Born measure. Derives from `foundations.md` and
+Expands the Chapter 8 comparison: the Born measure and the universal prior arise in
+distinct formal settings and can be compared only as weighting schemes. States the precise
+limits of the analogy and that the book neither derives nor closes the Born-measure question. Derives from `foundations.md` and
 `index.md`; the seam to *Multitudes*.
 
 ### C. Anthropic Assumptions (ideas)
 
-SSA, SIA, and the speed prior, defined plainly, with what each would add and why the
-book adopts none: each is an extra cut, not forced. Neutral in tone. Derives from the
+SSA, SIA, reference classes, and xerographic distributions, defined plainly, with what each would
+add and why the book adopts none. The speed prior is treated separately as a program prior that
+does not by itself define probabilities over observer occurrences. Neutral in tone. Derives from the
 Chapter 8 and 9 notes and `foundations.md`.
 
 ### D. Refusing the Postulate (ideas)

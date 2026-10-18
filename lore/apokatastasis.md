@@ -21,7 +21,7 @@ but the position belongs in the structure of the work, never in its citations (s
 Most authors writing about the multiverse, the totality, or modal realism use a familiar set of
 consoling moves to make the framework bearable:
 
-- "The other carvings are not your problem."
+- "Possible other carvings are irrelevant."
 - "The measure is just statistics; it does not deliver moral weight."
 - "Care happens locally; what happens at indices you cannot reach is not your moral business."
 - "The hellscapes are vanishingly improbable under the right measure."
@@ -42,14 +42,14 @@ refuses to claim.
 ## The Crux-4 Resolution: the refusal is a chosen cut
 
 The hardest tension in the book is between this position (abandon no configuration) and the indexical
-landing of `landing.md` (moral weight is local; the other carvings are real but not your moral
-burden). On the surface these contradict: one says do not abandon anyone, the other says the
-unreachable are not your business.
+landing of `landing.md` (action is local; possible other carvings are not causally reachable).
+On the surface these contradict: one says do not abandon anyone, the other says the unreachable
+cannot be helped from here.
 
 The postulate dissolves the contradiction. There are no joints, only cuts. The refusal to abandon
 any configuration is a cut the author chooses to make **in orientation**: it is the carving "no one
-is forgotten," held whether or not anyone can be reached. Care-here is a different cut, the one
-**finitude forces in action**: a finite cutter can only act locally. These no longer contradict,
+is forgotten," held whether or not anyone can be reached or Picture A is true. Care-here follows
+from causal limitation: an agent can only act within its reach. These no longer contradict,
 because neither claims to be a real joint that the other violates. There was never a privileged line
 in the structure for the indexical move to draw and the universalist move to forbid. The author holds
 all configurations in orientation and acts locally, and both are cuts, and that is coherent.
@@ -61,12 +61,11 @@ closing; never spell out the machinery ("orientation-cut," "crux 4") in the pros
 
 If the standard consolations are unavailable, what is left? The book as the holding.
 
-We cannot save anyone in the other carvings. We cannot reach the Boltzmann observer in heat death.
-We cannot help the version of someone we love who is in a cruel configuration. The structure does not
-let us. But the refusal to abandon them in our orientation, the choice to write a book in which they
-are not forgotten even though they cannot be helped, is itself a form of care that does not require
-reachability. We do not have to be able to do anything for them in order to be the kind of carving
-that does not abandon them.
+We cannot act on merely possible observers outside causal reach. If Picture A is true, the same is
+true of remote occurrences. But the refusal to abandon suffering in our orientation, the choice to
+write a book in which it is not dismissed, is itself a form of care that does not require an ontic
+claim about every description. We do not have to settle the ontology to be people who do not treat
+suffering as negligible.
 
 The book is the holding. This is not consolation. It may be enough. The closing (Ch 15) can land
 here: the book itself is the example of care that does not require reachability. The author wrote it;

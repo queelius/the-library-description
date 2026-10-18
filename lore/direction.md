@@ -16,8 +16,9 @@ that the joints the reader navigates by are their own cuts.
 
 ### Pedagogical Structure
 
-The book follows the skeleton in `foundations.md`: bedrock (settled math) to the postulate ("no
-cut is privileged") to finitude (a consequence of Kraft) to consequences. The reader meets the
+The book follows the skeleton in `foundations.md`: theorem to universal construction to the
+postulate ("no cut is privileged") to finitude (the practical limit that requires local models)
+to consequences. The reader meets the
 mathematics through everyday inquiry, not by axioms imposed from above. Each chapter resolves a
 puzzle the reader has been led to feel, and the resolution is something they cannot un-see. The
 central thing they are led to feel is the inversion: there are no joints, only the cuts you make.
@@ -26,7 +27,7 @@ Part I (The Index) builds the bedrock and earns the inversion. Part II (The Syst
 slip into ontology, labels the postulate, and reaches the indifference. Part III (The Self) walks
 the implications and lands on the chosen response. Quantum mechanics is used only as a familiar
 landmark; observer-measure assumptions are discussed and not adopted. The reader can always trace
-any conclusion back to bedrock, finitude, or the postulate.
+any conclusion back to theorem, construction, finitude, or postulate.
 
 ### Tone
 
@@ -37,9 +38,9 @@ difficulty rather than rushing to reassurance.
 
 Critical discipline: keep visible the difference between what the mathematics forces and where
 interpretive room remains. Worldlines could be uncompromising because relativity is uncontested.
-Here the bedrock is uncontested but the postulate is a genuine commitment, and the book's job is
-to keep that line in view at every step. Finitude is presented as what the bedrock forces on a
-finite cutter; the postulate is presented as the one thing asked of the reader.
+Here the mathematical results are uncontested but their application has hypotheses, the universal
+prior uses explicit modeling choices, and the postulate is a genuine commitment. Finitude forces
+approximation, not a unique prior; the postulate is presented as the one thing asked of the reader.
 
 ### Comparable Works (to position against, not imitate)
 
@@ -77,8 +78,8 @@ decorative figures, no "artist's impression of the multiverse."
 The recurring figure is **the cut**: the same structure carved two different ways, with neither
 carving privileged. Candidate diagrams:
 
-- A prefix-free code tree (Kraft made visible), with the scarcity of short codewords shown
-  directly (finitude).
+- A prefix-free code tree (Kraft made visible), showing admissible fair-bit length weights without
+  implying that Kraft uniquely selects a prior.
 - The universal prior as a stacked measure over programs of increasing length.
 - The totality as a uniform tape; the index as a cut; two different cuts on the same tape.
 - Branching diagrams (the quantum tree, the decision tree, the computational tree) shown as the

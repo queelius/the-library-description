@@ -85,7 +85,8 @@ effective theories at each scale, not a posterior over a global program. Science
 for the program; it is the construction of a library of local cuts. The cell biologist's model
 of mitosis is not extracted from the universe's wave function; it is a local cut that captures
 the cell's behavior with a short description. This is finitude in practice (see
-`foundations.md`): the observer is forced toward cheap local cuts.
+`foundations.md`): the observer is forced to use bounded local models, while no theorem forces a
+unique way to weight them.
 
 ## Hierarchical decomposability as an anthropic constraint
 

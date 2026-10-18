@@ -1,8 +1,8 @@
 # Foundations: The Bedrock, the Cut, and the Postulate
 
-The entire argument of this book rests on a small amount of settled mathematics and one
-inversion of intuition. The mathematics is not difficult and is, in its core form, closed
-since the 1960s. The inversion is the work the book does on the reader:
+The argument rests on settled mathematics, a particular universal construction, and one
+interpretive postulate. Those layers must remain visible. The inversion is the work the book
+does on the reader:
 
 > There are no joints. There are only the cuts you make.
 
@@ -16,23 +16,24 @@ consequence.
 
 The book earns its bedrock the way Worldlines earned the constancy of the speed of light:
 through everyday inquiry that ends somewhere the reader did not start. Chapter 1 begins with
-ordinary induction. You observe data; you predict. By the end of Part I the reader has, with
-nothing imposed from above, arrived at the universal prior, the dominance theorem,
+ordinary induction. You observe data; you predict. By the end of Part I the reader has
+arrived at a principled universal prior, the dominance theorem,
 and the recognition that the index, the system, and the self were all the same move all
 along. The mathematics is not asserted. It is the resolution of a puzzle the reader has been
 led to feel.
 
 What is interpretive in the book is concentrated in one place and labeled there: the single
-postulate (Section "The postulate"). The reader can always trace any conclusion back to
-bedrock, to the postulate, or to finitude. Nothing is hidden behind difficulty.
+postulate (Section "The postulate"). A second distinction is just as important: fair random
+program bits and a reference universal machine define a construction, not a theorem forcing a
+unique prior. The reader can always trace a conclusion to theorem, construction, postulate, or
+finitude. Nothing is hidden behind difficulty.
 
 ---
 
 ## The bedrock
 
-The bedrock is a single integrated edifice of probability and computation. It is settled
-mathematics, stated as theorems, and it does not change under the re-foundation. It can be
-given in three theorems and one definition.
+The bedrock is a compact body of probability and computation. It can be stated in several
+conditional results and definitions. Their hypotheses matter.
 
 ### 1. Bayes' theorem (probability)
 
@@ -41,10 +42,11 @@ posterior is
 
 $$P(H \mid D) = \frac{P(D \mid H)\, P(H)}{P(D)}.$$
 
-This is not philosophy. It is the only way to combine prior and likelihood that respects the
-axioms of probability (Cox's theorem). It says nothing about *which* prior to use. That
-silence is the entire problem of induction, and it is the first hint that something has to be
-brought to the structure from outside it.
+Bayes' theorem follows from the probability calculus. Cox-style representation theorems show,
+under regularity and richness assumptions, when coherent degrees of plausibility can be
+represented by that calculus. They do not prove that probability is the only conceivable logic
+of uncertainty. Bayes says nothing about *which* prior to use. That silence is the problem of
+induction.
 
 ### 2. Kraft's inequality (the bridge)
 
@@ -52,13 +54,13 @@ For any prefix-free code with codeword lengths $\ell_1, \ell_2, \ldots$:
 
 $$\sum_i 2^{-\ell_i} \leq 1.$$
 
-This is the entire reason "shorter" can become "more probable." A prefix-free code is one in
+This is what makes familiar length weights admissible. A prefix-free code is one in
 which no codeword is a prefix of another: a code that knows where it ends without external
-punctuation, self-delimiting. Kraft says the lengths of such a code can be read as a
-probability mass function, $P(i) = 2^{-\ell_i}$ up to normalization. Without prefix-free
-encoding the sum diverges. Prefix-free is exactly the structure of self-delimiting
-computation: a program that knows when it has finished reading its input. Kraft is also the
-hinge of finitude (see below): it makes short descriptions necessarily scarce.
+punctuation, self-delimiting. Kraft says the quantities $2^{-\ell_i}$ have total mass at most
+one. They are also the probabilities of reading those codewords from fair random bits.
+Prefix-free encoding is the structure of self-delimiting computation: a program knows when it
+has finished reading its input. Kraft does **not** force this weighting, a unique prior, or the
+claim that most total mass must lie on short descriptions. Other coherent priors exist.
 
 ### 3. The universal prior (Solomonoff)
 
@@ -66,11 +68,15 @@ Given a universal prefix Turing machine $U$, the universal prior is
 
 $$M(x) = \sum_{p\, :\, U(p) = x*} 2^{-|p|},$$
 
-where $x*$ means "$x$ as a prefix of the output." This is a probability distribution over
-strings, derived entirely from program lengths. The deep fact is not the formula but what
-$M$ does. The shortest description length of $x$, written $K(x)$, satisfies
-$M(x) \geq 2^{-K(x)}$: the weight $M$ places on $x$ is dominated by its single cheapest
-description.
+where $x*$ means that the output begins with $x$. This is a lower-semicomputable semimeasure
+over finite prefixes. It results from two modeling choices: a reference universal prefix
+machine and fair random input bits. A related exact-output algorithmic probability is
+
+$$m(x) = \sum_{q\, :\, V(q)=x} 2^{-|q|}.$$
+
+For a suitable prefix machine $V$, the coding theorem gives
+$-\log_2 m(x)=K_V(x)+O(1)$. The book must not silently replace sequential $M$ by exact-output
+$m$, or condition $m$ as though it were the sequential predictor.
 
 ### 4. The dominance theorem (optimality)
 
@@ -79,10 +85,10 @@ be approximated from below by an algorithm), there is a constant $c_\mu$ with
 
 $$M(x) \geq c_\mu \cdot \mu(x) \quad \text{for all } x.$$
 
-Whatever computable distribution is generating your data, $M$ catches up to it; its
-predictions converge to the truth at the same asymptotic rate, up to a multiplicative
-constant. The universal prior is contained inside every reasonable distribution, up to
-a constant. For prediction, you cannot do better.
+The constant may be extremely small and depends on the source and the chosen universal
+machine. Under the usual computable-source assumptions, dominance supports strong convergence
+results for sequential prediction. It does not establish pointwise superiority at every finite
+horizon, a unique rational prior, or superiority to every rival under every optimality notion.
 
 ### 5. The invariance theorem (machine-independence)
 
@@ -92,8 +98,10 @@ between them:
 
 $$M_1(x) \asymp M_2(x).$$
 
-Asymptotically the choice of machine does not matter. "The universal prior" is
-well-defined up to a constant, and the constant becomes negligible as data accumulate.
+Universal machines define a multiplicative-equivalence class. This supports asymptotic
+robustness in the settings covered by the convergence results, but the constants can dominate
+finite problems. Adversarial universal machines can encode poor finite-scale biases. There is no
+single machine-independent prior.
 
 ---
 
@@ -122,7 +130,8 @@ isolates $x$ from the totality.
 ### The cut has no canonical form
 
 Here is the move that makes this book different from every other multiverse book. The totality
-has no canonical decomposition. The mathematics is program-output space with a measure on it;
+has no canonical decomposition. The construction gives program-output space with description
+weights on candidate output prefixes;
 there are no "books," no shelves, no index in it anywhere. Borges' books and Tegmark's
 discrete structures are convenient discretizations of an undecomposed substrate. The shortest
 description of $x$ is taken across *all* regularities, not book by book; if two "books" share
@@ -162,37 +171,35 @@ stated plainly, that the reader may refuse.
 This single postulate replaces the two "speculative moves" earlier drafts carried (the claim
 that physics is computable, and the claim that all computable structures exist). Those were
 framed as *additions*: things you take on. The postulate is the opposite. It is a *refusal to
-privilege*. "Only this one world is real" is not the cheap default it feels like; it is a cut,
-and specifying which world costs information. Declining to privilege that cut is what is left
-when you stop carving. So the multiverse is not a large addition to the ontology; it is what
-remains when no cut is treated as the real one. (What that does to the question of existence
-itself is the subject of "The ontology" below; even the leap from "no cut is privileged" to
-"all cuts are equally real" is a further cut, and the book does not make it.)
+privilege*. "Only this one world is real" is one possible cut. Declining to privilege it does
+not prove that every describable world exists. Under Picture A it motivates considering the
+whole space without selecting one member as view-independently real; under Picture B it leaves
+the observer with competing candidate descriptions. Even the leap from "no cut is privileged"
+to "all cuts are equally real" is a further postulate, and the book does not make it.
 
 The reader who refuses the postulate keeps all of the bedrock: Bayesian indexing is still
-well-posed, the simplicity bias is still forced for prediction, Solomonoff is still optimal.
-What they lose is only the ontological reach of Parts II and III. The postulate is the one
-place the book asks for assent, and it asks once.
+well-posed, and Solomonoff induction remains a distinguished theoretical construction with
+strong dominance and convergence properties. What they lose is only the ontological reach of
+Parts II and III. The postulate is the one place the book asks for assent, and it asks once.
 
 ---
 
-## Finitude: why some cuts are forced
+## Finitude: why every usable view is local
 
-"No cut is privileged" sounds as though it should collapse into "anything goes": if no carving
-is correct, why prefer Solomonoff to its opposite, why simplicity, why anything? It does not
-collapse, and the reason is **finitude**.
+"No cut is privileged" does not make every practical representation equally useful. A finite
+observer cannot store, compute, or act on an exhaustive description. Finitude therefore forces
+bounded and local models. It does not, by itself or through Kraft, force the Solomonoff prior or
+any unique allocation of probability mass.
 
-A finite observer is forced toward cheap cuts. This is a consequence of Kraft, not a new
-theorem, and the book presents it as such. Kraft makes short descriptions necessarily scarce
-(their weights must sum to at most one), so a finite agent with finite probability mass to
-allocate is *compelled* to spend most of it on short descriptions. Simplicity is therefore not
-the world's joint and not a privileged cut. It is the cut a finite cutter cannot avoid making.
-The bias is real for the observer and never in the structure.
+Short descriptions are often valuable because they save memory and computation, and the
+fair-bit universal mixture gives a precise way to reward them. Its justification is cumulative:
+prefix-code admissibility, universality, dominance, convergence, and the practical value of
+compression. Each reason has a scope and none makes simplicity a joint in reality.
 
-This is the guardrail for everything that follows. Whenever the book leans on simplicity, on
-the universal prior, on the optimality of Solomonoff, it is leaning on what finitude
-forces, never on a claim that the structure prefers the simple. The discipline of the book is
-to keep that distinction visible at every step.
+This is the guardrail for everything that follows. Finitude explains why observers must cut and
+approximate. The universal prior supplies one especially powerful ideal benchmark for prediction.
+The book must not turn either statement into the false theorem that finite agents are compelled
+to use one unique prior.
 
 ---
 
@@ -201,13 +208,18 @@ to keep that distinction visible at every step.
 Take the postulate seriously and one more thing follows, the book's coldest and most
 self-consistent move: the question of which picture is *real* is itself a cut.
 
-There are two pictures the framework supports. **Picture A** is the totality as an object: the
-static set with its measure, surveyed from outside. **Picture B** is the observer inside some
+There are two pictures the framework supports. **Picture A** is the totality as an object: a
+static program-output space with description weights, surveyed from outside. **Picture B** is the observer inside some
 $U(p)$, with access only to a prefix of their local structure, holding a posterior over
 candidate programs that never collapses, unable even in principle and with unbounded data to
 retrieve which program generates them. The book does not declare either picture the real one,
 because choosing between them is a carving, and no carving is privileged. It holds the
-existence question open and undecidable from inside.
+existence question open and underdetermined from inside.
+
+Neither picture supplies an indexical measure. $M$ distributes weight over candidate programs
+and output prefixes, not over observer occurrences. Turning it into odds that *this occurrence*
+is you requires an additional reference class, xerographic distribution, or other self-location
+rule. The book adopts none.
 
 This relocates the book's vertigo. The cold is no longer "the hellscapes definitely exist." It
 is *groundlessness*: nothing in the structure, and no possible vantage, settles whether they
@@ -217,11 +229,11 @@ It also changes what the book promises. Earlier framing asked "why the Born meas
 system?" and offered the universal prior as the answer. Under the postulate the book
 gives a different and more honest answer: the *why* presupposes a joint, a privileged cut from
 which "this and not that" would have a determinate sense, and there is none. The Born measure
-and the universal prior are the same kind of object because both are the bookkeeping of
-cuts (what a carving costs), and the question "but are the carved things real?" is itself a
-cut. This is the clean seam to *Multitudes* (Volume II): that book postulates the Born measure
-and hands forward "why this measure"; this book answers that the question was a cut. The shift
-is deliberate and should read as a finding, not a retreat.
+and the universal prior can be compared as two forms of weighting, but their domains and
+justifications differ: one weights quantum outcomes within quantum theory, while the other
+weights program descriptions in universal induction. The analogy neither derives the Born rule
+nor closes its empirical and mathematical questions. The question "but are the weighted things
+real?" remains interpretive. This is the clean seam to *Multitudes* (Volume II).
 
 ---
 
@@ -231,17 +243,19 @@ The book is structured so that every conclusion in Parts II and III can be trace
 source. The vocabulary of the trace changed under the re-foundation; the discipline did not.
 Every conclusion rests on one of three things:
 
-**Bedrock alone** gives:
+**Theorems plus the chosen universal construction** give:
 
 - Bayesian indexing is well-posed.
-- The simplicity bias is mathematical structure, not aesthetic preference (this is finitude
-  applied to prediction).
-- Solomonoff is asymptotically optimal among computable learners.
-- The choice of machine is asymptotically irrelevant.
+- Length weights from fair program bits are admissible for a prefix code.
+- The resulting universal semimeasure dominates every lower-semicomputable semimeasure up to a
+  source- and machine-dependent constant.
+- Under stated computable-source assumptions, its sequential predictions converge strongly.
+- Universal-machine changes preserve a multiplicative equivalence class, while finite-scale
+  differences remain consequential.
 
-**Bedrock plus finitude** gives:
+**Finitude** gives:
 
-- Why a finite observer predicts with the simple, and why this is compulsion, not discovery.
+- Why a finite observer must use bounded, selective, local representations.
 - Why local inference (effective theories at each scale), not global Solomonoff, is what
   observers actually do.
 
@@ -259,16 +273,16 @@ Every conclusion rests on one of three things:
   computation. It does not say no powerful agent could exist; it says no agent's view is *the*
   view. Developed in Chapter 9; it sharpens the indifference (the structure is not only
   unpreferring but unwatched) and seeds the grace of Part III (warmth, if any, comes from
-  among the rungs, never handed down).
-- Boltzmann observers, hellscapes, dark continuations, and other uncomfortable carvings are
-  all permitted, and the book catalogues them honestly (Chapter 9) rather than engineering
-  them away. The chosen response of Part III is the answer the book offers in their place.
+  among observers, never handed down).
+- Boltzmann observers, hellscapes, dark continuations, and other uncomfortable descriptions are
+  permitted by Picture A; the framework does not establish their existence or assign a
+  self-location measure over their occurrences. The book catalogues the conditional implication
+  honestly (Chapter 9). The chosen response of Part III is not a theorem about it.
 
-Quantum mechanics enters only as a familiar landmark: the plainest reading of the unmodified
-Schrodinger equation already branches, so multiplicity is not exotic. It carries no
-argumentative weight here; a reader who rejects the quantum reading still inherits the whole
-cascade from the postulate, and the physics-grounded version of multiplicity is the work of
-*Multitudes*.
+Quantum mechanics enters only as a familiar interpretive landmark. Unitary quantum mechanics
+plus an Everettian ontology describes effectively autonomous decoherent branches. Decoherence
+does not by itself select that ontology or solve the definite-outcome problem. A reader who
+rejects Everett loses no theorem in this book.
 
 ---
 
@@ -288,9 +302,10 @@ The bedrock and the postulate are silent on:
   with finite data the constants matter; this is the finite-scale caveat on Solomonoff.
 - **Whether the postulate is correct.** The book takes it seriously and follows its
   consequences. It does not claim to have proven it.
-- **Whether the indexing problem has an accessible solution.** The choice function exists (you
-  live somewhere, so a cut is in force); no procedure converges to "the true index" on bounded
-  resources. Choice exists in the structure; access to choice does not.
+- **How to assign self-location probabilities.** $M$ supplies a posterior over candidate
+  programs and prefixes. It does not define a sample space of observer occurrences or a
+  probability distribution over them. SSA, SIA, and related rules add structure the book does
+  not adopt.
 - **The coherence of mathematics itself.** The book presupposes mathematics is coherent in the
   standard sense. No contradiction has been found in over a century of foundational work, but
   this is an empirical claim about a practice, not a proof. If "computable structure" failed to
@@ -298,7 +313,8 @@ The bedrock and the postulate are silent on:
   working assumption and flags it here.
 
 These are the honest limits. The reader who follows the cascade should always be able to ask
-"which of bedrock, finitude, or the postulate does this rest on?" and get a visible answer.
+"which theorem, construction, interpretation, or practical limit does this rest on?" and get a
+visible answer.
 
 ---
 
@@ -306,19 +322,19 @@ These are the honest limits. The reader who follows the cascade should always be
 
 The re-foundation changes the frame, not the book's integrity rules.
 
-1. **Bedrock is bedrock.** The theorems are presented as theorems. They are not negotiable and
-   they do not depend on the postulate.
+1. **State hypotheses with results.** Theorems do not depend on the postulate, but their scope
+   does depend on definitions and assumptions.
 2. **The postulate is labeled and asked once.** The one interpretive commitment is named where
    it enters; the reader is never asked to confuse mathematics with metaphysics.
-3. **Finitude carries the weight the structure will not.** Simplicity is presented as forced on
-   the observer, a consequence of Kraft, never as a preference of the structure or a theorem of
-   its own.
-4. **The cascade is traceable.** Every conclusion unwinds to bedrock, finitude, or the
-   postulate. The source is always visible.
+3. **Finitude forces approximation, not a prior.** Kraft makes length weights admissible; fair
+   program bits choose them; dominance and convergence explain their power. Keep these claims
+   distinct.
+4. **The cascade is traceable.** Every conclusion unwinds to theorem, construction, postulate,
+   or practical limit. The source is always visible.
 5. **Never claim the math supports more than it does.** "No view from the top" follows from the
-   postulate, not from a strained argument about the limits of computation; the central
-   identification (Born measure and universal prior) is cut-bookkeeping, not a
-   derivation of one from the other.
+   postulate, not from a strained argument about the limits of computation; the Born-measure
+   comparison is an analogy between weighting roles, not a derivation or an identification of
+   domains.
 6. **Never project emotional properties onto the structure.** It does not care, prefer, or
    punish. It has no joints to care with. The measure is not benevolent.
 7. **Never console with what is not true, and never engineer away what the framework permits.**

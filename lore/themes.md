@@ -15,11 +15,11 @@ structure that ranks none of them. You are not one worldline and not even one we
 pattern. You are a region someone (you) has drawn a boundary around, for navigation, in a
 structure with no boundaries in it.
 
-This is not speculative physics. The bedrock is mathematics settled since the 1960s. The one
-interpretive commitment, the postulate that no cut is privileged, is stated once and may be
-refused. Quantum mechanics appears only as a familiar landmark, a sign that multiplicity is
-not exotic, never as a step the reader must take. The reader who refuses the postulate keeps
-the bedrock and loses only the ontological reach of Parts II and III.
+The mathematical results are settled; the choice of a reference universal machine and fair
+program bits is a construction; the ontological reading is interpretation. The postulate that no
+cut is privileged is stated once and may be refused. Everettian quantum mechanics appears only as
+a familiar interpretive landmark, never as independent confirmation. The reader who refuses the
+postulate keeps the mathematical results and the universal construction.
 
 ## The Inversion
 
@@ -34,12 +34,12 @@ The naive view: reality is complicated; explaining it is the hard problem; the s
 line of code, and it has no shape of its own. Generation is trivial. The cut is everything,
 and the cut is yours.
 
-Once the reader feels this, the rest falls out. The simplicity bias is what finitude forces
-on a finite cutter, not a preference of the structure. The universal prior is the
-bookkeeping of cuts. The dominance theorem says all reasonable cuts agree asymptotically for
-prediction. Bayesian inference is cutting under uncertainty. "One world exists" is itself a
-cut, and so is the question of whether the uncut totality is real. The book asks the reader to
-sit with the inversion and follow where it leads.
+Once the reader feels this, the rest can be traced. Finitude forces bounded local models, not a
+unique prior. Fair program bits supply length weights, Kraft makes them admissible, and Solomonoff
+dominance and convergence make the resulting universal mixture a distinguished ideal predictor.
+Bayesian inference is cutting under uncertainty. "One world exists" is itself a cut, and so is
+the question of whether the uncut totality is real. The book asks the reader to sit with the
+inversion and follow where it leads.
 
 ## Core Themes
 
@@ -52,7 +52,7 @@ predicting, worlding, self-modeling. Every concept in the book maps to the cut.
 
 ### 2. No Privileged Cut
 
-The structure ranks carvings by what they cost and singles out none. There is no canonical
+No decomposition is view-independently privileged. There is no canonical
 index, no canonical decomposition into "systems," no canonical "you." This is the postulate,
 and it is the deeper version of Worldlines' "no privileged now." The block universe had no
 preferred temporal slice. The totality has no preferred carving at all.
@@ -63,9 +63,10 @@ Worldlines dissolved the self temporally: the four-dimensional worm has the five
 the eighty-year-old as equally real cross-sections, and "I" is what one cross-section calls
 itself. This book dissolves the self as a carving. The "I" is a short local program, the
 brain's self-model, a boundary drawn around a region for navigation. It does not carve at any
-joint, because there are none. The dissolution is not annihilation: the region is real. What
-dissolves is the claim that the boundary was in the structure rather than in the observer's
-interface to it. Self and index dissolve together, because they are one move at two levels.
+joint, because there are none. The dissolution is not annihilation: experiences and people do
+not vanish when a boundary is modeled differently. What dissolves is the claim that the boundary
+was in the structure rather than in the observer's interface to it. Self and index dissolve
+together, because they are one move at two levels.
 
 ### 4. The Groundlessness
 
@@ -80,23 +81,21 @@ offers in their place.
 
 ### 5. Finitude
 
-The guardrail against "anything goes." If no cut is privileged, why simplicity, why
-Solomonoff? Because a finite observer is forced toward cheap cuts: Kraft makes short
-descriptions scarce, so finite probability mass is compelled toward them. Simplicity is real
-for the observer, never in the structure. This is what observers actually do: not global
-Solomonoff (uncomputable) but local inference, an ensemble of short descriptions of
-substructures at each scale.
+The guardrail against "anything goes." A finite observer must use bounded, selective models.
+Kraft does not compel most probability mass toward short descriptions, and finitude does not
+select a unique prior. The fair-bit universal mixture is instead motivated by a conjunction of
+admissibility, universality, dominance, convergence, and compression. What observers actually do
+is not global Solomonoff induction (uncomputable) but local inference with tractable descriptions
+at each scale.
 
 ### 6. The Indifference of Description
 
-The titular thesis. Just as the block universe is indifferent to your worldline (Worldlines),
-the structure is indifferent among descriptions: it ranks carvings by cost and singles out
-none, neither which index is you nor which "system" is real nor which boundary is the self.
-Why this physics? Because it is a cheap cut and you are inside it; ask why simplicity, why a
-measure at all, and the question presupposes a joint there is none of. The structure ranks;
-it singles out nothing. This is the cold the book sits with. The bedrock gives the structure;
-finitude explains the bias; the postulate gives the indifference; the chosen response gives
-the warmth the structure does not.
+The titular thesis. Just as the block-universe reading has no privileged present, the postulate
+denies a view-independent decomposition into one index, system, or self. The universal mixture
+ranks candidate program descriptions; it neither selects what is real nor assigns probabilities
+to observer occurrences. Why this physics remains an empirical and interpretive question. The
+mathematics gives a powerful predictor; finitude explains local approximation; the postulate gives
+the indifference; the chosen response gives the warmth the structure does not.
 
 ### 7. The Chosen Response: The Held Cut
 
@@ -107,9 +106,8 @@ math implies how to live. It claims:
 - We are not indifferent.
 - The warmth comes from us, from no other source.
 
-Under groundlessness, both the cold and the warmth are cuts at the same level; neither is the
-ground. Care is the cut we choose to keep making toward each other. "We" is a cut, the braid
-is a cut, and we make it anyway: the making is the whole point. Rage at the indifference is
+Under groundlessness, care is the cut we choose to keep making toward each other. "We" is a cut,
+the braid is a cut, and we make it anyway: the making is the whole point. Rage at the indifference is
 appropriate; the rage passes; equanimity comes; care is chosen. We treat each other with grace
 not because the structure requires it (it requires nothing) but because it does not, and we
 are the only things in the structure that can. This is the held cut, and it is the load-bearing
@@ -134,9 +132,9 @@ question of the measure.
 The pairing with Worldlines is intentional. A reader who has read it is ready for this one. A
 reader who has read both has the full argument. Neither requires the other; they reinforce.
 The relationship to Multitudes is sharper: that book postulates the Born measure and hands
-forward "why this measure?"; this book answers that the question presupposes a privileged cut
-and therefore has no view-independent answer, while showing the Born measure and the universal
-distribution to be the same kind of object, the bookkeeping of cuts.
+forward "why this measure?"; this book asks whether that demand presupposes a privileged cut.
+The Born measure and universal prior can be compared as weighting schemes, but they have distinct
+domains and justifications; neither is derived from the other.
 
 ## What This Book Is NOT
 
@@ -144,16 +142,17 @@ These exclusions define the project's boundaries.
 
 - **Not speculative beyond one postulate.** The single interpretive commitment is that no cut
   is privileged, and it is labeled where it enters. Quantum mechanics is used only as a
-  familiar landmark, never as a step; observer-measure assumptions (SSA, SIA, the speed prior)
-  are discussed and deliberately not adopted.
+  familiar Everettian landmark, never as a step; observer-measure assumptions (SSA, SIA, and
+  xerographic distributions) are discussed and deliberately not adopted. The speed prior is a
+  program prior, not by itself a complete observer measure.
 - **Not mediated by alien intelligence.** No AI guide, no superintelligence thought
   experiment. The reader and the mathematics, alone in a room.
 - **Not techno-futurist in topic, but contemporary in example.** Not about AI safety,
   simulation, transhumanism, or uploading. The multiplicity is the given, not a future
   scenario; the mathematics has been in plain sight since 1964. Language models appear only
-  where the math earns the example: they are finite computable cutters, their training
-  minimizes description length, and their failures are inductive failures in the
-  Russell's-chicken sense. They are evidence, not topic.
+  where the math earns the analogy. Their training losses do not literally implement Solomonoff
+  induction or minimum description length unless model cost is included. They are examples, not
+  evidence for the theorem's ontology.
 - **Not about consciousness.** The hard problem is bracketed. The book is about the structure
   observers cut, not about why structure is observed.
 - **Not consoled by the structure.** The totality offers no comfort. It does not say your life

@@ -10,8 +10,8 @@ reader, one braid per pair. The structure was indifferent; care was figure again
 closing could say "we are each other's refuge" because there was a specific "we" and a specific
 structure to be refuge against.
 
-This book loses that contrast. The indifference now contains the care: the totality holds every kind
-carving and every cruel carving at their coordinates, ranked only by cost. The figure-ground
+This book loses that contrast under Picture A. The contemplated totality includes kind
+descriptions and cruel ones, with program weights rather than moral rank. The figure-ground
 inversion that worked for Worldlines does not transfer. Two of the old moves broke on this:
 
 1. The symmetric-distribution argument ("multiplicity multiplies the sites where warmth can be
@@ -20,21 +20,20 @@ inversion that worked for Worldlines does not transfer. Two of the old moves bro
    contains every preference, including the preference not to care.
 
 **The re-foundation resolves the diagnostic rather than working around it.** Under the postulate,
-both the cold and the warmth are cuts at the same level, and neither is the ground. So the closing
+neither the cold ontology nor the warmth is view-independent ground. So the closing
 no longer needs a figure-ground contrast it cannot have. It holds care with no floor under it, not
 even the floor of "the structure is the real thing and care is the addition." This is the held cut.
-The symmetric-distribution problem dissolves: yes, the structure distributes everything and prefers
-nothing; we provide the preference by choosing the cut, and the choosing is the whole of it.
+The symmetric-distribution problem dissolves: the framework permits opposed descriptions and
+provides no moral preference; we provide preference through action, and the choosing is the whole of it.
 
 ## The Three Directions, Reconciled into the Held Cut
 
 The earlier draft kept three candidate landings in tension. Under the held cut they combine.
 
-- **Direction A (local-indexical), retained as the structural footing.** You are not at the measure;
-  you are at an index. Moral relations are causal relations; causal relations are local. The other
-  carvings are real but not morally reachable. The braid at these coordinates is the moral universe
-  you have access to. This is the Worldlines unreachability argument extended one level, and it works
-  because it cedes the indifference rather than fighting it.
+- **Direction A (local-indexical), retained as the structural footing.** You act from a local
+  situation, not from an abstract measure. Moral relations require causal reach, which is local.
+  Possible other carvings are not reachable from here whether or not Picture A is true. The braid
+  at these coordinates is the moral universe you can affect.
 - **Direction B (Camus / performative), promoted to the central move.** The closing does not argue
   the choice; it is the choice. The book turns and looks at itself: author writing carefully, reader
   reading carefully, both at their indices, is the answer. Not what the book says but what it has
@@ -49,8 +48,8 @@ existential problem (the math cannot ground the response; the response grounds i
 performed). C is temperature, kept cooler than Worldlines without making the coldness the point.
 
 The apokatastasis position rides alongside A as an *orientation-cut* (see `apokatastasis.md`): the
-refusal to abandon any carving is a cut we choose to make in orientation, while care-here is the cut
-finitude forces in action. These no longer contradict, because neither claims to be a real joint
+refusal to abandon any carving is a cut we choose to make in orientation, while care-here follows
+from the limits of causal reach. These no longer contradict, because neither claims to be a real joint
 (this is the crux-4 resolution). The book holds all carvings in orientation and acts locally, without
 pretending either is the structure's joint.
 
