@@ -130,20 +130,22 @@ Part II = The System (Ch 6-10, capped by Ch 10 "The Indifference of Description"
 The Self (Ch 11-15, closing on the held cut: a header-less coda, address "Stay.", Camus's *must*
 literal, the adequacy-doubt named).
 
-**Status (2026-07-15): technical and safety revision in progress.** A Worldsmith review found
-systemic overclaims in the Kraft-to-prior step, machine invariance, Cox, Everett/decoherence,
-Turing jumps, and observer self-location, plus a crisis-resources defect. Canonical lore and the
-manuscript have been revised to keep theorem, construction, postulate, and interpretation apart.
+**Status (2026-10-18): revised candidate, awaiting a fresh release review.** The 2026-07-15
+Worldsmith release gate found systemic overclaims in the Kraft-to-prior step, machine
+invariance, Cox, Everett/decoherence, Turing jumps, and observer self-location, plus a
+crisis-resources defect (`.worldsmith/reviews/2026-07-15/`). Canonical lore and the manuscript
+were revised to keep theorem, construction, postulate, and interpretation apart, and that
+revision is now committed. It has not yet had the fresh review its revision record calls for.
 Do not restore categorical multiverse or observer-measure language from older commits or specs.
+Build: 134 pages, no undefined references or overfull boxes; the EPUB passes `epubcheck` 5.3.0.
 
 **Appendices (2026-07-02):** a back-matter Appendices section (A The Bedrock, Formally;
 B The Born Measure and the Universal Prior; C Anthropic Assumptions; D Refusing the
-Postulate; E Objections and Replies) and marker-free keyed Notes were drafted
-(subagent-driven), reviewed, math-audited (Appendix A), and integrated. They add about
-5,200 words; the build is now 138 pages and the EPUB revalidates (`epubcheck` clean).
-Governing docs: `lore/appendices.md`, the design spec
+Postulate; E Objections and Replies) and marker-free keyed Notes were drafted, reviewed, and
+integrated, then corrected by the 2026-07-15 revision (several appendix claims the July 2
+math check had passed were overclaims). Governing docs: `lore/appendices.md`, the design spec
 (`docs/superpowers/specs/2026-07-02-appendices-design.md`), and the plan
-(`docs/superpowers/plans/2026-07-02-appendices.md`). The DOI release now waits on this.
+(`docs/superpowers/plans/2026-07-02-appendices.md`). The DOI release waits on a clean review.
 
 ---
 
