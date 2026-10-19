@@ -1,10 +1,9 @@
 \documentclass[11pt,twoside]{book}
 \usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
+\input{figures/figure-preamble}  % fontenc, Libertinus text and math, amsmath, TikZ
 % Body + math: Libertinus (warm humanist serif) with its matching math font.
 % amssymb is intentionally NOT loaded: the manuscript uses no amssymb-only symbols,
 % and Libertinus Math already provides them, so loading amssymb would clash.
-\usepackage[osf]{libertinus}
 \usepackage{microtype}  % font expansion + protrusion + \textls letterspacing
 \usepackage[
   paperwidth=6in,paperheight=9in,
@@ -31,8 +30,6 @@
 \usepackage{xurl}  % load after hyperref: lets \url{} break at any character (no margin bleed)
 
 % Math
-\usepackage{amsmath}
-\usepackage{libertinust1math}  % Libertinus Math: matches the text; supplies the amssymb glyphs we use
 \usepackage{amsthm}
 
 % Figure/table captions: small, italic label ("Figure 1.1.")
@@ -41,8 +38,6 @@
 \usepackage{placeins}  % local \FloatBarrier commands keep figures with their argument
 
 % Diagrams
-\usepackage{tikz}
-\usetikzlibrary{arrows.meta, calc, decorations.markings, decorations.pathmorphing, patterns, trees}
 
 % Graphics
 \usepackage{graphicx}
@@ -58,6 +53,26 @@
 % Epigraphs
 \usepackage{epigraph}
 
+% Chapter epigraphs: \chapterepigraph[width]{quote}{attribution}. The quote sits
+% right-aligned in a minipage (default 0.55\textwidth); an empty 0.12\textwidth
+% column to its right keeps the block's right edge where the original layout set it.
+% kdp/epub-filter.lua recognizes the expanded form (italic quote, line break,
+% attribution) and styles it for the EPUB.
+\newcommand{\chapterepigraph}[3][0.55]{%
+\vspace{1em}
+\hfill
+\begin{minipage}[c]{#1\textwidth}
+\raggedleft
+\small\itshape
+#2\\[0.5em]
+\upshape\footnotesize #3
+\end{minipage}%
+\hspace{0.5em}
+\begin{minipage}[c]{0.12\textwidth}
+\end{minipage}
+\vspace{1.5em}}
+
+
 % Continuous footnote numbering across chapters
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
@@ -71,6 +86,7 @@
 \setlength{\emergencystretch}{1.5em}  % last-resort glue stretch to clear small overfull lines
 \widowpenalty=10000  % forbid widow lines
 \clubpenalty=10000   % forbid orphan lines
+\raggedbottom        % with widows and orphans forbidden, let a page end short instead of stretching its vertical glue
 % Break hints for long technical terms TeX cannot hyphenate on its own
 \hyphenation{So-lo-mo-noff Kol-mo-go-rov in-ter-pret-abil-i-ty mes-a-op-ti-mi-za-tion mes-a-op-ti-miz-er}
 
@@ -138,7 +154,7 @@
 \cleardoublepage
 \thispagestyle{empty}
 \vspace*{\stretch{1}}
-\epigraph{The Library will endure: illuminated, solitary, infinite, perfectly motionless, armed with precious volumes, useless, incorruptible, secret.}{Jorge Luis Borges, ``The Library of Babel'' (1941)}
+\epigraph{The Library will endure: illuminated, solitary, infinite, perfectly motionless, equipped with precious volumes, useless, incorruptible, secret.}{Jorge Luis Borges, ``The Library of Babel'' (1941), trans.\ Irby}
 \vspace*{\stretch{2}}
 
 \tableofcontents

@@ -26,12 +26,14 @@ Conversely, any lengths $\ell_1, \ell_2, \ldots$ satisfying this inequality are 
 
 \emph{Sketch.} Read the codewords as leaves of the infinite binary tree. A codeword at depth $\ell$ owns the fraction $2^{-\ell}$ of the unit interval spanned by the strings that extend it. Prefix-freeness means no codeword lies on the path to another, so these fractions are disjoint, and disjoint fractions of one unit interval sum to at most one. The converse packs the required intervals from the shortest length upward, and Kraft's inequality is precisely the room to do so. Chapter~4 draws the tiling.
 
-The inequality is what makes fair-bit length weights admissible. It does not force those weights. Fix a universal monotone prefix machine $U$ and feed it fair random bits.
+The inequality is what makes fair-bit length weights admissible. It does not force those weights. For sequential prediction, fix a universal \emph{monotone} machine $U$: it reads its input one bit at a time, never going back, and writes its output one symbol at a time, never erasing. Feed it fair random bits. Write $U(p) = x{*}$ when $p$ is a \emph{minimal} program for the finite string $x$: after reading exactly the bits of $p$, the output of $U$ begins with $x$, and after reading any proper prefix of $p$ it did not yet.
 
 \begin{definition}[Sequential universal semimeasure]
-$$M_U(x) = \sum_{p\, :\, U(p) = x*} 2^{-|p|}.$$
-$M_U(x)$ is the fair-bit weight of programs whose output begins with the finite string $x$. It is the object used for sequential prediction below.
+$$M_U(x) = \sum_{p\, :\, U(p) = x{*}} 2^{-|p|} = \lambda\bigl\{\omega \in \{0,1\}^{\infty} : U(\omega) \text{ begins with } x\bigr\},$$
+where $\lambda$ is the fair-coin measure on infinite input sequences. $M_U(x)$ is the probability that fair coin flips make the output of $U$ begin with $x$. It is the object used for sequential prediction below.
 \end{definition}
+
+The two forms agree because every input sequence whose output begins with $x$ has exactly one minimal program for $x$ as a prefix. For the same reason the minimal programs for $x$ form a prefix-free set, so Kraft gives $M_U(x) \le 1$. The restriction to minimal programs matters: on a monotone machine every extension of a sufficient program is again sufficient, so a sum over all programs would count the same event again at every length and diverge. A halting machine is the wrong model in the other direction: summing over halting programs whose finite output begins with $x$ gives total weight on the strings of length $n$ that shrinks toward zero as $n$ grows, so the result could not dominate even the uniform measure. Li and Vit\'anyi treat monotone machines and $M$ in their section~4.5, separately from the prefix machines of their sections~3.1 and~4.3.
 
 For the coding theorem, use a related exact-output construction. Let $V$ be a universal prefix machine whose halting programs output finite strings, and define
 
@@ -42,40 +44,40 @@ Because a shortest program contributes to the sum, $m_V(x)\ge 2^{-K_V(x)}$. Levi
 
 $$-\log_2 m_V(x)=K_V(x)+O(1).$$
 
-The exact-output $m_V$ and sequential $M_U$ are related constructions with different events. The book does not condition $m_V$ as though it were $M_U$, or cite the coding theorem as an exact identity for sequential $M_U$.
+Keep the two apart. $m_V$ answers ``how likely is exactly this output?''; $M_U$ answers ``how likely is an output that begins this way?''; only the second is the predictor. The coding theorem is a statement about $m_V$ and $K_V$, not an exact identity for $M_U$.
 
 Two cautions the body carried. First, $M_U$ is a semimeasure, not an ordinary probability measure, and is lower-semicomputable but not computable; $K_V$ is not computable. Second, Kraft constrains code lengths and validates the fair-bit weights once chosen. It does not force an arbitrary prior to place most of its mass on short descriptions. Finitude forces observers to approximate with bounded models, not to implement one unique prior.
 
 \section*{Solomonoff Dominance}
 
 \begin{theorem}[Dominance]
-For every lower-semicomputable semimeasure $\mu$, there is a constant $c_{\mu,U} > 0$, independent of $x$, with
+For every lower-semicomputable semimeasure $\mu$ on finite output prefixes, there is a constant $c_{\mu,U} > 0$, independent of $x$, with
 $$M_U(x) \ge c_{\mu,U}\, \mu(x) \quad \text{for all } x.$$
-A standard construction yields $c_{\mu,U}\ge 2^{-K_U(\mu)-O(1)}$ for a suitable description of $\mu$.
+A standard construction yields $c_{\mu,U}\ge 2^{-K(\mu)-O(1)}$, where $K(\mu)$ is the prefix complexity of a suitable description of $\mu$ and the $O(1)$ depends on $U$.
 \end{theorem}
 
-\emph{Sketch.} $M_U$ is a universal mixture, and a mixture is at least any one weighted component. A description that enumerates the semimeasure $\mu$ contributes a fixed, machine-dependent share proportional to $2^{-K_U(\mu)}\mu(x)$; other components only add to the total. The guaranteed share may be extremely small.
+\emph{Sketch.} $M_U$ is a universal mixture, and a mixture is at least any one weighted component. A description that enumerates the semimeasure $\mu$, followed by fair bits that drive a sampler for it, contributes a fixed, machine-dependent share proportional to $2^{-K(\mu)}\mu(x)$; other components only add to the total. The guaranteed share may be extremely small.
 
 The prediction consequence is the reason the book leans on $M_U$. Write $\mu(a \mid x_{<t})$ and the suitably normalized Solomonoff conditional for the next-symbol probabilities after $x_{<t}=x_1\cdots x_{t-1}$. For a computable probability measure $\mu$, standard results bound cumulative expected divergence and imply that the predictive conditionals converge to those of $\mu$ with $\mu$-probability one. In a common formulation, cumulative expected squared or Hellinger error is
 
-$$O\!\big(K_U(\mu)\big),$$
+$$O\!\big(K(\mu)\big),$$
 
 with constants depending on the precise normalization and divergence used.
 
-\emph{Sketch.} Dominance bounds the likelihood ratio $\mu(x_{1:n})/M_U(x_{1:n})$ uniformly in $n$. Taking logarithms bounds cumulative expected log-loss by a description-length term. The chain rule decomposes that divergence into per-step contributions; standard inequalities then control predictive distance. A finite cumulative bound forces the per-step error toward zero in the theorem's stated senses. Hutter gives precise versions and constants.
+\emph{Sketch.} Dominance bounds the likelihood ratio $\mu(x_{1:n})/M_U(x_{1:n})$ uniformly in $n$. Taking logarithms bounds the cumulative excess log-loss of $M_U$ over $\mu$ on every sequence, and therefore its expectation, the Kullback-Leibler divergence $D(\mu \,\|\, M_U)$ over the first $n$ symbols, by a description-length term. The chain rule decomposes that divergence into per-step contributions; standard inequalities then control predictive distance. A finite cumulative bound forces the per-step error toward zero in the theorem's stated senses. Hutter gives precise versions and constants.
 
 Two honest limits. A description-length bound does not make any particular finite prediction good, and its machine-dependent constant can be large. The results do not show pointwise superiority to every computable learner or optimality under every criterion. They are statements about universal sequence prediction, nothing ontological or indexical.
 
 \section*{Invariance}
 
-$M_U$ and $K_U$ are machine-relative. Different universal machines give different objects. Invariance theorems bound how far their complexities and universal semimeasures can disagree.
+$M_U$ and $K_V$ are machine-relative. Different universal machines give different objects. Invariance theorems bound how far their complexities and universal semimeasures can disagree.
 
 \begin{theorem}[Invariance]
-For any two universal prefix machines $U$ and $V$ there is a constant $c_{U,V}$, independent of $x$, with
-$$|K_U(x) - K_V(x)| \le c_{U,V} \quad \text{for all } x.$$
-Likewise, sequential universal semimeasures from two universal machines lie within fixed multiplicative factors of each other.
+For any two universal prefix machines $V$ and $V'$ there is a constant $c_{V,V'}$, independent of $x$, with
+$$|K_V(x) - K_{V'}(x)| \le c_{V,V'} \quad \text{for all } x.$$
+Likewise, the sequential universal semimeasures $M_U$ and $M_{U'}$ from two universal monotone machines lie within fixed multiplicative factors of each other.
 \end{theorem}
 
-\emph{Sketch.} Fix, once and for all, an interpreter for $V$ written as a $U$-program; it has some finite length $c$. Prepend it to any shortest $V$-program for $x$, and you have a $U$-program for $x$ that is only $c$ bits longer, so $K_U(x) \le K_V(x) + c$. The same argument with the roles exchanged bounds the other direction. Li and Vit\'anyi give the standard proof.
+\emph{Sketch.} Fix, once and for all, an interpreter for $V'$ written as a $V$-program; it has some finite length $c$. Prepend it to any shortest $V'$-program for $x$, and you have a $V$-program for $x$ that is only $c$ bits longer, so $K_V(x) \le K_{V'}(x) + c$. The same argument with the roles exchanged bounds the other direction. For $M$, prefix a fixed program of length $\ell$ that makes $U$ simulate $U'$; every run of $U'$ then reappears on $U$ for $\ell$ extra bits, so $M_U(x) \ge 2^{-\ell} M_{U'}(x)$, and symmetrically. Li and Vit\'anyi give the standard proofs.
 
 The constants do not depend on $x$, but they can be large. Invariance defines an asymptotic equivalence class; it does not make machine choice harmless for a finite observer with finite data. Adversarial machines can encode poor finite-scale preferences. There is no absolute machine-free complexity and no single universal prior. This is a caveat on the construction, not a reason to erase its convergence results.

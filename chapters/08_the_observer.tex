@@ -1,28 +1,16 @@
 \chapter{The Observer}
 
-\vspace{1em}
-\hfill
-\begin{minipage}[c]{0.55\textwidth}
-\raggedleft
-\small\itshape
-Every quantum transition taking place on every star, in every galaxy, in every remote corner of the universe, is splitting our local world into myriads of copies of itself.\\[0.5em]
-\upshape\footnotesize Bryce DeWitt, ``Quantum Mechanics and Reality'' (1970)
-\end{minipage}%
-\hspace{0.5em}
-\begin{minipage}[c]{0.12\textwidth}
-% \includegraphics[width=\textwidth]{figures/ch08_observer.png}
-\end{minipage}
-\vspace{1.5em}
+\chapterepigraph
+{Every quantum transition taking place on every star, in every galaxy, in every remote corner of the universe, is splitting our local world on earth into myriads of copies of itself.}
+{Bryce DeWitt, ``Quantum Mechanics and Reality'' (1970)}
 
-\noindent \textsc{Chapter 7 left two pictures open}. Picture A treats program-output space as a total object; Picture B keeps the observer situated with a posterior over candidate programs. In neither picture does the universal semimeasure become a distribution over observer occurrences without an additional rule.
+\noindent \textsc{Chapter 7 left two pictures open}. Picture A treats program-output space as a total object; Picture B keeps you situated, with finite data and a posterior over candidate programs. Neither supplies what Chapter 7 called the missing occurrence measure.
 
-Before turning to the observer, this chapter pauses at a nearby interpretive landmark. Everettian quantum mechanics offers a physically serious picture of multiplicity, though it is not forced by the tested formalism. The chapter then says what an observer is and identifies the self-location rule the Library does not supply.
+This chapter visits a landmark in physics, says what an observer is, and then asks the question that measure would have to answer.
 
 \section*{An Everettian landmark}
 
-There is a multiplicity much closer to hand if quantum mechanics is read in the Everettian way. The ``if'' matters.
-
-Quantum theory is extraordinarily well confirmed. What has been argued about since the 1920s is what its formalism says exists and how definite outcomes arise. Everettian interpretations retain unitary evolution and treat decohering components of the wave function as effectively autonomous branches.\footnote{Decoherence explains the suppression of interference between relevant components and the emergence of stable quasi-classical structure. By itself it does not select one outcome, prove that branches are fundamental objects, or choose among interpretations. Everettian interpretations add an ontological reading of the unitary formalism; collapse and hidden-variable approaches read it differently.} On that reading, an observer becomes correlated with different outcomes. Calling each branch equally real is the interpretation, not an interpretation-free experimental result.
+There is a multiplicity much closer to hand, if you read quantum mechanics the way Hugh Everett did. On that reading the wave function never collapses: an observer becomes correlated with every outcome, and decoherence keeps the outcomes from interfering, so each behaves like a separate history.\footnote{Decoherence explains the suppression of interference between relevant components and the emergence of stable quasi-classical structure. By itself it does not select one outcome, prove that branches are fundamental objects, or choose among interpretations. Everettian interpretations add an ontological reading of the unitary formalism; collapse and hidden-variable approaches read it differently.} DeWitt's ``myriads of copies,'' at the head of this chapter, is that reading at its most tempting. The experiments confirm quantum predictions; they do not choose Everett's reading over its rivals. The book uses it as a landmark, not as evidence, and nothing later rests on it. If a quantum model can be computably described, its branching can be written out in program space too, but that is a relation between descriptions, and it is no evidence that the branches, or the programs' outputs, exist.
 
 \begin{figure}[h]
 \centering
@@ -57,15 +45,7 @@ Quantum theory is extraordinarily well confirmed. What has been argued about sin
 \label{fig:mwi-branching}
 \end{figure}
 
-This is a landmark, not corroboration. The experiments confirm quantum predictions, not the claim that every decoherent component is a world. Everett shows that a multiplicity can be developed from a serious reading of familiar physics; it does not confirm Picture A for the Library.
-
-If a quantum model is computably describable, its branch structure can be represented in program space. That is a relation between descriptions, not evidence that each output of each program exists. The Library and Everett therefore remain distinct proposals.
-
-There is a deeper reason quantum mechanics belongs in this book, and it is not branching. It is weighting. The Born rule assigns outcome probabilities from squared amplitudes $|\psi|^2$. How that rule is justified and interpreted within Everett is a substantive problem; flat branch-counting is not a well-defined substitute because decoherence does not produce a unique count of branches.
-
-This book does not derive the Born rule from the universal prior. It makes a narrower comparison (Figure~\ref{fig:born-prior}). Quantum theory assigns $|\psi|^2$ to outcomes in its own formal setting; algorithmic information theory assigns $2^{-|p|}$ to program descriptions and sums them into $M$. The domains, formulas, and warrants remain distinct.
-
-The comparison can reveal a shared role: both attach weights to alternatives after a representation has been chosen. It does not dissolve the empirical and mathematical question of why quantum statistics follow the Born rule, and the postulate does not answer that question for us. This limited analogy is the bridge to the companion volume.
+There is a deeper reason quantum mechanics belongs in this book, and it is not branching. It is weighting. The Born rule weights quantum outcomes by their squared amplitudes $|\psi|^2$; the universal prior weights programs by $2^{-|p|}$ and sums them into $M$ (Figure~\ref{fig:born-prior}). Both are bookkeeping attached to a cut: neither can assign a weight until the alternatives have been carved out. That shared role is the whole comparison. The domains, formulas, and warrants differ, and nothing here derives the Born rule or explains why quantum statistics obey it; Appendix~\ref{app:born} marks the boundary. Even inside Everett, counting branches is no shortcut to the rule, because decoherence fixes no unique count: how many branches there are depends on how finely you cut. The shared role is the seam to the companion volume, \textit{Multitudes}.
 
 \begin{figure}[h]
 \centering
@@ -73,32 +53,32 @@ The comparison can reveal a shared role: both attach weights to alternatives aft
   % Left panel: Born weights on quantum branches
   \node[font=\scriptsize, anchor=south] at (1.5,2.15) {Everettian outcomes};
   \draw[->, gray] (0,0) -- (3.1,0);
-  \foreach \x/\h/\w in {0.6/1.8/0.28, 1.5/1.0/0.17, 2.4/0.5/0.10} {
-    \draw[draw=blue!60!black, fill=blue!22] (\x-\w,0) rectangle (\x+\w,\h);
+  \foreach \x/\h in {0.6/0.9, 1.5/1.7, 2.4/0.45} {
+    \draw[draw=blue!60!black, fill=blue!22] (\x-0.22,0) rectangle (\x+0.22,\h);
   }
   \node[font=\scriptsize, anchor=north] at (1.5,-0.1) {weight $|\psi|^2$};
 
-  % similarity sign
-  \node[font=\large] at (3.85,0.9) {$\sim$};
+  % the comparison is of role only
+  \node[font=\scriptsize, gray!70!black, align=center] at (3.9,0.9) {same role,\\different\\domains};
 
   % Right panel: universal prior on programs
   \node[font=\scriptsize, anchor=south] at (6.2,2.15) {programs};
   \draw[->, gray] (4.7,0) -- (7.8,0);
-  \foreach \x/\h/\w in {5.3/1.8/0.28, 6.2/1.0/0.17, 7.1/0.5/0.10} {
-    \draw[draw=teal!55!black, fill=teal!22] (\x-\w,0) rectangle (\x+\w,\h);
+  \foreach \x/\h in {5.1/1.8, 5.75/0.9, 6.4/0.45, 7.05/0.225} {
+    \draw[draw=teal!55!black, fill=teal!22] (\x-0.17,0) rectangle (\x+0.17,\h);
   }
   \node[font=\scriptsize, anchor=north] at (6.2,-0.1) {weight $2^{-|p|}$};
 \end{tikzpicture}
-\caption{An analogy between weighting roles. Quantum theory uses Born weights $|\psi|^2$ for outcomes; algorithmic information theory weights program descriptions by $2^{-|p|}$ and sums them into $M$. The domains, formulas, and justifications differ. No Born-rule derivation or ontological identification is intended.}
+\caption{Two weightings, one role. Quantum theory weights outcomes by $|\psi|^2$; algorithmic information theory weights program descriptions by $2^{-|p|}$ and sums them into $M$. The bars are schematic. The role is shared; the domains, formulas, and justifications are not, and neither weighting is derived from the other.}
 \label{fig:born-prior}
 \end{figure}
 \FloatBarrier
 
 \section*{What an observer is}
 
-The chapter has used the word \emph{observer} without saying what one is. The framework needs a working definition before the next question makes sense.
+The book has used the word \emph{observer} without saying what one is. The framework needs a working definition before the next question makes sense.
 
-For the purposes of this framework, an observer is modeled as a local pattern within some candidate $U(p)$, with internal organization, a sensorium, memory, and a capacity to model. An Everettian may place such a pattern within a decoherent branch. This is a working model, not a solution to the hard problem of consciousness or a claim that every observer is literally computable.
+For the purposes of this framework, an observer is modeled as a local pattern within some candidate $U(p)$, with internal organization, a sensorium, memory, and a capacity to model. An Everettian may place such a pattern within a decoherent branch. This is a working model, not a solution to the hard problem of consciousness or a claim that every observer is literally computable. And notice what the model already does. Nothing in $U(p)$ marks where the pattern ends and its surroundings begin; the boundary is drawn by whoever does the modeling, the observer included. The observer is itself a carving.
 
 But not every substructure is an observer, and among those that are, a distinction matters. An observer-moment, a configuration that merely \emph{matches} an observer-state for an instant, can occur almost anywhere. An observer whose inference \emph{works}, who can model its surroundings, persist, and do science, needs something specific from the universe it is in.
 
@@ -106,9 +86,9 @@ But not every substructure is an observer, and among those that are, a distincti
 
 This is a strong restriction on which candidate programs support observers of that kind. Many computable outputs are locally chaotic, tightly coupled, or homogeneous and do not admit effective local modeling. There is no canonical way to count all programs, so the book makes no claim about what a ``vast majority'' of them are like.
 
-A caveat the rest of the chapter will sharpen: none of this says observer-\emph{states} cannot occur in the lawless majority. They can. In a large enough chaotic or high-entropy structure, a configuration matching your exact observer-state can fluctuate into being for a moment, carrying all your apparent memories and none of the lawful past they seem to record. That is the Boltzmann brain, one of the uncomfortable things the framework permits, and we return to it below. The decomposability requirement is not a condition for an observer-state to \emph{exist}; it is what an observer needs for its inference to \emph{work}, for its models to track its world, for it to persist past the instant.
+A caveat the rest of the chapter will sharpen: none of this says observer-\emph{states} cannot occur in lawless structures. They can. In a large enough chaotic or high-entropy structure, a configuration matching your exact observer-state can fluctuate into being for a moment, carrying all your apparent memories and none of the lawful past they seem to record. That is the Boltzmann brain, one of the uncomfortable things the framework permits, and we return to it below. The decomposability requirement is not a condition for an observer-state to \emph{exist}; it is what an observer needs for its inference to \emph{work}, for its models to track its world, for it to persist past the instant.
 
-Our observed environment is locally decomposable at multiple scales. The success of effective theories is evidence for that feature of our environment. It is not evidence that an observer measure is concentrated there, because the framework has supplied no observer measure.
+Our observed environment is locally decomposable at multiple scales. The success of effective theories is evidence for that feature of our environment. It is not evidence that observers are concentrated in environments like it; that would take the missing occurrence measure, and the framework has not supplied one.
 
 \emph{Local inference.} The observer's epistemic activity, science, is not a search for the global program. Kolmogorov complexity is uncomputable, and an observer with finite resources could not carry out global Solomonoff induction even approximately without choosing severe bounds. What the observer does instead is build a collection of tractable local models $p_s$, each approximating a local substructure $s$. These are the effective theories of physics, the models of biology, the heuristics of everyday cognition. Together they form the observer's working model of its local region.
 
@@ -116,7 +96,7 @@ The observer never has access to the global program. The observer has access to 
 
 This is what science is, in this framework. Not the discovery of \emph{the} program. The construction of a library of local approximations, scale by scale, each anchored to a substructure the observer can probe.
 
-\emph{The self as a local model.} The same picture extends to the observer's self-representation. The brain's model of itself is a short local program approximating the substructure the observer occupies. $I$ is one of the local theories. The dissolution of the self in Chapter 14 follows from this: the self-model is not different in kind from the other local effective theories the observer maintains. The self is a $p_{\text{self}}$, useful, finite, approximate, and like every other $p_s$, not the structure it describes.
+\emph{The self as a local model.} The same picture extends to the observer's model of itself. The brain's self-model is a short local program approximating the substructure the observer occupies: \emph{I} is one of the local theories, drawn by the same kind of cut as the others. Chapter 14 follows that thought to its end.
 
 With these in place, the question of the next section sharpens. The observer is locally modeled, with no access to a global view. So: what can the posterior over programs tell you, and what extra structure would be needed to ask which occurrence is \emph{you}?
 
@@ -138,16 +118,13 @@ Under Picture A or an Everettian ontology, a sharp question emerges. Suppose sev
     \node[font=\scriptsize, anchor=west, draw=blue!45, rounded corners, inner sep=2.5pt, fill=blue!7, text width=4.1cm] at (3.4,\y) {\lbl};
     \draw[->, gray!70] (1.9,1.125) to[out=0,in=180] (3.35,\y);
   }
-  \node[font=\scriptsize, anchor=north west, text width=5.0cm] at (3.4,-1.15) {Programs can output the same prefix. $M$ weights programs; occurrence weights are not yet defined.};
 \end{tikzpicture}
 \caption{Two underdeterminations. A finite stretch of data (left) is compatible with many candidate programs (right), and $M$ gives a posterior over those programs. If several observer occurrences match the same data, $M$ alone does not distribute probability among them. ``Which program predicts next?'' and ``which occurrence am I?'' are different questions.}
 \label{fig:where-am-i}
 \end{figure}
 
-The literature has attempted to answer this with indexical assumptions. The \emph{Self-Sampling Assumption} (SSA) says to reason as if you are a random sample from a specified reference class. The \emph{Self-Indication Assumption} (SIA) treats your existence as evidence favoring hypotheses with more eligible observers. Other approaches use a xerographic distribution that assigns first-person weights directly. These proposals disagree about cases such as Sleeping Beauty, the doomsday argument, and Boltzmann observers. None is forced, and each must say what counts as an occurrence.
+This is where the missing occurrence measure of Chapter 7 would have to do its work, and the literature offers several rules to supply it. The \emph{Self-Sampling Assumption} (SSA) says to reason as if you are a random sample from a specified reference class. The \emph{Self-Indication Assumption} (SIA) treats your existence as evidence favoring hypotheses with more eligible observers. Xerographic distributions assign first-person weights directly. These proposals disagree about cases such as Sleeping Beauty, the doomsday argument, and Boltzmann observers. None is forced, and each must first say what counts as an occurrence, which is to say where to cut. Appendix~\ref{app:anthropics} surveys them.
 
 The book does not commit to an indexical assumption. So \emph{where am I?}, understood as self-location among occurrences, does not merely have a broad posterior here; it is undefined until extra structure is supplied. That is a limit of the framework, kept visible rather than hidden inside $M$.
 
-There is a deeper underdetermination underneath this one, and it is worth naming because Chapter 6 promised it. The book has been speaking in two pictures without choosing between them. In Picture A, program-output space is treated as a static object carrying program-description weights. In Picture B, you are situated with access only to finite local data and a posterior over candidate programs. The question of which picture is \emph{real}, whether the totality is ontic or only the situated predictive use is warranted, has no answer supplied by $M$. The postulate declines to privilege either decomposition. The book therefore holds the ontology open.
-
-The framework cannot settle self-location without a rule it does not contain. One hope remains: perhaps a greater mind could supply a uniquely correct overview. The next chapter asks what such an overview would mean, and finds no privileged view at the top.
+There is a deeper underdetermination underneath this one, and Chapter 6 promised to name it. The book has been speaking in two pictures without choosing between them. In Picture A, program-output space is a static object carrying program-description weights. In Picture B, you are situated, with finite local data and a posterior over candidate programs. Which picture is the \emph{real} one? $M$ does not say, and the question has a shape you have seen before. Choosing which picture is the real one is itself a cut, a carving of the whole into what exists and what is only described, and the postulate privileges no cut. That is why the book holds the question open rather than answering it. The observer was a carving; so is the line between the world that exists and the worlds that are only described.

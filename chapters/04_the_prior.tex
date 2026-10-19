@@ -1,38 +1,24 @@
 \chapter{The Prior}
 
-\vspace{1em}
-\hfill
-\begin{minipage}[c]{0.55\textwidth}
-\raggedleft
-\small\itshape
-The universal a priori probability is a probability measure on the set of all possible sequences of symbols.\\[0.5em]
-\upshape\footnotesize Ray Solomonoff, \textit{A Formal Theory of Inductive Inference} (1964)
-\end{minipage}%
-\hspace{0.5em}
-\begin{minipage}[c]{0.12\textwidth}
-% \includegraphics[width=\textwidth]{figures/ch04_prior.png}
-\end{minipage}
-\vspace{1.5em}
+\chapterepigraph
+{[T]he problem dealt with is the extrapolation of a very long sequence of symbols\ldots. Almost all, if not all problems in induction can be put in this form.}
+{Ray Solomonoff, \textit{A Formal Theory of Inductive Inference} (1964)}
 
-\noindent \textsc{Bayes requires a prior.} In the classical treatment, the prior reflects background knowledge, judgment, or convention. This chapter constructs a prior with an unusual claim to generality.
+\noindent \textsc{Bayes requires a prior.} If conditioning is the cut the data make, the prior is the cut you make before any data arrive: a decision about how to spread belief over candidates that nothing has yet ruled out. In the classical treatment, it reflects background knowledge, judgment, or convention.
 
 \section*{What kind of measure?}
 
-The Library is generated from strings, but a predictor needs weights, not merely an enumeration. We will build them from a simple experiment: feed fair random bits to a universal computer and ask what output begins to appear.
+The Library is generated from strings, but a predictor needs weights, not merely an enumeration. We will build them from a simple experiment: feed fair random bits to a universal computer and ask what output begins to appear. First, though, the weights have to add up to at most $1$.
 
-At any fixed length $n$, fair bits give each of the $2^n$ strings weight $2^{-n}$. The total weight at that level is exactly $1$.
+Start with the most even-handed idea: give every finite string the same weight. It cannot be done. There are infinitely many finite strings, so any fixed positive weight, however small, sums past $1$, and a weight of zero sums to nothing.
 
-The sum over all levels diverges. There are infinitely many levels.
+The next attempt follows the coin. Flip fair coins and ask how likely the flips are to begin with a given string $s$. The answer is $2^{-|s|}$, where $|s|$ is the length of $s$. Length-$1$ strings each get $1/2$; length-$2$ strings each get $1/4$; and so on. At any fixed length $n$, the $2^n$ strings share the weight exactly: the level sums to $1$.
 
-That does not define a distribution over all finite strings at once: summing the mass of every level diverges. The problem is not that probability logically demands one particular preference for short strings. It is that a stream of bits needs a way to say where one program ends.
+But the levels are not separate events. Flips that begin with $01$ also begin with $0$; reading $0$ is part of reading $01$. Each level re-counts the same coin flips at a finer grain, so adding the levels counts every run of flips again at every length: $1 + 1 + 1 + \dots$, unbounded. The weights are fine one level at a time. Together they overlap, and the overlap is the whole problem: a stream of bits has no way to say where one string ends.
 
 \section*{Prefix-free codes}
 
-The next attempt: weight each string $s$ by $2^{-|s|}$, where $|s|$ is its length. Length-$1$ strings each get $1/2$; length-$2$ strings each get $1/4$; and so on.
-
-This also diverges. There are two strings of length $1$, contributing $2 \times 1/2 = 1$. Four strings of length $2$, contributing $4 \times 1/4 = 1$. And so on. The total is $1 + 1 + 1 + \dots$, unbounded.
-
-The fix is to use only a \emph{prefix-free} subset of the strings.
+The fix is to remove the overlap: use only a \emph{prefix-free} subset of the strings.
 
 A set of strings is prefix-free if no string in the set is a prefix of another. The set $\{0, 10, 11\}$ is prefix-free. The set $\{0, 01, 11\}$ is not: $0$ is a prefix of $01$.
 
@@ -120,15 +106,19 @@ The function $P$ is a subprobability distribution on the codewords: shorter indi
 
 Notice exactly what has happened. Kraft makes the length weights $2^{-|s|}$ admissible; it does not make them compulsory. We chose fair bits, and fair bits assign those weights. Other coherent distributions over a prefix-free code are possible. Nor does Kraft say that most of the total mass of an arbitrary code lies on its shortest descriptions: there may be many long codewords.
 
-Finitude supplies a different lesson. A finite reasoner must use bounded representations and local approximations. Short descriptions are useful because they cost less to store and manipulate. That practical pressure does not select a unique prior. The universal construction earns its stronger status in the next chapter, through dominance and convergence.
+Finitude supplies a different lesson. A finite reasoner must use bounded representations and local approximations. Short descriptions are useful because they cost less to store and manipulate. That practical pressure does not select a unique prior.
 
 \section*{The universal prior}
 
 Now extend from codewords to programs. Programs are strings; they differ from arbitrary strings only in that they have a runtime behavior on a universal computer.
 
-Let $U$ be a universal Turing machine whose input set is prefix-free: every halting input is a complete program, not the prefix of a longer one. Such machines exist and are standard.\footnote{Any universal machine can be made prefix-free by including the program's length as a header, or by self-delimiting techniques developed by Chaitin and Levin in the 1970s. The technical details do not affect the argument.} For each program $p$ that produces the string $x$ as the start of its output (Figure~\ref{fig:prefix}), give it weight $2^{-|p|}$. Sum over all such programs:
+Let $U$ be a universal machine that reads its program one bit at a time, never going back, and writes its output one symbol at a time, never erasing.\footnote{Machines that read and write this way are called \emph{monotone} machines; Li and Vit\'anyi, \textit{An Introduction to Kolmogorov Complexity and Its Applications}, section~4.5, gives the standard treatment. This form of $M$ is due to Zvonkin and Levin (1970), building on Solomonoff (1964). Machines that must halt are the wrong model here. A halted program has finished its output, so the total weight such programs give to outputs at least $n$ symbols long shrinks toward zero as $n$ grows, and no such sum can keep pace with a source that goes on producing symbols. Halting machines define the exact-output quantity $m_V$ below instead.} Feed it fair coin flips. It need never halt: it reads another bit when it needs one and writes more output when it can. If its output comes to begin with $x$, there is a first moment that happens. Call the bits read up to that moment $p$, a \emph{minimal} program for $x$, and write $U(p) = x{*}$ (Figure~\ref{fig:prefix}). Give each minimal program weight $2^{-|p|}$ and sum:
 
-$$M(x) = \sum_{p \,:\, U(p) = x*} 2^{-|p|}.$$
+$$M(x) = \sum_{p \,:\, U(p) = x{*}} 2^{-|p|}.$$
+
+Equivalently, $M(x)$ is the probability that fair coin flips make $U$'s output begin with $x$. The two descriptions give the same number, because each run of flips passes through at most one minimal program for $x$: the bits it had read when $x$ first appeared.
+
+The word \emph{minimal} is doing the work. Because $U$ never erases, once its output begins with $x$ it goes on beginning with $x$ however many further bits it reads. Counting every such extension would re-count the same flips at every length, the overlap from the start of the chapter, and the sum would diverge. Counting only the first moment removes the overlap. (On the output side the overlap is wanted: the weight for $x$ is shared out among its continuations $x0$ and $x1$, and any shortfall is the mass a semimeasure can lose.) No minimal program for $x$ can begin with another one, since the shorter one would have produced $x$ first. So the minimal programs for $x$ form a prefix-free set, and Kraft keeps the sum at most $1$.
 
 \begin{figure}[h]
 \centering
@@ -140,7 +130,7 @@ $$M(x) = \sum_{p \,:\, U(p) = x*} 2^{-|p|}.$$
   }
 
   % Dashed separator
-  \draw[thick, dashed, gray!60] (4.05, -0.15) -- (4.05, 1.5);
+  \draw[thick, dashed, gray!60] (4.05, -0.15) -- (4.05, 1.05);
 
   % Continuation: gray "?" boxes
   \foreach \i in {0, 1, 2, 3} {
@@ -156,11 +146,11 @@ $$M(x) = \sum_{p \,:\, U(p) = x*} 2^{-|p|}.$$
   % Label above
   \node[anchor=south, font=\small] at (4.5, 1.1) {output of program $p$};
 \end{tikzpicture}
-\caption{The notation $U(p) = x*$ means program $p$ outputs $x$ as the beginning of its run, followed by any continuation (or none). $M(x)$ sums the weights of all programs whose outputs begin with $x$.}
+\caption{The notation $U(p) = x{*}$ means that $p$ is a minimal program for $x$: when $U$ has read exactly the bits of $p$, its output begins with $x$, and no shorter beginning of $p$ was enough. What follows is any continuation (or none). $M(x)$ sums the weights of all minimal programs for $x$.}
 \label{fig:prefix}
 \end{figure}
 
-This is Solomonoff's \emph{universal semimeasure} on finite output prefixes $x$.\footnote{It is a semimeasure rather than an ordinary probability measure: probability can be lost when an input produces no further output. Its conditional ratios can still be used for sequential prediction.} It is a distribution for prediction, not yet a measure on realities or on observer occurrences. Figure~\ref{fig:universal-prior} shows $M(x)$ as a cumulative sum over the programs whose outputs begin with $x$, ordered by length.
+This is Solomonoff's \emph{universal semimeasure} on finite output prefixes $x$.\footnote{It is a semimeasure rather than an ordinary probability measure: probability can be lost when an input produces no further output. Its conditional ratios can still be used for sequential prediction.} It is a distribution for prediction, not yet a measure on realities or on observer occurrences. Figure~\ref{fig:universal-prior} shows $M(x)$ as a cumulative sum over the minimal programs for $x$, ordered by length.
 
 \begin{figure}[h]
 \centering
@@ -189,43 +179,39 @@ This is Solomonoff's \emph{universal semimeasure} on finite output prefixes $x$.
   \node[font=\scriptsize] at (6.4, -0.15) {$\cdots$};
 
   % Asymptote label (placed at end of asymptote, inside the plot area)
-  \node[anchor=west, font=\small] at (6.85, 3.85) {$M(x) \leq 1$};
+  \node[anchor=south, font=\small] at (6.2, 3.95) {$M(x) \leq 1$};
 
   % First step height annotation (inside plot, right of the first step)
   \draw[<->, gray!70, thin] (1.35, 0.05) -- (1.35, 2.35);
   \node[anchor=west, font=\scriptsize, gray] at (1.4, 1.2) {$2^{-|p_1|}$};
 
   % X-axis caption (below, centered)
-  \node[anchor=north, font=\small] at (3.8, -0.75) {programs producing $x$, in order of length};
+  \node[anchor=north, font=\small] at (3.8, -0.75) {minimal programs for $x$, in order of length};
 \end{tikzpicture}
-\caption{The universal semimeasure $M(x)$ as a cumulative step function. Each program $p$ whose output begins with $x$ contributes $2^{-|p|}$. Shorter individual programs contribute larger terms. Kraft bounds the completed sum by $1$, but it does not require most of the mass to come from the first few programs.}
+\caption{The universal semimeasure $M(x)$ as a cumulative step function. Each minimal program $p$ for $x$ contributes $2^{-|p|}$. Shorter individual programs contribute larger terms. Kraft bounds the completed sum by $1$, because the minimal programs for $x$ form a prefix-free set, but it does not require most of the mass to come from the first few programs.}
 \label{fig:universal-prior}
 \end{figure}
 
-What $M$ does, in three sentences. It assigns weight to a prefix by summing every fair-bit program that produces it. A shorter program contributes a larger individual term. It assigns positive weight to every prefix produced by at least one program.
+What $M$ does, in three sentences. It assigns weight to a prefix by summing over every minimal program for it, which comes to the probability that fair coin flips make the machine's output begin with that prefix. A shorter program contributes a larger individual term. Because $U$ is universal, every finite prefix has at least one minimal program, so every prefix gets positive weight.
 
-A related construction connects probability to Kolmogorov complexity, but the distinction matters. Let $V$ be a prefix machine that halts with the exact finite output $x$, and define
+A related construction connects probability to Kolmogorov complexity, but the distinction matters. Let $V$ be a universal \emph{prefix} machine: its programs must halt, its halting programs form a prefix-free set, and each one ends with an exact finite output. Define
 
-$$m(x) = \sum_{q\, :\, V(q)=x} 2^{-|q|}.$$
+$$m_V(x) = \sum_{q\, :\, V(q)=x} 2^{-|q|}.$$
 
-Let $K_V(x)$ be the length of the shortest such program. The coding theorem says
+Let $K_V(x)$ be the length of the shortest program $q$ with $V(q) = x$. Because $V$ is universal, the coding theorem says
 
-$$-\log_2 m(x) = K_V(x) + O(1).$$
+$$-\log_2 m_V(x) = K_V(x) + O(1).$$
 
-Thus exact-output algorithmic probability $m$ and prefix complexity $K_V$ express the same notion up to a machine-dependent additive constant. Sequential $M$, by contrast, weights programs whose output merely begins with the observed data and is the object we condition for prediction. The two constructions are close relatives, not interchangeable notation.
+Thus exact-output algorithmic probability $m_V$ and prefix complexity $K_V$ express the same notion up to an additive constant that depends on $V$. Sequential $M$, by contrast, sums over minimal programs whose output merely begins with the observed data, on a machine that need never halt, and it is the object we condition for prediction. The two constructions are close relatives, not interchangeable notation.
 
-Philosophically, $M$ weights candidate generative descriptions according to the fair-bit experiment. It does not say that descriptions with large weight are common realities, or that an observer is likely to be one occurrence rather than another. Those would require further assumptions.
+Each program in the sum is a candidate cut: one way of saying what your data are the beginning of. $M$ weights the candidates by the fair-bit experiment, and by nothing else. Whether a heavily weighted description is anything more than a good bet is a question the construction does not ask.
 
 \section*{Where this leaves you}
 
-Bayes needed a prior. Prefix-free programs and fair random bits give you a universal one.
+Bayes needed a prior. Fair coin flips fed to a universal machine that never erases give you one.
 
-The construction is principled but not unique. It depends on a reference universal machine and on the fair-bit distribution. Other coherent priors exist.
+The construction is principled but not unique. It depends on a reference universal machine and on the fair-bit distribution. A reasonable agent could write down a different one. Why should this one get special standing?
 
-When you condition on sequential data, $M$ weighs candidate programs and their continuations. It does not by itself answer the indexical question \emph{which observer occurrence am I?}
-
-But $M$ is only one prior. A reasonable agent could write down a different one. Why should this one be privileged?
-
-The answer is the next chapter. Under stated computability assumptions, the universal semimeasure dominates each lower-semicomputable semimeasure up to a constant and supports powerful convergence results.
+The next chapter answers with a theorem. $M$ dominates every lower-semicomputable semimeasure up to a constant, and when the data come from a computable source, its predictions converge, with probability one, to the source's own.
 
 That is the optimality.

@@ -1,0 +1,16 @@
+% Shared figure preamble: the fonts, math, and TikZ setup every diagram needs.
+% Loaded by the-library.tex and by kdp/render-figures.lua, which compiles each
+% TikZ figure standalone for the EPUB, so print and ebook diagrams share one source.
+\usepackage[T1]{fontenc}
+\usepackage[osf]{libertinus}
+\usepackage{amsmath}
+\usepackage{libertinust1math}  % Libertinus Math: matches the text; supplies the amssymb glyphs we use
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, calc, decorations.markings, decorations.pathmorphing, patterns, trees}
+% Labels inside diagrams never hyphenate (a broken word in a three-word label reads as a typo).
+\tikzset{every node/.append style={execute at begin node={\hyphenpenalty=10000\exhyphenpenalty=10000}}}
+
+% The one field of points that the book's recurring "cut" figures carve
+% (Figure 7.1, two carvings; Figure 14.1, three cuts). Defined once so both
+% figures carve literally the same structure.
+\newcommand{\cutfield}{0.30/0.40, 0.85/1.10, 0.50/2.20, 1.00/2.62, 1.05/0.30, 1.60/1.75, 1.95/0.80, 2.10/2.30, 2.45/1.40, 2.95/0.50, 3.00/2.62, 3.25/1.90, 3.65/1.00, 3.75/2.55, 3.30/0.30, 0.60/1.70, 1.70/2.78, 2.55/2.85, 0.70/0.75, 3.05/1.25, 1.55/1.05, 2.20/0.20, 3.80/1.40, 0.95/1.85}

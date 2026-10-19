@@ -1,20 +1,10 @@
 \chapter{The Limits}
 
-\vspace{1em}
-\hfill
-\begin{minipage}[c]{0.6\textwidth}
-\raggedleft
-\small\itshape
-Nature has no particular goal in view, and final causes are but human figments.\\[0.5em]
-\upshape\footnotesize Baruch Spinoza, \textit{Ethics} (1677), trans.\ Elwes
-\end{minipage}%
-\hspace{0.5em}
-\begin{minipage}[c]{0.12\textwidth}
-% \includegraphics[width=\textwidth]{figures/ch09_limits.png}
-\end{minipage}
-\vspace{1.5em}
+\chapterepigraph[0.6]
+{Nature has no particular goal in view, and \ldots{} final causes are mere human figments.}
+{Baruch Spinoza, \textit{Ethics} (1677), trans.\ Elwes}
 
-\noindent \textsc{One question remains}, and it is the one a reader keeps in reserve: even if \emph{I} cannot find my index, surely someone could. This chapter follows that hope to its end. Then it says plainly what the framework permits, and what it does not.
+\noindent \textsc{One question remains}, and it is the one a reader keeps in reserve: even if \emph{I} cannot say where I am, surely someone could. This chapter follows that hope to its end. Then it sets out, plainly, what the framework permits.
 
 \section*{No view from the top}
 
@@ -22,7 +12,7 @@ Push the question one more time. \emph{Where am I?} had no sharp answer for you,
 
 It is not occupied, and the deepest reason is the postulate. There is no privileged view. Any survey of the Library, however vast the mind that performs it, is a carving, a cut like any other, and no cut is the structure's own. So even a mind that could take in the whole would not be reading off \emph{the} fact of the matter about your index; it would be making one more cut, with no better claim to be the true one than yours. The fact of the matter the reader hoped for, unreachable but at least existing, is not merely unreachable. It is absent. It would require a privileged vantage, and the postulate is precisely the denial that any vantage is privileged.
 
-Computability supplies a narrower caution, not a second proof. No ordinary computable procedure decides the halting problem for every program, including arbitrary programs of its own kind. A Turing jump obtains greater relative power by granting an oracle; it is not an ordinary computable successor that can simply be built inside the Library. The hierarchy of oracle machines therefore does not prove that physically possible minds form an endless ladder, that no maximal intelligence can exist, or that no overseer exists.
+Computability adds a narrower point, not a second proof: no computable procedure can decide, for every program, whether it halts. That limits what any computable mind can know about the Library; it does not by itself rule out a greatest mind, and the argument above does not need it.
 
 The conclusion here rests on the postulate alone. Greater intelligence can enlarge a view, correct errors, and discover regularities. It cannot turn its decomposition into the structure's uniquely privileged decomposition. Power is not privilege. A simulator, if one exists, would know more about the simulated system while still bringing its own representation and boundaries.
 
@@ -30,9 +20,9 @@ Hold onto this; Part III will need it. The book has not disproved every possible
 
 \section*{What the framework permits}
 
-Picture A, combined with further physical and indexical assumptions, permits descriptions that are uncomfortable to sit with. A small sample.
+Picture A, combined with physical and indexical assumptions the book does not adopt, permits descriptions that are uncomfortable to sit with. A small sample.
 
-\emph{Boltzmann brains.} In some long-lived cosmological models, and under some ways of counting observer occurrences, transient fluctuations can outnumber ordinary observers. If you treated yourself as a random draw from that class, your apparent past could be misleading. None of those premises comes from $M$ alone. The book adopts no cosmology, reference class, or self-location distribution that yields the conclusion.\footnote{Schmidhuber's \emph{speed prior} penalizes computation time and is sometimes discussed near this problem. It is a prior over program outputs, not by itself a probability distribution over observer occurrences, and it does not resolve the reference-class question.}
+\emph{Boltzmann brains.} In some long-lived cosmological models, and under some ways of counting observer occurrences, transient fluctuations can outnumber ordinary observers. If you treated yourself as a random draw from that class, your apparent past could be misleading.\footnote{Schmidhuber's \emph{speed prior} penalizes computation time and is sometimes discussed near this problem. It is a prior over program outputs, not by itself a probability distribution over observer occurrences, and it does not resolve the reference-class question.}
 
 \begin{figure}[h]
 \centering
@@ -48,44 +38,38 @@ Picture A, combined with further physical and indexical assumptions, permits des
 
   % BB path: very long red dashed arrow from far left
   \draw[thick, red, dashed, ->] (0, 0.3) -- (7.7, 0.65);
-  \node[font=\scriptsize, anchor=south, red, text width=3.5cm, align=center] at (2, -0.3) {Boltzmann brain (vast fluctuation)};
+  \node[font=\scriptsize, anchor=north, red, text width=3.5cm, align=center] at (2, 0.2) {Boltzmann brain (vast fluctuation)};
 \end{tikzpicture}
 \caption{Two hypotheses for matching data. A lawful history and a fluctuation could, in principle, contain the same instantaneous observer-state. Comparing their first-person probabilities requires a cosmology and an occurrence measure that this framework does not provide.}
 \label{fig:boltzmann-brain}
 \end{figure}
 
-\emph{Hellscapes.} Programs can describe worlds with sustained suffering. Picture A may take such descriptions ontically; Picture B need not. Neither the postulate nor $M$ establishes that the described worlds exist, and program weights are not moral weights.
+\emph{Hellscapes.} Programs can describe worlds of sustained suffering, and nothing in the Library forbids the description. Picture A may read such descriptions ontically; Picture B need not. Program weights are not moral weights.
 
-\emph{Dark quantum continuation.} Everettian branching plus a controversial first-person continuation rule can generate stories in which experience follows surviving but progressively damaged branches. The book adopts neither the rule nor the conclusion. It names the possibility because careless presentations of ``quantum immortality'' often omit its darkest implication.
+\emph{Dark quantum continuation.} Everettian branching plus a controversial first-person continuation rule can generate stories in which experience follows surviving but progressively damaged branches. The book names the possibility because careless presentations of ``quantum immortality'' often omit its darkest implication.
 
-\emph{Versions of you, and of everyone you love.} Picture A permits descriptions in which a matching pattern acts or suffers differently. Calling those patterns versions of a person, asserting that they exist, and assigning weight among them are three additional choices. The framework keeps them separate.
-
-The framework does not resolve any of this. The book does not pretend that it does. These are conditional costs of combining Picture A with additional physical and indexical assumptions, not consequences of the postulate alone.
+\emph{Versions of you, and of everyone you love.} Picture A permits descriptions in which a matching pattern acts or suffers differently. Calling those patterns versions of a person, asserting that they exist, and assigning weight among them are three additional choices.
 
 One thing should be said plainly here, because this is the sharpest the book has yet been. Describing a possibility does not place you in it, and the framework has supplied no occurrence measure that says otherwise. If this section is destabilizing, step away from it and return to the room, person, or task within reach. ``No cut is privileged'' is a claim about descriptions and boundaries, not a claim that your present experience or personhood is unreal. The framework survives being held at arm's length.
 
 What the book offers in response is not a formal move. It is the chosen response of Part III. The mathematics is silent on what to do; care is what we provide; the rest of the book is what that looks like.\footnote{Camus, considering the absurd condition of finite beings in an indifferent cosmos, concluded: \emph{Il faut imaginer Sisyphe heureux}. One must imagine Sisyphus happy. The book's posture is parallel. The framework is what it is. The response is what we choose, in awareness of what the framework permits.}
 
-\section*{What if you refuse}
+\section*{Without Everett}
 
-None of what follows rests on Everett. It was a familiar interpretive landmark, not corroboration or a premise. A reader who prefers an operational, hidden-variable, or objective-collapse approach loses the landmark and keeps the book's mathematics and postulate. Ontic multiplicity from the Library would still require Picture A; it does not follow from the postulate alone.
-
-What does refusing Everett cost here? Only one analogy. The companion volume, \emph{Multitudes}, makes the fuller case for its quantum interpretation. Here, Everett is a guest.
-
-The mathematical results survive any interpretive refusal. The postulate, Picture A, Everett, a cosmology, and an indexical rule each add something different. The reader can trace any conclusion to the footing it requires.
+Chapter 8 called Everett a landmark, and the book has not leaned on it since. A reader who prefers an operational, hidden-variable, or objective-collapse reading of quantum mechanics loses the landmark, one analogy, and one entry of the catalogue above. Everything else stays: the mathematics, the postulate, and every other argument of Part II. The companion volume, \textit{Multitudes}, makes the fuller case for an Everettian reading. Here, Everett is a guest.
 
 \section*{Where this leaves you}
 
-The coldest part of the picture is now in view. The reader has met the book's one interpretive commitment:
+The coldest part of the picture is now in view. You have met the book's one interpretive commitment:
 
 \begin{quote}
-\textbf{The postulate: no cut is privileged.} No decomposition is view-independently correct. This does not by itself turn the universal prior into a measure on realities or observer occurrences. The book takes the postulate; the reader may refuse it and keep the mathematics.
+\textbf{The postulate: no cut is privileged.} No decomposition of the describable totality is view-independently correct. Every carving into worlds, systems, and selves is a cut an observer makes; none comes labeled as the structure's own.
 \end{quote}
 
-\noindent and one interpretive landmark: Everettian quantum mechanics describes decoherent branches carrying Born weights. Its ontology is optional; its formula and domain differ from the universal semimeasure's.
+\noindent The book takes it. You may refuse it, as Chapter 7 set out, and keep the mathematics.
 
-The theorems are conditional mathematics; the universal prior is a construction; the postulate and Everett are interpretations. Picture A plus further assumptions permits the uncomfortable descriptions this chapter catalogued. No layer supplies a privileged view that ranks them morally.
+Every claim in Part II rests on one of the five footings Chapter 7 named: theorem, construction, finitude, postulate, optional additions. Everything this chapter catalogued, read as more than a description, stands on the fifth. None of the five supplies a view from the top, and none ranks the catalogued descriptions morally.
 
-The book does not engineer answers to questions the framework does not resolve. The self-location question lacks a measure. Boltzmann-observer claims depend on cosmology and reference class. Hellscapes remain describable, while their ontology is held open. Precision does not remove the darkness; it prevents the book from claiming more darkness than its premises earn.
+The book will not engineer answers to questions the framework leaves open, and several stay open: which occurrence is you, which picture is real, whether anything answers to the darkest descriptions. Precision does not remove the darkness; it prevents the book from claiming more darkness than its premises earn.
 
-The next chapter states plainly what all of it amounts to: the indifference of description. After that, the response.
+There is a name for what all of this amounts to, and the next chapter says it.

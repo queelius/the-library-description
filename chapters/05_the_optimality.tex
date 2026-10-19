@@ -1,28 +1,18 @@
 \chapter{The Optimality}
 
-\vspace{1em}
-\hfill
-\begin{minipage}[c]{0.55\textwidth}
-\raggedleft
-\small\itshape
-Solomonoff's distribution dominates any other computable distribution up to a multiplicative constant.\\[0.5em]
-\upshape\footnotesize Marcus Hutter, \textit{Universal Artificial Intelligence} (2005)
-\end{minipage}%
-\hspace{0.5em}
-\begin{minipage}[c]{0.12\textwidth}
-% \includegraphics[width=\textwidth]{figures/ch05_optimality.png}
-\end{minipage}
-\vspace{1.5em}
+\chapterepigraph
+{His central result is that the posterior of his universal semimeasure $M$ converges rapidly to the true sequence generating posterior $\mu$, if the latter is computable. Hence, $M$ is eligible as a universal predictor in case of unknown $\mu$.}
+{Marcus Hutter, \textit{On the Existence and Convergence of Computable Universal Priors} (2003)}
 
-\noindent \textsc{Chapter 4 gave you a prior.} It came from a counting argument on prefix-free codes: each program weighted by $2^{-|p|}$, summed over all programs producing the output $x$. The universal prior $M(x)$.
+\noindent \textsc{Chapter 4 gave you a prior.} It came from fair coin flips fed to a universal machine: each minimal program whose output begins with $x$, weighted by $2^{-|p|}$, and the weights summed. The universal prior $M(x)$.
 
 You can use $M$. You can also use something else.
 
-The reason to use $M$ is a theorem.
+The best reason to take $M$ seriously is a theorem.
 
 \section*{The dominance theorem}
 
-Let $\mu$ be any computable probability distribution on output strings: any distribution that an algorithm can sample from, or compute the probability of.\footnote{The theorem in fact holds for the wider class of lower-semicomputable semimeasures, which is the natural home of $M$ itself; ``computable distribution'' is the friendly special case, and the one every example below belongs to.} Most distributions of practical interest are computable. Gaussian, exponential, geometric. Every distribution a statistician has written down. Every distribution a physics calculation can produce.
+Let $\mu$ be any computable probability distribution on output strings: any distribution that an algorithm can sample from, or compute the probability of.\footnote{The theorem in fact holds for the wider class of lower-semicomputable semimeasures, which is the natural home of $M$ itself; ``computable distribution'' is the friendly special case, and the one every example below belongs to.} Most distributions of practical interest are computable. Gaussian, exponential, geometric. Every distribution a statistician writes down with computable parameters. Every distribution a simulation can produce.
 
 The dominance theorem says: there is a constant $c_\mu$ such that
 
@@ -82,7 +72,7 @@ Figure~\ref{fig:dominance-proof} shows the inequality: the $\mu$-sampler's contr
   \node[anchor=west, font=\scriptsize, gray] at (6.1, 3.5) {other programs};
   \node[anchor=west, font=\scriptsize, blue!50!black] at (6.1, 1) {$\mu$-sampler};
 \end{tikzpicture}
-\caption{Why $M$ dominates $\mu$. The bar on the left is the contribution from one program that generates $\mu$, including fixed machine overhead. The bar on the right is the full universal semimeasure $M(x)$, which also includes every other program whose output begins with $x$. So $M(x)$ is at least the generator's piece alone.}
+\caption{Why $M$ dominates $\mu$. The bar on the left is the contribution from one program that generates $\mu$, including fixed machine overhead. The bar on the right is the full universal semimeasure $M(x)$, which also includes every other minimal program for $x$. So $M(x)$ is at least the generator's piece alone.}
 \label{fig:dominance-proof}
 \end{figure}
 
@@ -126,7 +116,7 @@ $$\log_2 \mu(x) - \log_2 M(x) \leq K(\mu) + O(1).$$
 
 By the chain rule for log-probabilities, the left side is the cumulative log-loss gap along the sequence. Thus its upper bound is a description-length term plus machine overhead.
 
-The upper bound does not grow with the length of the sequence. The average gap therefore goes to zero. Related bounds control cumulative squared prediction error and yield convergence for computable sources. Figure~\ref{fig:dominance} shows the guarantee schematically.
+The upper bound does not grow with the length of the sequence, and it holds on every sequence, not only on typical ones. Spread over $n$ observations, the guaranteed excess per observation is at most $(K(\mu)+O(1))/n$, which shrinks toward zero. Averaged over sequences drawn from $\mu$, the same gap is a Kullback-Leibler divergence, bounded by the same quantity. Related bounds control cumulative squared prediction error and yield convergence for computable sources. Figure~\ref{fig:dominance} shows the guarantee schematically.
 
 \begin{figure}[h]
 \centering
@@ -141,32 +131,42 @@ The upper bound does not grow with the length of the sequence. The average gap t
 
   % One admissible M trajectory below the bound
   \draw[thick, red] (0, 0) .. controls (0.5, 0.8) and (2, 1.05) .. (7, 1.12);
-  \node[anchor=south west, font=\small, red] at (3.5, 1.4) {$M$};
+  \node[anchor=north, font=\small, red] at (5.0, 1.0) {$M$};
 
   % One illustrative rival trajectory
   \draw[thick, dashed, gray!80] (0, 0) .. controls (3, 2) and (5, 3.5) .. (7, 4.5);
-  \node[anchor=south, font=\small, gray!80] at (5, 3.6) {other learner};
+  \node[anchor=east, font=\scriptsize, gray!80, text width=2.6cm, align=right] at (4.3, 3.4) {a learner whose models leave out $\mu$};
 
   % X-axis label
   \node[anchor=north, font=\small] at (4, -0.5) {observations};
 \end{tikzpicture}
-\caption{A schematic dominance guarantee. Solomonoff's cumulative log-loss gap has an upper bound of the form $K(\mu)+O(1)$; the red curve is one possible trajectory below it, not a required asymptote. The dashed curve illustrates that a rival can lack this guarantee, though many other learners also perform well. As data accumulates, $M$'s average guaranteed gap goes to zero.}
+\caption{A schematic dominance guarantee. Solomonoff's cumulative log-loss gap has an upper bound of the form $K(\mu)+O(1)$; the red curve is one possible trajectory below it, not a required asymptote. The dashed curve is a learner whose models leave out the source; its excess loss can grow without bound. Many other learners also do well: dominance is a guarantee for $M$, not a ranking of rivals. Spread over more observations, $M$'s guaranteed excess per observation shrinks toward zero.}
 \label{fig:dominance}
 \end{figure}
 
 This is the central guarantee. Under a computable source, Solomonoff prediction converges while paying a description-dependent overhead. It is a powerful universality result. It is not a claim that $M$ wins at every finite time or under every possible criterion of optimality.
 
+\section*{What this says to the chicken}
+
+Chapter 1 left Russell's chicken on the farm, and Hume's question unanswered. The bound above is the precise, conditional answer that chapter promised.
+
+Write the chicken's life as a sequence: one symbol each morning, food or no food. Suppose the farm runs on some computable rule $\mu$, however elaborate: a hundred mornings of food, or three hundred, and then the morning that is different. Give the chicken $M$ in place of habit. On every possible life, the chicken's total surprise, counted in bits, exceeds the surprise of someone who knew the rule all along by at most $K(\mu) + O(1)$: roughly the length of the shortest description of the farm, plus the machine's constant. If the rule involves no chance, the one who knew it is never surprised at all, and the bound caps the chicken's whole lifetime of surprise.
+
+That is a budget, and it is finite. A Solomonoff chicken can still be surprised on the last morning, and badly. The bound does not say when the surprise comes, and nothing in it protects any particular morning. What it rules out is surprise without limit. However long the chicken lives, the total excess is drawn from a budget fixed by how hard the farm is to describe, not by how long the chicken has been watching.
+
+Notice what has happened to Hume's assumption. The naive answer in Chapter 1 was that the world is uniform, and that answer smuggled in what it set out to prove. The bound needs no uniformity. It needs something else: that the data come from some computable source. That is an assumption too, and no amount of data can establish it. So this is not induction justified from nothing, the thing Hume showed could not be had. It is a different thing: a price for being wrong, stated in advance, on the condition that the source is computable. No chicken can run $M$, which is not computable. The condition and the price hold for the ideal.
+
 \section*{The choice of machine}
 
-The construction of $M$ depended on a choice of universal Turing machine $U$. A different machine $U'$ gives a different prior $M'$.
+The construction of $M$ depended on a choice of universal monotone machine $U$. A different machine $U'$ gives a different prior $M'$.
 
 The invariance theorem says how the choices are related.
 
-For any two universal Turing machines $U$ and $U'$, there exists a constant $c$ such that
+For any two universal monotone machines $U$ and $U'$, there exists a constant $c$ such that
 
 $$M(x) \leq c \cdot M'(x) \quad \text{and} \quad M'(x) \leq c \cdot M(x)$$
 
-for all $x$, allowing different constants in the two directions. The constants are determined by compiler overhead between the machines. Mathematics supplies no general ``few hundred bits'' bound for machines chosen in advance.
+for all $x$. The constant comes from compiler overhead. If a fixed program of length $\ell$ makes $U$ simulate $U'$, then every run of $U'$ can be reproduced on $U$ for $\ell$ extra bits, so $M(x) \geq 2^{-\ell} M'(x)$; the same argument runs the other way. Mathematics supplies no general ``few hundred bits'' bound for machines chosen in advance.
 
 So universal machines define a multiplicative-equivalence class. This relation supports asymptotic robustness in the computable-source setting. At finite scales, however, the constants may dominate, and a perversely chosen universal machine can encode perverse prior preferences.
 
@@ -179,36 +179,20 @@ The bedrock of inference under uncertainty is now in place. Four ingredients:
 \begin{itemize}
 \item \textbf{Cox-style representation results.} Under stated richness and regularity assumptions, coherent plausibilities can be represented by probability.
 \item \textbf{Bayes' theorem.} Conditional probability determines the update once a probability model and prior are supplied.
-\item \textbf{Kraft plus fair program bits.} Kraft makes the weights $2^{-|p|}$ admissible for prefix-free programs; fair bits choose those weights and define $M$.
+\item \textbf{Kraft plus fair program bits.} Kraft makes the weights $2^{-|p|}$ admissible on any prefix-free set of programs, the minimal programs for $x$ among them; fair bits choose those weights and, run through a universal monotone machine, define $M$.
 \item \textbf{Dominance, convergence, and invariance.} $M$ dominates lower-semicomputable semimeasures up to source- and machine-dependent constants; its predictions converge for computable sources; different universal machines remain multiplicatively related.
 \end{itemize}
 
-The results are settled mathematics when their hypotheses and definitions are kept attached. Together they make $M$ a distinguished ideal for universal sequence prediction. They do not prove a unique rational prior or rule out every learner that performs better on a particular source, finite sample, or loss function.
-
-Notice what this does and does not rule out. The preference for short programs in $M$ is not forced by Kraft: it comes from the fair-bit construction. Dominance gives that construction a remarkable guarantee, but other coherent priors and successful specialized learners remain. Invariance limits machine dependence asymptotically without erasing it. Ask ``why consider simple explanations?'' and the honest answer is cumulative: compression is useful to finite agents, fair program bits provide a clean universal mixture, and the mixture has dominance and convergence theorems. That is a powerful case for \emph{a} universal ideal, not a proof of \emph{the} uniquely rational prior.
-
-Hold onto how strong this is, and how narrow. These are facts about a constructed predictor under stated assumptions. Finitude forces an observer to approximate, but it does not force this prior. Reading program weights as facts about what exists would be a separate interpretive move. The next chapter examines that temptation and names the postulate the book actually adopts.
+The results are settled mathematics when their hypotheses stay attached, and together they make $M$ a distinguished ideal for universal prediction. They are not a proof of \emph{the} uniquely rational prior: Kraft permits the short-program preference, fair bits supply it, and dominance gives it a remarkable guarantee. Reading program weights as facts about what exists would be a separate move.
 
 \section*{The bedrock in the wild}
 
-This is mathematics from the 1960s. Sixty years ago, it was an abstract result, of interest mainly to a handful of researchers in computability and information theory.
-
-It is no longer abstract.
-
-Modern language models make the analogy vivid, but only as an analogy. They are finite next-token predictors trained to reduce cross-entropy on text. Cross-entropy is a data code length under the model; minimum description length would also charge for specifying the model itself. Lower loss means better prediction on the evaluated distribution, not measured closeness to Solomonoff's $M$.
-
-Larger models can represent richer families of distributions, and empirical scaling laws often show smoother improvement with compute and data. Solomonoff dominance does not predict those curves: real training depends on architecture, optimization, sampling, and a fixed resource budget absent from the ideal theorem. The shared shape is universal prediction under uncertainty, nothing stronger.
-
-Acting has a related idealization. Hutter introduced AIXI in 2000 and developed it at book length in 2005: an uncomputable agent that combines a universal mixture with expected-reward maximization. Its claims depend on the chosen universal machine, reward and horizon, and the relevant optimality notion. Reinforcement-tuned language models do not thereby become AIXI approximations; the formal objectives and planning procedures differ.
-
-Some failures of these systems resemble Russell's chicken: confident extrapolation meets a distribution shift. Others come from optimization, representation, data, or objective mismatch. The analogy illustrates bounded induction; it does not certify the systems as approximations to $M$ or their reasoning as sound.
-
-The contemporary systems make sequential prediction culturally visible. They do not empirically confirm the dominance theorem, which is already a mathematical result about a different idealized object.
+This is mathematics from the 1960s and 1970s, and modern language models have made it culturally visible. They are finite next-token predictors trained to reduce cross-entropy on text, and cross-entropy is cumulative log-loss, the same kind of quantity the bound above controls. That shared quantity is where the analogy is earned, and where it stops: a trained model is not shown to approximate $M$, its training loss charges for the data but not for the length of the model itself, and its performance depends on architecture, optimization, and a fixed compute budget the theorem never mentions. Acting has its own idealization, Hutter's AIXI, introduced in 2000 and developed at book length in 2005: an uncomputable agent that pairs a universal mixture with expected-reward maximization, whose optimality claims depend on the chosen machine, reward, and horizon. The systems illustrate bounded universal prediction. They do not implement it, and they do not confirm the theorem, which was already proved about a different, idealized object.
 
 \section*{Where this leaves you}
 
 The mathematical core is in place: Bayes' theorem, a universal construction, dominance and convergence results, and machine-relative invariance. The distinctions among them matter as much as the formulas.
 
-What remains is interpretation.
+Chapter 4 called each program a candidate cut. $M$ ranks those candidates by what they cost to write down, and the theorems say how well the ranking predicts. They say what the ranking is good for. What it means is another question.
 
-So far, the universal semimeasure has weighted candidate generative descriptions of sequential data. The next chapter examines the temptation to read those weights ontologically, a step the mathematics does not force.
+What remains is interpretation.

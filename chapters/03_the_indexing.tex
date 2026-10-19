@@ -1,18 +1,8 @@
 \chapter{The Indexing}
 
-\vspace{1em}
-\hfill
-\begin{minipage}[c]{0.55\textwidth}
-\raggedleft
-\small\itshape
-The actual science of logic is conversant at present only with things either certain, impossible, or entirely doubtful, none of which (fortunately) we have to reason on. Therefore the true logic for this world is the calculus of probabilities.\\[0.5em]
-\upshape\footnotesize James Clerk Maxwell, 1850
-\end{minipage}%
-\hspace{0.5em}
-\begin{minipage}[c]{0.12\textwidth}
-% \includegraphics[width=\textwidth]{figures/ch03_indexing.png}
-\end{minipage}
-\vspace{1.5em}
+\chapterepigraph
+{The actual science of logic is conversant at present only with things either certain, impossible, or entirely doubtful, none of which (fortunately) we have to reason on. Therefore the true logic for this world is the calculus of probabilities.}
+{James Clerk Maxwell, 1850}
 
 \noindent \textsc{Chapter 2 ended with a name.} Probability is the indexing procedure. You have been performing it your whole life, the way you perform induction: without thinking about it, often well, sometimes badly.
 
@@ -28,7 +18,7 @@ The rule is the simplest thing in the world. It is counting.
 
 \section*{Restriction}
 
-The Library contains every possibility. You are somewhere in it. What does your data do?
+The Library contains every possibility. Some of it describes you. What does your data do?
 
 It restricts you.
 
@@ -55,8 +45,8 @@ This is the structure of conditional probability. Conditional probability is res
   \node[font=\small] at (5.0,2.5) {$H \cap D$};
 
   % Annotation
-  \draw[->, gray] (8.6,0.6) -- (7.3,1.6);
-  \node[gray, font=\scriptsize, anchor=west] at (8.5,0.4) {data restricts to $D$};
+  \draw[->, gray] (8.3,0.75) -- (7.3,1.6);
+  \node[gray, font=\scriptsize, anchor=north] at (8.3,0.7) {data restricts to $D$};
 \end{tikzpicture}
 \caption{Conditional probability as restriction. The outer rectangle is the Library: every possibility. The circle $D$ is the subset of cases consistent with what you have observed. The circle $H$ is the subset where the hypothesis you care about holds. The posterior $P(H \mid D)$ is the fraction of $D$ that also lies in $H$. Bayes' theorem is what you get when you write that fraction in terms of the original sizes.}
 \label{fig:bayes-counting}
@@ -146,7 +136,7 @@ Or suppose your rule gives different posteriors depending on the order in which 
 
 Suppose degrees of plausibility can be ordered and represented by real numbers; suppose equivalent ways of reaching the same proposition agree; suppose conjunction and negation are combined consistently; and suppose the domain is rich enough and the rules regular enough. Under assumptions of this kind, a Cox-style representation theorem says that the scale can be regraded so that it obeys the sum and product rules of probability.\footnote{The qualifications matter. Different versions of Cox's result use different richness, continuity, differentiability, or extension assumptions. Without enough structure, especially on small finite domains, the conclusion need not follow. The theorem is a representation result under stated conditions, not a proof that every conceivable logic of uncertainty is probability.}
 
-This earns probability as a particularly coherent calculus for the setting we need. It does not make it the only formalism anyone could invent. Within the probability calculus, however, conditionalization and Bayes' theorem follow exactly.
+This earns probability as a particularly coherent calculus for the setting we need. It does not make it the only formalism anyone could invent. Within the probability calculus, Bayes' theorem follows exactly. Updating by it as evidence arrives, called conditionalization, is a further norm about how belief should move over time; the counting above is what makes it natural.
 
 You have been doing this your whole life. The mathematics is just the explicit form.
 
@@ -162,9 +152,9 @@ The regress goes all the way down. Bayes tells you what to do once you have a pr
 
 A reasonable agent could start with $P(\text{trick}) = 0.5$, treating fair and trick coins as equally likely. After five heads, they would be at about $0.97$.
 
-Another reasonable agent could start with $P(\text{trick}) = 0.001$. After the same five heads, they would be at about $0.030$.
+Another reasonable agent could start with $P(\text{trick}) = 0.001$. After the same five heads, they would be at about $0.031$.
 
-Both are using Bayes. Both are internally consistent. Both are answering the same question with the same data. They get different answers because they started in different places. Cox's theorem cannot adjudicate. Bayes' theorem cannot either. The choice of prior is, in the standard treatment, a matter of taste, of prior knowledge, or of guess.
+Both are using Bayes. Both are internally consistent. Both are answering the same question with the same data. They get different answers because they started in different places. Cox-style results cannot adjudicate. Bayes' theorem cannot either. The choice of prior is, in the standard treatment, a matter of taste, of prior knowledge, or of guess.
 
 This is the problem of induction returning, in a different form. Hume said there is no logical justification for inferring future from past. Bayes says: given a prior, here is how to do the inference. The hard question, the one that resists, is the same one. Where does the prior come from?
 
@@ -172,8 +162,8 @@ This is the problem of induction returning, in a different form. Hume said there
 
 You have a coherent procedure for updating beliefs. It is also incomplete: it requires an input the procedure itself cannot supply.
 
-For two and a half centuries, this gap was treated as a fact about the limits of pure reason. Priors are subjective. They reflect agent-specific commitments that mathematics cannot dictate. Different reasonable agents may end with different posteriors, and there is no principled way to declare one of them right.
+For two centuries after Bayes, the choice of prior was contested. Laplace started from indifference: when you know nothing, spread your belief evenly. Jeffreys looked for priors that would not change when the problem was redescribed. Others held that priors are personal, commitments that mathematics cannot dictate, so that different reasonable agents may end with different posteriors and no principled way to declare one of them right. The debate did not end, and it has not ended since.
 
-That was the consensus until the 1960s.
+In the 1960s a new kind of candidate appeared.
 
-The next chapter builds one remarkable answer: a universal prior from self-delimiting programs and fair random bits. It is not the only coherent prior. Its claim on us comes from the results it supports, not from uniqueness by definition.
+The next chapter builds one remarkable answer: a universal prior from fair random bits fed to a universal machine. It is not the only coherent prior. Its claim on us comes from the results it supports, not from uniqueness by definition.
