@@ -2,7 +2,7 @@
 
 \chapterepigraph
 {His central result is that the posterior of his universal semimeasure $M$ converges rapidly to the true sequence generating posterior $\mu$, if the latter is computable. Hence, $M$ is eligible as a universal predictor in case of unknown $\mu$.}
-{Marcus Hutter, \textit{On the Existence and Convergence of Computable Universal Priors} (2003)}
+{Marcus Hutter, ``On the Existence and Convergence of Computable Universal Priors'' (2003)}
 
 \noindent \textsc{Chapter 4 gave you a prior.} It came from fair coin flips fed to a universal machine: each minimal program whose output begins with $x$, weighted by $2^{-|p|}$, and the weights summed. The universal prior $M(x)$.
 
@@ -28,7 +28,7 @@ The constant is positive. It does not depend on $x$; it depends on $\mu$ and on 
 
 The proof is a few lines.
 
-Since $\mu$ is computable, there is a program that reads random bits and generates a sequence distributed according to $\mu$. A shortest description of that generator has length $K(\mu)$ relative to the chosen machine, with fixed interpreter overhead.
+Since $\mu$ is computable, there is a program that reads random bits and generates a sequence distributed according to $\mu$. Write $K(\mu)$ for the length of a shortest description of that generator on the prefix machine of Chapter 4; running the generator on the chosen monotone machine $U$ adds only a fixed overhead, a constant that depends on $U$.
 
 That generator contributes a fixed share of $M$. For any prefix $x$, the fair random inputs that make it begin with $x$ have total weight $\mu(x)$. Encoding the generator costs $K(\mu)+O(1)$ bits, so its share is at least $2^{-K(\mu)-O(1)}\mu(x)$.
 
