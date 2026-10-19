@@ -18,7 +18,7 @@ prediction, the work of Part I (The Index).
 books, shelves, coordinates, bitstrings as items in an enumeration. This is the apparatus, and
 it is observer-imposed. There is no canonical noun-index in the structure (see `foundations.md`:
 the library is generable but not surveyable; $K$ and $M$ are not computable; no algorithm
-returns an item's canonical position). The noun-index is one more cut.
+returns an item's complexity or shortest description). The noun-index is one more cut.
 
 Both senses are the cut, at different grain. The book uses the verb sense freely and names the
 noun sense as imposition wherever the imposition matters.
@@ -28,8 +28,9 @@ noun sense as imposition wherever the imposition matters.
 The framework supports two pictures of the totality, and the book must not silently switch
 between them.
 
-**Picture A: the totality as object.** The static set $\{U(p)\}$ with its measure $M$, surveyed
-from outside. The book's title-level statements use this picture: the indifference of
+**Picture A: the totality as object.** The static set $\{U(p)\}$ with the universal semimeasure
+$M$ weighting its output prefixes (not its members as realities, and not observer occurrences),
+surveyed from outside. The book's title-level statements use this picture: the indifference of
 description over carvings.
 
 **Picture B: the observer as situated.** The observer inside some $U(p)$, with access only to a
@@ -39,11 +40,11 @@ cannot retrieve which one generates them.
 
 | | Picture A | Picture B |
 |---|---|---|
-| What it describes | static set with measure | the observer's posterior given a prefix |
+| What it describes | static set with a semimeasure on output prefixes | the observer's posterior given a prefix |
 | Vantage | outside, surveying the totality | inside, with finite data |
-| Status of the generating program | one real $p$; the totality contains all | always a posterior, never sharp |
+| Status of the generating program | held open: if Picture A is read ontically, the totality contains all candidate outputs; no $p$ is singled out | always a posterior, never sharp |
 | Status of the index | observer-imposed on a static set | unretrievable from inside |
-| What is indifferent | the measure over outputs | the posterior never resolves |
+| What is indifferent | the weighting over output prefixes | the posterior never resolves |
 
 The pictures are consistent, not in conflict. But the decisive point under the postulate is
 that **choosing which picture is the real one is itself a cut.** Picture A reads as though the
@@ -106,9 +107,10 @@ $\pi$ are computable but locally chaotic; an observer "in" them could not do sci
 stretches.
 
 Observers whose inference *works* exist only where the local structure is hierarchically
-decomposable. (Observer-*moments* can fluctuate into being anywhere, Boltzmann-brain style; what
-the lawless majority cannot support is an observer whose models track their world and who
-persists past the instant.) This is anthropic but more substantive than the usual move. The
+decomposable. (Under some cosmologies, observer-*moments* might fluctuate into being in lawless
+regions, Boltzmann-brain style; what lawless structures cannot support is an observer whose
+models track their world and who persists past the instant. There is no canonical count of
+programs, so the book makes no claim about what a "majority" of structures are like.) This is anthropic but more substantive than the usual move. The
 standard version asks "why is the world lawful?"; the deeper version asks "why is it
 *hierarchically* lawful, with effective theories we can find with local effort?" The answer is
 the same (it has to be, or we are not here to ask), but the constraint is real: it is a genuine

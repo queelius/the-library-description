@@ -10,23 +10,38 @@ The structure the book is about (the totality of computable possibility, the Lib
 Babel made formal) has no natural decomposition: no books, no shelves, no index, no list of
 "systems," no privileged "you." Every one of those is a cut, a carving an observer brings to
 a structure that has none of its own. Once the reader feels this, the rest of the book is
-consequence.
+consequence. (Two footings sit under this paragraph and must stay distinct: that no computable procedure
+indexes the Library by description cost is a theorem-level fact of Part I; that no decomposition at all is the
+correct one is the postulate of Chapter 6. See "The cut has no canonical form.")
 
 ## The principle of earned axioms
 
 The book earns its bedrock the way Worldlines earned the constancy of the speed of light:
 through everyday inquiry that ends somewhere the reader did not start. Chapter 1 begins with
 ordinary induction. You observe data; you predict. By the end of Part I the reader has
-arrived at a principled universal prior, the dominance theorem,
-and the recognition that the index, the system, and the self were all the same move all
-along. The mathematics is not asserted. It is the resolution of a puzzle the reader has been
-led to feel.
+arrived at a principled universal prior and the dominance theorem, and has felt the inversion
+(Chapter 2) as a picture. The recognition that the index, the system, and the self were all the
+same move all along is Part III's work: it converges in Chapter 14, once the third depth (the
+self) has been cut. The mathematics is not asserted. It is the resolution of a puzzle the reader
+has been led to feel.
 
 What is interpretive in the book is concentrated in one place and labeled there: the single
 postulate (Section "The postulate"). A second distinction is just as important: fair random
 program bits and a reference universal machine define a construction, not a theorem forcing a
-unique prior. The reader can always trace a conclusion to theorem, construction, postulate, or
-finitude. Nothing is hidden behind difficulty.
+unique prior. Every conclusion rests on one of five footings, named the same way everywhere
+(lore, chapters, appendices):
+
+1. **theorem** (Bayes, Kraft, the coding theorem, dominance, convergence, invariance, each with
+   its hypotheses);
+2. **construction** (a chosen universal machine and fair random program bits, which define $M$
+   and $m$);
+3. **finitude** (a finite observer must use bounded local models);
+4. **postulate** (no cut is privileged; asked once, refusable);
+5. **optional additions** (Picture A read ontically, Everett, an identity rule, a self-location
+   rule, a cosmology), which the book names when a conclusion would need them and adopts none
+   of.
+
+The reader can always trace a conclusion to one of these. Nothing is hidden behind difficulty.
 
 ---
 
@@ -56,34 +71,65 @@ $$\sum_i 2^{-\ell_i} \leq 1.$$
 
 This is what makes familiar length weights admissible. A prefix-free code is one in
 which no codeword is a prefix of another: a code that knows where it ends without external
-punctuation, self-delimiting. Kraft says the quantities $2^{-\ell_i}$ have total mass at most
+punctuation. Kraft says the quantities $2^{-\ell_i}$ have total mass at most
 one. They are also the probabilities of reading those codewords from fair random bits.
-Prefix-free encoding is the structure of self-delimiting computation: a program knows when it
-has finished reading its input. Kraft does **not** force this weighting, a unique prior, or the
+For a prefix machine (the machine class of exact-output $m$ and $K$ below), prefix-free encoding
+is the structure of self-delimiting computation: a program knows when it has finished reading its
+input. The monotone machine that defines $M$ need not halt; there Kraft applies to the minimal
+programs for a fixed $x$, which also form a prefix-free set. Kraft does **not** force this weighting, a unique prior, or the
 claim that most total mass must lie on short descriptions. Other coherent priors exist.
 
 ### 3. The universal prior (Solomonoff)
 
-Given a universal prefix Turing machine $U$, the universal prior is
+Fix a universal **monotone** machine $U$: it reads its program one bit at a time, never going
+back, and writes its output one symbol at a time, never erasing. Feed it fair coin flips. If its
+output comes to begin with $x$, there is a first moment it does; the bits read up to that moment
+form a **minimal program** $p$ for $x$. Write $U(p)=x*$ for "$p$ is a minimal program whose
+output begins with $x$." The universal prior is
 
-$$M(x) = \sum_{p\, :\, U(p) = x*} 2^{-|p|},$$
+$$M(x) = \sum_{p\, :\, U(p) = x*} 2^{-|p|} \qquad \text{(sum over minimal programs)},$$
 
-where $x*$ means that the output begins with $x$. This is a lower-semicomputable semimeasure
-over finite prefixes. It results from two modeling choices: a reference universal prefix
-machine and fair random input bits. A related exact-output algorithmic probability is
+equivalently the fair-coin probability that $U$'s output begins with $x$:
 
-$$m(x) = \sum_{q\, :\, V(q)=x} 2^{-|q|}.$$
+$$M(x) = \lambda\{\omega : U(\omega) \text{ begins with } x\}.$$
 
-For a suitable prefix machine $V$, the coding theorem gives
-$-\log_2 m(x)=K_V(x)+O(1)$. The book must not silently replace sequential $M$ by exact-output
-$m$, or condition $m$ as though it were the sequential predictor.
+The minimal programs for $x$ form a prefix-free set (no minimal program for $x$ extends
+another), so Kraft keeps the sum at most $1$. $M$ is a lower-semicomputable semimeasure on
+finite output prefixes; mass can be lost where the output stalls. It results from two modeling
+choices: a reference universal monotone machine and fair random input bits. (Li and Vitanyi,
+*An Introduction to Kolmogorov Complexity and Its Applications*, sec. 4.5; Hutter, *Universal
+Artificial Intelligence*, 2005, ch. 2.)
+
+A halting prefix machine does **not** give this object. Summing $2^{-|p|}$ over halting programs
+whose output begins with $x$ yields a quantity whose total over all $x$ of length $n$ is a tail
+of a convergent sum and tends to zero, so it dominates no computable probability measure (the
+uniform measure is already a counterexample). The dominance and convergence theorems below are
+theorems about the monotone-machine $M$. Do not define $M$ on a halting prefix machine, on a
+"monotone prefix machine," or with an unrestricted sum over all (non-minimal) programs, which
+diverges on a monotone machine.
+
+The related exact-output algorithmic probability lives on a different machine class. For a
+universal **prefix** machine $V$ (halting programs, prefix-free domain; Li and Vitanyi secs. 3.1
+and 4.3),
+
+$$m_V(x) = \sum_{q\, :\, V(q)=x} 2^{-|q|}.$$
+
+For a universal prefix machine $V$, the coding theorem gives
+$-\log_2 m_V(x)=K_V(x)+O(1)$. Universality is required; the theorem is false for arbitrary
+prefix machines. The book must not silently replace sequential $M$ by exact-output $m$, or
+condition $m$ as though it were the sequential predictor.
 
 ### 4. The dominance theorem (optimality)
 
 For any lower-semicomputable semimeasure $\mu$ (any distribution over data sequences that can
 be approximated from below by an algorithm), there is a constant $c_\mu$ with
 
-$$M(x) \geq c_\mu \cdot \mu(x) \quad \text{for all } x.$$
+$$M(x) \geq c_\mu \cdot \mu(x) \quad \text{for all } x, \qquad c_\mu = 2^{-K(\mu)-O(1)}.$$
+
+The log-loss form: $\log_2\mu(x_{1:n})-\log_2 M(x_{1:n})\le K(\mu)+O(1)$ on every sequence, so
+the guaranteed excess per observation, at most $(K(\mu)+O(1))/n$, shrinks toward zero. In
+expectation the gap is a KL divergence, also bounded by $K(\mu)+O(1)$. (Do not write "the
+average gap goes to zero.")
 
 The constant may be extremely small and depends on the source and the chosen universal
 machine. Under the usual computable-source assumptions, dominance supports strong convergence
@@ -92,11 +138,13 @@ horizon, a unique rational prior, or superiority to every rival under every opti
 
 ### 5. The invariance theorem (machine-independence)
 
-$M$ depends on the choice of universal machine, but for any two universal machines $U_1, U_2$
-the distributions differ by at most a constant set by the length of the cross-compiler
-between them:
+$M$ depends on the choice of universal machine, but for any two universal monotone machines
+$U_1, U_2$ the semimeasures differ by at most a multiplicative constant set by the length of the
+cross-compiler between them:
 
 $$M_1(x) \asymp M_2(x).$$
+
+Likewise, two universal prefix machines give $K$'s within an additive constant.
 
 Universal machines define a multiplicative-equivalence class. This supports asymptotic
 robustness in the settings covered by the convergence results, but the constants can dominate
@@ -112,34 +160,56 @@ space and time give." It is meant to leave the reader with an intuition they can
 
 ### Generation is trivial
 
-The generator for the totality of computable structures is, in effect, one line: dovetail
-every program on every input, or equivalently enumerate all binary strings. The Kolmogorov
+The generator for the totality of computable structures is, in effect, one line: enumerate all
+binary strings as candidate programs, and dovetail them on a universal machine (run the first
+for one step, the first two for two steps, and so on, so that every program receives
+unboundedly many steps). Enumerating the strings only lists the candidates; dovetailing is what
+runs them. The two are not equivalent, and the generator needs both. The Kolmogorov
 complexity of "the universe of all programs" is small. It is one of the cheapest objects there
 is. This is the Library of Babel point made formal: Borges' library contains every possible
 book, and generating it is trivial. The hard problem is locating any specific book.
 
 ### The information lives in the cut
 
-The empty set and the universal set are complements, and both are informationally cheap:
-$K(\emptyset) \approx K(V) \approx$ small. A theory that explains everything explains nothing;
-a theory that explains nothing explains nothing; a theory that explains *this* is the only
-interesting thing. The information lives in the **cut**: the selection, the boundary, the
-restriction. Kolmogorov complexity $K(x)$ is exactly the length of the shortest cut that
-isolates $x$ from the totality.
+The empty set and the universal set $\Omega$ (the set of all strings, "everything") are
+complements, and both are informationally cheap: $K(\emptyset) \approx K(\Omega) \approx$ small. A
+theory that explains everything explains nothing; a theory that explains nothing explains
+nothing; a theory that explains *this* is the only interesting thing. The information lives in
+the **cut**: the selection, the boundary, the restriction. Relative to a chosen universal prefix
+machine, Kolmogorov complexity $K(x)$ is the length of the shortest program that outputs $x$. In
+the book's image, it is the cost of the cheapest cut that isolates $x$ from the totality. That
+is an image, not a definition: the definition is the program length, and it is machine-relative
+up to an additive constant.
 
 ### The cut has no canonical form
 
-Here is the move that makes this book different from every other multiverse book. The totality
-has no canonical decomposition. The construction gives program-output space with description
-weights on candidate output prefixes;
-there are no "books," no shelves, no index in it anywhere. Borges' books and Tegmark's
-discrete structures are convenient discretizations of an undecomposed substrate. The shortest
-description of $x$ is taken across *all* regularities, not book by book; if two "books" share
-structure, $K$ exploits it, indifferent to any boundary we imposed. The library is generable
-but not surveyable: we can produce everything in it by running the generator, but no algorithm
-takes an arbitrary $x$ and returns its position, its complexity, or its shortest description
-($K$ is not computable; $M$ is only lower-semicomputable). There is no computable canonical
-index. Any index is a tool the observer brings.
+Here is the move that makes this book different from every other book about all possible worlds. Two claims
+sit under it, and they have different footings. Keep them apart.
+
+**The theorem-level fact (Part I).** No computable procedure sorts the Library by how cheaply each
+item can be said. The construction
+gives program-output space with description weights on candidate output prefixes; it contains
+no "books," no shelves, no index. Borges' books and Tegmark's discrete structures are
+convenient discretizations of an undecomposed substrate. The shortest description of $x$ is
+taken across *all* regularities, not book by book; if two "books" share structure, $K$ exploits
+it, indifferent to any boundary we imposed. The library is generable but not surveyable: we can
+produce everything in it by running the generator, but no algorithm takes an arbitrary $x$ and
+returns its complexity or its shortest description ($K$ is not computable; $M$ is
+only lower-semicomputable). A bare address (a string's place in a length-ordered enumeration,
+its path in the tree) is computable, but it is only the string again; any index that tracks what
+matters to an observer is a tool the observer brings. This much is mathematics and needs no
+assent. (Do not write "no algorithm returns its position": a string's index in an enumeration
+is computable.)
+
+**The postulate (Part II).** That no decomposition at all, computable or not, is the correct
+one is a further claim. It is not a theorem; it is the refusable commitment of Chapter 6 (see
+"The postulate" below).
+
+The spine sentence ("There are no joints. There are only the cuts you make.") is first *felt*
+in Chapter 2, as the inversion, on top of the theorem-level fact. It becomes a *commitment* in
+Chapter 6, which quotes the spine back at the postulate and names Chapter 2's inversion as the
+picture the reader is now being asked to adopt. Chapter 2 should present the inversion as a
+picture to be committed to later, not as Part I fact.
 
 ### The cut at three depths
 
@@ -155,7 +225,9 @@ are the book's three Parts:
 
 Self, system, and index are not three separate facts. They are one move applied at three
 levels of the same apparatus. The dissolution of the self that Part III performs is the same
-operation as the dissolution of the index; they are one move, seen twice.
+operation as the dissolution of the index; they are one move, seen twice. The book makes this
+convergence concrete in Chapter 14 (index, system, and self each carved two ways in the prose,
+then the "three cuts" figure: one field with three nested boundaries), not earlier.
 
 ---
 
@@ -164,9 +236,13 @@ operation as the dissolution of the index; they are one move, seen twice.
 The bedrock above is mathematics. Exactly one thing in the book is not: a single postulate,
 stated plainly, that the reader may refuse.
 
-> **No cut is privileged.** The totality has no decomposition that is the correct one. Every
-> carving (into a world, into systems, into selves, into "the one reality that exists") is a
-> cut an observer makes, and the structure ranks none of them above the others.
+> **The postulate: no cut is privileged.** No decomposition of the describable totality is
+> view-independently correct. Every carving into worlds, systems, and selves is a cut an
+> observer makes; none comes labeled as the structure's own.
+
+This is the boxed wording, and it is identical wherever the manuscript boxes it (Chapter 6,
+where it enters, and Chapter 9, where it is recalled). Elsewhere, recap it in prose. "The one
+reality that exists" is one of the carvings it covers.
 
 This single postulate replaces the two "speculative moves" earlier drafts carried (the claim
 that physics is computable, and the claim that all computable structures exist). Those were
@@ -181,6 +257,11 @@ The reader who refuses the postulate keeps all of the bedrock: Bayesian indexing
 well-posed, and Solomonoff induction remains a distinguished theoretical construction with
 strong dominance and convergence properties. What they lose is only the ontological reach of
 Parts II and III. The postulate is the one place the book asks for assent, and it asks once.
+
+The refusal lives in one place in the body: Chapter 7's section "What if you refuse," which says
+what the refuser keeps (all of the theorem-level fact of Part I, including that no computable
+procedure sorts the Library by description cost) and what they give up. Appendix D expands Chapter 7's refusal.
+Chapter 9's section on refusing Everett is a different matter and is titled "Without Everett."
 
 ---
 
@@ -216,24 +297,35 @@ retrieve which program generates them. The book does not declare either picture 
 because choosing between them is a carving, and no carving is privileged. It holds the
 existence question open and underdetermined from inside.
 
-Neither picture supplies an indexical measure. $M$ distributes weight over candidate programs
-and output prefixes, not over observer occurrences. Turning it into odds that *this occurrence*
-is you requires an additional reference class, xerographic distribution, or other self-location
-rule. The book adopts none.
+In the manuscript, "realism is a cut" is stated once in the body, at the end of Chapter 8:
+choosing which picture is the real one is itself a cut, and the postulate privileges no cut, so
+the book holds the question open rather than answering it. It is not left to the objector in
+Appendix E; Appendix E's reply can point back to Chapter 8.
+
+**The missing occurrence measure.** Neither picture supplies one. $M$ weights candidate
+programs and output prefixes. Nothing in the construction says what counts as an observer
+occurrence, whether occurrences exist, or how first-person weight is spread among them.
+Supplying that takes further rules (SSA, SIA, xerographic distributions, reference classes),
+which the book adopts none of. This gap has one name, "the missing occurrence measure." It is
+defined once, at full strength, in Chapter 7; Chapter 8 lists the rules that would fill it
+(with Appendix C for detail); afterwards the book refers to it by name instead of restating it.
 
 This relocates the book's vertigo. The cold is no longer "the hellscapes definitely exist." It
 is *groundlessness*: nothing in the structure, and no possible vantage, settles whether they
 do, and you are the kind of thing that cannot stop asking.
 
 It also changes what the book promises. Earlier framing asked "why the Born measure, why this
-system?" and offered the universal prior as the answer. Under the postulate the book
-gives a different and more honest answer: the *why* presupposes a joint, a privileged cut from
-which "this and not that" would have a determinate sense, and there is none. The Born measure
-and the universal prior can be compared as two forms of weighting, but their domains and
+system?" and offered the universal prior as the answer. The book no longer offers that answer,
+and it does not replace it with a dissolution of the question. Under the postulate, no
+representation certifies itself as the view from nowhere. But "why this weighting?" remains an
+ordinary scientific and mathematical question, and quantum theory owes it an answer:
+experiments exhibit Born statistics, and an account of them is still due. The Born measure and
+the universal prior can be compared as two forms of weighting, but their domains and
 justifications differ: one weights quantum outcomes within quantum theory, while the other
-weights program descriptions in universal induction. The analogy neither derives the Born rule
-nor closes its empirical and mathematical questions. The question "but are the weighted things
-real?" remains interpretive. This is the clean seam to *Multitudes* (Volume II).
+weights program descriptions in universal induction. The book compares their roles only. It
+neither derives the Born rule nor closes the Born question (Appendix B, which this matches).
+The question "but are the weighted things real?" remains interpretive. This is the clean seam to
+*Multitudes* (Volume II).
 
 ---
 
@@ -241,9 +333,11 @@ real?" remains interpretive. This is the clean seam to *Multitudes* (Volume II).
 
 The book is structured so that every conclusion in Parts II and III can be traced to its
 source. The vocabulary of the trace changed under the re-foundation; the discipline did not.
-Every conclusion rests on one of three things:
+Every conclusion rests on one of the five footings: theorem, construction, finitude, postulate,
+optional additions. Use these names, in this order, wherever the manuscript lists the footings
+(the Appendices opener A0, Appendix E, Chapter 7's tracing convention, Chapter 9, Chapter 10).
 
-**Theorems plus the chosen universal construction** give:
+**Theorem and construction** give:
 
 - Bayesian indexing is well-posed.
 - Length weights from fair program bits are admissible for a prefix code.
@@ -259,14 +353,21 @@ Every conclusion rests on one of three things:
 - Why local inference (effective theories at each scale), not global Solomonoff, is what
   observers actually do.
 
-**Bedrock plus the postulate** gives the full picture the book commits to:
+**Postulate** (on top of theorem, construction, and finitude) gives the full picture the book
+commits to:
 
 - The totality has no privileged decomposition; index, system, and self are cuts.
 - "One world exists" is a cut; realism is a cut; the existence question is held open.
-- **The indifference of description.** No description is privileged. The structure ranks
-  carvings (by what they cost) and singles out none. This is the deeper analog of Worldlines'
-  "indifference of geometry": geometry was indifferent to your worldline; here the structure
-  is indifferent among all the ways you could describe it, including the one you call "I."
+- **The indifference of description.** No description is privileged. You can carve the Library
+  into worlds, systems, and selves in endlessly many ways, and nothing in it marks one carving
+  as the right one. $M$ ranks descriptions by what they cost; it singles out none of them as the
+  world, and none as you. The indifference is over descriptions, and the description is yours.
+  This is the deeper analog of Worldlines' "indifference of geometry": geometry was indifferent
+  to your worldline; here the structure is indifferent among all the ways you could describe
+  it, including the one you call "I." Chapter 10 states it positively first, opening with the
+  spine sentence, and then gives its caveats once, in one paragraph: it does not say every
+  output exists; it does not say which occurrence is you (the missing occurrence measure); it
+  does not derive the Born rule.
 - **No view from the top.** No view is privileged because every view is a cut and no cut is
   privileged; so there is no overseer, no God's-eye decomposition that is the real one, and
   this follows directly from the postulate rather than from any claim about the limits of
@@ -274,15 +375,25 @@ Every conclusion rests on one of three things:
   view. Developed in Chapter 9; it sharpens the indifference (the structure is not only
   unpreferring but unwatched) and seeds the grace of Part III (warmth, if any, comes from
   among observers, never handed down).
+**Optional additions** (Picture A read ontically, Everett, an identity rule, a self-location
+rule, a cosmology) are named wherever a conclusion would need them, and the book adopts none:
+
 - Boltzmann observers, hellscapes, dark continuations, and other uncomfortable descriptions are
   permitted by Picture A; the framework does not establish their existence or assign a
-  self-location measure over their occurrences. The book catalogues the conditional implication
-  honestly (Chapter 9). The chosen response of Part III is not a theorem about it.
+  self-location measure over their occurrences (the missing occurrence measure). Reading them
+  as facts takes optional additions. The book catalogues the conditional implication honestly
+  (Chapter 9). The chosen response of Part III is not a theorem about it.
+- Quantum mechanics enters only as a familiar interpretive landmark. Unitary quantum mechanics
+  plus an Everettian ontology describes effectively autonomous decoherent branches. Decoherence
+  does not by itself select that ontology or solve the definite-outcome problem. Everett is a
+  landmark, never evidence and never a premise; it is stated once at full strength in Chapter 8,
+  and nothing later rests on it. A reader who rejects Everett loses no theorem in this book.
+- Quantum immortality takes at least Everett, an identity rule, and a self-location rule. Chapter 11
+  states it plainly as such, labeled, with a reader-safety note; the premise analysis lives in
+  Appendix C.
 
-Quantum mechanics enters only as a familiar interpretive landmark. Unitary quantum mechanics
-plus an Everettian ontology describes effectively autonomous decoherent branches. Decoherence
-does not by itself select that ontology or solve the definite-outcome problem. A reader who
-rejects Everett loses no theorem in this book.
+The chosen response (care, the held cut) is none of the five footings. It is chosen, and the
+book says so.
 
 ---
 
@@ -313,8 +424,8 @@ The bedrock and the postulate are silent on:
   working assumption and flags it here.
 
 These are the honest limits. The reader who follows the cascade should always be able to ask
-"which theorem, construction, interpretation, or practical limit does this rest on?" and get a
-visible answer.
+"which footing does this rest on: theorem, construction, finitude, postulate, or an optional
+addition?" and get a visible answer.
 
 ---
 
@@ -329,8 +440,8 @@ The re-foundation changes the frame, not the book's integrity rules.
 3. **Finitude forces approximation, not a prior.** Kraft makes length weights admissible; fair
    program bits choose them; dominance and convergence explain their power. Keep these claims
    distinct.
-4. **The cascade is traceable.** Every conclusion unwinds to theorem, construction, postulate,
-   or practical limit. The source is always visible.
+4. **The cascade is traceable.** Every conclusion unwinds to one of the five footings: theorem,
+   construction, finitude, postulate, optional additions. The source is always visible.
 5. **Never claim the math supports more than it does.** "No view from the top" follows from the
    postulate, not from a strained argument about the limits of computation; the Born-measure
    comparison is an analogy between weighting roles, not a derivation or an identification of
@@ -341,3 +452,14 @@ The re-foundation changes the frame, not the book's integrity rules.
 8. **The reader is never alone with difficulty.** If a step is hard, the book pauses. If a step
    is interpretive, the book labels it. The reader who follows from Chapter 1 has all the tools
    by the end of Part I. What remains is to see what they build.
+9. **State each caveat once, where its object first enters, at full strength; afterwards refer
+   back by name.** A caveat restated is a caveat weakened, and a book that restates its caveats
+   becomes a book defending itself instead of a voice talking to the reader. Canonical homes:
+   the Kraft/no-unique-prior caveat in Chapter 4 (one paragraph in Chapter 5 at most); the
+   dominance scope in Chapter 5; the missing occurrence measure in Chapter 7 (its filling rules
+   listed in Chapter 8); Everett as landmark in Chapter 8 (one consolidated paragraph);
+   "realism is a cut" at the end of Chapter 8; the Born comparison in Chapter 8 (Appendix B for
+   the boundary; later chapters cross-reference it); "conditional copies do not console" once,
+   in Chapter 12. Later passages cite these by name ("the missing occurrence measure," "Everett
+   is a landmark") rather than re-arguing them. This is not permission to weaken any scoping
+   claim; it is a rule about where each one lives.

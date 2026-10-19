@@ -26,8 +26,9 @@ Ranked roughly by severity, re-audited under the re-foundation.
    you drew." This is the move most worth handling with care in the prose.
 
 2. **The permanence-of-suffering-across-carvings implication.** The block-universe S-risk reframed
-   as nonfiction: "your worst moment exists at its coordinates in countless carvings, and the
-   structure ranks none of them." For a reader with chronic depression, trauma, or active
+   as nonfiction, in the dark reading a reader may take away even though the book does not assert
+   it: "your worst moment exists at its coordinates in countless carvings, and the structure ranks
+   none of them." For a reader with chronic depression, trauma, or active
    suicidality, this lands wrong and lingers. Distilled from the horror register of Echoes into the
    author's nonfiction voice, it is a different kind of transmission.
 
@@ -89,17 +90,23 @@ come at a hard moment, and naming what the book wants for them. Candidate framin
 > permission you are looking for is not in the Library. What is in the Library is this configuration:
 > a finite primate writing to another finite primate, asking them to stay.
 
-It can sit at the end of the preface or as a short note after it.
+It can sit at the end of the preface or as a short note after it. As published, the front crisis
+note now **opens with the emergency route and contacts** (immediate danger first, then the
+services), links to Resources, and only then speaks in the author's voice. It does not answer the
+misconception with ontology (no "this book does not establish that ontology"); the footing it
+offers is local and practical.
 
 ### Resources at the end
 
-The Resources back-matter must route action in this order:
+The Resources back-matter must route action in this order, which matches the published page:
 
-1. If the reader may act soon or is in immediate physical danger, call the local emergency number
-   or go to the nearest emergency department, and ask another person to stay with them.
-2. Give direct call and text options for the United States and Canada, Samaritans in the United
-   Kingdom and Ireland, and an international directory.
-3. Offer one plain disclosure script: "I am thinking about suicide and need help staying safe."
+1. **Immediate danger.** If the reader may act soon or is in immediate physical danger, call the
+   local emergency number or go to the nearest emergency department, and ask another person to
+   stay with them.
+2. **The disclosure script.** One plain sentence the reader can say or text: "I am thinking about
+   suicide and need help staying safe."
+3. **Services.** United States: 988 (call or text). Canada: 9-8-8 (call or text). United Kingdom
+   and Ireland: Samaritans, 116 123 (free, 24/7). Elsewhere: findahelpline.com.
 
 The copy must be unconditional and non-metaphysical. Do not argue from the Library, tell the reader
 what their continued life means to loved ones, or turn staying alive into an obligation. The purpose
@@ -128,6 +135,21 @@ Under the re-foundation this is no longer the passage most worth revisiting; the
 done most of the work. Keep it as a labeled implication the book declines to assert, with the
 reader-safety note, and do not give it a full load-bearing section. The author's personal reasons for
 caution and the book's structural reasons not to need it still point the same way.
+
+"The reader-safety note" means a note in **Chapter 11 itself**, where quantum immortality is named,
+not only Chapter 9's general note. Chapter 11 states the idea plainly and labeled, and carries one
+plain, non-metaphysical sentence in the body: the thought experiment is not a reason to take any
+real risk, with a pointer to Resources. Its examples of choices the framework does not rank are
+ordinary (a job, a phone call), never a lethal act, and the reader is never cast, in the second
+person, as the one killed. The detailed premise analysis lives in Appendix C, which keeps the same
+framing. The Notes entry on Tegmark's "quantum suicide" thought experiment carries the same
+caution.
+
+### Safety notes live in the body
+
+Every safety note is body text, never a footnote. The Chapter 12 safety note moves from a footnote
+into the body, matching Chapter 9's. No safety note assumes the reader has someone to turn to;
+each can point to Resources as the unconditional route.
 
 ## The Author's Standing
 

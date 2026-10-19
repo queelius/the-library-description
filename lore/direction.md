@@ -76,7 +76,9 @@ work. Every figure must earn its place by letting the reader derive or verify so
 decorative figures, no "artist's impression of the multiverse."
 
 The recurring figure is **the cut**: the same structure carved two different ways, with neither
-carving privileged. Candidate diagrams:
+carving privileged. It is now drawn: Chapter 7's "two carvings" figure introduces it, and Chapter
+14's "three cuts" figure (the same field with three nested boundaries: I, here, this world;
+the prose carves index, system, and self two ways each) reuses it for the convergence. Candidate diagrams:
 
 - A prefix-free code tree (Kraft made visible), showing admissible fair-bit length weights without
   implying that Kraft uniquely selects a prior.
@@ -86,10 +88,14 @@ carving privileged. Candidate diagrams:
   same shape, to make multiplicity feel ordinary.
 - The "where am I?" diagram: the same data, two different carvings, illustrating the
   underdetermination (Picture B).
-- The same region described two ways (the self as one boundary among many possible), for Ch 14.
+- The same region described two ways (the self as one boundary among many possible), for Ch 14
+  (now the "three cuts" figure).
 
-Candidate formulas: $\sum_i 2^{-\ell_i} \leq 1$ (Kraft); $M(x) = \sum_{p:U(p)=x*} 2^{-|p|}$ (the
-universal prior); $M(x) \geq c_\mu \mu(x)$ (dominance); $K(x)$ and its relation to the cut.
+Candidate formulas: $\sum_i 2^{-\ell_i} \leq 1$ (Kraft); $M(x) = \sum_{p:U(p)=x*} 2^{-|p|}$, summed
+over minimal programs $p$ on a universal monotone machine $U$, equivalently the fair-coin
+probability that $U$'s output begins with $x$ (the universal prior; never a halting prefix
+machine, see `foundations.md`); $M(x) \geq c_\mu \mu(x)$ (dominance); $K(x)$ (relative to a
+universal prefix machine) and its image as the cost of a cut.
 Each appears where its meaning is being established, with prose interpretation alongside.
 
 ### Mathematical Notation
@@ -133,8 +139,10 @@ the same in both; this book can name the resonance without leaning on it.
 Worldlines closed by acknowledging that the book is part of the structure it describes. This book
 must do the same, and the form is sharper. The book describes a totality of all computable
 structures; the book is itself a computable structure, one carving among all of them; every reader
-is at a specific index, which is itself a cut. The book's existence at *this* index, in the
-reader's reality, is itself a fact about the cut. This is not cleverness; it is the logical
+reads it from a local situation, and calling that situation "this index" is itself a cut. The
+book's existence here, in the reader's hands, is itself a fact about the cut. (Not a claim that
+the reader is instantiated at many indices; see the missing occurrence measure in
+`foundations.md`.) This is not cleverness; it is the logical
 endpoint of the argument. The closing chapter ("The Pattern Describing Itself") acknowledges it
 honestly, the way Worldlines' final chapter did, and it is where the held cut is performed.
 

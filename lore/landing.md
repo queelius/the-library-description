@@ -36,7 +36,7 @@ The earlier draft kept three candidate landings in tension. Under the held cut t
   at these coordinates is the moral universe you can affect.
 - **Direction B (Camus / performative), promoted to the central move.** The closing does not argue
   the choice; it is the choice. The book turns and looks at itself: author writing carefully, reader
-  reading carefully, both at their indices, is the answer. Not what the book says but what it has
+  reading carefully, each where they are, is the answer. Not what the book says but what it has
   been. The reader closes the book and the book was the example of what it was for.
 - **Direction C (honest-darker), kept as a spoken beat, not just a harmonic.** The book lands
   somewhere colder than Worldlines and says so; the rage need not entirely pass; equanimity is
@@ -63,7 +63,7 @@ the choosing proceed unsure ("the only way it was ever going to be done"). This 
 a spoken beat and is the Camus *must* in its honest form: commitment without assurance.
 
 Two distinct doubts now sit side by side, both named. The *epistemic* doubt (the framework, the
-postulate, might be wrong) is seeded early, in Ch 10's "what this does not console," with a forward
+postulate, might be wrong) is seeded early, in Ch 10's closing section ("What remains yours"), with a forward
 reference to the closing. The *adequacy* doubt (granting the framework, is care among the reachable
 carvings enough against the cold it cannot reach) is the closing's own. The craft rails hold: the
 doubt is not turned into a new consolation, and "Stay." lands as a choice made in full view of it.
@@ -83,7 +83,7 @@ the table and the book in the hand are things, and they carry it.
 
 Worldlines used "Hello, fellow sufferer. Stay with me." This book reuses it in the preface (slightly
 thinner the second time, because it performs continuity rather than first contact) and earns a
-shorter address for the closing: the single word **"Stay."** The twelve chapters of work before it
+shorter address for the closing: the single word **"Stay."** The fourteen chapters of work before it
 are what let one word carry the weight. Alternatives ("fellow traveler in the multiplicity") were
 rejected as too clever.
 

@@ -5,9 +5,10 @@ what they *mean* when taken seriously: what they do to the human concepts that c
 in Part III. The framing has shifted with the re-foundation, from "what multiplicity does to each
 concept" to "each concept is a cut."
 
-Each implication is traceable. The reader can always ask "which theorem, construction, practical
-limit, or postulate does this rest on?" The answers are noted, in the new vocabulary (the old "Moves I, II"
-are gone; quantum branching is a familiar landmark, not a step).
+Each implication is traceable. The reader can always ask which of the five footings (theorem,
+construction, finitude, postulate, optional additions) it rests on. The answers are noted, in the
+new vocabulary ("Bedrock" below abbreviates theorem and construction; the old "Moves I, II" are
+gone; quantum branching is a familiar landmark and, where used, an optional addition, not a step).
 
 ---
 
@@ -43,7 +44,9 @@ Worldlines argued that free will in the block universe is what choice looks like
 a fixed structure; compatibilism survives, and the felt openness is a feature of the worldline, not
 a window onto an open future.
 
-This book refines it. The chooser is a cut. On an Everettian reading, "could have chosen otherwise"
+This book refines it. The chooser is a cut: responsibility attaches to a drawn boundary (the
+region you call *you*), while the causal process inside it is real. On an Everettian reading, which
+Chapter 11 offers only as a brief optional lens, "could have chosen otherwise"
 can be represented by decoherent continuations in which choices differ. That interpretation gives
 felt openness no automatic metaphysical weight. The compatibilist point does not require branches
 to be ontically real.
@@ -63,8 +66,10 @@ claims below are one reading, not a result.)
 
 In Worldlines, death is the boundary of the four-dimensional worm; the suffering at every point is
 permanent at its coordinates. This book refines the picture: the boundary called death is a cut.
-Some carvings of the pattern you call yourself terminate; some do not, or the termination is
-delayed, or the continuation is in a carving of vanishing weight. This produces an asymmetry.
+Only with optional additions (Everett, an identity rule, a self-location rule) do descriptions of
+the pattern you call yourself include continuations past the boundary, and nothing in $M$ weights
+such continuations as occurrences (the missing occurrence measure). The book adopts none of those
+additions. Even so stated, the conditional produces an asymmetry.
 
 **Third-person death:** locally decisive. Your loved ones lose you; the braid has a specific endpoint
 in their lives. Descriptions of other continuations do not soften that loss.
@@ -75,9 +80,10 @@ died; from the inside you continued. The book refuses to assert this as real, on
 adopts no indexical assumption, and under the postulate it does not claim the carvings exist.
 
 **The ethics of the asymmetry.** This is one of the harder passages in Part III. The third-person
-grief in this carving is real; the first-person presence in others does not console it. The chapter
-sits with the difficulty rather than resolving it, and does not claim quantum immortality is
-consoling. It is the shape of the problem, not its solution.
+grief here is real; descriptions of first-person continuation elsewhere do not console it. The
+chapter sits with the difficulty rather than resolving it, and does not claim quantum immortality is
+consoling. It is the shape of the problem, not its solution. Chapter 12 makes this "does not
+console" turn once, at full strength, for the whole of Part III; later chapters refer back to it.
 
 ---
 
@@ -118,7 +124,8 @@ than undermined.
 
 ## Boltzmann Observers and the Past
 
-**Cascade:** universal induction + optional ontology + an additional observer-counting rule.
+**Cascade:** theorem and construction + optional additions (Picture A read ontically, a cosmology,
+a self-location rule).
 
 The framework permits a problem: under some cosmological models and observer-counting rules,
 observer-moments matching your self-description may be dominated by transient fluctuations rather
@@ -146,7 +153,7 @@ the war averted and the war not averted, the suffering that occurred and the suf
 The postulate singles out no decomposition as view-independently canonical. From a local history,
 the actual path still matters because it determines what happened to people here. This
 deepens the dissolution rather than restoring narrative. The chosen response, to act in this carving
-for kindness, is one configuration among many; we act in ours.
+for kindness, is one describable configuration among many; we act in ours.
 
 ---
 

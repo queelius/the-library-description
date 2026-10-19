@@ -137,7 +137,7 @@ The book's emotional arc mirrors Worldlines':
 1. Build the bedrock through Part I; the reader feels the inversion.
 2. Make the slip and meet the postulate; the reader feels the groundlessness.
 3. Walk the implications: continuation, death, love, self.
-4. Arrive at the closing. Rage. The rage passes. Care.
+4. Arrive at the closing. Rage. The rage passes. Equanimity. Care.
 
 The room is colder because the indifference is at a deeper level (the structure has no joints at
 all, not merely no preferred slice). The destination is no warmer and no colder: if care held under

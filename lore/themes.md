@@ -2,7 +2,7 @@
 
 ## The Central Discomfort
 
-Worldlines established that physical spacetime is a static four-dimensional structure
+Worldlines developed a block-universe reading on which physical spacetime is a static four-dimensional structure
 indifferent to the worldlines inside it. This book goes one level down. The manifold itself
 is one carving of a vastly larger structure, the totality of computable possibility, the
 Library of Babel made formal. And that larger structure has no carving of its own.
@@ -46,8 +46,10 @@ inversion and follow where it leads.
 ### 1. The Cut
 
 The book's central image and its single move. The totality is trivial to generate and
-impossible to navigate without a carving. Kolmogorov complexity $K(x)$ is exactly the length
-of the shortest cut that isolates $x$. The act of being an observer is the act of cutting:
+impossible to navigate without a carving. Relative to a chosen universal prefix machine,
+Kolmogorov complexity $K(x)$ is the length of the shortest program that outputs $x$; in the
+book's image, the cost of the cheapest cut that isolates $x$ (an image, not the definition). The
+act of being an observer is the act of cutting:
 predicting, worlding, self-modeling. Every concept in the book maps to the cut.
 
 ### 2. No Privileged Cut
@@ -126,15 +128,17 @@ question of the measure.
 | The cut named | the worldline against the manifold | the branch against the wavefunction | every joint (index, system, self) against an undecomposed totality |
 | Indifference | geometry is indifferent to your worldline | measure is indifferent to your branch | no description is privileged; the structure has no joints |
 | Self | dissolved temporally (the 4D worm) | (Volume II's treatment) | dissolved as a cut (the self is a description) |
-| Seam handed forward | the Past Hypothesis (unexplained) | the Born measure (postulated, unexplained) | the why-this-measure question is itself a cut |
+| Seam handed forward | the Past Hypothesis (unexplained) | the Born measure (postulated, unexplained) | the Born measure and $M$ compared in role only; "why this weighting?" stays open to quantum theory |
 | Response | care, equanimity | (Volume II's treatment) | the held cut: care chosen with no floor under it |
 
 The pairing with Worldlines is intentional. A reader who has read it is ready for this one. A
 reader who has read both has the full argument. Neither requires the other; they reinforce.
 The relationship to Multitudes is sharper: that book postulates the Born measure and hands
-forward "why this measure?"; this book asks whether that demand presupposes a privileged cut.
-The Born measure and universal prior can be compared as weighting schemes, but they have distinct
-domains and justifications; neither is derived from the other.
+forward "why this measure?" This book does not answer that question and does not dissolve it.
+Under the postulate no representation certifies itself as the view from nowhere, but "why this
+weighting?" remains an ordinary scientific and mathematical question that quantum theory owes an
+answer. The Born measure and universal prior can be compared as weighting schemes, in role only;
+they have distinct domains and justifications, and neither is derived from the other.
 
 ## What This Book Is NOT
 
@@ -148,8 +152,8 @@ These exclusions define the project's boundaries.
 - **Not mediated by alien intelligence.** No AI guide, no superintelligence thought
   experiment. The reader and the mathematics, alone in a room.
 - **Not techno-futurist in topic, but contemporary in example.** Not about AI safety,
-  simulation, transhumanism, or uploading. The multiplicity is the given, not a future
-  scenario; the mathematics has been in plain sight since 1964. Language models appear only
+  simulation, transhumanism, or uploading. The multiplicity of candidate descriptions is the
+  given, not a future scenario; the mathematics has been in plain sight since 1964. Language models appear only
   where the math earns the analogy. Their training losses do not literally implement Solomonoff
   induction or minimum description length unless model cost is included. They are examples, not
   evidence for the theorem's ontology.
@@ -169,7 +173,7 @@ The book sits in dialogue with the author's other work but occupies territory no
 claim.
 
 - **Worldlines** is the direct predecessor. This book takes the eternalism Worldlines
-  established and pushes it one level out: physical spacetime is itself one carving of a larger
+  developed (on its block-universe reading) and pushes it one level out: physical spacetime is itself one carving of a larger
   structure, and that structure has no carving of its own.
 - **The Policy** uses AI alignment as horror; this book has no alignment problem because there
   is no agent to align with and no overseer above. The structure does not have a policy.
