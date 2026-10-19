@@ -27,8 +27,8 @@ you expect it tomorrow. Why is the prediction reasonable? The naive answer (unif
 nature) is interrogated and left open. **The cut, named:** prediction is already a restriction,
 a slice taken from what could be.
 
-**Epigraph (candidate):** Russell on the chicken that knew, with great confidence, that food
-would come every morning.
+**Epigraph:** Russell, "The man who has fed the chicken every day throughout its life at last
+wrings its neck instead." (*The Problems of Philosophy*, 1912, ch. 6)
 
 ### Chapter 2: The Library
 
@@ -78,8 +78,12 @@ superiority or a proof of a unique rational prior. Treat language-model examples
 evidence. The chapter ends by turning toward reality: what
 happens when we read this not as how to learn but as what is?
 
-**Epigraph:** Hutter, on the universal prior dominating every computable distribution up to a
-constant (*Universal Artificial Intelligence*, 2005).
+**Epigraph:** Hutter, "His central result is that the posterior of his universal semimeasure $M$
+converges rapidly to the true sequence generating posterior $\mu$, if the latter is computable.
+Hence, $M$ is eligible as a universal predictor in case of unknown $\mu$." (abstract of "On the
+Existence and Convergence of Computable Universal Priors," ALT 2003; verified against the source
+2026-10-18). Do not restore the earlier *Universal Artificial Intelligence* (2005) line: it was a
+paraphrase, not a quotation.
 
 ---
 
@@ -154,9 +158,12 @@ ordinary halting theorem supplies only a narrower limit. The grace of Part III i
 catalogue of what the framework permits: Boltzmann observers, hellscapes, dark continuation, with
 a calibrated reader-safety note (Picture A permits these descriptions; the framework neither
 establishes that they exist nor places you in one; step away if the material is destabilizing).
-Then a short section, "Without Everett": what refusing the Everett landmark costs (nothing in the
-cascade). The refusal of the *postulate* is not argued here; it lives in Chapter 7. The postulate
-box, if recalled here, uses the identical canonical wording.
+This catalogue is the one home of "program weights are not moral weights"; later chapters refer
+back to it instead of restating it. Then a short section, "Without Everett": what refusing the
+Everett landmark costs (nothing in the cascade). The refusal of the *postulate* is not argued
+here; it lives in Chapter 7. The postulate box, if recalled here, uses the identical canonical
+wording; the chapter does not also recap the five footings (Ch 10 does that once). Camus is not
+quoted here; his line belongs to Ch 15.
 
 **Epigraph:** Spinoza, "Nature has no particular goal in view, and final causes are mere human
 figments." (*Ethics*, 1677, trans. Elwes)
@@ -175,7 +182,10 @@ Then one positive cascade summary in the five footing names (theorem, constructi
 postulate, optional additions), and **one** paragraph of caveats, stated once: it does not say
 every output exists; it does not say which occurrence is you (the missing occurrence measure, by
 name); it does not derive the Born rule (a cross-reference to Ch 8 and Appendix B, not a re-run of
-the comparison). Say what the indifference is before saying what it is not.
+the comparison). Say what the indifference is before saying what it is not. The adequacy
+doubt is seeded once, in plain terms, in "What remains yours" (what could fail: the theorems'
+application to nature, the machine idealization, the postulate), and "Where this leaves you"
+points forward to Ch 15 without closing it.
 
 This is the analog of Worldlines' "The Block Universe" chapter, one level deeper.
 
@@ -206,7 +216,9 @@ non-metaphysical, pointing to Resources: the thought experiment is not a reason 
 risk. The detailed premise analysis moves to Appendix C. The chapter's examples of choices the
 framework does not rank are ordinary ones (take the job or turn it down; make the call or let it
 ring), never a lethal act. Bridge from Ch 10 through the cut, not through "if the Everettian
-picture is true"; expand any acronym (no bare "MWI").
+picture is true"; expand any acronym (no bare "MWI"). The chooser's boundary is redrawn here at
+several scales (decision, brain, person, family, culture); that is this chapter's specific use of
+the move, and Ch 14 later gathers it as evidence rather than Ch 11 pre-empting Ch 14.
 
 **Epigraph:** Schopenhauer, "A man can do what he wills, but he cannot will what he wills," in
 Einstein's paraphrase (1932 credo), not verbatim *On the Freedom of the Will* (1839); the Notes
@@ -223,8 +235,11 @@ optional additions) do not console the people left behind, and the book will not
 Chapters 13 to 15 refer back to this turn instead of re-making it. Block-universe permanence
 appears only "on that reading," once; no "your branch" (say "history"). The Ch 12 safety note
 lives in the body, not in a footnote, and does not assume the reader has someone to call (it
-points to Resources). **The cut:** the boundary called death is a carving; what the living lose
-is lost here, where they are.
+points to Resources). "What the living lose" stays in grief terms: the braid ends in the
+survivors' history, some of it is carried in them, and the others who grieve are still within
+reach. The broad-orientation, local-action discipline is not stated here; its home is Ch 13.
+**The cut:** the boundary called death is a carving; what the living lose is lost here, where
+they are.
 
 **Epigraph:** Epicurus, "Death is nothing to us," *Letter to Menoeceus*, in Hicks's translation
 (the epigraph text must match Hicks's wording).
@@ -232,13 +247,17 @@ is lost here, where they are.
 ### Chapter 13: Love Across Branches
 
 Love and grief. The braid extended: two patterns intertwined through mutual influence, the braid a
-carving we maintain. **"We" is a cut we make anyway**, and the chapter turns on that: the
+carving we maintain. The opening image is *Worldlines'* (the braid in the manifold, permanent on
+the block-universe reading) and is attributed as such; this book keeps the image and changes what
+holds it together (the tending, not the structure). **"We" is a cut we make anyway**, and the
+chapter turns on that: the
 boundary around *us* is drawn, not found, and the drawing is the work. Picture A permits
 descriptions of braids that end in cruelty, in care, or never form; program weights are not moral
 ranks, and the book says so once and acts here. It does not re-make Ch 12's "does not console"
 turn; it refers back. Holds the concrete object in the table vignette (a table, late; a mug held
-both-handed; the coffee gone cool, with the temperature consistent across the scene), and keeps the
-abstractions out of the scene itself. "There is no cancellation. There is what happened here, and
+both-handed; the coffee gone cold, with the temperature consistent across the scene and in Ch 14),
+and keeps the abstractions out of the scene itself (the gloss comes after the scene, not in it).
+This chapter is the home of the discipline "orientation can be broad; action remains local." "There is no cancellation. There is what happened here, and
 what you do next." **The cut:** the braid is a carving we maintain; "we" is a cut we make anyway.
 
 **Epigraph:** Rilke, *Letters to a Young Poet* (Herter Norton translation, named in the Notes; any
@@ -252,38 +271,52 @@ Extends Parfit (identity versus what matters): identity is a cut, and what matte
 the experience, the effects of care) is here, where it happens; the chapter does not claim it
 recurs or totals across other carvings.
 
-**The convergence made concrete (the chapter's center, about 1,000 words more than the current
-draft):** index, system, and self, each carved two ways, worked through with examples the reader
-already holds (the Ch 3 coin and the Ch 2 catalogue for the index; Ch 6's "one world" for the
-system; the self-model for the self), so that "the cut met three times" is seen, not asserted.
-The "three cuts" figure draws it. The spine sentence is reprised here. Earlier chapters (Ch 8, Ch
-11) only point forward to this; they do not pre-empt it. The derealization safety note stays
-("the self is a cut" is a claim about a model and boundary, not that a person or experience is
-unreal; "You are here."). **The cut, all the way down:** this is the convergence the whole book
-has built toward.
+The self-model is made felt before it is argued: the light switch in a dark house, and the
+rubber-hand illusion. Parfit and Metzinger are introduced once, together.
+
+**The convergence made concrete (the chapter's center):** index, system, and self, each carved
+two ways, worked through with examples the reader already holds (the Ch 3 coin for the index; the
+Ch 13 kitchen for the system, scaled up to "this world"; the self-model for the self), so that
+"the cut met three times" is seen, not asserted. The self's carving opens by gathering the lines
+the reader has already drawn (around the chooser in Ch 11, around the dying in Ch 12) and then
+takes the job away. The "three cuts" figure draws it. The spine sentence is reprised here, with
+the tail "One of them is you." "What is preserved" is short: Parfit's point that what matters
+rides on the connections, the conclusion that no thread from $M$ ties "you here" to "you there,"
+and the derealization safety note, which ends on "You are here." (not on a technical sentence).
+**The cut, all the way down:** this is the convergence the whole book has built toward.
 
 **Epigraph:** Hume, *Treatise*, on the self as a bundle of perceptions.
 
 ### Chapter 15: The Pattern Describing Itself
 
 Closing. The book is one carving in the totality; reading it is another; care is another. The held
-cut: warmth between cuts, the book itself the holding performed. The restored cadence, in order
-(Ch 15 gains about 300 to 500 words so the rhythm is felt):
+cut: warmth between cuts, the book itself the holding performed. The book-as-act beat is made
+once (the protected line in item 4) and paid off once (item 5's "I wrote this book"), not repeated
+paragraph after paragraph. The opening's self-description is exact: the short program that prints
+everything prints this book too (the sentence must not imply that a short program prints this
+book alone). The cadence, in shipped order:
 
 1. **The cold, gathered**, as a cadence and not a list of caveats (the caveats already live in
    their homes and are referred to by name). A sentence scoping what follows (nothing in the
    framework says why there is anything), then: "No view from above. No reason beneath." ("No
    view from above" means no privileged view, echoing Ch 9's "No view from the top"; the book
    has not disproved every greater mind.)
+   Then "And here you are": the local situation, the next room, the next call.
 2. **The triad:** "The structure does not require it. The structure does not reward it. The
    structure does not notice."
 3. **Rage**, appropriate; it passes. **Equanimity**, named. **Care** remains, chosen.
-4. **"I wrote this book"** (first person; the narrator is I).
-5. The spine reprised; the **adequacy doubt** named ("Is it enough? I do not know."), the hope
-   named as hope, the choosing done unsure; Camus's *must* literal. Keep verbatim the line "A
-   person described a pattern and chose, in the describing, to be kind about it." and the final
-   paragraph ending "We do it unsure, which is the only way it was ever going to be done."
-6. A header-less coda; the address is the single word **"Stay."**
+4. **The object and the warmer room:** *Worldlines* had a dark ground to stand care against; this
+   book does not. The book as a finite object, with the protected line kept verbatim: "A person
+   described a pattern and chose, in the describing, to be kind about it."
+5. **The recognition:** "fellow sufferer" answered; the spine reprised (its tail here is the line
+   that puts writer and reader on the same side, distinct from Ch 14's "One of them is you"); the
+   refusal toward the dark descriptions, which reaches no one and is still a thing a person can do;
+   Camus's *must* literal, and **"I wrote this book"** as that commitment, performed (first
+   person; the narrator is I).
+6. **The adequacy doubt** named ("Is it enough? I do not know."), the hope named as hope, the
+   choosing done unsure. Keep verbatim the final paragraph ending "We do it unsure, which is the
+   only way it was ever going to be done."
+7. A header-less coda; the address is the single word **"Stay."**
 
 No pre-revision line about simplicity returns (no "simplicity is why you are here").
 
@@ -294,7 +327,7 @@ No pre-revision line about simplicity returns (no "simplicity is why you are her
 ## Frontmatter
 
 - Title page; copyright; dedication ("For Kimberly, at every index.")
-- Half-title epigraph: Borges, *The Library of Babel*.
+- Half-title epigraph: Borges, "The Library of Babel" (Irby).
 - Preface: the book is about the indifference of description, and about why you should be gentle
   with the people around you; the connection takes several chapters to build. Ends "Hello, fellow
   sufferer. Stay with me."
@@ -316,17 +349,24 @@ No pre-revision line about simplicity returns (no "simplicity is why you are her
 
 ---
 
-## Word-count targets (provisional)
+## Word counts (targets and the release candidate)
 
-| Section | Target |
-|---|---|
-| Preface | 500 |
-| Part I (5 chapters) | ~7,500 |
-| Part II (5 chapters) | ~8,000 |
-| Part III (5 chapters) | ~8,000 (aspirational; the current draft is about 4,650, and the 2026-10-18 pass rebuilds toward ~6,500, mainly in Ch 14 and Ch 15) |
-| Appendices (A to E) | ~3,000 to 5,000 (under about 20 percent of the body; see `appendices.md`) |
-| Notes, Resources, and other back matter | as needed |
-| **Body total (preface and Parts I to III)** | **~24,000 (target)** |
+Actuals are `detex | wc -w` per chapter file at the 2026-10-19 release candidate (figure labels
+included, so prose alone runs a few hundred words lower per Part).
+
+| Section | Target | Actual |
+|---|---|---|
+| Preface | 500 | about 300 |
+| Part I (5 chapters) | ~7,500 | about 9,400 |
+| Part II (5 chapters) | ~8,000 | about 7,900 |
+| Part III (5 chapters) | ~8,000 (aspirational) | about 6,200 |
+| Appendices (A to E) | ~3,000 to 5,000 (under about 20 percent of the body; see `appendices.md`) | about 3,700 |
+| Notes, Resources, and other back matter | as needed | Notes about 1,500 |
+| **Body total (preface and Parts I to III)** | **~24,000** | **about 23,800** |
+
+Part III is shorter than Parts I and II by design after the October revision: it refers back to
+caveats stated in their homes instead of restating them. Growing it means new material, not
+restatement.
 
 Slightly longer than Worldlines (~18,500) to accommodate the Part I groundwork. Chapters are
 roughly the length of Worldlines' chapters; this book has more of them because old Chapter 6 and
@@ -363,16 +403,15 @@ Each step is set up by the previous, tracing the new skeleton:
 
 ---
 
-## Open questions for drafting
+## Drafting questions (resolved)
 
-- **Epigraph review.** None of the current candidates name "enumeration," so no forced swaps from
-  the subtitle change; but re-read each once the prose is reframed, in case a candidate now reads
-  oddly against "description." Flag, do not resolve here.
-- **The cut named as imposition.** Decide the exact cadence of naming the carving as imposition at
-  each entry (Ch 2 the cut, Ch 3 the index, Ch 6 the system, Ch 8 the observer) versus the full
-  dissolution at Ch 14. Default: name at each entry, dissolve fully at 14.
-- **Where the finitude guardrail sits.** Ch 4 is the natural home; decide whether it needs its own
-  short section or rides inside the prose.
-- **Worldlines reference cadence.** Reference explicitly in the preface, Ch 10 (the parallel of
-  "The Block Universe"), and Ch 14 (the parallel of "The Self"); let other parallels speak for
-  themselves.
+- **Epigraph review.** Done 2026-10-18: every epigraph was checked against its source, and the
+  Ch 5 Hutter line was replaced (see the Ch 5 entry and
+  `.worldsmith/reviews/2026-10-18/decisions/revision.md`).
+- **The cut named as imposition.** Named at each entry (Ch 2 the cut, Ch 3 the index, Ch 6 the
+  system, Ch 8 the observer), dissolved fully at Ch 14.
+- **Where the finitude guardrail sits.** Inside the prose of Ch 4.
+- **Worldlines reference cadence.** Explicit in the preface, Ch 7 ("What if you refuse"), Ch 10
+  ("The deeper indifference"),
+  Ch 13 (the braid image), Ch 14 ("The temporal dissolution, recalled"), and Ch 15 (the warmer
+  room); other parallels speak for themselves.

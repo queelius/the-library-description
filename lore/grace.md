@@ -90,8 +90,8 @@ The book cannot argue for the must. The framework permits the must and the not-m
 book is the must, performed: an author writing carefully, despite doubt, in a structure that does
 not notice; a reader reading carefully, the same configuration. Both are the imagining; both are
 the pushing. This belongs in the closing explicitly. Camus is named; *Il faut imaginer Sisyphe
-heureux* lands as the closing move, with "Hello, fellow sufferer" as its companion and "Stay." as
-its single-word address.
+heureux* lands in the closing's recognition beat, with "Hello, fellow sufferer" as its companion;
+the adequacy doubt follows it, and "Stay." is the single-word address.
 
 ## Humility About the Framework
 
@@ -183,7 +183,9 @@ care, only that the author supports care, standing in the space the math does no
 
 The Worldlines double helix (two intertwined worldlines) extends naturally. Here the braid is two
 patterns, each itself many-carved, with the braid as the relation between them: a thicker braid,
-each strand frayed into parallel lines, the braid the relation between the bundles. It should appear
-faintly in early chapters, centrally in Chapter 13 ("Love Across Branches"), and in the closing as
-the book's answer. The braid is the form care takes here; the dissolution of the self does not
-dissolve the braid, it thickens it, because the braid was always a carving we keep.
+each strand frayed into parallel lines, the braid the relation between the bundles. It enters in
+Chapter 12 (the braid that ends in the survivors' history), is central in Chapter 13 ("Love Across
+Branches"), and returns in Chapters 14 and 15 as the book's answer. The braid is the form care
+takes here; the dissolution of the self does not dissolve the braid. It shows what holds the braid
+together, which was never the structure: the braid was always a carving we keep, held by the
+tending.

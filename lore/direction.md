@@ -83,9 +83,13 @@ the prose carves index, system, and self two ways each) reuses it for the conver
 - A prefix-free code tree (Kraft made visible), showing admissible fair-bit length weights without
   implying that Kraft uniquely selects a prior.
 - The universal prior as a stacked measure over programs of increasing length.
-- The totality as a uniform tape; the index as a cut; two different cuts on the same tape.
+- The totality as a uniform tape; the index as a cut; two different cuts on the same tape. (Not
+  drawn: the "two carvings" field figure of Chapter 7 does this work.)
 - Branching diagrams (the quantum tree, the decision tree, the computational tree) shown as the
-  same shape, to make multiplicity feel ordinary.
+  same shape, to make multiplicity feel ordinary. (Dropped: drawing them as one shape would
+  suggest the branchings are the same kind of thing, which the book does not claim. The only
+  branching tree drawn is Chapter 8's Everettian schematic, labelled as one interpretation;
+  Chapter 13's braid figure is a conditional Everettian picture, labelled as such.)
 - The "where am I?" diagram: the same data, two different carvings, illustrating the
   underdetermination (Picture B).
 - The same region described two ways (the self as one boundary among many possible), for Ch 14

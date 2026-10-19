@@ -109,6 +109,10 @@ cancel past harm. You act here.
 
 ## Memory
 
+*Exploratory (as of 2026-10-19): not used in the manuscript. Ch 12's "What the living lose"
+touches memory only as what the survivors carry; this fuller treatment is held for a later
+edition.*
+
 **Cascade:** Bedrock + the postulate.
 
 Worldlines reframed memory as a cross-reference, not a record: a configuration at one set of
@@ -144,6 +148,8 @@ and the chosen response of Part III is what follows.
 ---
 
 ## History and Progress
+
+*Exploratory (as of 2026-10-19): not used in the manuscript. Held for a later edition.*
 
 **Cascade:** Bedrock + the postulate.
 

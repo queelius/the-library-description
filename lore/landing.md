@@ -63,8 +63,8 @@ the choosing proceed unsure ("the only way it was ever going to be done"). This 
 a spoken beat and is the Camus *must* in its honest form: commitment without assurance.
 
 Two distinct doubts now sit side by side, both named. The *epistemic* doubt (the framework, the
-postulate, might be wrong) is seeded early, in Ch 10's closing section ("What remains yours"), with a forward
-reference to the closing. The *adequacy* doubt (granting the framework, is care among the reachable
+postulate, might be wrong) is seeded early, in Ch 10's "What remains yours," and Ch 10's closing
+section ("Where this leaves you") carries the forward reference to the closing. The *adequacy* doubt (granting the framework, is care among the reachable
 carvings enough against the cold it cannot reach) is the closing's own. The craft rails hold: the
 doubt is not turned into a new consolation, and "Stay." lands as a choice made in full view of it.
 
