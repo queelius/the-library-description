@@ -2,33 +2,33 @@
 
 Volume III of the "Indifference of" suite, after *Worldlines: The Indifference of Geometry* and *Multitudes: The Indifference of Measure*.
 
-A nonfiction book that takes the reader from optimal learning to the indifference of description: from the everyday act of induction to the realization that the joints you navigate by, the index, the world, the self, are cuts you make in a structure that has none of its own. It takes up the question the previous volume left open, why the Born measure, why any particular system at all, and answers that the question presupposes a privileged cut there is none of.
+A nonfiction book that takes the reader from optimal learning to the indifference of description: from the everyday act of induction to the recognition that the joints you navigate by, the index, the world, the self, are cuts you make. It takes up the question the previous volume left open, why the Born measure, and declines to answer it by fiat: the book compares the Born rule and the universal prior as weightings that play the same role, derives neither from the other, and leaves "why this weighting?" to quantum theory, where it belongs.
 
-**Status:** Re-foundation complete, on `main`. This repository re-founds an earlier draft (originally subtitled *The Indifference of Enumeration*, since superseded and consolidated into this one) around a single spine: *there are no joints, only the cuts you make.* The lore bible is authored and the manuscript ported and reframed: fifteen chapters, three parts, plus a back-matter Appendices section (A to E) and keyed Notes, building to a 138-page PDF and a clean-validating EPUB. The one remaining step is the DOI mint (see `CLAUDE.md`). See `CLAUDE.md` for the governing frame and `docs/superpowers/` for the design spec and plans.
+**Status:** Fifteen chapters in three parts, plus a back-matter Appendices section (A to E) and keyed Notes. A 2026-07-15 review and revision removed a set of formal and ontological overclaims; a fresh release review on 2026-10-18 found one remaining formal defect (the definition of Solomonoff's $M$) and asked for the argument and voice of Parts II and III to be restored, and the revision from that review is in the working tree for the author's approval. The DOI release waits on that approval. See `CLAUDE.md` for the governing frame and `.worldsmith/reviews/` for the review record.
 
 ## What This Book Is
 
-*Worldlines* established the eternalism of physical spacetime: your life is a finite four-dimensional worm in an indifferent manifold. *Multitudes* established a quantum eternalism: every branch of the wavefunction is equally real, weighted by the Born measure, and it postulates that measure without explaining it. This book goes one level further out, to the totality of all computable structures, and finds the indifference there too, at the bottom, with nothing under it.
+*Worldlines* read relativity as a block universe: your life a finite four-dimensional worm in an indifferent manifold. *Multitudes* read quantum mechanics the Everettian way, with every branch weighted by the Born measure, a measure it postulates rather than explains. This book goes one level further out, to the space of all computable descriptions, and finds no joint there to stand on.
 
-The bedrock is mathematics settled since the 1960s:
+The argument keeps five footings apart, and every conclusion can be traced to one of them:
 
-1. **Bayes' theorem** (Cox's uniqueness)
-2. **Kraft's inequality** (prefix-free codes turn length into probability)
-3. **Solomonoff's dominance theorem** (the universal prior is asymptotically optimal)
+1. **Theorem.** Bayes' theorem; Cox-style representation results under stated regularity assumptions; Kraft's inequality (prefix-free codes can afford the length weights $2^{-\ell}$, which makes those weights admissible, not compulsory); Solomonoff's dominance theorem (the universal semimeasure $M$ dominates every lower-semicomputable semimeasure up to a source- and machine-dependent constant), with its convergence results for computable sources; and the invariance theorem, which relates universal machines up to constants that can still matter at finite scales.
+2. **Construction.** $M$ itself: a universal monotone machine fed fair coin flips, with $M(x)$ the probability that its output begins with $x$. It is a choice, and a well-earned one; it is not the only coherent prior.
+3. **Finitude.** A finite observer must use bounded, local models. Finitude forces approximation; it does not force this prior.
+4. **The postulate**, asked once and refusable:
 
-On top of the bedrock the book takes exactly one interpretive commitment, labeled where it enters:
+   > **The postulate: no cut is privileged.** No decomposition of the describable totality is view-independently correct. Every carving into worlds, systems, and selves is a cut an observer makes; none comes labeled as the structure's own.
 
-> **The postulate: no cut is privileged.** The totality has no decomposition that is the correct one, and no element that is the one that is real. Every carving, including the carving that says only this world exists, is a cut an observer makes.
+   The postulate is a refusal, not an addition. It does not assert that all computable worlds exist, and it does not turn $M$ into a measure on realities. Whether the totality is real is itself a cut, and the book holds the question open.
+5. **Optional additions**, named wherever a conclusion would need them and adopted nowhere: an ontic reading of the totality, Everett's interpretation of quantum mechanics (a landmark, never evidence), identity rules, self-location rules (SSA, SIA, xerographic distributions), and cosmologies. $M$ weights candidate programs, not observer occurrences; the book calls the gap the missing occurrence measure and does not fill it.
 
-Simplicity is not a second postulate; it is what a finite cutter is forced toward, because Kraft makes short descriptions scarce. Quantum mechanics enters only as a familiar landmark, not a step: the plainest reading of the wave-function equations already branches, and a reader who rejects it loses nothing. Observer-measure assumptions (SSA, SIA, the speed prior) are discussed and deliberately not adopted.
-
-The question *Multitudes* leaves open, why the Born measure, is answered by relocation rather than derivation: the Born measure and the universal prior are the same kind of object, the bookkeeping of cuts, and "why this measure" presupposes a privileged vantage the postulate denies. The book traces what the picture does to continuation, mortality, love, memory, and the self, and closes with care: not because the structure implies it, but because the structure does not, and a configuration that holds care is, even so, not the same as one that does not. The same chosen response as *Worldlines*, in a colder room.
+From these the book traces what the indifference does to choice, mortality, love, and the self, and closes with care: not because the structure implies it, but because the structure does not require it, does not reward it, and does not notice, and a situation with care is still not the same, for the people in it, as one without. The same chosen response as *Worldlines*, in a colder room.
 
 ## The Spine
 
 > **There are no joints. There are only the cuts you make.**
 
-Generating everything is trivial: the totality of all computable structures, the Library of every possible book, is the output of a one-line program. What is hard, what is the whole of the problem, is locating yourself within it, and every act of locating (predicting, worlding, self-modeling) is a cut. The one move appears at three depths, which are the book's three parts: the index (cut to predict), the system (cut to have a world), and the self (cut to be someone, and to care). Dissolve the self and you dissolve, in the same motion, the privileged coordinate and the privileged world; all three were the same cut.
+Generating everything is trivial: an enumeration of all programs, the Library of every possible book made formal, is the output of a short program. What is hard, what is the whole of the problem, is picking out anything in it, and every act of picking out (predicting, worlding, self-modeling) is a cut. Part of this is a theorem-level fact (no computable procedure sorts the Library by how cheaply each thing in it can be said); the rest, that no decomposition at all is the correct one, is the postulate. The one move appears at three depths, which are the book's three parts: the index (cut to predict), the system (cut to have a world), and the self (cut to be someone, and to care). Chapter 14 shows the three as one cut.
 
 ## Structure
 
@@ -56,10 +56,10 @@ the-library-description/
 │   ├── grace.md               # The destination: the held cut
 │   ├── landing.md             # Why the closing was hard, and how (c) resolves it
 │   ├── apokatastasis.md       # The universalist moral spine; the refusal as a chosen cut
+│   ├── appendices.md          # The appendix set (A to E) and the Notes policy
 │   └── information_hazards.md # Reader-harm analysis, re-audited under (c)
 ├── docs/superpowers/      # Design spec and implementation plans for the re-foundation
-├── figures/               # TikZ diagrams
-├── images/                # Bitmap images
+├── figures/               # Shared figure preamble (fonts, math, TikZ setup)
 ├── kdp/                   # KDP build: metadata.yaml, EPUB css/filter/postprocess, cover
 ├── CLAUDE.md              # Guidance for Claude Code sessions (the governing frame)
 └── Makefile               # Build system
@@ -78,11 +78,11 @@ make clean      # Remove auxiliary files (outputs preserved)
 make distclean  # Remove the-library.pdf and the-library.epub
 ```
 
-The EPUB validates cleanly with `epubcheck`. The cover (`kdp/the-library-cover-ebook.jpg`, 1600x2560) is set for the *Description* subtitle, passes `kdp_validate_cover`, and is embedded in the EPUB. `make epub` builds with whatever cover is present.
+`make epub` first renders every TikZ figure to a PNG (`make epub-figures`, via `kdp/render-figures.lua`, into `build/epub-figures/`) so the EPUB carries the same diagrams as the print book. The EPUB validates cleanly with `epubcheck`. The cover (`kdp/the-library-cover-ebook.jpg`, 1600x2560) is set for the *Description* subtitle, passes `kdp_validate_cover`, and is embedded in the EPUB. `make epub` builds with whatever cover is present.
 
 ## Pairing with the Suite
 
-This is Volume III of the "Indifference of" suite and is intended to be read after *Worldlines* and *Multitudes*, though each stands alone. The three together form a single argument that descends one level at a time: physical eternalism (geometry), quantum eternalism (measure), and computational eternalism (this).
+This is Volume III of the "Indifference of" suite and is intended to be read after *Worldlines* and *Multitudes*, though each stands alone. The three together form a single argument that descends one level at a time: the indifference of geometry, of measure, and of description.
 
 ## Author
 
