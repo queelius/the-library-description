@@ -130,14 +130,17 @@ Part II = The System (Ch 6-10, capped by Ch 10 "The Indifference of Description"
 The Self (Ch 11-15, closing on the held cut: a header-less coda, address "Stay.", Camus's *must*
 literal, the adequacy-doubt named).
 
-**Status (2026-10-18): revised candidate, awaiting a fresh release review.** The 2026-07-15
-Worldsmith release gate found systemic overclaims in the Kraft-to-prior step, machine
-invariance, Cox, Everett/decoherence, Turing jumps, and observer self-location, plus a
-crisis-resources defect (`.worldsmith/reviews/2026-07-15/`). Canonical lore and the manuscript
-were revised to keep theorem, construction, postulate, and interpretation apart, and that
-revision is now committed. It has not yet had the fresh review its revision record calls for.
-Do not restore categorical multiverse or observer-measure language from older commits or specs.
-Build: 134 pages, no undefined references or overfull boxes; the EPUB passes `epubcheck` 5.3.0.
+**Status (2026-10-18): release candidate after the October review.** A fresh cover-to-cover
+Worldsmith review (`.worldsmith/reviews/2026-10-18/`) confirmed the July 15 fixes held in the
+body, then found one new BLOCKING error (the definition of the sequential $M$, which must sum
+over minimal programs of a universal monotone machine) and a July over-correction of Parts II
+and III. The revision fixed all 63 findings (60 verified per finding), restored the spine
+sentence and Part III, made the EPUB carry every figure, and aligned README, About, KDP, and
+citation metadata with the book (CC BY-NC-SA 4.0; KDP Select off). Author decisions and the
+epigraph source checks are in `decisions/revision.md`. Build: 140 pages, about 28,800 words, no
+undefined references or overfull boxes; EPUB passes `epubcheck` 5.3.0. Not yet re-reviewed as a
+whole after the October revision. Do not restore categorical multiverse or observer-measure
+language from older commits or specs.
 
 **Appendices (2026-07-02):** a back-matter Appendices section (A The Bedrock, Formally;
 B The Born Measure and the Universal Prior; C Anthropic Assumptions; D Refusing the
