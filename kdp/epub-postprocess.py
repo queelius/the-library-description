@@ -4,7 +4,7 @@
 - Remove the duplicate title H1 from the dedication/epigraph page
 - Clean up the TOC: rename it "Contents", drop a redundant top-level wrapper,
   and lift the back-matter entries out of Part II's nested list
-- Prefix the Part heading pages with "Part I" / "Part II"
+- Prefix the Part heading pages with "Part I" / "Part II" / "Part III"
 
 Adapted from the Worldlines post-processor. Some patterns depend on pandoc's
 exact output; every substitution no-ops cleanly if it does not match, so a
@@ -59,13 +59,14 @@ def patch_nav(text: str) -> str:
 
 
 PART_LABELS = {
-    "The Discovery": "Part I",
-    "The Response": "Part II",
+    "The Index": "Part I",
+    "The System": "Part II",
+    "The Self": "Part III",
 }
 
 
 def patch_parts(text: str) -> str:
-    """Add 'Part I' / 'Part II' prefix to part heading pages."""
+    """Add 'Part I' / 'Part II' / 'Part III' prefix to part heading pages."""
     for title, label in PART_LABELS.items():
         text = text.replace(
             f"<h1>{title}</h1>",

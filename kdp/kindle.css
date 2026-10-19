@@ -125,7 +125,24 @@ h2 + p, h3 + p,
     text-indent: 0;
 }
 
-/* -- Diagram descriptions (TikZ figures without images) -- */
+/* -- Diagrams (TikZ figures rendered to images) -- */
+div.diagram {
+    margin: 1.2em 0;
+    text-align: center;
+}
+div.diagram img {
+    max-width: 100%;
+    height: auto;
+}
+div.diagram-caption p {
+    margin-top: 0.5em;
+    font-size: 0.85em;
+    text-align: left;
+    text-indent: 0;
+    line-height: 1.4;
+}
+
+/* -- Diagram descriptions (fallback when a figure has no rendered image) -- */
 .diagram-description {
     margin: 1em 1.5em;
     font-size: 0.85em;
