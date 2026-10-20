@@ -51,7 +51,7 @@ the-library-description/
 │   ├── themes.md              # Core vision, the inversion, the seven themes, the suite table
 │   ├── outline.md             # Canonical three-part, 15-chapter structure
 │   ├── direction.md           # Format, tone, pedagogy, the cut as figure
-│   ├── index.md               # Picture A vs B (choosing is a cut); local inference
+│   ├── index.md               # outside vs inside view (choosing is a cut); local inference
 │   ├── implications.md        # Each human concept re-derived as a cut
 │   ├── grace.md               # The destination: the held cut
 │   ├── landing.md             # Why the closing was hard, and how (c) resolves it

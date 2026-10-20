@@ -35,7 +35,7 @@ where $\lambda$ is the fair-coin measure on infinite input sequences. $M_U(x)$ i
 
 The two forms agree because every input sequence whose output begins with $x$ has exactly one minimal program for $x$ as a prefix. For the same reason the minimal programs for $x$ form a prefix-free set, so Kraft gives $M_U(x) \le 1$. The restriction to minimal programs matters: on a monotone machine every extension of a sufficient program is again sufficient, so a sum over all programs would count the same event again at every length and diverge. A halting machine is the wrong model in the other direction: summing over halting programs whose finite output begins with $x$ gives total weight on the strings of length $n$ that shrinks toward zero as $n$ grows, so the result could not dominate even the uniform measure. Li and Vit\'anyi treat monotone machines and $M$ in their section~4.5, separately from the prefix machines of their sections~3.1 and~4.3.
 
-For the coding theorem, use a related exact-output construction. Let $V$ be a universal prefix machine whose halting programs output finite strings, and define
+Chapter 4 defined $K$ and pointed here for its relation to algorithmic probability. For the coding theorem, use a related exact-output construction. Let $V$ be a universal prefix machine whose halting programs output finite strings, and define
 
 $$m_V(x)=\sum_{q\, :\, V(q)=x}2^{-|q|},
 \qquad K_V(x)=\min\{\,|q|:V(q)=x\,\}.$$

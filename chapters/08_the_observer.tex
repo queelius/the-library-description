@@ -4,13 +4,39 @@
 {Every quantum transition taking place on every star, in every galaxy, in every remote corner of the universe, is splitting our local world on earth into myriads of copies of itself.}
 {Bryce DeWitt, ``Quantum Mechanics and Reality'' (1970)}
 
-\noindent \textsc{Chapter 7 left two pictures open}. Picture A treats program-output space as a total object; Picture B keeps you situated, with finite data and a posterior over candidate programs. Neither supplies what Chapter 7 called the missing occurrence measure.
+\noindent \textsc{Chapter 7 left two pictures open}. The outside view treats program-output space as a total object; the inside view keeps you situated, with finite data and a posterior over candidate programs. Neither supplies what Chapter 7 called the missing occurrence measure.
 
-This chapter visits a landmark in physics, says what an observer is, and then asks the question that measure would have to answer.
+This chapter says what an observer is, then visits a landmark in physics that offers a multiplicity of its own, and then asks the question that measure would have to answer.
+
+\section*{What an observer is}
+
+The book has used the word \emph{observer} without saying what one is. The framework needs a working definition before the next question makes sense.
+
+For the purposes of this framework, an observer is modeled as a local pattern within some candidate $U(p)$, with internal organization, a sensorium, memory, and a capacity to model. An Everettian, in the reading the next section visits, may place such a pattern within a decoherent branch. This is a working model, not a solution to the hard problem of consciousness or a claim that every observer is literally computable. And notice what the model already does. Nothing in $U(p)$ marks where the pattern ends and its surroundings begin; the boundary is drawn by whoever does the modeling, the observer included. The observer is itself a carving.
+
+But not every substructure is an observer, and among those that are, a distinction matters. An observer-moment, a configuration that merely \emph{matches} an observer-state for an instant, can occur almost anywhere. An observer whose inference \emph{works}, who can model its surroundings, persist, and do science, needs something specific from the universe it is in.
+
+\emph{Hierarchical decomposability.} An observer's predictions, models, and actions all rely on isolating subsystems. The cell can be modeled without the quarks. The apple's fall can be predicted without the wave function of every electron. For this to work at all, the universe (whether $U(p)$ or the relevant branch of the wave function) must have a hierarchical structure: at each scale, local short programs approximate local substructures well enough for the observer to reason. Without this, no observer could build a model that reliably tracks anything.
+
+This is a strong restriction on which candidate programs support observers of that kind. Many computable outputs are locally chaotic, tightly coupled, or homogeneous and do not admit effective local modeling. There is no canonical way to count all programs, so the book makes no claim about what a ``vast majority'' of them are like.
+
+A caveat the rest of the chapter will sharpen: none of this says observer-\emph{states} cannot occur in lawless structures. They can. In a large enough chaotic or high-entropy structure, a configuration matching your exact observer-state can fluctuate into being for a moment, carrying all your apparent memories and none of the lawful past they seem to record. That is the Boltzmann brain, one of the uncomfortable things the framework permits, and Chapter 9 returns to it. The decomposability requirement is not a condition for an observer-state to \emph{exist}; it is what an observer needs for its inference to \emph{work}, for its models to track its world, for it to persist past the instant.
+
+Our observed environment is locally decomposable at multiple scales. The success of effective theories is evidence for that feature of our environment. It is not evidence that observers are concentrated in environments like it; that would take the missing occurrence measure, and the framework has not supplied one.
+
+\emph{Local inference.} The observer's epistemic activity, science, is not a search for the global program. Kolmogorov complexity is uncomputable, and an observer with finite resources could not carry out global Solomonoff induction even approximately without choosing severe bounds. What the observer does instead is build a collection of tractable local models $p_s$, each approximating a local substructure $s$. These are the effective theories of physics, the models of biology, the heuristics of everyday cognition. Together they form the observer's working model of its local region.
+
+The observer never has access to the global program. The observer has access to a prefix of its local substructure, restricted to whatever its sensorium can resolve. From this, it infers local $p_s$'s and predicts forward. The relevant ensemble is not a posterior over global programs; it is the collection of local effective theories the observer maintains.
+
+This is what science is, in this framework. Not the discovery of \emph{the} program. The construction of a library of local approximations, scale by scale, each anchored to a substructure the observer can probe.
+
+\emph{The self as a local model.} The same picture extends to the observer's model of itself. The brain's self-model is a short local program approximating the substructure the observer occupies: \emph{I} is one of the local theories, drawn by the same kind of cut as the others. Chapter 14 follows that thought to its end.
+
+With these in place, a question sharpens. The observer is locally modeled, with no access to a global view. So: what can the posterior over programs tell you, and what extra structure would be needed to ask which occurrence is \emph{you}?
 
 \section*{An Everettian landmark}
 
-There is a multiplicity much closer to hand, if you read quantum mechanics the way Hugh Everett did. On that reading the wave function never collapses: an observer becomes correlated with every outcome, and decoherence keeps the outcomes from interfering, so each behaves like a separate history (Figure~\ref{fig:mwi-branching}).\footnote{Decoherence explains the suppression of interference between relevant components and the emergence of stable quasi-classical structure. By itself it does not select one outcome, prove that branches are fundamental objects, or choose among interpretations. Everettian interpretations add an ontological reading of the unitary formalism; collapse and hidden-variable approaches read it differently.} DeWitt's ``myriads of copies,'' at the head of this chapter, is that reading at its most tempting. The experiments confirm quantum predictions; they do not choose Everett's reading over its rivals. The book uses it as a landmark, not as evidence, and nothing later rests on it. If a quantum model can be computably described, its branching can be written out in program space too, but that is a relation between descriptions, and it is no evidence that the branches, or the programs' outputs, exist.
+Before that question, a landmark. There is a multiplicity much closer to hand than the Library's, if you read quantum mechanics the way Hugh Everett did. On that reading the wave function never collapses: an observer becomes correlated with every outcome, and decoherence keeps the outcomes from interfering, so each behaves like a separate history (Figure~\ref{fig:mwi-branching}).\footnote{Decoherence explains the suppression of interference between relevant components and the emergence of stable quasi-classical structure. By itself it does not select one outcome, prove that branches are fundamental objects, or choose among interpretations. Everettian interpretations add an ontological reading of the unitary formalism; collapse and hidden-variable approaches read it differently.} DeWitt's ``myriads of copies,'' at the head of this chapter, is that reading at its most tempting. The experiments confirm quantum predictions; they do not choose Everett's reading over its rivals. The book uses it as a landmark, not as evidence, and nothing later rests on it. If a quantum model can be computably described, its branching can be written out in program space too, but that is a relation between descriptions, and it is no evidence that the branches, or the programs' outputs, exist.
 
 \begin{figure}[h]
 \centering
@@ -74,35 +100,9 @@ There is a deeper reason quantum mechanics belongs in this book, and it is not b
 \end{figure}
 \FloatBarrier
 
-\section*{What an observer is}
-
-The book has used the word \emph{observer} without saying what one is. The framework needs a working definition before the next question makes sense.
-
-For the purposes of this framework, an observer is modeled as a local pattern within some candidate $U(p)$, with internal organization, a sensorium, memory, and a capacity to model. An Everettian may place such a pattern within a decoherent branch. This is a working model, not a solution to the hard problem of consciousness or a claim that every observer is literally computable. And notice what the model already does. Nothing in $U(p)$ marks where the pattern ends and its surroundings begin; the boundary is drawn by whoever does the modeling, the observer included. The observer is itself a carving.
-
-But not every substructure is an observer, and among those that are, a distinction matters. An observer-moment, a configuration that merely \emph{matches} an observer-state for an instant, can occur almost anywhere. An observer whose inference \emph{works}, who can model its surroundings, persist, and do science, needs something specific from the universe it is in.
-
-\emph{Hierarchical decomposability.} An observer's predictions, models, and actions all rely on isolating subsystems. The cell can be modeled without the quarks. The apple's fall can be predicted without the wave function of every electron. For this to work at all, the universe (whether $U(p)$ or the relevant branch of the wave function) must have a hierarchical structure: at each scale, local short programs approximate local substructures well enough for the observer to reason. Without this, no observer could build a model that reliably tracks anything.
-
-This is a strong restriction on which candidate programs support observers of that kind. Many computable outputs are locally chaotic, tightly coupled, or homogeneous and do not admit effective local modeling. There is no canonical way to count all programs, so the book makes no claim about what a ``vast majority'' of them are like.
-
-A caveat the rest of the chapter will sharpen: none of this says observer-\emph{states} cannot occur in lawless structures. They can. In a large enough chaotic or high-entropy structure, a configuration matching your exact observer-state can fluctuate into being for a moment, carrying all your apparent memories and none of the lawful past they seem to record. That is the Boltzmann brain, one of the uncomfortable things the framework permits, and Chapter 9 returns to it. The decomposability requirement is not a condition for an observer-state to \emph{exist}; it is what an observer needs for its inference to \emph{work}, for its models to track its world, for it to persist past the instant.
-
-Our observed environment is locally decomposable at multiple scales. The success of effective theories is evidence for that feature of our environment. It is not evidence that observers are concentrated in environments like it; that would take the missing occurrence measure, and the framework has not supplied one.
-
-\emph{Local inference.} The observer's epistemic activity, science, is not a search for the global program. Kolmogorov complexity is uncomputable, and an observer with finite resources could not carry out global Solomonoff induction even approximately without choosing severe bounds. What the observer does instead is build a collection of tractable local models $p_s$, each approximating a local substructure $s$. These are the effective theories of physics, the models of biology, the heuristics of everyday cognition. Together they form the observer's working model of its local region.
-
-The observer never has access to the global program. The observer has access to a prefix of its local substructure, restricted to whatever its sensorium can resolve. From this, it infers local $p_s$'s and predicts forward. The relevant ensemble is not a posterior over global programs; it is the collection of local effective theories the observer maintains.
-
-This is what science is, in this framework. Not the discovery of \emph{the} program. The construction of a library of local approximations, scale by scale, each anchored to a substructure the observer can probe.
-
-\emph{The self as a local model.} The same picture extends to the observer's model of itself. The brain's self-model is a short local program approximating the substructure the observer occupies: \emph{I} is one of the local theories, drawn by the same kind of cut as the others. Chapter 14 follows that thought to its end.
-
-With these in place, the question of the next section sharpens. The observer is locally modeled, with no access to a global view. So: what can the posterior over programs tell you, and what extra structure would be needed to ask which occurrence is \emph{you}?
-
 \section*{Where am I?}
 
-Under Picture A or an Everettian ontology, a sharp question emerges. Suppose several observer occurrences match your current self-description: your memories, sensory state, and moment of reading this. What would make one of them your self-location? (Figure~\ref{fig:where-am-i}.)
+Under the outside view or an Everettian ontology, a sharp question emerges. Suppose several observer occurrences match your current self-description: your memories, sensory state, and moment of reading this. What would make one of them your self-location? (Figure~\ref{fig:where-am-i}.)
 
 \begin{figure}[h]
 \centering
@@ -127,4 +127,4 @@ This is where the missing occurrence measure of Chapter 7 would have to do its w
 
 The book does not commit to an indexical assumption. So \emph{where am I?}, understood as self-location among occurrences, does not merely have a broad posterior here; it is undefined until extra structure is supplied. That is a limit of the framework, kept visible rather than hidden inside $M$.
 
-There is a deeper underdetermination underneath this one, and Chapter 6 promised to name it. The book has been speaking in two pictures without choosing between them. In Picture A, program-output space is a static object carrying program-description weights. In Picture B, you are situated, with finite local data and a posterior over candidate programs. Which picture is the \emph{real} one? $M$ does not say, and the question has a shape you have seen before. Choosing which picture is the real one is itself a cut, a carving of the whole into what exists and what is only described, and the postulate privileges no cut. That is why the book holds the question open rather than answering it. The observer was a carving; so is the line between the world that exists and the worlds that are only described.
+There is a deeper underdetermination underneath this one, and Chapter 6 promised to name it. The book has been speaking in two pictures without choosing between them: the totality surveyed from outside, and the observer situated inside it with a posterior. Which picture is the \emph{real} one? $M$ does not say, and the question has a shape you have seen before. Choosing which picture is the real one is itself a cut, a carving of the whole into what exists and what is only described, and the postulate privileges no cut. That is why the book holds the question open rather than answering it. The observer was a carving; so is the line between the world that exists and the worlds that are only described.

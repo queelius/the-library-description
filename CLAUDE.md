@@ -105,7 +105,7 @@ manuscript; when changing a fact, update the lore doc first, then propagate.
 |---|---|
 | `foundations.md` | **Canonical.** Theorem/construction distinctions, the postulate, finitude, $M$ versus $m$, the missing indexical measure, the ontology (c), and discipline. Upstream of all. |
 | `themes.md` | Core vision, the inversion, the seven themes (theme 6 = the indifference of description), the suite table, "What This Book Is NOT." |
-| `index.md` | Supporting detail: Picture A vs Picture B (and that choosing between them is a cut), local inference, hierarchical decomposability. |
+| `index.md` | Supporting detail: the outside view vs the inside view (formerly Picture A and B; choosing between them is a cut), local inference, hierarchical decomposability. |
 | `outline.md` | The three parts as three cuts; per-chapter cut notes; Ch 10 = "The Indifference of Description"; word targets; pedagogical sequencing. |
 | `direction.md` | Format, tone, pedagogy, comparable works, diagrams (the cut as figure), the voice sample. |
 | `grace.md` | The destination (the held cut); no-view-from-the-top grounded on the postulate; the symmetric-distribution resolution. |
@@ -130,7 +130,9 @@ Part II = The System (Ch 6-10, capped by Ch 10 "The Indifference of Description"
 The Self (Ch 11-15, closing on the held cut: a header-less coda, address "Stay.", Camus's *must*
 literal, the adequacy-doubt named).
 
-**Status (2026-10-19): release candidate after the October review and whole-book check.** A fresh cover-to-cover
+**Status (2026-10-19, evening): release candidate after the October review, the whole-book check, and the author's read-through.** The author's reading notes (scratch, gitignored at `lore/reading-notes.md`) and a fresh Fable 5.1 cover-to-cover review led to one more revision the same day: Chapter 2 gained the section "The address of a book" (the address arithmetic and the counting fact; see `lore/foundations.md`, "The counting fact"); Chapter 4 opens with a fast-path signpost and defines $K$ in one paragraph, with $m_V$ and the coding theorem now in Appendix A only; Chapter 7 treats the empty set as an explicit stand-in for nothing that is itself something; the two pictures are now "the outside view" and "the inside view" (formerly Picture A and B), introduced by name in Chapter 6; Chapter 8 defines the observer before the Everett landmark; Chapter 10 says what the mathematics bought Part III; Appendix E has a sixth objection (joint-carving realism, the postulate's named adversary); Chapters 11 and 13 are retitled "The Chooser" and "The Braid" (files unchanged). Build: 144 pages, about 30,500 words including back matter; EPUB passes `epubcheck`. The earlier October history follows.
+
+**The October review and check.** A fresh cover-to-cover
 Worldsmith review (`.worldsmith/reviews/2026-10-18/`) confirmed the July 15 fixes held in the
 body, then found one new BLOCKING error (the definition of the sequential $M$, which must sum
 over minimal programs of a universal monotone machine) and a July over-correction of Parts II
@@ -141,8 +143,8 @@ epigraph source checks are in `.worldsmith/reviews/2026-10-18/decisions/revision
 whole-book `/worldsmith:check` on 2026-10-19 (`.worldsmith/reviews/2026-10-19/`) found the
 mathematics and lore sound but Part III re-performing moves after the per-finding fixes; those
 seams, the stale outline, and the cross-reference residue were fixed and independently verified
-the same day. Build: 140 pages, about 28,750 words, no undefined references or overfull boxes;
-EPUB passes `epubcheck` 5.3.0. Do not restore categorical multiverse or observer-measure language
+the same day. Build at that point: 140 pages, about 28,750 words, no undefined references or overfull boxes;
+EPUB passed `epubcheck` 5.3.0. Do not restore categorical multiverse or observer-measure language
 from older commits or specs.
 
 **Appendices (2026-07-02):** a back-matter Appendices section (A The Bedrock, Formally;
@@ -197,7 +199,10 @@ release-quality build. The canonical chapter list and include order live in `the
   from the postulate, not from a Turing-jump ladder); never project emotional properties
   onto the structure; never console with what is not true; never engineer away what the framework
   permits; keep the moral spine in the structure, never in citations (no Origen, Hart, Gregory of
-  Nyssa, the bodhisattva vow, Levinas; and under (c), no Nagarjuna, Pyrrho, or "emptiness").
+  Nyssa, the bodhisattva vow, Levinas; and under (c), no Nagarjuna, Pyrrho, or "emptiness"). The
+  rule guards the moral spine against borrowed authority; it does not bar mathematical sources, and
+  a philosophical adversary (Lewis, Sider) may be named in the Notes, as Appendix E's sixth
+  objection does. Rationale in `lore/apokatastasis.md`, "What Not To Do."
 - *Worldlines* is a **companion, not a prerequisite**: gloss any borrowed concept (block
   universe, worldline, the braid) inline.
 

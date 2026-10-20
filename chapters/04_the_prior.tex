@@ -6,6 +6,8 @@
 
 \noindent \textsc{Bayes requires a prior.} If conditioning is the cut the data make, the prior is the cut you make before any data arrive: a decision about how to spread belief over candidates that nothing has yet ruled out. In the classical treatment, it reflects background knowledge, judgment, or convention.
 
+This is the most technical chapter in the book, and you can take it at either of two speeds. Read it through and you will see the prior built from nothing but fair coin flips and a universal computer, with the one inequality that makes the weights add up. Or go straight to the paragraph near the end that begins \emph{What $M$ does, in three sentences}, the one after it, which names $K$, and then to Chapter 5's ``What this says to the chicken.'' The rest of the book asks no more of you than those two passages. Appendix~\ref{app:bedrock} carries the formal statements for anyone who wants them.
+
 \section*{What kind of measure?}
 
 The Library is generated from strings, but a predictor needs weights, not merely an enumeration. We will build them from a simple experiment: feed fair random bits to a universal computer and ask what output begins to appear. First, though, the weights have to add up to at most $1$.
@@ -112,7 +114,7 @@ Finitude supplies a different lesson. A finite reasoner must use bounded represe
 
 Now extend from codewords to programs. Programs are strings; they differ from arbitrary strings only in that they have a runtime behavior on a universal computer.
 
-Let $U$ be a universal machine that reads its program one bit at a time, never going back, and writes its output one symbol at a time, never erasing.\footnote{Machines that read and write this way are called \emph{monotone} machines; Li and Vit\'anyi, \textit{An Introduction to Kolmogorov Complexity and Its Applications}, section~4.5, gives the standard treatment. This form of $M$ is due to Zvonkin and Levin (1970), building on Solomonoff (1964). Machines that must halt are the wrong model here. A halted program has finished its output, so the total weight such programs give to outputs at least $n$ symbols long shrinks toward zero as $n$ grows, and no such sum can keep pace with a source that goes on producing symbols. Halting machines define the exact-output quantity $m_V$ below instead.} Feed it fair coin flips. It need never halt: it reads another bit when it needs one and writes more output when it can. If its output comes to begin with $x$, there is a first moment that happens. Call the bits read up to that moment $p$, a \emph{minimal} program for $x$, and write $U(p) = x{*}$ (Figure~\ref{fig:prefix}). Give each minimal program weight $2^{-|p|}$ and sum:
+Let $U$ be a universal machine that reads its program one bit at a time, never going back, and writes its output one symbol at a time, never erasing.\footnote{Machines that read and write this way are called \emph{monotone} machines; Li and Vit\'anyi, \textit{An Introduction to Kolmogorov Complexity and Its Applications}, section~4.5, gives the standard treatment. This form of $M$ is due to Zvonkin and Levin (1970), building on Solomonoff (1964). Machines that must halt are the wrong model here. A halted program has finished its output, so the total weight such programs give to outputs at least $n$ symbols long shrinks toward zero as $n$ grows, and no such sum can keep pace with a source that goes on producing symbols. Halting machines define the exact-output quantities instead: $K$ below, and $m_V$ in Appendix~\ref{app:bedrock}.} Feed it fair coin flips. It need never halt: it reads another bit when it needs one and writes more output when it can. If its output comes to begin with $x$, there is a first moment that happens. Call the bits read up to that moment $p$, a \emph{minimal} program for $x$, and write $U(p) = x{*}$ (Figure~\ref{fig:prefix}). Give each minimal program weight $2^{-|p|}$ and sum:
 
 $$M(x) = \sum_{p \,:\, U(p) = x{*}} 2^{-|p|}.$$
 
@@ -194,15 +196,7 @@ This is Solomonoff's \emph{universal semimeasure} on finite output prefixes $x$.
 
 What $M$ does, in three sentences. It assigns weight to a prefix by summing over every minimal program for it, which comes to the probability that fair coin flips make the machine's output begin with that prefix. A shorter program contributes a larger individual term. Because $U$ is universal, every finite prefix has at least one minimal program, so every prefix gets positive weight.
 
-A related construction connects probability to Kolmogorov complexity, but the distinction matters. Let $V$ be a universal \emph{prefix} machine: its programs must halt, its halting programs form a prefix-free set, and each one ends with an exact finite output. Define
-
-$$m_V(x) = \sum_{q\, :\, V(q)=x} 2^{-|q|}.$$
-
-Let $K_V(x)$ be the length of the shortest program $q$ with $V(q) = x$. Because $V$ is universal, the coding theorem says
-
-$$-\log_2 m_V(x) = K_V(x) + O(1).$$
-
-Thus exact-output algorithmic probability $m_V$ and prefix complexity $K_V$ express the same notion up to an additive constant that depends on $V$. Sequential $M$, by contrast, sums over minimal programs whose output merely begins with the observed data, on a machine that need never halt, and it is the object we condition for prediction. The two constructions are close relatives, not interchangeable notation.
+One relative of $M$ needs a name here, because the rest of the book uses it. Write $K(x)$ for the length of the shortest program that prints exactly $x$ and then halts, on a universal \emph{prefix} machine: one whose programs must halt and, taken as a set, are prefix-free. $K(x)$ is the Kolmogorov complexity of $x$, the cost of saying $x$ outright, the cost Chapter 2 was counting. The two quantities are close kin: a short halting program for $x$, run on $U$ through a fixed interpreter, is a large term in $M(x)$, and Appendix~\ref{app:bedrock} says how close, through an exact-output relative of $M$ and Levin's coding theorem. But they are not interchangeable notation. $M$ sums over programs whose output merely begins with $x$, on a machine that need never halt, and $M$ is the object we condition for prediction. $K$ prices a string; $M$ predicts its continuation.
 
 Each program in the sum is a candidate cut: one way of saying what your data are the beginning of. $M$ weights the candidates by the fair-bit experiment, and by nothing else. Whether a heavily weighted description is anything more than a good bet is a question the construction does not ask.
 
