@@ -23,36 +23,37 @@ returns an item's complexity or shortest description). The noun-index is one mor
 Both senses are the cut, at different grain. The book uses the verb sense freely and names the
 noun sense as imposition wherever the imposition matters.
 
-## Picture A and Picture B
+## The outside view and the inside view
 
 The framework supports two pictures of the totality, and the book must not silently switch
 between them.
 
-**Picture A: the totality as object.** The static set $\{U(p)\}$ with the universal semimeasure
+**The outside view (formerly Picture A): the totality as object, the Library surveyed.** The static set $\{U(p)\}$ with the universal semimeasure
 $M$ weighting its output prefixes (not its members as realities, and not observer occurrences),
 surveyed from outside. The book's title-level statements use this picture: the indifference of
 description over carvings.
 
-**Picture B: the observer as situated.** The observer inside some $U(p)$, with access only to a
+**The inside view (formerly Picture B): the observer as situated, the Library inhabited.** The observer inside some $U(p)$, with access only to a
 prefix of their local structure, holding a posterior over candidate programs that never
 collapses. Even with unbounded data, many distinct programs stay consistent; the observer
 cannot retrieve which one generates them.
 
-| | Picture A | Picture B |
+| | The outside view | The inside view |
 |---|---|---|
 | What it describes | static set with a semimeasure on output prefixes | the observer's posterior given a prefix |
 | Vantage | outside, surveying the totality | inside, with finite data |
-| Status of the generating program | held open: if Picture A is read ontically, the totality contains all candidate outputs; no $p$ is singled out | always a posterior, never sharp |
+| Status of the generating program | held open: if the outside view is read ontically, the totality contains all candidate outputs; no $p$ is singled out | always a posterior, never sharp |
 | Status of the index | observer-imposed on a static set | unretrievable from inside |
 | What is indifferent | the weighting over output prefixes | the posterior never resolves |
 
 The pictures are consistent, not in conflict. But the decisive point under the postulate is
-that **choosing which picture is the real one is itself a cut.** Picture A reads as though the
-totality is the fundamental object; Picture B reads as though the situated observer is. Treating
+that **choosing which picture is the real one is itself a cut.** The outside view reads as though the
+totality is the fundamental object; the inside view reads as though the situated observer is. Treating
 either as privileged is a carving, and no carving is privileged. The book holds the choice open;
 this is the ontology of `foundations.md` ("realism is a cut") seen from the reader's side.
-Picture B is what applies to any actual reader, because the reader is always inside, never
-outside.
+The inside view is what applies to any actual reader, because the reader is always inside, never
+outside. The names are descriptive on purpose (the letters A and B confused the author on a
+read-through); Chapter 6 introduces both by name in a paragraph of their own.
 
 ## The index is one instance of the cut, parallel to the self
 

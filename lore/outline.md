@@ -43,6 +43,17 @@ address is computable, but it is only the string again); the inversion itself is
 the picture Chapter 6 will ask the reader to commit to (the postulate), not stated as Part I
 fact.
 
+A section "The address of a book" follows "Indexing" and carries the chapter's one piece of
+arithmetic: an address written in the library's own alphabet is $1{,}312{,}000$ symbols, one
+full book ("the address of a book is a book"), so a catalogue of $T$ books is $T$ volumes and a
+complete catalogue is the library over again; then the counting fact (fewer than one string in
+$2^k$ can be shortened by more than $k$ symbols, in any scheme, so cheap cuts are rare and a law
+is one; which few are cheap is machine-relative, how few is not; see `foundations.md`, "The
+counting fact"). The opening qualifies "every possible book" by size ("in the one size it
+stocks"), the list adds longer works "in installments," and the catalogue beat is phrased by
+pages, so nothing claims a one-volume catalogue. A footnote notes Borges' narrator hoped for one.
+A second footnote: his alphabet had no digits, so this book is on the next shelves, not his.
+
 **Epigraph:** Borges, "The Library of Babel."
 
 ### Chapter 3: The Indexing
@@ -58,11 +69,15 @@ letter to Lewis Campbell).
 
 ### Chapter 4: The Prior
 
+Opens with a signpost naming the fast path (the paragraph "What $M$ does, in three sentences,"
+then Chapter 5's "What this says to the chicken"), since this is the most technical chapter.
 Kraft's inequality; fair random bits assign $2^{-|p|}$ to prefix-free programs; the sequential
 universal semimeasure $M(x) = \sum_{p:U(p)=x*} 2^{-|p|}$, summed over minimal programs on a
 universal monotone machine $U$ (equivalently, the fair-coin probability that $U$'s output begins
-with $x$); and the distinct exact-output quantity $m_V(x)=\sum_{q:V(q)=x}2^{-|q|}$ on a universal
-prefix machine $V$, used in the coding theorem for $K(x)$. **The cut, and finitude:** Kraft makes
+with $x$). $K(x)$ is defined in one paragraph (shortest halting program on a universal prefix
+machine), named as kin to $M$ but not interchangeable, and pointed to Appendix A; the
+exact-output $m_V$ and the coding theorem live in Appendix A only (moved out of the body
+2026-10-19 as the densest unused passage). **The cut, and finitude:** Kraft makes
 the chosen weights admissible but does not force them. Finitude requires bounded models; the
 universal prior is a powerful ideal construction, not the only coherent prior.
 
@@ -101,13 +116,15 @@ of `foundations.md`). The postulate section opens by quoting the spine back ("Th
 There are only the cuts you make.") and naming Chapter 2's inversion as the picture the reader is
 now asked to commit to: first felt there, a commitment here. It denies that one decomposition is
 view-independently canonical; it does not prove that every described world exists or that $M$ is
-an ontic measure. Picture A and Picture B are introduced as alternatives and held open.
+an ontic measure. The outside view and the inside view are introduced by name, in a paragraph of
+their own, and held open. One clause names the postulate's opposite (joint-carving realism) and
+points to Appendix E, objection 6.
 
 **Epigraph:** Wheeler, "It from bit."
 
 ### Chapter 7: The Inhabited Library
 
-The optional Picture A made available by the slip, the old question it sharpens (why is there
+The optional outside view made available by the slip, the old question it sharpens (why is there
 something rather than nothing), and the humility hinge: the section "What if you refuse," the one
 place in the body where refusing the postulate is argued (what the refuser keeps, including the
 Part I fact that no index is computably canonical, and what they give up; Appendix D expands it).
@@ -116,8 +133,11 @@ programs and output prefixes; nothing in the construction says what counts as an
 occurrence, whether occurrences exist, or how first-person weight is spread among them. Later
 chapters refer to it by name. The recurring cut figure is drawn here ("two carvings": the same
 structure carved two ways, neither privileged). The nothing question is taken seriously and not
-pretended-resolved (nothing is itself a cheap cut; observation excludes it; coherence is
-flagged). A note on time: computation is static, time is a logical index, the same eternalism as
+pretended-resolved: the Library's nearest stand-in for nothing is the empty cut, which is cheap
+but already something (a set, not the absence of sets; the Library has no symbol for the absence
+of the Library), so the cut principle compares the empty cut with the whole and neither is quite
+the nothing the question meant; observation excludes nothing; coherence is flagged, and the
+failed translation points at it. The figure labels the left endpoint "the empty cut."  A note on time: computation is static, time is a logical index, the same eternalism as
 the block universe. **The cut:** the inhabited world is a carving; contingency is relocated, not
 resolved.
 
@@ -125,7 +145,9 @@ resolved.
 
 ### Chapter 8: The Observer
 
-Everettian quantum mechanics as a familiar interpretive landmark, not a route or corroboration:
+Order (2026-10-19): the chapter first says what an observer is, then visits the Everettian
+landmark, then asks "Where am I?"; a chapter titled The Observer defines the observer before
+the physics. Everettian quantum mechanics as a familiar interpretive landmark, not a route or corroboration:
 unitary evolution plus an Everettian ontology yields decoherent branches, shown briefly and
 cross-referenced to *Multitudes* for the full treatment. Decoherence gives effective autonomy,
 not a unique outcome or an interpretation-free ontology. The Everett caveat is stated once, at
@@ -133,8 +155,8 @@ full strength, in one consolidated paragraph; nothing later rests on Everett. Th
 universal-prior comparison is made here: they arise in different formal settings and can be
 compared only in role (each attaches weight once a domain of alternatives is specified); their
 domains and warrants differ, no formula is identified or derived, and "why this weighting?"
-stays open to quantum theory. This is the seam to *Multitudes*. Then the chapter defines what an
-observer is: a local substructure doing local inference, with hierarchical decomposability as the
+stays open to quantum theory. This is the seam to *Multitudes*. The chapter defines what an
+observer is (before the landmark): a local substructure doing local inference, with hierarchical decomposability as the
 condition for inference to work, and the self as a short local program. "Where am I?" becomes
 sharp; the rules that would fill the missing occurrence measure (SSA, SIA, xerographic
 distributions) are listed as none-forced and adopted by none (the speed prior is distinguished as a program
@@ -156,7 +178,7 @@ This follows from the postulate, not from a Turing-jump ladder of allegedly comp
 ordinary halting theorem supplies only a narrower limit. The grace of Part III is seeded here
 (warmth, if any, is among observers, not handed down). Then the
 catalogue of what the framework permits: Boltzmann observers, hellscapes, dark continuation, with
-a calibrated reader-safety note (Picture A permits these descriptions; the framework neither
+a calibrated reader-safety note (the outside view permits these descriptions; the framework neither
 establishes that they exist nor places you in one; step away if the material is destabilizing).
 This catalogue is the one home of "program weights are not moral weights"; later chapters refer
 back to it instead of restating it. Then a short section, "Without Everett": what refusing the
@@ -182,7 +204,11 @@ Then one positive cascade summary in the five footing names (theorem, constructi
 postulate, optional additions), and **one** paragraph of caveats, stated once: it does not say
 every output exists; it does not say which occurrence is you (the missing occurrence measure, by
 name); it does not derive the Born rule (a cross-reference to Ch 8 and Appendix B, not a re-run of
-the comparison). Say what the indifference is before saying what it is not. The adequacy
+the comparison). Say what the indifference is before saying what it is not. "What remains yours" carries
+one paragraph saying what the mathematics bought Part III, mostly as refusals (no occurrence
+measure, so copies neither console nor dilute and quantum immortality is not in the
+mathematics; no computable index; $M$ ranks descriptions, not persons): the theorems' gift to
+Part III is the floor they take away. The adequacy
 doubt is seeded once, in plain terms, in "What remains yours" (what could fail: the theorems'
 application to nature, the machine idealization, the postulate), and "Where this leaves you"
 points forward to Ch 15 without closing it.
@@ -199,7 +225,11 @@ This is the analog of Worldlines' "The Block Universe" chapter, one level deeper
 human concerns, and what is the chosen response? The self is the third and deepest instance of
 the move, and care is the cut we choose.*
 
-### Chapter 11: The Question of Continuation
+### Chapter 11: The Chooser
+
+(Titled "The Question of Continuation" until 2026-10-19; renamed because the chapter is about
+where the chooser is, and the one-noun title sits in the series The Observer, The Chooser, The
+Pattern. The file is still `11_continuation.tex`.)
 
 Free will and the chooser, built around one beat: **the chooser is a cut.** Responsibility attaches
 to a drawn boundary (the region you call *you*, carved out for navigation and for answering); the
@@ -244,14 +274,18 @@ they are.
 **Epigraph:** Epicurus, "Death is nothing to us," *Letter to Menoeceus*, in Hicks's translation
 (the epigraph text must match Hicks's wording).
 
-### Chapter 13: Love Across Branches
+### Chapter 13: The Braid
+
+(Titled "Love Across Branches" until 2026-10-19; renamed because the chapter sets branches
+aside on its first page and the braid is its governing image from first section to last. The
+file is still `13_love_across_branches.tex`.)
 
 Love and grief. The braid extended: two patterns intertwined through mutual influence, the braid a
 carving we maintain. The opening image is *Worldlines'* (the braid in the manifold, permanent on
 the block-universe reading) and is attributed as such; this book keeps the image and changes what
 holds it together (the tending, not the structure). **"We" is a cut we make anyway**, and the
 chapter turns on that: the
-boundary around *us* is drawn, not found, and the drawing is the work. Picture A permits
+boundary around *us* is drawn, not found, and the drawing is the work. The outside view permits
 descriptions of braids that end in cruelty, in care, or never form; program weights are not moral
 ranks, and the book says so once and acts here. It does not re-make Ch 12's "does not console"
 turn; it refers back. Holds the concrete object in the table vignette (a table, late; a mug held
@@ -351,18 +385,18 @@ No pre-revision line about simplicity returns (no "simplicity is why you are her
 
 ## Word counts (targets and the release candidate)
 
-Actuals are `detex | wc -w` per chapter file at the 2026-10-19 release candidate (figure labels
-included, so prose alone runs a few hundred words lower per Part).
+Actuals are `detex | wc -w` per chapter file after the 2026-10-19 author-notes revision (figure
+labels included, so prose alone runs a few hundred words lower per Part).
 
 | Section | Target | Actual |
 |---|---|---|
 | Preface | 500 | about 300 |
-| Part I (5 chapters) | ~7,500 | about 9,400 |
-| Part II (5 chapters) | ~8,000 | about 7,900 |
-| Part III (5 chapters) | ~8,000 (aspirational) | about 6,200 |
-| Appendices (A to E) | ~3,000 to 5,000 (under about 20 percent of the body; see `appendices.md`) | about 3,700 |
-| Notes, Resources, and other back matter | as needed | Notes about 1,500 |
-| **Body total (preface and Parts I to III)** | **~24,000** | **about 23,800** |
+| Part I (5 chapters) | ~7,500 | about 10,100 |
+| Part II (5 chapters) | ~8,000 | about 8,450 |
+| Part III (5 chapters) | ~8,000 (aspirational) | about 6,100 |
+| Appendices (A to E) | ~3,000 to 5,000 (under about 20 percent of the body; see `appendices.md`) | about 4,050 |
+| Notes, Resources, and other back matter | as needed | Notes about 1,600 |
+| **Body total (preface and Parts I to III)** | **~24,000** | **about 25,000** |
 
 Part III is shorter than Parts I and II by design after the October revision: it refers back to
 caveats stated in their homes instead of restating them. Growing it means new material, not
@@ -394,10 +428,10 @@ Each step is set up by the previous, tracing the new skeleton:
 9. **The limits** (Ch 9). No view from the top; what the framework permits; without Everett.
 10. **The indifference of description** (Ch 10). Thesis stated positively, opening with the
     spine; caveats once; The System capped.
-11. **Continuation** (Ch 11). The chooser is a cut; responsibility attaches to a drawn boundary;
+11. **The chooser** (Ch 11). The chooser is a cut; responsibility attaches to a drawn boundary;
     quantum immortality labeled, with a safety note.
 12. **Death** (Ch 12). The boundary is a cut; the loss is not; "does not console," once.
-13. **Love** (Ch 13). The braid as a carving we maintain; "we" is a cut we make anyway.
+13. **The braid** (Ch 13). The braid as a carving we maintain; "we" is a cut we make anyway.
 14. **Self** (Ch 14). The cut all the way down; the convergence made concrete, with the figure.
 15. **Closing** (Ch 15). The held cut; the restored cadence; "Stay."
 

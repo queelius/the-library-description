@@ -10,7 +10,7 @@ reader, one braid per pair. The structure was indifferent; care was figure again
 closing could say "we are each other's refuge" because there was a specific "we" and a specific
 structure to be refuge against.
 
-This book loses that contrast under Picture A. The contemplated totality includes kind
+This book loses that contrast under the outside view. The contemplated totality includes kind
 descriptions and cruel ones, with program weights rather than moral rank. The figure-ground
 inversion that worked for Worldlines does not transfer. Two of the old moves broke on this:
 
@@ -32,7 +32,7 @@ The earlier draft kept three candidate landings in tension. Under the held cut t
 
 - **Direction A (local-indexical), retained as the structural footing.** You act from a local
   situation, not from an abstract measure. Moral relations require causal reach, which is local.
-  Possible other carvings are not reachable from here whether or not Picture A is true. The braid
+  Possible other carvings are not reachable from here whether or not the outside view is true. The braid
   at these coordinates is the moral universe you can affect.
 - **Direction B (Camus / performative), promoted to the central move.** The closing does not argue
   the choice; it is the choice. The book turns and looks at itself: author writing carefully, reader

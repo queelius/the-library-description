@@ -19,3 +19,5 @@ build/
 # canonical source lives in claude-anvil / alex-claude-plugins)
 plugins/
 .agents/
+lore/reading-notes.md
+.*.swp

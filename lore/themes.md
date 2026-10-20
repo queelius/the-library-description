@@ -74,7 +74,7 @@ together, because they are one move at two levels.
 
 Earlier framing made the cold "the hellscapes exist." Under the postulate the cold is deeper
 and quieter: nothing in the structure, and no possible vantage, settles whether they do.
-Picture A (the totality as an object, surveyed from outside) and Picture B (the observer
+The outside view (the totality as an object, surveyed from outside) and the inside view (the observer
 inside, with finite data, whose posterior never resolves) are two cuts on the same fact, and
 choosing between them as the real one is itself a cut the book refuses. Boltzmann observers,
 hellscapes, and dark continuations are carvings the framework permits; the book catalogues

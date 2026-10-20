@@ -37,7 +37,7 @@ unique prior. Every conclusion rests on one of five footings, named the same way
    and $m$);
 3. **finitude** (a finite observer must use bounded local models);
 4. **postulate** (no cut is privileged; asked once, refusable);
-5. **optional additions** (Picture A read ontically, Everett, an identity rule, a self-location
+5. **optional additions** (the outside view read ontically, Everett, an identity rule, a self-location
    rule, a cosmology), which the book names when a conclusion would need them and adopts none
    of.
 
@@ -181,6 +181,23 @@ the book's image, it is the cost of the cheapest cut that isolates $x$ from the 
 is an image, not a definition: the definition is the program length, and it is machine-relative
 up to an additive constant.
 
+### The counting fact: cheap cuts are rare
+
+Theorem-level, Part I, stated in Chapter 2's section "The address of a book." Of the $2^n$
+binary strings of length $n$, fewer than $2^{n-k}$ have a description more than $k$ symbols
+shorter than themselves, in any scheme of description whatever, because there are fewer than
+$2^{n-k}$ such short descriptions to hand out. So fewer than one string in $2^k$ can be
+shortened by more than $k$ symbols. Almost everything in the Library costs as much to name as
+to write out; the cheap cuts are rare, and they are the ones with a pattern in them (a law is a
+short name for a long book). Borges' arithmetic is the same fact in costume: the library stocks
+$25^{1{,}312{,}000}$ books, so an address in its own alphabet is $1{,}312{,}000$ symbols, one full
+book; a catalogue of $T$ books is $T$ volumes, each as lost as the book it names; a complete
+catalogue is the library over again. The counting is machine-independent. Which few strings get
+the short names is machine-relative (invariance, Chapter 5), and the constant can be large.
+The fact seeds the reply to joint-carving realism (Appendix E, objection 6): shortness is a
+fact about a string relative to a machine, with all machines agreeing only in the limit, where
+no finite observer stands.
+
 ### The cut has no canonical form
 
 Here is the move that makes this book different from every other book about all possible worlds. Two claims
@@ -244,12 +261,26 @@ This is the boxed wording, and it is identical wherever the manuscript boxes it 
 where it enters, and Chapter 9, where it is recalled). Elsewhere, recap it in prose. "The one
 reality that exists" is one of the carvings it covers.
 
+**The named adversary.** The postulate's opposite is joint-carving realism: Lewis's natural
+properties, Sider's structure, Plato's image of carving nature at the joints. The body names
+the opposite in one clause where the postulate is stated (Chapter 6) and gives it its strongest
+form as objection 6 of Appendix E. The citations live in the Notes (the Appendix E section), not
+in the body; an adversary named in the Notes is not an imported authority, so the moral-spine
+rule is untouched. The reply separates two senses of *privileged*. Rewarded for a job is
+conceded: decomposability rewards carvings that follow the grain (Chapter 8), and the counting
+fact makes shortness a fact about a string. The structure's own, independently of every job, is
+denied: which strings are short is machine-relative up to a constant that invariance does not
+make small, and *works* is always *works for a job*, with many jobs (the kitchen of Chapter 13
+reread at mug grain and at molecule grain in Chapter 14; the chooser at five widths in Chapter
+11). A reader who insists on the second sense is refusing the postulate, which Chapter 7 and
+Appendix D allow, and keeps every theorem.
+
 This single postulate replaces the two "speculative moves" earlier drafts carried (the claim
 that physics is computable, and the claim that all computable structures exist). Those were
 framed as *additions*: things you take on. The postulate is the opposite. It is a *refusal to
 privilege*. "Only this one world is real" is one possible cut. Declining to privilege it does
-not prove that every describable world exists. Under Picture A it motivates considering the
-whole space without selecting one member as view-independently real; under Picture B it leaves
+not prove that every describable world exists. Under the outside view it motivates considering the
+whole space without selecting one member as view-independently real; under the inside view it leaves
 the observer with competing candidate descriptions. Even the leap from "no cut is privileged"
 to "all cuts are equally real" is a further postulate, and the book does not make it.
 
@@ -289,11 +320,17 @@ to use one unique prior.
 Take the postulate seriously and one more thing follows, the book's coldest and most
 self-consistent move: the question of which picture is *real* is itself a cut.
 
-There are two pictures the framework supports. **Picture A** is the totality as an object: a
-static program-output space with description weights, surveyed from outside. **Picture B** is the observer inside some
+There are two pictures the framework supports. **The outside view** is the totality as an
+object: a static program-output space with description weights, surveyed from outside, the
+Library surveyed. **The inside view** is the observer inside some
 $U(p)$, with access only to a prefix of their local structure, holding a posterior over
 candidate programs that never collapses, unable even in principle and with unbounded data to
-retrieve which program generates them. The book does not declare either picture the real one,
+retrieve which program generates them: the Library inhabited. (These were "Picture A" and
+"Picture B" in drafts through 2026-10-19 and in the design history under `docs/superpowers/`;
+the descriptive names replaced them because the letters did not stick. Chapter 6 introduces
+both by name, in a paragraph of their own, before the postulate is put to use.) The outside
+view is a picture no finite observer occupies; the inside view is where every actual reader
+is. The book does not declare either picture the real one,
 because choosing between them is a carving, and no carving is privileged. It holds the
 existence question open and underdetermined from inside.
 
@@ -375,11 +412,11 @@ commits to:
   view. Developed in Chapter 9; it sharpens the indifference (the structure is not only
   unpreferring but unwatched) and seeds the grace of Part III (warmth, if any, comes from
   among observers, never handed down).
-**Optional additions** (Picture A read ontically, Everett, an identity rule, a self-location
+**Optional additions** (the outside view read ontically, Everett, an identity rule, a self-location
 rule, a cosmology) are named wherever a conclusion would need them, and the book adopts none:
 
 - Boltzmann observers, hellscapes, dark continuations, and other uncomfortable descriptions are
-  permitted by Picture A; the framework does not establish their existence or assign a
+  permitted by the outside view; the framework does not establish their existence or assign a
   self-location measure over their occurrences (the missing occurrence measure). Reading them
   as facts takes optional additions. The book catalogues the conditional implication honestly
   (Chapter 9). The chosen response of Part III is not a theorem about it.
@@ -401,9 +438,14 @@ book says so.
 
 The bedrock and the postulate are silent on:
 
-- **Why there is something rather than nothing.** "Nothing" is the empty set, itself a cheap
-  cut; "everything uncut" is its complement. What excludes nothing is not simplicity but
-  observation (we exist) and a question about coherence. The book does not pretend to resolve
+- **Why there is something rather than nothing.** The nearest thing the Library can offer for
+  "nothing" is the empty cut, the empty set, which is as cheap as the whole; but the empty set is
+  already something (a set, a container with nothing in it, needing a domain of possibilities to
+  exclude from), and the Library has no symbol for the absence of the Library. So the cut
+  principle compares the empty cut with the whole, and neither is quite the nothing the question
+  meant; the chapter says so (Chapter 7, "An older question") and does not write "nothing is the
+  empty set" flatly. What excludes nothing is not simplicity but
+  observation (we exist) and a question about coherence, which the failed translation points at. The book does not pretend to resolve
   this; under the postulate, "why anything" is itself a cut, which relocates the question
   without closing it.
 - **The hard problem of consciousness.** Bracketed. The book is about the structure observers

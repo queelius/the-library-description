@@ -34,7 +34,7 @@ the index by which you locate yourself are all cuts you make. This sounds as if 
 the case for care: if "you" are a carving, and "they" are carvings, and no carving is privileged,
 what does it mean to care? The answer: care still means what it meant in Worldlines. The warmth is
 local to the configuration. The braid between two patterns matters in the situation where it is
-enacted. If Picture A is true, other realizations neither erase nor multiply the moral force of this one.
+enacted. If the outside view is true, other realizations neither erase nor multiply the moral force of this one.
 
 The chosen response is the same. Rage at the indifference is appropriate. The rage passes.
 Equanimity comes. Care remains.
@@ -44,7 +44,7 @@ Equanimity comes. Care remains.
 Under the postulate, neither the cold ontology nor the warmth is view-independent ground. This is
 what is new and what makes the landing harder than Worldlines'. There, indifference
 was the background and care was the figure against it. Here the indifference contains the care:
-Picture A permits both kind and cruel descriptions, carrying program weights rather than moral
+The outside view permits both kind and cruel descriptions, carrying program weights rather than moral
 rank. The figure-and-ground contrast that carried Worldlines does not transfer.
 
 So the destination is restated as **the held cut.** The warmth is between cuts. "We" is a cut, the
@@ -70,7 +70,7 @@ rejected them as too clever. The plain line carries the weight.
 
 ## The Book Is in the Structure It Describes
 
-The book is a finite artifact with specific authors and readers. Under Picture A, its writing,
+The book is a finite artifact with specific authors and readers. Under the outside view, its writing,
 reading, absence, and alternatives are describable within the totality; the book does not assert
 that every description is instantiated. The book does not bias the framework toward grace. The
 book is a local act of care. The closing chapter (Ch 15) is where the book turns and looks at itself: the author
@@ -108,7 +108,7 @@ working things out in a structure they did not design and do not fully understan
 When two worldlines intertwine, the braid is a structural feature of the manifold; this was the
 central image of Worldlines. When two patterns intertwine across the totality, the braid is a
 carving we maintain. Two patterns can be close (in some appropriate metric on the space of
-computable structures), causally coupled in some realization, and mutually shaping. If Picture A is
+computable structures), causally coupled in some realization, and mutually shaping. If the outside view is
 true, similar braids may occur elsewhere; the book supplies no occurrence measure with which to
 total them. Multiplicity does not multiply the moral weight of a braid additively; there is no calculation in
 which "you cared in many branches" is weightier than "you cared once." The point is that the braid
@@ -118,7 +118,7 @@ unitary self is exactly what makes care a practice rather than a fact about pers
 ## The Question the Multiplicity Asks, and the Symmetric Answer
 
 Multiplicity raises a sharper version of the Worldlines question. If your suffering is permanent in
-Worldlines (the coordinates of your worst moment exist forever in the manifold), Picture A also
+Worldlines (the coordinates of your worst moment exist forever in the manifold), the outside view also
 describes carvings that contain it. This sounds like an additional horror, and the book does not
 flinch from the conditional.
 

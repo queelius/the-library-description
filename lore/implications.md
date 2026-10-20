@@ -94,12 +94,12 @@ console" turn once, at full strength, for the whole of Part III; later chapters 
 Worldlines described love as two worldlines intertwined, shaping each other's structure; the braid
 is a feature of the manifold, real at its coordinates. This book shows the braid as a carving we
 maintain. The two patterns you call yourself and another form a braid through mutual influence. If
-Picture A is true, similar braids elsewhere do not add to or subtract from this one. The braid is a
+the outside view is true, similar braids elsewhere do not add to or subtract from this one. The braid is a
 carving we keep, and the conventions do not maintain themselves.
 
 This deepens rather than dilutes the compassion argument. The care you provide has effects here.
 
-**Where this gets harder.** Picture A permits descriptions of braids ending in cruelty, in care, or
+**Where this gets harder.** The outside view permits descriptions of braids ending in cruelty, in care, or
 not forming at all. Program weights are not moral ranks. The chosen response is to act here with
 care, knowing that possibilities outside causal reach are not under your control. This is the analog
 of Worldlines' "you cannot rewrite the coordinates of your past carelessness": present care does not
@@ -117,7 +117,7 @@ edition.*
 
 Worldlines reframed memory as a cross-reference, not a record: a configuration at one set of
 coordinates that partially and lossily mirrors a configuration at another. This book extends it.
-Your memory cross-references events within your local history. Under Picture A,
+Your memory cross-references events within your local history. Under the outside view,
 similar-but-different descriptions can diverge from yours. "The
 true memory" is well-defined within your carving and ill-defined across carvings (which carving's
 original?). The notion of a single privileged original is itself a cut. For practical purposes "the
@@ -128,7 +128,7 @@ than undermined.
 
 ## Boltzmann Observers and the Past
 
-**Cascade:** theorem and construction + optional additions (Picture A read ontically, a cosmology,
+**Cascade:** theorem and construction + optional additions (the outside view read ontically, a cosmology,
 a self-location rule).
 
 The framework permits a problem: under some cosmological models and observer-counting rules,
@@ -154,7 +154,7 @@ and the chosen response of Part III is what follows.
 **Cascade:** Bedrock + the postulate.
 
 Worldlines dissolved the Whig narrative: "things got better" is a statement about later events
-having features we prefer. This book extends it. Picture A permits descriptions of many histories:
+having features we prefer. This book extends it. The outside view permits descriptions of many histories:
 the war averted and the war not averted, the suffering that occurred and the suffering that did not.
 The postulate singles out no decomposition as view-independently canonical. From a local history,
 the actual path still matters because it determines what happened to people here. This

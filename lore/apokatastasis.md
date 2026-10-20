@@ -48,7 +48,7 @@ cannot be helped from here.
 
 The postulate dissolves the contradiction. There are no joints, only cuts. The refusal to abandon
 any configuration is a cut the author chooses to make **in orientation**: it is the carving "no one
-is forgotten," held whether or not anyone can be reached or Picture A is true. Care-here follows
+is forgotten," held whether or not anyone can be reached or the outside view is true. Care-here follows
 from causal limitation: an agent can only act within its reach. These no longer contradict,
 because neither claims to be a real joint that the other violates. There was never a privileged line
 in the structure for the indexical move to draw and the universalist move to forbid. The author holds
@@ -61,7 +61,7 @@ closing; never spell out the machinery ("orientation-cut," "crux 4") in the pros
 
 If the standard consolations are unavailable, what is left? The book as the holding.
 
-We cannot act on merely possible observers outside causal reach. If Picture A is true, the same is
+We cannot act on merely possible observers outside causal reach. If the outside view is true, the same is
 true of remote occurrences. But the refusal to abandon suffering in our orientation, the choice to
 write a book in which it is not dismissed, is itself a form of care that does not require an ontic
 claim about every description. We do not have to settle the ontology to be people who do not treat

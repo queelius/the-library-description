@@ -91,7 +91,7 @@ the prose carves index, system, and self two ways each) reuses it for the conver
   branching tree drawn is Chapter 8's Everettian schematic, labelled as one interpretation;
   Chapter 13's braid figure is a conditional Everettian picture, labelled as such.)
 - The "where am I?" diagram: the same data, two different carvings, illustrating the
-  underdetermination (Picture B).
+  underdetermination (the inside view).
 - The same region described two ways (the self as one boundary among many possible), for Ch 14
   (now the "three cuts" figure).
 
