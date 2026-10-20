@@ -92,7 +92,9 @@ Camus, Eliot, and the like), precise caveats, and small asides.
   citations (no Origen, Hart, Gregory of Nyssa, Levinas, Nagarjuna, or "emptiness").
   Mathematical citations are welcome in A and B, and a philosophical adversary may be named
   in the Notes: the rule guards the moral spine against borrowed authority, not the
-  metaphysics against its opponents.
+  metaphysics against its opponents. The one Chapter 15 Note that names the universalist
+  kinship as kinship, and disclaims resting on it, is the single sanctioned exception (see
+  `apokatastasis.md`, "What Not To Do").
 - The appendices stay a supplement, under about 20 percent of the body.
 
 ## Placement

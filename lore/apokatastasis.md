@@ -98,7 +98,12 @@ names it structurally; the others enact it.
   where it leads happens to be a place the author's orientation will not let them abandon anyone in.
 - The closing should not invoke Origen, Gregory of Nyssa, David Bentley Hart, the bodhisattva vow, or
   Levinas by name. That would dilute the position into a literary reference. The position belongs in
-  the structure, not the citations.
+  the structure, not the citations. One exception, decided by the author 2026-10-19 ("i like the
+  honest approach"): a single Notes entry for Chapter 15, keyed to "It could decline to treat them
+  as negligible," names the kinship as kinship (the universalist strand from Origen's apokatastasis
+  to its recent defenders; the bodhisattva vow) and says in the same breath that the book does not
+  rest on it. Honesty about company is not borrowing authority. The body stays clean, and no other
+  Note does this.
 - Under the re-foundation, also keep the emptiness and skeptical traditions out of the prose. "No
   cut is privileged" and "realism is a cut" are close to ideas in Madhyamaka and Pyrrhonism; do not
   name Nagarjuna, Pyrrho, or "emptiness." The kinship belongs in the lore, not the book.

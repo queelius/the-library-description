@@ -261,6 +261,23 @@ This is the boxed wording, and it is identical wherever the manuscript boxes it 
 where it enters, and Chapter 9, where it is recalled). Elsewhere, recap it in prose. "The one
 reality that exists" is one of the carvings it covers.
 
+**Status: a refusal, not a proof of absence.** The spine sentence asserts an absence ("there
+are no joints"); the postulate declines to crown. The author's ontology is epistemic humility
+(2026-10-19), so the body says once, in Chapter 6's inline objection-and-reply after the
+postulate, that the denial is weaker than the spine sentence sounds: whether the structure has
+joints is not settled from inside in either direction. The counting fact makes shortness a fact
+relative to a machine, and machines agree only in the limit, where no finite observer stands.
+The book has not shown there are no joints; it has refused to name one, and says so. Chapter
+10's thesis is worded to match ("nothing in it, from any vantage you can occupy, marks one
+carving as the right one"). The spine sentence stays as the picture; the lore already records
+that Chapter 2 presents it as a picture, not fact.
+
+**The two views are not symmetric.** The inside view is a vantage every reader has; the outside
+view is a picture no finite observer occupies. So "which picture is real" is not a choice
+between rival worlds: the cut between what exists and what is only described is drawn between a
+vantage you have and a picture you drew. Chapter 8's closing paragraph says this; it makes
+"realism is a cut" cleaner, not weaker.
+
 **The named adversary.** The postulate's opposite is joint-carving realism: Lewis's natural
 properties, Sider's structure, Plato's image of carving nature at the joints. The body names
 the opposite in one clause where the postulate is stated (Chapter 6) and gives it its strongest

@@ -46,3 +46,25 @@ no undefined references; EPUB passes epubcheck.
 Other Part I passages to move to Appendix A; a Socratic device for contested sections;
 larger restructures; the challenge to the postulate from the counting fact (see the session
 write-up).
+
+## Second pass (same evening)
+
+Author replies: a worked example of a law; the honest Notes line for Chapter 15; draft the
+three inline objection-and-reply pairs; the spine sentence to be read as a refusal (the author's
+ontology is epistemic humility); the two views are not symmetric.
+
+- Ch 2: the Moon example after "A law is a short name for a long book" (to the eye, among the
+  stars; the name fits on a page).
+- Ch 6: inline pair after "Be careful how far this reaches": science finds joints / the
+  concession, the narrower denial, and the status (the postulate proves no absence; it declines
+  to crown one; the joints question is not shown from inside in either direction). Ch 10's thesis
+  sentence now reads "from any vantage you can occupy." Lore: `foundations.md` "Status."
+- Ch 7: inline pair ("you have changed the subject") before "The book does not resolve this."
+- Ch 11: inline pair ("Yours?") after "The line is yours": the map marks where the mapmaker
+  stands; Ch 14 holds the pen.
+- Ch 8: the two views are a vantage and a picture, not two worlds of the same standing.
+- Notes, Ch 15: one sanctioned entry naming the universalist kinship as kinship and disclaiming
+  it (rule amended in `apokatastasis.md`, `appendices.md`, CLAUDE.md).
+
+Verified by a third fresh auditor (one HIGH: "the postulate asserts nothing" contradicted the
+box; fixed to "proves no absence"). 146 pages; epubcheck clean.
