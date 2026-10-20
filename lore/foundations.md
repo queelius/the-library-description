@@ -194,6 +194,15 @@ $25^{1{,}312{,}000}$ books, so an address in its own alphabet is $1{,}312{,}000$
 book; a catalogue of $T$ books is $T$ volumes, each as lost as the book it names; a complete
 catalogue is the library over again. The counting is machine-independent. Which few strings get
 the short names is machine-relative (invariance, Chapter 5), and the constant can be large.
+And nothing tells you by looking which strings have one: no statistical test run on the digits
+of $\pi$ has found a pattern, and they have a one-line name (a program that prints the digits
+in order for as long as asked). To call a thing in the Library "noise" reports only that no
+short name is known; whether it has one is a separate fact. Counting says it rarely does. The
+asymmetry (Chapter 2's inversion paragraph): a short name, once found, is its own certificate,
+and the compressible strings are computably enumerable; but no procedure certifies that a
+string has no short name, which is what the incomputability of $K$ comes to here. The book uses $\pi$ for this once, in Chapter 2;
+it is not a book on Borges' shelves (infinite, and his alphabet has no digits), and its short
+name is a description, not a shelf address.
 The fact seeds the reply to joint-carving realism (Appendix E, objection 6): shortness is a
 fact about a string relative to a machine, with all machines agreeing only in the limit, where
 no finite observer stands.

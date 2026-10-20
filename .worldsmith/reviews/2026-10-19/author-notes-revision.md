@@ -68,3 +68,7 @@ ontology is epistemic humility); the two views are not symmetric.
 
 Verified by a third fresh auditor (one HIGH: "the postulate asserts nothing" contradicted the
 box; fixed to "proves no absence"). 146 pages; epubcheck clean.
+
+## Third pass (same evening): pi in the inversion paragraph
+
+The author asked whether "a good address for pi is the shortest program that can compute any digit of pi," then noted it is not really about the address of a book. Agreed: pi is infinite, Borges' alphabet has no digits, and a short program is a description, not a shelf address. What pi earns is the flip side of the counting fact, which Part I lacked: a string can show no pattern to any statistical test and still have a one-line name. Added to Chapter 2's inversion paragraph (after "no computable procedure sorts the Library"), with a Notes entry (normality conjectured; Li and Vitanyi section 2.3) and the lore sentence in `foundations.md`, "The counting fact." A fresh auditor caught one HIGH in the first draft: "nothing computable says which strings have them" is false, since the compressible strings are computably enumerable; the passage now states the asymmetry (a found name certifies, absence cannot be certified) and says "statistical" tests. Build: 146 pages, epubcheck clean, about 31,700 words.

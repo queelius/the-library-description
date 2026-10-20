@@ -49,7 +49,9 @@ full book ("the address of a book is a book"), so a catalogue of $T$ books is $T
 complete catalogue is the library over again; then the counting fact (fewer than one string in
 $2^k$ can be shortened by more than $k$ symbols, in any scheme, so cheap cuts are rare and a law
 is one; which few are cheap is machine-relative, how few is not; see `foundations.md`, "The
-counting fact"). The opening qualifies "every possible book" by size ("in the one size it
+counting fact"). The inversion paragraph adds the flip side: no statistical test has found a
+pattern in $\pi$'s digits, yet they have a one-line name, so calling a thing "noise" reports only
+that no short name is known; a found name certifies, absence cannot be certified. The opening qualifies "every possible book" by size ("in the one size it
 stocks"), the list adds longer works "in installments," and the catalogue beat is phrased by
 pages, so nothing claims a one-volume catalogue. A footnote notes Borges' narrator hoped for one.
 A second footnote: his alphabet had no digits, so this book is on the next shelves, not his.
