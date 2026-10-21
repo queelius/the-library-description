@@ -37,9 +37,10 @@ unique prior. Every conclusion rests on one of five footings, named the same way
    and $m$);
 3. **finitude** (a finite observer must use bounded local models);
 4. **postulate** (no cut is privileged; asked once, refusable);
-5. **optional additions** (the outside view read ontically, Everett, an identity rule, a self-location
-   rule, a cosmology), which the book names when a conclusion would need them and adopts none
-   of.
+5. **optional additions** (the outside view read ontically, a supplier of occurrences
+   (Everett is one; an infinite cosmos is another; the Library read ontically is a third), an
+   identity rule, a self-location rule, a cosmology), which the book names when a conclusion
+   would need them and adopts none of.
 
 The reader can always trace a conclusion to one of these. Nothing is hidden behind difficulty.
 
@@ -207,6 +208,160 @@ The fact seeds the reply to joint-carving realism (Appendix E, objection 6): sho
 fact about a string relative to a machine, with all machines agreeing only in the limit, where
 no finite observer stands.
 
+### Three principles the book names
+
+Three facts the book has always used, stated once each (2026-10-21) and cited by name
+afterward. All three are pre-postulate: they need no assent, and the postulate (a stance; see
+below) sits on top of them. The labels P1, P2, P3 are lore-only. The body uses the handles
+given here, identically everywhere, and never the labels.
+
+**P1. The center is not in the description.** Body handle: *no description contains its
+center*. Home: Chapter 9, "The Center"; cite as "Chapter 9" or "the center."
+
+*Statement.* A description of the whole, however complete, does not say which part of it is
+the one reading the description. It can contain every occurrence of you, each with its
+memories and each thinking "I am here," and still not contain the fact of which one is this,
+or which later one is next. Those facts are not missing from the description by oversight;
+they are not the kind of thing a description contains. Philosophers call a world with a "you
+are here" mark in it a *centered* world (Lewis's two gods, who know every fact about their
+world and not which god each is; the Notes cite Lewis 1979 and Perry 1979; the body tells the
+two gods without the name).
+
+*How far P1 reaches.* P1 stops there: no description, however complete, contains its center.
+Whether there is nonetheless a hidden fact of which occurrence is you, unreachable but
+existing, is a question closed from inside in both directions (P3), exactly like the joints.
+So "the center is a cut" is not part of P1. It is the postulate applied to the center: the
+book declines to posit a cross-occurrence "you" as a found fact and reads it as a cut. P1 is
+the finding; "the center is a cut" is the refusal. Chapter 9 says both, in that order.
+
+*Two faces.* **Now:** among the occurrences that match your evidence, which is you (the
+self-location question; the missing occurrence measure is this face in the Library's
+currency). **Next:** among later occurrences, which continue you (the identity question).
+Every argument in the family needs a supplier of occurrences plus one or both rules, and the
+rules are cuts. The five widths of Chapter 11 are *not* a face of P1: they are the extent of
+the one who acts, carved for a job, and stay under the postulate.
+
+*Supplier-neutrality.* The occurrences can be supplied by Everett branches, by a spatially
+infinite cosmos (ordinary cosmology allows one; Tegmark's Level I), by eternal inflation, by
+thermal fluctuation, by simulation, or by the Library read ontically. The argument's form and
+force are the same for every supplier, because the force lives in the two rules. Everett
+stays Chapter 8's landmark as the supplier with the most physics behind it (the author's
+wish); the infinite cosmos is the supplier that asks least of physics and most of counting,
+and it is the author's own case (2026-10-21): "quantum immortality without the quantum."
+
+*The occurrence measure, sorted.* Two claims hide in "the occurrence measure is missing."
+That the construction supplies none is a finding (P2: $M$ is defined on prefixes, and no
+carving of occurrences has been supplied). That the book adopts none of the rules on offer is
+a refusal. Both are said, and kept apart, in Chapter 9 and Appendix C.
+
+*The native-weighting slip.* Each supplier brings a weighting of its own: Born weights on
+branches; $M$ on program prefixes; nothing at all for an infinite cosmos, where the ratio of
+one kind of occurrence to another is infinity over infinity and every regularization gives an
+answer that depends on the cutoff (the cosmological measure problem). Reading any native
+weighting as first-person weight over occurrences is Chapter 6's slip made one level down.
+The best version of the slip uses the book's own prior: weight an observer-moment by the
+length of the shortest program that generates the world *and locates the observer inside it*.
+That is UDASSA, the universal-distribution absolute self-sampling assumption, proposed by Wei
+Dai (everything-list, late 1990s) and set out by Hal Finney (web essay, about 2005); Carlsmith
+(2021) is the secondary account and records that Dai later rejected it. It is the most
+principled candidate for an occurrence measure anyone has offered, and it is a cut three
+times over: the locating program is an index, its length is relative to a machine, and the
+decision to weight by that length is the choice of a rule. The reply does not say it is wrong.
+It says it is chosen, and that the choosing is the whole point. The reply must also say why
+"chosen" disqualifies UDASSA as *the* occurrence measure without disqualifying $M$ as the
+book's predictor, since both are machine-relative choices: the book uses $M$ for a job, with
+its scope stated, and crowns nothing; UDASSA may be used the same way, for a job; what the
+objection asked for was a crown, and that is what the book declines. Appendix C surveys it;
+Appendix E, objection 7, gives it the hearing joint-carving realism got.
+
+*The copy was already there.* No supplier's copies are brought into being by your death. On
+Everett the branches are there regardless; in an infinite cosmos the survivor is in some far
+region now, while you are alive. "You die and then continue as the survivor" is the identity
+rule talking, and the same rule, applied evenly, makes the survivor as much you before your
+death as after, along with every other match, including the ones whose next moment is
+dissolution. No one experiences the gap between occurrences, and no one experiences its
+absence. The ordering of causally disconnected regions is itself a convention (*Worldlines*).
+This reply lives in the same section as the infinite-cosmos case in Chapter 9, with no
+heading between (`information_hazards.md`).
+
+*Status.* A fact about descriptions, not a theorem of algorithmic information theory and not
+the postulate. It needs no assent. The deflationary reading, that "I am this one" is trivially
+true for each occurrence of itself, is compatible with it; the step from there to "there is no
+cross-occurrence you" is the refusal above, not the finding. No dissent citation in the Notes.
+
+*Seeds and instances.* Chapter 1 (the chicken is "not at the place in the structure it thinks
+it is"); Chapter 2 (no book in the library says which reader is holding it; the catalogue
+cannot carry a "you are here" mark); Chapter 7 (the missing occurrence measure, defined there,
+is the *now* face in the Library's currency; one sentence points forward); Chapter 8 (the
+Everett landmark, now explicitly one supplier); Chapter 9 (the principle, both faces, the
+catalogue, no view from the top); Chapter 10 (the caveat paragraph and "What remains yours"
+cite it by name); Chapter 11 (quantum immortality is the chapter's one P1 instance); Chapter
+12 (the *does not console* turn is an application: a copy's being you is a cut, so nothing in
+the structure makes it a continuation that could console); Chapter 13 (dilution, by
+reference); Chapter 14 ("no thread supplied by $M$ ties you here to you there," by reference);
+Appendix C (the survey of rules, now including UDASSA); Appendix E (objection 7).
+
+**P2. Weights come after cuts.** Body handle: *weights come after cuts*. Home: Chapter 3, at
+the coin; cite as "Chapter 3's rule" or by the phrase.
+
+*Statement.* A weight is defined on alternatives that have already been carved out. Before
+the bins there is no count, and before the count there is no probability. The coin's bins in
+Chapter 3 came with your question, not with the trials ("The counting was exact. The bins
+were not in the trials; they came with your question."); $M$ is defined on prefixes because
+the machine fixed that carving; Born weights attach to outcomes once decoherence has carved
+them, and decoherence fixes no unique count; the self-sampling rules need a reference class
+before they can weigh anything.
+
+*Status.* Mathematics (a measure is defined on a space of events someone has specified).
+Needs no assent.
+
+*What it does for the book.* It explains why the occurrence measure is missing rather than
+merely unspecified: nobody has supplied the carving it would be defined on, and on the
+postulate nobody can supply a privileged one. It is the hinge in Chapter 10 between the two
+absences of privilege: the first (prediction's underdetermination) can never settle the second
+(description's), because every weight the first could offer presupposes a carving the second
+is about. It is also why branch-counting is no shortcut to the Born rule (Chapter 8, Appendix
+B) and why the native-weighting slip is a slip.
+
+*Instances.* Chapter 3 (home); Chapter 4 ($M$ weights prefixes because the machine carved the
+stream into them); Chapter 8 (the Born comparison cites it); Chapter 9 (the rules); Chapter 10
+(the hinge); Chapter 14 ("The index, carved twice" recalls Chapter 3 instead of introducing
+it).
+
+**P3. A found name certifies itself; an absence cannot be certified.** Body handle: the phrase,
+or *the one-way certificate*. Home: Chapter 2, the inversion paragraph (the $\pi$ passage);
+the formal statement in Appendix A.
+
+*Statement.* For strings this is exact. A short description, once exhibited, settles that the
+string has one; the strings with short names can be listed by a procedure that never ends
+(the set $\{x : K(x) < |x| - k\}$ is computably enumerable). But no procedure certifies that a
+given string has no short name ($K$ is upper semicomputable, not computable), and Chaitin's
+incompleteness theorem sharpens this: for any formal system that proves only true statements
+of the form "$K(x) > n$," there is a constant, depending on the system, beyond which it proves
+none, although almost every string has complexity beyond it (Chaitin, "Information-theoretic
+limitations of formal systems," *Journal of the ACM* 21(3), 1974, 403-424; the hypothesis is
+soundness for that class of statements, not mere consistency). Cite the paper, not a Li and
+Vitányi section number.
+
+*Where it reaches, and where it does not.* It governs the string facts. It governs "no greater
+mind has been disproved": a mind that showed itself would certify its existence; absence never
+certifies. It does *not* govern the joints question, where neither direction is certifiable
+from inside: a carving that works certifies that it works for a job, it cannot certify that it
+is the structure's own, and nothing certifies that none is. That double closure is why the
+postulate must be a stance (below). Outside strings the principle is an analogy, and the prose
+says so whenever it uses it that way.
+
+*Status.* Theorem for strings; analogy elsewhere, labeled.
+
+*Instances.* Chapter 2 (home); Chapter 6 (why the postulate declines rather than denies);
+Chapter 9 (no view from the top, second half); Chapter 10 ("What remains yours": the shape of
+the doubt); Appendix A (the theorem); Appendix D; Appendix E (objections 6 and 7).
+
+**Two smaller threads,** named once and used: *a carving is good for a job* (Chapter 8's
+decomposability, Appendix E objection 6, Chapter 11's five widths, Chapter 14's kitchen) and
+*being observed is thin evidence* (Chapter 7's "what does favor something: we observe it"
+rules out empty outcomes and little else).
+
 ### The cut has no canonical form
 
 Here is the move that makes this book different from every other book about all possible worlds. Two claims
@@ -262,24 +417,47 @@ then the "three cuts" figure: one field with three nested boundaries), not earli
 The bedrock above is mathematics. Exactly one thing in the book is not: a single postulate,
 stated plainly, that the reader may refuse.
 
-> **The postulate: no cut is privileged.** No decomposition of the describable totality is
-> view-independently correct. Every carving into worlds, systems, and selves is a cut an
-> observer makes; none comes labeled as the structure's own.
+> **The postulate: no cut is privileged.** The book treats no decomposition of the describable totality
+> as view-independently correct. Every carving into worlds, systems, and selves it reads as a
+> cut an observer makes, and none as the structure's own.
 
-This is the boxed wording, and it is identical wherever the manuscript boxes it (Chapter 6,
-where it enters, and Chapter 9, where it is recalled). Elsewhere, recap it in prose. "The one
-reality that exists" is one of the carvings it covers.
+This is the boxed wording (2026-10-21), and it is identical wherever the manuscript boxes it
+(Chapter 6, where it enters, and Chapter 9, where it is recalled) and in `README.md`.
+Elsewhere, recap it in prose. "The one reality that exists" is one of the carvings it covers.
+The box says what the book declines, not what the structure lacks.
 
-**Status: a refusal, not a proof of absence.** The spine sentence asserts an absence ("there
-are no joints"); the postulate declines to crown. The author's ontology is epistemic humility
-(2026-10-19), so the body says once, in Chapter 6's inline objection-and-reply after the
-postulate, that the denial is weaker than the spine sentence sounds: whether the structure has
-joints is not settled from inside in either direction. The counting fact makes shortness a fact
-relative to a machine, and machines agree only in the limit, where no finite observer stands.
-The book has not shown there are no joints; it has refused to name one, and says so. Chapter
-10's thesis is worded to match ("nothing in it, from any vantage you can occupy, marks one
-carving as the right one"). The spine sentence stays as the picture; the lore already records
-that Chapter 2 presents it as a picture, not fact.
+**Register: a stance, and why it is forced.** The author's decision (2026-10-21): the book
+takes the epistemically humble approach in general. By P3 the joints question is closed from
+inside in both directions. A book that asserts "there are no joints" as an axiom claims what
+it has just said cannot be certified. A book that declines to crown any cut claims only what
+it can show: that nothing available from inside marks one, and that it will therefore read
+none as the structure's own. So the postulate is a stance, worded in the box as what the book
+declines. The spine sentence ("There are no joints. There are only the cuts you make.") stays
+verbatim as the picture, in Chapters 2, 6, 10, 14, and 15; Chapter 2 presents it as a picture,
+not a fact. "The center is a cut" is the postulate applied, a refusal, not part of P1. The
+body says the register once, in Chapter 6's inline reply after the box ("The postulate proves
+no absence; it declines to crown one," with the one-way certificate named as the reason), and
+recalls it in Chapter 9; elsewhere the prose speaks plainly. A hedge on every page is the
+defensive register rule 9 forbids. Chapter 10's thesis is worded to match ("nothing in it,
+from any vantage you can occupy, marks one carving as the right one").
+
+**Every cold sentence is a finding or a refusal,** and the prose that carries it must be
+consistent with its kind:
+
+| Sentence | Kind | Rests on |
+|---|---|---|
+| Almost nothing has a short name; nothing computable sorts the Library by cost | finding | theorem |
+| No description contains its center; nothing says which one is you | finding | P1 |
+| No weight without a carving; the construction supplies no occurrence measure | finding | P2 |
+| The book adopts none of the occurrence rules on offer | refusal | postulate |
+| The center is a cut (no cross-occurrence "you" as a found fact) | refusal | postulate + P1 + P3 |
+| No surveying mind, however vast, can read off which one is you | finding | P1 |
+| No greater mind has been disproved | finding | P3 |
+| No carving is the structure's own | refusal | postulate (stance) |
+| No mind's decomposition is *the* decomposition | refusal | postulate |
+| Groundlessness: no floor under any cut | refusal, stated as "no floor the book can certify" | postulate + P3 |
+| The structure does not require, reward, or notice | finding about the structure as a mathematical object, not about minds in it | construction |
+| No view from above. No reason beneath. (Ch 15) | kept verbatim; the scope sentence before it ("nothing in the framework says") makes it "as far as the book can see" | P1 + P3 + framework |
 
 **The two views are not symmetric.** The inside view is a vantage every reader has; the outside
 view is a picture no finite observer occupies. So "which picture is real" is not a choice
@@ -318,7 +496,8 @@ Parts II and III. The postulate is the one place the book asks for assent, and i
 The refusal lives in one place in the body: Chapter 7's section "What if you refuse," which says
 what the refuser keeps (all of the theorem-level fact of Part I, including that no computable
 procedure sorts the Library by description cost) and what they give up. Appendix D expands Chapter 7's refusal.
-Chapter 9's section on refusing Everett is a different matter and is titled "Without Everett."
+Chapter 9 no longer has a section on refusing Everett; a reader who rejects Everett loses one
+supplier of occurrences and nothing else (Chapter 8's landmark paragraph says so).
 
 ---
 
@@ -370,8 +549,11 @@ programs and output prefixes. Nothing in the construction says what counts as an
 occurrence, whether occurrences exist, or how first-person weight is spread among them.
 Supplying that takes further rules (SSA, SIA, xerographic distributions, reference classes),
 which the book adopts none of. This gap has one name, "the missing occurrence measure." It is
-defined once, at full strength, in Chapter 7; Chapter 8 lists the rules that would fill it
+defined once, at full strength, in Chapter 7; Chapter 9 lists the rules that would fill it
 (with Appendix C for detail); afterwards the book refers to it by name instead of restating it.
+It is the *now* face of P1 in the Library's currency, and two claims hide in "missing": that
+the construction supplies none (a finding, P2) and that the book adopts none of the rules on
+offer (a refusal); see "Three principles" above.
 
 This relocates the book's vertigo. The cold is no longer "the hellscapes definitely exist." It
 is *groundlessness*: nothing in the structure, and no possible vantage, settles whether they
@@ -409,6 +591,11 @@ optional additions. Use these names, in this order, wherever the manuscript list
 - Under stated computable-source assumptions, its sequential predictions converge strongly.
 - Universal-machine changes preserve a multiplicative equivalence class, while finite-scale
   differences remain consequential.
+- P1: no description contains its center (a fact about descriptions; "Three principles"
+  above).
+- P2: weights come after cuts (a fact about measures).
+- P3: a found name certifies itself; an absence cannot be certified (a theorem for strings;
+  an analogy, labeled, elsewhere).
 
 **Finitude** gives:
 
@@ -431,15 +618,21 @@ commits to:
   spine sentence, and then gives its caveats once, in one paragraph: it does not say every
   output exists; it does not say which occurrence is you (the missing occurrence measure); it
   does not derive the Born rule.
-- **No view from the top.** No view is privileged because every view is a cut and no cut is
-  privileged; so there is no overseer, no God's-eye decomposition that is the real one, and
-  this follows directly from the postulate rather than from any claim about the limits of
-  computation. It does not say no powerful agent could exist; it says no agent's view is *the*
-  view. Developed in Chapter 9; it sharpens the indifference (the structure is not only
-  unpreferring but unwatched) and seeds the grace of Part III (warmth, if any, comes from
-  among observers, never handed down).
-**Optional additions** (the outside view read ontically, Everett, an identity rule, a self-location
-rule, a cosmology) are named wherever a conclusion would need them, and the book adopts none:
+- **No view from the top, in two halves.** The indexical half is a finding and needs no
+  postulate: even a mind that surveys the whole cannot read off which occurrence is you,
+  because that fact is in no survey (P1). The joints half is the postulate applied, a
+  refusal: whether any mind's decomposition is the structure's own is what the book declines
+  to grant, and by P3 no mind inside could certify it; and the hidden indexical fact the
+  reader hoped for, "unreachable but at least existing," is declined, not denied. Neither
+  half comes from any claim about the limits of computation. "Power is not privilege": the
+  book has not disproved every greater mind (P3). Developed in Chapter 9; it sharpens the
+  indifference (the structure is not only unpreferring but, as far as the book can see,
+  unwatched) and seeds the grace of Part III (warmth, if any, comes from among observers,
+  never handed down).
+**Optional additions** (the outside view read ontically, a supplier of occurrences (Everett is
+one; an infinite cosmos is another; the Library read ontically is a third), an identity rule,
+a self-location rule, a cosmology) are named wherever a conclusion would need them, and the
+book adopts none:
 
 - Boltzmann observers, hellscapes, dark continuations, and other uncomfortable descriptions are
   permitted by the outside view; the framework does not establish their existence or assign a
@@ -451,8 +644,9 @@ rule, a cosmology) are named wherever a conclusion would need them, and the book
   does not by itself select that ontology or solve the definite-outcome problem. Everett is a
   landmark, never evidence and never a premise; it is stated once at full strength in Chapter 8,
   and nothing later rests on it. A reader who rejects Everett loses no theorem in this book.
-- Quantum immortality takes at least Everett, an identity rule, and a self-location rule. Chapter 11
-  states it plainly as such, labeled, with a reader-safety note; the premise analysis lives in
+- Quantum immortality takes a supplier of occurrences (which need not be quantum), an identity
+  rule, and a self-location rule; Chapter 9 states the general form and its reply, Chapter 11
+  names the instance, labeled, with a reader-safety note; the premise analysis lives in
   Appendix C.
 
 The chosen response (care, the held cut) is none of the five footings. It is chosen, and the
@@ -484,7 +678,7 @@ The bedrock and the postulate are silent on:
 - **How to assign self-location probabilities.** $M$ supplies a posterior over candidate
   programs and prefixes. It does not define a sample space of observer occurrences or a
   probability distribution over them. SSA, SIA, and related rules add structure the book does
-  not adopt.
+  not adopt, and no description could supply them (P1).
 - **The coherence of mathematics itself.** The book presupposes mathematics is coherent in the
   standard sense. No contradiction has been found in over a century of foundational work, but
   this is an empirical claim about a practice, not a proof. If "computable structure" failed to
@@ -510,8 +704,9 @@ The re-foundation changes the frame, not the book's integrity rules.
    distinct.
 4. **The cascade is traceable.** Every conclusion unwinds to one of the five footings: theorem,
    construction, finitude, postulate, optional additions. The source is always visible.
-5. **Never claim the math supports more than it does.** "No view from the top" follows from the
-   postulate, not from a strained argument about the limits of computation; the Born-measure
+5. **Never claim the math supports more than it does.** "No view from the top" has two halves:
+   its indexical half follows from P1 and needs no postulate; its joints half is the postulate
+   applied, a refusal; neither comes from a strained argument about the limits of computation. The Born-measure
    comparison is an analogy between weighting roles, not a derivation or an identification of
    domains.
 6. **Never project emotional properties onto the structure.** It does not care, prefer, or
@@ -528,6 +723,8 @@ The re-foundation changes the frame, not the book's integrity rules.
    listed in Chapter 8); Everett as landmark in Chapter 8 (one consolidated paragraph);
    "realism is a cut" at the end of Chapter 8; the Born comparison in Chapter 8 (Appendix B for
    the boundary; later chapters cross-reference it); "conditional copies do not console" once,
-   in Chapter 12. Later passages cite these by name ("the missing occurrence measure," "Everett
-   is a landmark") rather than re-arguing them. This is not permission to weaken any scoping
+   in Chapter 12; P1 in Chapter 9; P2 in Chapter 3; P3 in Chapter 2. Later passages cite
+   these by name ("the missing occurrence measure," "Everett is a landmark," "no description
+   contains its center," "weights come after cuts," "the one-way certificate") rather than
+   re-arguing them. This is not permission to weaken any scoping
    claim; it is a rule about where each one lives.
