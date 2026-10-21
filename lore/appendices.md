@@ -10,8 +10,9 @@ The body is lay-readable on purpose: second-person, plain, companionate, its bed
 stated informally so the voice is never broken by formalism. The appendices are where
 the depth the chapters kept out finds a home: the mathematics for the reader who wants
 it, the digressions the argument did not need, and a place to answer the reader who
-pushes back. They are a supplement, not a second book (target about 3,000 to 5,000
-words total), and they keep the book's voice and discipline.
+pushes back. They are a supplement, not a second book (about 5,000 words as of 2026-10-21; the earlier
+target of 3,000 to 5,000 is historical, since the author set no length target), and they keep
+the book's voice and discipline.
 
 ## The set
 
@@ -103,9 +104,9 @@ markers to the body, so the companionate voice is never interrupted. (The body d
 small number of ordinary footnotes for scoping asides; the Notes' opening must not claim the
 chapters carry no markers at all. Safety notes are never footnotes: they live in the body, as
 at Chapters 9, 11, 12, and 14.) Each note quotes the phrase it annotates, and the key must
-match the body's wording exactly. Every chapter has a section, including Chapter 10, and Appendix E has one (the sources of
-the joint-carving view: Plato's *Phaedrus*, Lewis 1983, Sider 2011, named there and not in
-the body; and, for objection 7, the UDASSA sources). New Chapter 9 entries (2026-10-21): Lewis,
+match the body's wording exactly. Every chapter has a section, including Chapter 10, and Appendices B and E have one (B: the
+Deutsch-Wallace sources; E: the sources of the joint-carving view, Plato's *Phaedrus*, Lewis
+1983, Sider 2011, named there and not in the body, and, for objection 7, the UDASSA sources). New Chapter 9 entries (2026-10-21): Lewis,
 "Attitudes De Dicto and De Se," *Philosophical Review* 88 (1979), for the two gods; Perry, "The
 Problem of the Essential Indexical," *Noûs* 13 (1979); Tegmark, "Parallel Universes,"
 *Scientific American* (May 2003), and *Our Mathematical Universe* (2014), for the infinite

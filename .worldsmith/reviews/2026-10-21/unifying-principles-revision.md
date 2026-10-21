@@ -39,10 +39,9 @@ Chapter 9 around the first principle.
 
 ## Verification
 
-Build after the fix passes: `make` and `make epub` exit 0; 158 pages; 0 overfull boxes; 0
-undefined references; `epubcheck` exit 0; `make wordcount` 35,092 (body chapters about
-27,600; appendices about 5,000). The spec's figure was about 33,500; content was kept per the
-spec, and the overrun is reported to the author with trim candidates.
+Build after the fix passes and the final review: `make` and `make epub` exit 0; 160 pages; 0 overfull
+boxes; 0 undefined references; `epubcheck` exit 0; `make wordcount` 35167 (body 27841;
+appendices 5049). The spec's figure was about 33,500; on 2026-10-21 the author set no length target.
 
 **Auditor 1 (mathematics and claim scope).** One HIGH: Chapter 9 and the lore said an infinite
 cosmos supplies "nothing at all" and that its survivor ratio is cutoff-dependent; that is true
@@ -93,9 +92,7 @@ to Appendix E.
 
 ## Deferred to the author
 
-- **Length.** 35,092 words against the spec's about 33,500. Trim candidates: Appendix E
-  objection 7's reply (about 350 words); the Chapter 9 rules paragraph; the optional-additions
-  parenthetical repeated verbatim in Chapter 7, Chapter 10, and A0.
+- **Length.** Resolved: the author set no length target (2026-10-21).
 - **Chapter 9's closing box.** The reader found the re-pasted postulate box at the end of
   Chapter 9 scaffolding that deflates the chapter's last beat. The spec and lore require the
   recall; removing it is a design change.
@@ -107,11 +104,20 @@ to Appendix E.
   openings; "the book adopts none of them" eight times; "asked once, can be refused, keep the
   mathematics" six times; the computability aside in Chapter 9; Chapter 10's last long paragraph
   answering Appendix E's objection 4 inside the body; Chapter 13's opening hedge-stack.
-- **Minor:** Appendix E's objector says UDASSA is "built from exactly the machinery of Part I"
-  (it needs the exact-output distribution of Appendix A, not sequential $M$); Deutsch and
-  Wallace are cited in the Appendix E Notes though Appendix B names them; Chapter 14's vertigo
-  paragraph ends "You are here." without a Resources pointer (within policy); Chapter 9's "you
-  die here" could be third person if the author prefers.
+- **Minor (addressed later the same day):** the Appendix E reply now notes that UDASSA is built
+  from the exact-output relative of $M$; Deutsch and Wallace now have an Appendix B Notes
+  section; the three word targets (CLAUDE.md, outline, appendices lore) were replaced by the
+  author's no-target decision; the "by name" formula was varied in Chapters 2 and 3; Chapter
+  9's opening names more than Everett; "the same analogy again" reads "as Chapter 6 used it";
+  Appendix A says the Chaitin constant depends on the system; Chapter 6's reply gained its
+  connective; the lore records Chapter 10's licensing sentence; Chapter 8's opening no longer
+  re-defines the two views; Chapter 9's "You may refuse it" sentence was trimmed. Left as is,
+  within policy: Chapter 14's "You are here." without a Resources pointer, and Chapter 9's
+  second-person "you die here."
+- **Still open for discussion with the author:** the re-pasted postulate box at the end of
+  Chapter 9; Chapters 9 and 10 announcing Chapter 15's care and adequacy doubt; the
+  computability aside in Chapter 9; Chapter 10's last long paragraph; Chapter 13's opening
+  hedges; "the book adopts none" and "asked once, can be refused" as recurring formulas.
 
 ## Rulings made during execution
 

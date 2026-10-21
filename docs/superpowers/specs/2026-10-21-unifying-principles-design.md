@@ -1,7 +1,13 @@
 # The Unifying Principles: Design Spec
 
 **Date:** 2026-10-21
-**Status:** Draft for the author's approval (brainstorm complete; builder check pending).
+**Status:** Approved 2026-10-21 and implemented the same day (plan:
+`docs/superpowers/plans/2026-10-21-unifying-principles.md`; record:
+`.worldsmith/reviews/2026-10-21/unifying-principles-revision.md`).
+
+> **Correction (2026-10-21, after implementation).** The length figures in sections 2, 5, 7,
+> and 11 are historical. The author set no length target: the book is as long as it needs to
+> be. The build landed at about 35,100 words including back matter.
 **Governs:** a structural revision of *The Library: The Indifference of Description* that names
 three principles the book already uses, moves the postulate into the register of epistemic
 humility, and rebuilds Chapter 9 around the first principle. Lore first, then prose.

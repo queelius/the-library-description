@@ -4,7 +4,8 @@
 are the one move (the cut, equivalently local compression) at three depths: you cut the totality
 to **predict** (The Index), to have a **world** (The System), and to be **someone** (The Self).
 The chapter order is unchanged from the prior draft; the parts name what was already there.
-Target length: 20,000 to 25,000 words.
+No fixed length target (the author's decision, 2026-10-21): the book, its chapters, and its
+parts are as long as they need to be. Actuals are in the word table below.
 
 The reasoning skeleton (see `foundations.md`) is theorem to universal construction to postulate
 ("no cut is privileged") to finitude (bounded local modeling) to consequences. Every chapter's
@@ -478,9 +479,8 @@ targets.
 | **Body total (preface and Parts I to III)** | **~24,000** | **about 25,000** | **27818** |
 | **Whole book (`make wordcount`)** | | 31,724 | **35092** |
 
-The 2026-10-21 figures exceed the spec's "about 33,500" by about 1,600 words; the overrun is
-in Chapter 9 (the infinite-cosmos case stated in full with its reply) and the appendices
-(Chaitin, UDASSA, objection 7). Content was kept, per the spec; trimming is the author's call.
+The "Target" column is historical. On 2026-10-21 the author set no length target: the book
+is as long as it needs to be, and chapters and parts may be added as needed.
 
 Part III is shorter than Parts I and II by design after the October revision: it refers back to
 caveats stated in their homes instead of restating them. Growing it means new material, not

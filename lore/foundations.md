@@ -444,8 +444,11 @@ verbatim as the picture, in Chapters 2, 6, 10, 14, and 15; Chapter 2 presents it
 not a fact. "The center is a cut" is the postulate applied, a refusal, not part of P1. The
 body says the register once, in Chapter 6's inline reply after the box ("The postulate proves
 no absence; it declines to crown one," with the one-way certificate named as the reason), and
-recalls it in Chapter 9; elsewhere the prose speaks plainly. A hedge on every page is the
-defensive register rule 9 forbids. Chapter 10's thesis is worded to match ("nothing in it,
+recalls it in Chapter 9; Chapter 10's "What each layer gives" adds one licensing sentence
+("The chapters that follow will speak plainly, as the postulate lets them... read every such
+sentence as the refusal it is"), so that Part III's plain sentences ("nothing in the structure
+marks one of these as the chooser") need no hedge of their own; elsewhere the prose speaks
+plainly. A hedge on every page is the defensive register rule 9 forbids. Chapter 10's thesis is worded to match ("nothing in it,
 from any vantage you can occupy, marks one carving as the right one").
 
 **Every cold sentence is a finding or a refusal,** and the prose that carries it must be
