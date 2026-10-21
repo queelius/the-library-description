@@ -63,12 +63,23 @@ one of these layers, and the trace is always kept visible.
    $M$. Kraft makes the length weights admissible; it does not force them. Exact-output $m$ is
    distinct and is the quantity used in the coding theorem with $K$.
 3. **The postulate** (the single interpretive commitment, asked once, refusable): **no cut is
-   privileged.** The totality has no decomposition that is the correct one. "Only this world is
-   real" is itself a cut. The postulate does not prove that all described worlds exist or turn
-   $M$ into an ontic or observer-occurrence measure.
+   privileged.** It is a stance, worded as what the book declines (2026-10-21): the book treats
+   no decomposition of the describable totality as view-independently correct, because nothing
+   from inside could certify a joint or its absence (the one-way certificate, Chapter 2). "Only
+   this world is real" is itself a cut. The postulate does not prove that all described worlds
+   exist, does not prove that no joint exists, and does not turn $M$ into an ontic or
+   observer-occurrence measure.
 4. **Finitude:** a finite observer must use bounded local models. Finitude does not force one
    unique prior.
 5. **Consequences:** everything in Parts II and III, with optional premises labeled.
+
+Underneath the postulate sit three pre-postulate principles, stated once each and cited by name
+afterward (`lore/foundations.md`, "Three principles the book names"): *no description contains
+its center* (Chapter 9, "The Center"; the indexical gap, supplier-neutral, with Everett as the
+landmark supplier), *weights come after cuts* (Chapter 3), and *a found name certifies itself; an
+absence cannot be certified* (Chapter 2; Chaitin's theorem in Appendix A). Every cold sentence in
+the book is either a finding resting on one of these or a refusal resting on the postulate; the
+sorting table is in `foundations.md`.
 
 **The ontology is (c): realism is itself a cut.** The book declines to assert the multiverse
 exists or does not; the existence question is underdetermined by $M$ and held open. The Born
@@ -103,12 +114,12 @@ manuscript; when changing a fact, update the lore doc first, then propagate.
 
 | Doc | Role |
 |---|---|
-| `foundations.md` | **Canonical.** Theorem/construction distinctions, the postulate, finitude, $M$ versus $m$, the missing indexical measure, the ontology (c), and discipline. Upstream of all. |
+| `foundations.md` | **Canonical.** Theorem/construction distinctions, the three principles (P1 to P3), the postulate as a stance, finitude, $M$ versus $m$, the missing indexical measure, the ontology (c), and discipline. Upstream of all. |
 | `themes.md` | Core vision, the inversion, the seven themes (theme 6 = the indifference of description), the suite table, "What This Book Is NOT." |
 | `index.md` | Supporting detail: the outside view vs the inside view (formerly Picture A and B; choosing between them is a cut), local inference, hierarchical decomposability. |
-| `outline.md` | The three parts as three cuts; per-chapter cut notes; Ch 10 = "The Indifference of Description"; word targets; pedagogical sequencing. |
+| `outline.md` | The three parts as three cuts; per-chapter cut notes; Ch 9 = "The Center," Ch 10 = "The Indifference of Description"; word targets; pedagogical sequencing. |
 | `direction.md` | Format, tone, pedagogy, comparable works, diagrams (the cut as figure), the voice sample. |
-| `grace.md` | The destination (the held cut); no-view-from-the-top grounded on the postulate; the symmetric-distribution resolution. |
+| `grace.md` | The destination (the held cut); no view from the top in two halves (P1 and the postulate); the symmetric-distribution resolution. |
 | `landing.md` | Why the closing was hard and how (c) resolves it; the three directions reconciled into the held cut; the adequacy-doubt decision. |
 | `apokatastasis.md` | The universalist moral spine; the refusal as a chosen orientation-cut; the crux-4 resolution. |
 | `implications.md` | Each human concept (free will, death, love, self) re-derived as a cut. |
@@ -130,7 +141,9 @@ Part II = The System (Ch 6-10, capped by Ch 10 "The Indifference of Description"
 The Self (Ch 11-15, closing on the held cut: a header-less coda, address "Stay.", Camus's *must*
 literal, the adequacy-doubt named).
 
-**Status (2026-10-19, evening): release candidate after the October review, the whole-book check, and the author's read-through.** The author's reading notes (scratch, gitignored at `lore/reading-notes.md`) and a fresh Fable 5.1 cover-to-cover review led to one more revision the same day: Chapter 2 gained the section "The address of a book" (the address arithmetic and the counting fact; see `lore/foundations.md`, "The counting fact"); Chapter 4 opens with a fast-path signpost and defines $K$ in one paragraph, with $m_V$ and the coding theorem now in Appendix A only; Chapter 7 treats the empty set as an explicit stand-in for nothing that is itself something; the two pictures are now "the outside view" and "the inside view" (formerly Picture A and B), introduced by name in Chapter 6; Chapter 8 defines the observer before the Everett landmark; Chapter 10 says what the mathematics bought Part III; Appendix E has a sixth objection (joint-carving realism, the postulate's named adversary); Chapters 11 and 13 are retitled "The Chooser" and "The Braid" (files unchanged). Build: 146 pages, about 31,500 words including back matter; EPUB passes `epubcheck`. The same evening added a worked law example (Ch 2), three inline objection-and-reply pairs (Ch 6, 7, 11), the refusal-not-proof status of the postulate (Ch 6, Ch 10), the asymmetry of the two views (Ch 8), and the one sanctioned Chapter 15 Note naming the universalist kinship. The earlier October history follows.
+**Status (2026-10-21): the unifying-principles revision.** Spec: `docs/superpowers/specs/2026-10-21-unifying-principles-design.md`; plan: `docs/superpowers/plans/2026-10-21-unifying-principles.md`; record: `.worldsmith/reviews/2026-10-21/unifying-principles-revision.md`. The author's observation that an infinite cosmos supplies "quantum immortality without the quantum" led to naming three principles the book had been using one case at a time: no description contains its center (Chapter 9, retitled "The Center," file unchanged, with "Where am I?" moved in from Chapter 8 and "Without Everett" dropped), weights come after cuts (Chapter 3), and the one-way certificate (Chapter 2; Chaitin's theorem in Appendix A). The postulate is now worded as a stance in both boxes and the README; "no view from the top" is split into a finding and a refusal; UDASSA is Appendix E's seventh objection; Part III cites Chapter 9 instead of re-deriving. Build figures are recorded at the end of the verification pass (see the record). The earlier October history follows.
+
+**Earlier status (2026-10-19, evening): release candidate after the October review, the whole-book check, and the author's read-through.** The author's reading notes (scratch, gitignored at `lore/reading-notes.md`) and a fresh Fable 5.1 cover-to-cover review led to one more revision the same day: Chapter 2 gained the section "The address of a book" (the address arithmetic and the counting fact; see `lore/foundations.md`, "The counting fact"); Chapter 4 opens with a fast-path signpost and defines $K$ in one paragraph, with $m_V$ and the coding theorem now in Appendix A only; Chapter 7 treats the empty set as an explicit stand-in for nothing that is itself something; the two pictures are now "the outside view" and "the inside view" (formerly Picture A and B), introduced by name in Chapter 6; Chapter 8 defines the observer before the Everett landmark; Chapter 10 says what the mathematics bought Part III; Appendix E has a sixth objection (joint-carving realism, the postulate's named adversary); Chapters 11 and 13 are retitled "The Chooser" and "The Braid" (files unchanged). Build: 146 pages, about 31,500 words including back matter; EPUB passes `epubcheck`. The same evening added a worked law example (Ch 2), three inline objection-and-reply pairs (Ch 6, 7, 11), the refusal-not-proof status of the postulate (Ch 6, Ch 10), the asymmetry of the two views (Ch 8), and the one sanctioned Chapter 15 Note naming the universalist kinship. The earlier October history follows.
 
 **The October review and check.** A fresh cover-to-cover
 Worldsmith review (`.worldsmith/reviews/2026-10-18/`) confirmed the July 15 fixes held in the
@@ -195,8 +208,9 @@ release-quality build. The canonical chapter list and include order live in `the
 - **Voice:** second-person, plain, companionate, unflinching, never hype (the Worldlines voice);
   the care is present as tone from the preface, long before it is argued in Part III.
 - **Discipline:** never claim the math supports more than it does (Kraft permits fair-bit length
-  weights but does not force a prior; finitude forces approximation; "no privileged view" follows
-  from the postulate, not from a Turing-jump ladder); never project emotional properties
+  weights but does not force a prior; finitude forces approximation; "no view from the top" has
+  its indexical half from P1 and its joints half from the postulate, never from a Turing-jump
+  ladder); never project emotional properties
   onto the structure; never console with what is not true; never engineer away what the framework
   permits; keep the moral spine in the structure, never in citations (no Origen, Hart, Gregory of
   Nyssa, the bodhisattva vow, Levinas; and under (c), no Nagarjuna, Pyrrho, or "emptiness"). The

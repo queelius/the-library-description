@@ -17,10 +17,10 @@ The argument keeps five footings apart, and every conclusion can be traced to on
 3. **Finitude.** A finite observer must use bounded, local models. Finitude forces approximation; it does not force this prior.
 4. **The postulate**, asked once and refusable:
 
-   > **The postulate: no cut is privileged.** No decomposition of the describable totality is view-independently correct. Every carving into worlds, systems, and selves is a cut an observer makes; none comes labeled as the structure's own.
+   > **The postulate: no cut is privileged.** The book treats no decomposition of the describable totality as view-independently correct. Every carving into worlds, systems, and selves it reads as a cut an observer makes, and none as the structure's own.
 
-   The postulate is a refusal, not an addition. It does not assert that all computable worlds exist, and it does not turn $M$ into a measure on realities. Whether the totality is real is itself a cut, and the book holds the question open.
-5. **Optional additions**, named wherever a conclusion would need them and adopted nowhere: an ontic reading of the totality, Everett's interpretation of quantum mechanics (a landmark, never evidence), identity rules, self-location rules (SSA, SIA, xerographic distributions), and cosmologies. $M$ weights candidate programs, not observer occurrences; the book calls the gap the missing occurrence measure and does not fill it.
+   The postulate is a refusal, not an addition, and it is worded as what the book declines rather than as what the structure lacks: nothing from inside could certify a joint or its absence. It does not assert that all computable worlds exist, and it does not turn $M$ into a measure on realities. Whether the totality is real is itself a cut, and the book holds the question open.
+5. **Optional additions**, named wherever a conclusion would need them and adopted nowhere: an ontic reading of the totality, a supplier of occurrences (Everett's interpretation of quantum mechanics, a landmark and never evidence, is one; a spatially infinite cosmos is another), identity rules, self-location rules (SSA, SIA, xerographic distributions), and cosmologies. $M$ weights candidate programs, not observer occurrences; the book calls the gap the missing occurrence measure and does not fill it.
 
 From these the book traces what the indifference does to choice, mortality, love, and the self, and closes with care: not because the structure implies it, but because the structure does not require it, does not reward it, and does not notice, and a situation with care is still not the same, for the people in it, as one without. The same chosen response as *Worldlines*, in a colder room.
 
@@ -35,10 +35,10 @@ Generating everything is trivial: an enumeration of all programs, the Library of
 | Part | Chapters | The cut |
 |------|----------|---------|
 | I. The Index | 1-5 | cut to predict (induction, Bayes, Kraft, the universal prior, optimality) |
-| II. The System | 6-10 | cut to have a world (the slip and the postulate, the inhabited Library, the observer, the limits, the indifference of description) |
+| II. The System | 6-10 | cut to have a world (the slip and the postulate, the inhabited Library, the observer, the center, the indifference of description) |
 | III. The Self | 11-15 | cut to be someone, and the held-cut response (continuation, death, love, the pattern, the closing) |
 
-Three parts, 15 chapters (canonical structure in `lore/outline.md`). Target length 20,000 to 25,000 words.
+Three parts, 15 chapters (canonical structure in `lore/outline.md`). About 33,500 words including the back matter.
 
 ## Repository Structure
 
