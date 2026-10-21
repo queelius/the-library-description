@@ -111,7 +111,7 @@ Problem of the Essential Indexical," *Noûs* 13 (1979); Tegmark, "Parallel Unive
 *Scientific American* (May 2003), and *Our Mathematical Universe* (2014), for the infinite
 cosmos; one review of the cosmological measure problem, verified before citation; UDASSA:
 proposed by Wei Dai on his everything-list in the late 1990s and set out by Hal Finney in the
-web essay "UDASSA" (about 2005), with Carlsmith, "Anthropics and the Universal Distribution"
+web essay "UDASSA" (undated), with Carlsmith, "Anthropics and the Universal Distribution"
 (2021), as the secondary account; no dissent citation. The Chapter 2 entry cites Chaitin 1974
 for the one-way certificate. The Chapter 11 entry on Tegmark's thought experiment adds that
 the argument's form does not depend on the quantum. The Chapter 9 Notes heading is "Chapter

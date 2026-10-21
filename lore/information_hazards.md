@@ -25,8 +25,10 @@ Ranked roughly by severity, re-audited under the re-foundation.
    years is here taken one level further: not "the self is impermanent" but "the self is a boundary
    you drew." This is the move most worth handling with care in the prose. (2026-10-21) "The center
    is a cut" is a new phrasing of the same risk, and the humility register is itself a mitigation:
-   the book no longer says there is no floor; it says it cannot certify one and holds the cut
-   anyway. Chapter 9's safety paragraph ("describing a possibility does not place you in it")
+   the body no longer argues that there is no floor; Chapter 6, Chapter 9, and Chapter 10 say it
+   cannot certify one and hold the cut anyway. (The Chapter 15 cadence, "No view from above. No
+   reason beneath." and "It has nothing under it," keeps its terse form by decision; the sentence
+   before the cadence scopes it to what the framework can see.) Chapter 9's safety paragraph ("describing a possibility does not place you in it")
    stays in the body.
 
 2. **The permanence-of-suffering-across-carvings implication.** The block-universe S-risk reframed

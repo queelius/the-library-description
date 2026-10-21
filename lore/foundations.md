@@ -255,14 +255,21 @@ carving of occurrences has been supplied). That the book adopts none of the rule
 a refusal. Both are said, and kept apart, in Chapter 9 and Appendix C.
 
 *The native-weighting slip.* Each supplier brings a weighting of its own: Born weights on
-branches; $M$ on program prefixes; nothing at all for an infinite cosmos, where the ratio of
-one kind of occurrence to another is infinity over infinity and every regularization gives an
-answer that depends on the cutoff (the cosmological measure problem). Reading any native
-weighting as first-person weight over occurrences is Chapter 6's slip made one level down.
+branches; $M$ on program prefixes; frequencies for a spatially infinite universe at a time
+(under statistical homogeneity the relative frequency of configurations is well defined by
+spatial density, and Tegmark says the measure problem is "mild and treatable" at Level I); and
+nothing stable once the supplier is eternal inflation or fluctuation across an endless future,
+where the ratio of one kind of occurrence to another is infinity over infinity and every
+regularization gives an answer that depends on the cutoff (the cosmological measure problem;
+Freivogel 2011). Do not write that an infinite cosmos supplies "nothing at all" or that its
+survivor ratio is cutoff-dependent (corrected 2026-10-21 after audit). Reading any native
+weighting as first-person weight over occurrences is Chapter 6's slip made one level down;
+frequency is one more such weighting.
 The best version of the slip uses the book's own prior: weight an observer-moment by the
 length of the shortest program that generates the world *and locates the observer inside it*.
-That is UDASSA, the universal-distribution absolute self-sampling assumption, proposed by Wei
-Dai (everything-list, late 1990s) and set out by Hal Finney (web essay, about 2005); Carlsmith
+That is UDASSA, the universal distribution plus the absolute self-selection assumption
+(Finney's expansion; Carlsmith also writes "self-sampling"), proposed by Wei Dai
+(everything-list, late 1990s) and set out by Hal Finney (undated web essay); Carlsmith
 (2021) is the secondary account and records that Dai later rejected it. It is the most
 principled candidate for an occurrence measure anyone has offered, and it is a cut three
 times over: the locating program is an index, its length is relative to a machine, and the
@@ -343,9 +350,9 @@ limitations of formal systems," *Journal of the ACM* 21(3), 1974, 403-424; the h
 soundness for that class of statements, not mere consistency). Cite the paper, not a Li and
 Vitányi section number.
 
-*Where it reaches, and where it does not.* It governs the string facts. It governs "no greater
-mind has been disproved": a mind that showed itself would certify its existence; absence never
-certifies. It does *not* govern the joints question, where neither direction is certifiable
+*Where it reaches, and where it does not.* It governs the string facts. By analogy, and
+labeled as such in the prose, it carries "no greater mind has been disproved": a mind that
+showed itself would certify its existence; absence never certifies. It does *not* govern the joints question, where neither direction is certifiable
 from inside: a carving that works certifies that it works for a job, it cannot certify that it
 is the structure's own, and nothing certifies that none is. That double closure is why the
 postulate must be a stance (below). Outside strings the principle is an analogy, and the prose
@@ -473,7 +480,7 @@ in the body; an adversary named in the Notes is not an imported authority, so th
 rule is untouched. The reply separates two senses of *privileged*. Rewarded for a job is
 conceded: decomposability rewards carvings that follow the grain (Chapter 8), and the counting
 fact makes shortness a fact about a string. The structure's own, independently of every job, is
-denied: which strings are short is machine-relative up to a constant that invariance does not
+declined: which strings are short is machine-relative up to a constant that invariance does not
 make small, and *works* is always *works for a job*, with many jobs (the kitchen of Chapter 13
 reread at mug grain and at molecule grain in Chapter 14; the chooser at five widths in Chapter
 11). A reader who insists on the second sense is refusing the postulate, which Chapter 7 and
