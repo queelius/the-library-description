@@ -222,7 +222,7 @@ full as the author's own case ("quantum immortality without the quantum": a shar
 to a death, eons that pass with no time passing for you), then inflation, fluctuation,
 simulation, and the Library read ontically in one sentence; the reply in the same section with
 no heading between (the copy was already there; no one experiences the gap; the ordering of
-disconnected regions is a convention; the measure gets worse without the quantum, not better);
+disconnected regions is a convention; the measure does not improve without the quantum);
 the native-weighting slip (Born, $M$, nothing) with UDASSA named in two sentences and sent to
 Appendices C and E; the two claims hiding in "missing" (finding: the construction supplies
 none; refusal: the book adopts none); then "the center is a cut," labeled as the postulate

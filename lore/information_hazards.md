@@ -60,7 +60,7 @@ Ranked roughly by severity, re-audited under the re-foundation.
    with a spatially infinite cosmos as the case, which widens the route to it: a reader who rejects
    Everett can reach it by the infinite-cosmos road. Mitigation: the reply sits in the same section
    as the case, with no heading between (the copy was already there; no one experiences the gap;
-   the measure gets worse without the quantum, not better), and the Chapter 11 safety sentence is
+   the measure does not improve without the quantum), and the Chapter 11 safety sentence is
    verbatim.
 
 ## What is Not Hazardous

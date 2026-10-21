@@ -38,7 +38,7 @@ Generating everything is trivial: an enumeration of all programs, the Library of
 | II. The System | 6-10 | cut to have a world (the slip and the postulate, the inhabited Library, the observer, the center, the indifference of description) |
 | III. The Self | 11-15 | cut to be someone, and the held-cut response (continuation, death, love, the pattern, the closing) |
 
-Three parts, 15 chapters (canonical structure in `lore/outline.md`). About 33,500 words including the back matter.
+Three parts, 15 chapters (canonical structure in `lore/outline.md`). About 35,000 words including the back matter.
 
 ## Repository Structure
 
