@@ -51,7 +51,11 @@ $2^k$ can be shortened by more than $k$ symbols, in any scheme, so cheap cuts ar
 is one; which few are cheap is machine-relative, how few is not; see `foundations.md`, "The
 counting fact"). The inversion paragraph adds the flip side: no statistical test has found a
 pattern in $\pi$'s digits, yet they have a one-line name, so calling a thing "noise" reports only
-that no short name is known; a found name certifies, absence cannot be certified. The opening qualifies "every possible book" by size ("in the one size it
+that no short name is known; a found name certifies, absence cannot be certified (P3, home;
+Appendix A states Chaitin's theorem, and the Chapter 2 Notes cite the 1974 paper). The
+catalogue paragraph of "The address of a book" seeds the center (P1): a faithful catalogue,
+even one that fit in a volume, could not carry a "you are here" mark, and no book in the
+library says which reader is holding it; one clause points to Chapter 9. The opening qualifies "every possible book" by size ("in the one size it
 stocks"), the list adds longer works "in installments," and the catalogue beat is phrased by
 pages, so nothing claims a one-volume catalogue. A footnote notes Borges' narrator hoped for one.
 A second footnote: his alphabet had no digits, so this book is on the next shelves, not his.
@@ -67,7 +71,11 @@ Bayes. The structure of belief revision; Cox-style representation results under 
 regularity assumptions. We have been cutting all along, using
 Bayesian inference informally: the prior is the cut before data, the posterior the cut after.
 Bayes does not say which prior to use; that silence is the opening Chapter 4 fills. **The cut,
-named:** indexing is conditioning, the verb sense of the cut.
+named:** indexing is conditioning, the verb sense of the cut. **P2's home** (2026-10-21): at
+the coin, after "Counted, not derived.", two sentences ("The counting was exact. The bins were
+not in the trials; they came with your question.") and one naming the rule, weights come after
+cuts, which the rest of the book uses by that name; Chapter 14 recalls these sentences instead
+of introducing them.
 
 **Epigraph:** Maxwell, "the true logic for this world is the calculus of probabilities" (1850,
 letter to Lewis Campbell).
@@ -79,7 +87,8 @@ then Chapter 5's "What this says to the chicken"), since this is the most techni
 Kraft's inequality; fair random bits assign $2^{-|p|}$ to prefix-free programs; the sequential
 universal semimeasure $M(x) = \sum_{p:U(p)=x*} 2^{-|p|}$, summed over minimal programs on a
 universal monotone machine $U$ (equivalently, the fair-coin probability that $U$'s output begins
-with $x$). $K(x)$ is defined in one paragraph (shortest halting program on a universal prefix
+with $x$). One sentence after the minimality paragraph cites weights come after cuts: $M$
+weights prefixes because the machine carved the stream into them. $K(x)$ is defined in one paragraph (shortest halting program on a universal prefix
 machine), named as kin to $M$ but not interchangeable, and pointed to Appendix A; the
 exact-output $m_V$ and the coding theorem live in Appendix A only (moved out of the body
 2026-10-19 as the densest unused passage). **The cut, and finitude:** Kraft makes
@@ -117,15 +126,19 @@ postulate, the groundlessness, and the indifference.*
 
 The pivot. The prose exposes the temptation to turn weights over candidate programs into a measure
 on realities. **The postulate enters here:** no cut is privileged (boxed, in the canonical wording
-of `foundations.md`). The postulate section opens by quoting the spine back ("There are no joints.
+of `foundations.md`). The box uses the stance wording of `foundations.md` (what the book declines, 2026-10-21), and
+the sentence after it says why: the one-way certificate (Chapter 2), named. The postulate section opens by quoting the spine back ("There are no joints.
 There are only the cuts you make.") and naming Chapter 2's inversion as the picture the reader is
 now asked to commit to: first felt there, a commitment here. It denies that one decomposition is
 view-independently canonical; it does not prove that every described world exists or that $M$ is
 an ontic measure. The outside view and the inside view are introduced by name, in a paragraph of
-their own, and held open. One clause names the postulate's opposite (joint-carving realism); an inline
+their own, and held open. "Two readings" ends with one clause: Chapter 9 meets the same slip
+one level down, where a weighting on branches or programs is read as a weighting on you. One clause names the postulate's opposite (joint-carving realism); an inline
 objection-and-reply pair after "Be careful how far this reaches" gives it its hearing in the
 chapter's own voice (science finds joints / the concession, then the denial, then the status:
-a refusal, not a proof of absence; the joints question is undecidable from inside) and points to
+a refusal, not a proof of absence, with the one-way certificate named as the reason; whether
+the structure has joints is not something anyone inside could certify, in either direction)
+and points to
 Appendix E, objection 6. This is one of three inline pairs (Ch 6, 7, 11), the book's answer to
 the author's Socratic-dialogue question: no staged dialogue; the reader is already the
 interlocutor.
@@ -141,7 +154,10 @@ Part I fact that no index is computably canonical, and what they give up; Append
 **The missing occurrence measure is defined here, once, at full strength:** $M$ weights candidate
 programs and output prefixes; nothing in the construction says what counts as an observer
 occurrence, whether occurrences exist, or how first-person weight is spread among them. Later
-chapters refer to it by name. The recurring cut figure is drawn here ("two carvings": the same
+chapters refer to it by name. One sentence points forward (2026-10-21): the gap is one face of
+something Chapter 9 names, and no description, however complete, could fill it. "What if you
+refuse" and the footing list use the supplier wording ("a supplier of occurrences (Everett is
+one)"; "a supplier of occurrences such as Everett or an infinite cosmos"). The recurring cut figure is drawn here ("two carvings": the same
 structure carved two ways, neither privileged). The nothing question is taken seriously and not
 pretended-resolved: the Library's nearest stand-in for nothing is the empty cut, which is cheap
 but already something (a set, not the absence of sets; the Library has no symbol for the absence
@@ -158,48 +174,80 @@ resolved.
 
 ### Chapter 8: The Observer
 
-Order (2026-10-19): the chapter first says what an observer is, then visits the Everettian
-landmark, then asks "Where am I?"; a chapter titled The Observer defines the observer before
-the physics. Everettian quantum mechanics as a familiar interpretive landmark, not a route or corroboration:
+Order (2026-10-21): the chapter says what an observer is, visits the Everettian landmark, and
+ends with a short section "Which picture is real"; "Where am I?" moved to Chapter 9 with its
+figure. A chapter titled The Observer defines the observer before the physics. Everettian quantum mechanics as a familiar interpretive landmark, not a route or corroboration:
 unitary evolution plus an Everettian ontology yields decoherent branches, shown briefly and
 cross-referenced to *Multitudes* for the full treatment. Decoherence gives effective autonomy,
 not a unique outcome or an interpretation-free ontology. The Everett caveat is stated once, at
-full strength, in one consolidated paragraph; nothing later rests on Everett. The Born-measure /
+full strength, in one consolidated paragraph; nothing later rests on Everett. The landmark
+paragraph carries "Here, Everett is a guest" and the one-supplier sentence: a reader who prefers
+another reading of quantum mechanics loses one supplier of the occurrences Chapter 9 is about,
+and nothing else (the former "Without Everett" section of Chapter 9 is gone). The Born-measure /
 universal-prior comparison is made here: they arise in different formal settings and can be
-compared only in role (each attaches weight once a domain of alternatives is specified); their
+compared only in role (each attaches weight once a domain of alternatives is specified, which
+is Chapter 3's rule, weights come after cuts, cited by name for "decoherence fixes no unique
+count"); their
 domains and warrants differ, no formula is identified or derived, and "why this weighting?"
 stays open to quantum theory. This is the seam to *Multitudes*. The chapter defines what an
 observer is (before the landmark): a local substructure doing local inference, with hierarchical decomposability as the
-condition for inference to work, and the self as a short local program. "Where am I?" becomes
-sharp; the rules that would fill the missing occurrence measure (SSA, SIA, xerographic
-distributions) are listed as none-forced and adopted by none (the speed prior is distinguished as a program
-prior in Chapter 9's footnote and Appendix C). **The cut:** the observer is itself a carving. **The chapter ends on "realism is
-a cut," stated in the body:** choosing which picture (outside or inside) is the real one is
-itself a cut, and the postulate privileges no cut, so the book holds the question open rather
-than answering it; and the two are not rivals of one kind (a vantage you have, a picture you
-drew), which is where the cut is drawn.
+condition for inference to work, and the self as a short local program. **The cut:** the
+observer is itself a carving. **The chapter ends on "realism is a cut," stated in the body,**
+in the short closing section "Which picture is real," which introduces the two-views question
+on its own terms (not as "a deeper underdetermination underneath" self-location, since that
+section is gone): choosing which picture (outside or inside) is the real one is itself a cut,
+and the postulate privileges no cut, so the book holds the question open rather than answering
+it; and the two are not rivals of one kind (a vantage you have, a picture you drew), which is
+where the cut is drawn. The last sentence hands off to Chapter 9: one more thing no picture
+contains, which one in it is you.
 
 **Epigraph:** Bryce DeWitt, on every quantum transition splitting the local world into myriads
 of copies of itself (1970).
 
-### Chapter 9: The Limits
+### Chapter 9: The Center
 
-The close of Part II and its coldest move. First, **no view from the top:** no view is privileged
-because every view is a cut and no cut is privileged, so no overseer's view is *the* view, and
-not contingently; what is above all minds is the structure, which is not a mind and surveys
-nothing. ("Power is not privilege": the book has not disproved every greater mind.)
-This follows from the postulate, not from a Turing-jump ladder of allegedly computable minds. The
-ordinary halting theorem supplies only a narrower limit. The grace of Part III is seeded here
-(warmth, if any, is among observers, not handed down). Then the
-catalogue of what the framework permits: Boltzmann observers, hellscapes, dark continuation, with
-a calibrated reader-safety note (the outside view permits these descriptions; the framework neither
-establishes that they exist nor places you in one; step away if the material is destabilizing).
-This catalogue is the one home of "program weights are not moral weights"; later chapters refer
-back to it instead of restating it. Then a short section, "Without Everett": what refusing the
-Everett landmark costs (nothing in the cascade). The refusal of the *postulate* is not argued
-here; it lives in Chapter 7. The postulate box, if recalled here, uses the identical canonical
-wording; the chapter does not also recap the five footings (Ch 10 does that once). Camus is not
-quoted here; his line belongs to Ch 15.
+(Titled "The Limits" until 2026-10-21; retitled because the chapter is now the one home of P1
+and sits in the one-noun series The Observer, The Center, The Chooser, The Pattern. The file is
+still `09_the_limits.tex`.)
+
+The close of Part II and its coldest move, in five sections. (1) **Where am I?**, moved from
+Chapter 8 with `fig:where-am-i`: several occurrences match your evidence; $M$ gives a posterior
+over programs, not over occurrences; the rules the literature offers (SSA, SIA, xerographic
+distributions) in one pointer sentence, with Appendix C for the survey. (2) **No description
+contains its center** (P1, stated here once; `foundations.md`, "Three principles"): the two
+gods told without Lewis's name; the principle in the book's voice; the two faces (now, next);
+the three ingredients (a supplier of occurrences, a now-rule, a next-rule); the suppliers,
+Everett first as the one with the most physics behind it, then the infinite cosmos stated in
+full as the author's own case ("quantum immortality without the quantum": a shared history up
+to a death, eons that pass with no time passing for you), then inflation, fluctuation,
+simulation, and the Library read ontically in one sentence; the reply in the same section with
+no heading between (the copy was already there; no one experiences the gap; the ordering of
+disconnected regions is a convention; the measure gets worse without the quantum, not better);
+the native-weighting slip (Born, $M$, nothing) with UDASSA named in two sentences and sent to
+Appendices C and E; the two claims hiding in "missing" (finding: the construction supplies
+none; refusal: the book adopts none); then "the center is a cut," labeled as the postulate
+applied, a refusal, not a finding. (3) **No view from the top**, in three clauses: finding (no
+survey, however complete, contains which one is you; P1); refusal (no mind's decomposition is
+*the* decomposition, and by the one-way certificate no mind inside could certify it); refusal
+(the hidden indexical fact the reader hoped for, "unreachable but at least existing," is
+declined, not denied). "Power is not privilege" and "the book has not disproved every possible
+greater mind" stay, the latter anchored to the one-way certificate; the ordinary halting
+theorem supplies only a narrower limit; the grace of Part III is seeded here (warmth, if any,
+is among observers, not handed down). (4) **What the framework permits**: the catalogue, each
+entry tagged with what it needs (Boltzmann observers: a supplier and a now-rule; hellscapes: a
+supplier read ontically, and this remains the one home of "program weights are not moral
+weights"; dark continuation: a supplier, a next-rule, a now-rule, and the quantum is
+dispensable here too; versions of you: three additional choices); the speed-prior footnote and
+the calibrated reader-safety paragraph verbatim (the outside view permits these descriptions;
+the framework neither establishes that they exist nor places you in one; step away if the
+material is destabilizing). (5) **Where this leaves you**: the postulate box recalled in the
+stance wording of `foundations.md`; the open questions; the handoff to Chapter 10. "Without
+Everett" is gone (Chapter 8's landmark paragraph carries the one-supplier sentence). The
+refusal of the *postulate* is not argued here; it lives in Chapter 7. The chapter does not
+recap the five footings (Ch 10 does that once). Camus is not quoted here; his line belongs to
+Ch 15. Economies: the rules and UDASSA are pointers here and full statements in Appendices C
+and E; the infinite-cosmos case is in full because its reply must sit beside it
+(`information_hazards.md`). Target about 2,400 words.
 
 **Epigraph:** Spinoza, "Nature has no particular goal in view, and final causes are mere human
 figments." (*Ethics*, 1677, trans. Elwes)
@@ -217,14 +265,18 @@ postulate, having asked for it in Ch 6.)
 Then one positive cascade summary in the five footing names (theorem, construction, finitude,
 postulate, optional additions), and **one** paragraph of caveats, stated once: it does not say
 every output exists; it does not say which occurrence is you (the missing occurrence measure, by
-name); it does not derive the Born rule (a cross-reference to Ch 8 and Appendix B, not a re-run of
-the comparison). Say what the indifference is before saying what it is not. "What remains yours" carries
+name, and Chapter 9's reason: no description contains its center); it does not derive the Born rule (a cross-reference to Ch 8 and Appendix B, not a re-run of
+the comparison). Say what the indifference is before saying what it is not. "Two absences of privilege" gains
+its hinge (P2): the first absence can never settle the second, because weights come after
+cuts. "What remains yours" carries
 one paragraph saying what the mathematics bought Part III, mostly as refusals (no occurrence
 measure, so copies neither console nor dilute and quantum immortality is not in the
 mathematics; no computable index; $M$ ranks descriptions, not persons): the theorems' gift to
-Part III is the floor they take away. The adequacy
+Part III is the floor they take away; the center is cited by name there. The adequacy
 doubt is seeded once, in plain terms, in "What remains yours" (what could fail: the theorems'
-application to nature, the machine idealization, the postulate), and "Where this leaves you"
+application to nature, the machine idealization, the postulate; the shape of the doubt is the
+one-way certificate's: a joint someone finds would show itself, and the refusal to crown one
+can be neither refuted by less nor confirmed), and "Where this leaves you"
 points forward to Ch 15 without closing it.
 
 This is the analog of Worldlines' "The Block Universe" chapter, one level deeper.
@@ -254,8 +306,11 @@ structure's joints. Everett appears only as a brief, optional lens (one paragrap
 such, pointing back to Ch 8's "Everett is a landmark"); the chapter does not assume it.
 
 Quantum immortality is then stated plainly and labeled: the claim, its premises named in one
-sentence (Everett, an identity rule, a self-location rule, all optional additions the book does not
-adopt), and the book's refusal to assert it. It comes with a reader-safety note in the body,
+sentence (a supplier of occurrences, which Chapter 9 showed need not be quantum; a next-rule; a
+now-rule; all optional additions the book does not adopt), and the book's refusal to assert it;
+"It is not a theorem of quantum mechanics, and it is not about quantum mechanics." This is the
+chapter's one instance of P1; the five widths are not refiled under P1 (they are the extent of
+the one who acts, a carving good for a job, under the postulate). It comes with a reader-safety note in the body,
 non-metaphysical, pointing to Resources: the thought experiment is not a reason to take any real
 risk. The detailed premise analysis moves to Appendix C. The chapter's examples of choices the
 framework does not rank are ordinary ones (take the job or turn it down; make the call or let it
@@ -278,7 +333,10 @@ metaphysical boundary was a cut. The local loss was not."). Identity is vague at
 is not. **This chapter makes the "does not console" turn once, at full strength, for the whole of
 Part III:** conditional copies, other carvings, and descriptions of continuation (each needing
 optional additions) do not console the people left behind, and the book will not pretend they do.
-Chapters 13 to 15 refer back to this turn instead of re-making it. Block-universe permanence
+Chapters 13 to 15 refer back to this turn instead of re-making it. The turn is an application
+of P1, not a face of it: after "Conditional copies do not console." one sentence says a copy's
+being you is a cut, as Chapter 9 said, so nothing in the structure makes it a continuation
+that could console; the granted premises use the supplier wording. Block-universe permanence
 appears only "on that reading," once; no "your branch" (say "history"). The Ch 12 safety note
 lives in the body, not in a footnote, and does not assume the reader has someone to call (it
 points to Resources). "What the living lose" stays in grief terms: the braid ends in the
@@ -325,7 +383,8 @@ The self-model is made felt before it is argued: the light switch in a dark hous
 rubber-hand illusion. Parfit and Metzinger are introduced once, together.
 
 **The convergence made concrete (the chapter's center):** index, system, and self, each carved
-two ways, worked through with examples the reader already holds (the Ch 3 coin for the index; the
+two ways, worked through with examples the reader already holds (the Ch 3 coin for the index, recalling Chapter 3's own sentences and the rule weights come
+after cuts rather than introducing them; the
 Ch 13 kitchen for the system, scaled up to "this world"; the self-model for the self), so that
 "the cut met three times" is seen, not asserted. The self's carving opens by gathering the lines
 the reader has already drawn (around the chooser in Ch 11, around the dying in Ch 12) and then
@@ -402,7 +461,11 @@ No pre-revision line about simplicity returns (no "simplicity is why you are her
 ## Word counts (targets and the release candidate)
 
 Actuals are `detex | wc -w` per chapter file after the 2026-10-19 author-notes revision (figure
-labels included, so prose alone runs a few hundred words lower per Part).
+labels included, so prose alone runs a few hundred words lower per Part). Targets for the
+2026-10-21 unifying-principles revision (the spec's section 7): Chapter 8 about 1,600, Chapter
+9 about 2,400, Chapter 11 about 1,650, Part II about 9,400, Part III about 6,050, appendices
+about 4,500, whole book (`make wordcount`) about 33,500; content wins over the per-chapter
+targets.
 
 | Section | Target | Actual |
 |---|---|---|
@@ -439,9 +502,10 @@ Each step is set up by the previous, tracing the new skeleton:
 7. **The inhabited world; the nothing question; humility** (Ch 7). Contingency relocated; the
    missing occurrence measure defined; "What if you refuse" (the one home of the postulate's
    refusal).
-8. **The observer defined; realism is a cut** (Ch 8). QM as landmark, stated once; the Born seam
+8. **The observer defined; realism is a cut** (Ch 8). QM as landmark, one supplier, stated once; the Born seam
    compared in role only; the chapter ends on "realism is a cut."
-9. **The limits** (Ch 9). No view from the top; what the framework permits; without Everett.
+9. **The center** (Ch 9). Where am I; no description contains its center; no view from the top
+   in two halves; what the framework permits.
 10. **The indifference of description** (Ch 10). Thesis stated positively, opening with the
     spine; caveats once; The System capped.
 11. **The chooser** (Ch 11). The chooser is a cut; responsibility attaches to a drawn boundary;
