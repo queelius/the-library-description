@@ -16,7 +16,11 @@ The destination is the same as Worldlines. This book arrives there from a colder
 
 Chapter 9's "no view from the top" turns the central claim from rhetoric into structure, and the
 closing (Ch 15) lands on it. No observer's view is privileged as *the* overview. This is not a
-Turing-jump claim about a ladder of computable minds; it follows directly from the postulate.
+Turing-jump claim about a ladder of computable minds. It has two halves (2026-10-21): the
+indexical half is a finding that needs no postulate (no survey, however complete, contains
+which occurrence is you; P1 in `foundations.md`), and the joints half is the postulate applied,
+a refusal (no mind's decomposition is *the* decomposition, and nothing inside could certify
+one).
 "We are the only things here that can care" is therefore not a lament about an absent God but a
 statement about where care is encountered and enacted.
 The grace move is stronger for it: care is not what is left after the overseer's silence; it is

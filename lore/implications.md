@@ -66,7 +66,8 @@ claims below are one reading, not a result.)
 
 In Worldlines, death is the boundary of the four-dimensional worm; the suffering at every point is
 permanent at its coordinates. This book refines the picture: the boundary called death is a cut.
-Only with optional additions (Everett, an identity rule, a self-location rule) do descriptions of
+Only with optional additions (a supplier of occurrences such as Everett or an infinite cosmos,
+an identity rule, a self-location rule) do descriptions of
 the pattern you call yourself include continuations past the boundary, and nothing in $M$ weights
 such continuations as occurrences (the missing occurrence measure). The book adopts none of those
 additions. Even so stated, the conditional produces an asymmetry.
@@ -189,7 +190,9 @@ The book is careful not to overreach. Claims the framework does *not* support:
 
 - **It does not prove quantum immortality.** It shows quantum immortality is the shape of a problem
   about indexical first-person continuation, under assumptions the book takes seriously without
-  adopting; under the postulate it does not even assert the relevant carvings are real.
+  adopting; under the postulate it does not even assert the relevant carvings are real. The
+  shape is P1's (no description contains its center) and it is supplier-neutral: the quantum is
+  dispensable, and Chapter 9 says so with the infinite cosmos as the case.
 - **It does not prove you are not a Boltzmann observer.** The framework permits the possibility and
   the book does not engineer it away; the technical responses are surveyed, none adopted.
 - **It does not prove the postulate.** "No cut is privileged" is the single interpretive commitment,

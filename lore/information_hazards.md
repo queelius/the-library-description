@@ -23,7 +23,11 @@ Ranked roughly by severity, re-audited under the re-foundation.
    derealization in vulnerable readers more readily than the older, more furnished picture did. The
    self-dissolution that Parfit's milder version has destabilized philosophy students with for forty
    years is here taken one level further: not "the self is impermanent" but "the self is a boundary
-   you drew." This is the move most worth handling with care in the prose.
+   you drew." This is the move most worth handling with care in the prose. (2026-10-21) "The center
+   is a cut" is a new phrasing of the same risk, and the humility register is itself a mitigation:
+   the book no longer says there is no floor; it says it cannot certify one and holds the cut
+   anyway. Chapter 9's safety paragraph ("describing a possibility does not place you in it")
+   stays in the body.
 
 2. **The permanence-of-suffering-across-carvings implication.** The block-universe S-risk reframed
    as nonfiction, in the dark reading a reader may take away even though the book does not assert
@@ -35,7 +39,10 @@ Ranked roughly by severity, re-audited under the re-foundation.
 3. **The total cold of "the structure does not notice," now with no overseer at all.** "No view from
    the top" makes the indifference not just unpreferring but unwatched, and not contingently. For a
    reader already feeling invisible, this can confirm a depressive worldview in a register that feels
-   mathematically supported.
+   mathematically supported. (2026-10-21) "No view from the top" is now two halves: the indexical
+   half is a finding (no survey contains which one is you) and the joints half a refusal (the book
+   declines to crown any mind's decomposition; it has not disproved a greater mind). That lowers
+   the "mathematically supported" register of the cold without softening the cold itself.
 
 4. **The Boltzmann shadow, reframed.** "Your past may not be real" becomes "the past is a cut." The
    reframing is intellectually honest but does not help a reader already in derealization, and it
@@ -47,7 +54,12 @@ Ranked roughly by severity, re-audited under the re-foundation.
    assumption, and explicitly refuses to privilege the carving in which you continue. The distressing
    claim is now one the book declines to make, named as a carving the reader is not required to
    inhabit. It remains worth handling carefully, but it is no longer load-bearing and no longer
-   asserted.
+   asserted. (2026-10-21) The argument is now stated supplier-neutrally in Chapter 9, "The Center,"
+   with a spatially infinite cosmos as the case, which widens the route to it: a reader who rejects
+   Everett can reach it by the infinite-cosmos road. Mitigation: the reply sits in the same section
+   as the case, with no heading between (the copy was already there; no one experiences the gap;
+   the measure gets worse without the quantum, not better), and the Chapter 11 safety sentence is
+   verbatim.
 
 ## What is Not Hazardous
 

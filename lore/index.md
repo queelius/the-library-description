@@ -111,7 +111,9 @@ Observers whose inference *works* exist only where the local structure is hierar
 decomposable. (Under some cosmologies, observer-*moments* might fluctuate into being in lawless
 regions, Boltzmann-brain style; what lawless structures cannot support is an observer whose
 models track their world and who persists past the instant. There is no canonical count of
-programs, so the book makes no claim about what a "majority" of structures are like.) This is anthropic but more substantive than the usual move. The
+programs, so the book makes no claim about what a "majority" of structures are like. Which of
+several matching occurrences is you is a different question, the *now* face of P1 in
+`foundations.md`, "Three principles": no description contains its center.) This is anthropic but more substantive than the usual move. The
 standard version asks "why is the world lawful?"; the deeper version asks "why is it
 *hierarchically* lawful, with effective theories we can find with local effort?" The answer is
 the same (it has to be, or we are not here to ask), but the constraint is real: it is a genuine
@@ -132,5 +134,6 @@ definition in Chapter 8 and the finitude argument in `foundations.md`.
 ## Where in the manuscript
 
 The chapter-by-chapter placement now lives in `outline.md` (the index named as imposition in
-Ch 2, the observer defined in Ch 8, the full dissolution in Ch 14). This document supplies the
+Ch 2, the observer defined in Ch 8, the center in Ch 9 "The Center," the full dissolution in
+Ch 14). This document supplies the
 argument those chapters draw on; it does not maintain its own chapter plan.

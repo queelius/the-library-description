@@ -57,7 +57,10 @@ predicting, worlding, self-modeling. Every concept in the book maps to the cut.
 No decomposition is view-independently privileged. There is no canonical
 index, no canonical decomposition into "systems," no canonical "you." This is the postulate,
 and it is the deeper version of Worldlines' "no privileged now." The block universe had no
-preferred temporal slice. The totality has no preferred carving at all.
+preferred temporal slice. The totality has no preferred carving at all. The postulate is a
+stance, not an assertion (2026-10-21): the book declines to treat any cut as the structure's
+own, because nothing from inside could certify a joint or its absence (P3 in `foundations.md`,
+"Three principles"); it does not claim to have shown that no joint exists.
 
 ### 3. The Self as a Cut
 
@@ -73,7 +76,10 @@ together, because they are one move at two levels.
 ### 4. The Groundlessness
 
 Earlier framing made the cold "the hellscapes exist." Under the postulate the cold is deeper
-and quieter: nothing in the structure, and no possible vantage, settles whether they do.
+and quieter: nothing in the structure, and no vantage the book can certify, settles whether
+they do. The groundlessness is the condition of one who cannot certify a floor under any cut,
+not the finding that there is none; the book holds the cut without a certified floor, and says
+so (`foundations.md`, "Register").
 The outside view (the totality as an object, surveyed from outside) and the inside view (the observer
 inside, with finite data, whose posterior never resolves) are two cuts on the same fact, and
 choosing between them as the real one is itself a cut the book refuses. Boltzmann observers,
@@ -97,7 +103,10 @@ denies a view-independent decomposition into one index, system, or self. The uni
 ranks candidate program descriptions; it neither selects what is real nor assigns probabilities
 to observer occurrences. Why this physics remains an empirical and interpretive question. The
 mathematics gives a powerful predictor; finitude explains local approximation; the postulate gives
-the indifference; the chosen response gives the warmth the structure does not.
+the indifference; the chosen response gives the warmth the structure does not. Underneath the
+postulate sit three pre-postulate facts the indifference rests on (`foundations.md`, "Three
+principles"): no description contains its center (Chapter 9), weights come after cuts (Chapter
+3), and a found name certifies itself while an absence cannot be certified (Chapter 2).
 
 ### 7. The Chosen Response: The Held Cut
 

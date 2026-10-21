@@ -47,6 +47,9 @@ approximation, not a unique prior; the postulate is presented as the one thing a
 - Max Tegmark, *Our Mathematical Universe*. This book is denser, colder, and more careful about
   the one speculative step. Tegmark posits that all mathematical structures exist; this book
   refuses even that, treating "they exist" as itself a cut.
+- Max Tegmark, *Our Mathematical Universe* (2014), for the Level I argument (a spatially infinite
+  cosmos contains duplicates); the book uses the argument as one supplier of occurrences in
+  Chapter 9 and gives it the same caution Chapter 6 gives his hypothesis.
 - David Deutsch, *The Fabric of Reality*. Deutsch is enthusiastic and broad; this book is narrower
   and colder.
 - Nick Bostrom, *Anthropic Bias*. This book uses anthropic reasoning more sparingly and is more
@@ -145,7 +148,7 @@ must do the same, and the form is sharper. The book describes a totality of all 
 structures; the book is itself a computable structure, one carving among all of them; every reader
 reads it from a local situation, and calling that situation "this index" is itself a cut. The
 book's existence here, in the reader's hands, is itself a fact about the cut. (Not a claim that
-the reader is instantiated at many indices; see the missing occurrence measure in
+the reader is instantiated at many indices; see the missing occurrence measure and P1 in
 `foundations.md`.) This is not cleverness; it is the logical
 endpoint of the argument. The closing chapter ("The Pattern Describing Itself") acknowledges it
 honestly, the way Worldlines' final chapter did, and it is where the held cut is performed.
