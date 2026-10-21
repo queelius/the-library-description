@@ -6,7 +6,7 @@
 
 \noindent \textsc{Chapter 7 left two pictures open}. The outside view treats program-output space as a total object; the inside view keeps you situated, with finite data and a posterior over candidate programs. Neither supplies what Chapter 7 called the missing occurrence measure.
 
-This chapter says what an observer is, then visits a landmark in physics that offers a multiplicity of its own, and then asks the question that measure would have to answer.
+This chapter says what an observer is, then visits a landmark in physics that offers a multiplicity of its own, and then asks which of the two pictures is the real one. The question the measure would have to answer, which of the occurrences is you, waits for Chapter 9.
 
 \section*{What an observer is}
 
@@ -36,7 +36,7 @@ With these in place, a question sharpens. The observer is locally modeled, with 
 
 \section*{An Everettian landmark}
 
-Before that question, a landmark. There is a multiplicity much closer to hand than the Library's, if you read quantum mechanics the way Hugh Everett did. On that reading the wave function never collapses: an observer becomes correlated with every outcome, and decoherence keeps the outcomes from interfering, so each behaves like a separate history (Figure~\ref{fig:mwi-branching}).\footnote{Decoherence explains the suppression of interference between relevant components and the emergence of stable quasi-classical structure. By itself it does not select one outcome, prove that branches are fundamental objects, or choose among interpretations. Everettian interpretations add an ontological reading of the unitary formalism; collapse and hidden-variable approaches read it differently.} DeWitt's ``myriads of copies,'' at the head of this chapter, is that reading at its most tempting. The experiments confirm quantum predictions; they do not choose Everett's reading over its rivals. The book uses it as a landmark, not as evidence, and nothing later rests on it. If a quantum model can be computably described, its branching can be written out in program space too, but that is a relation between descriptions, and it is no evidence that the branches, or the programs' outputs, exist.
+Before that question, which the next chapter takes up, a landmark. There is a multiplicity much closer to hand than the Library's, if you read quantum mechanics the way Hugh Everett did. On that reading the wave function never collapses: an observer becomes correlated with every outcome, and decoherence keeps the outcomes from interfering, so each behaves like a separate history (Figure~\ref{fig:mwi-branching}).\footnote{Decoherence explains the suppression of interference between relevant components and the emergence of stable quasi-classical structure. By itself it does not select one outcome, prove that branches are fundamental objects, or choose among interpretations. Everettian interpretations add an ontological reading of the unitary formalism; collapse and hidden-variable approaches read it differently.} DeWitt's ``myriads of copies,'' at the head of this chapter, is that reading at its most tempting. The experiments confirm quantum predictions; they do not choose Everett's reading over its rivals. The book uses it as a landmark, not as evidence, and nothing later rests on it. Here, Everett is a guest. A reader who prefers an operational, hidden-variable, or objective-collapse reading of quantum mechanics loses one supplier of the occurrences Chapter 9 is about, and nothing else; the companion volume, \textit{Multitudes}, makes the fuller case for Everett's reading. If a quantum model can be computably described, its branching can be written out in program space too, but that is a relation between descriptions, and it is no evidence that the branches, or the programs' outputs, exist.
 
 \begin{figure}[h]
 \centering
@@ -71,7 +71,7 @@ Before that question, a landmark. There is a multiplicity much closer to hand th
 \label{fig:mwi-branching}
 \end{figure}
 
-There is a deeper reason quantum mechanics belongs in this book, and it is not branching. It is weighting. The Born rule weights quantum outcomes by their squared amplitudes $|\psi|^2$; the universal prior weights programs by $2^{-|p|}$ and sums them into $M$ (Figure~\ref{fig:born-prior}). Both are bookkeeping attached to a cut: neither can assign a weight until the alternatives have been carved out. That shared role is the whole comparison. The domains, formulas, and warrants differ, and nothing here derives the Born rule or explains why quantum statistics obey it; Appendix~\ref{app:born} marks the boundary. Even inside Everett, counting branches is no shortcut to the rule, because decoherence fixes no unique count: how many branches there are depends on how finely you cut. The shared role is the seam to the companion volume, \textit{Multitudes}.
+There is a deeper reason quantum mechanics belongs in this book, and it is not branching. It is weighting. The Born rule weights quantum outcomes by their squared amplitudes $|\psi|^2$; the universal prior weights programs by $2^{-|p|}$ and sums them into $M$ (Figure~\ref{fig:born-prior}). Both are bookkeeping attached to a cut: neither can assign a weight until the alternatives have been carved out, which is Chapter 3's rule, weights come after cuts. That shared role is the whole comparison. The domains, formulas, and warrants differ, and nothing here derives the Born rule or explains why quantum statistics obey it; Appendix~\ref{app:born} marks the boundary. Even inside Everett, counting branches is no shortcut to the rule, because decoherence fixes no unique count: how many branches there are depends on how finely you cut. The shared role is the seam to the companion volume, \textit{Multitudes}.
 
 \begin{figure}[h]
 \centering
@@ -100,31 +100,8 @@ There is a deeper reason quantum mechanics belongs in this book, and it is not b
 \end{figure}
 \FloatBarrier
 
-\section*{Where am I?}
+\section*{Which picture is real}
 
-Under the outside view or an Everettian ontology, a sharp question emerges. Suppose several observer occurrences match your current self-description: your memories, sensory state, and moment of reading this. What would make one of them your self-location? (Figure~\ref{fig:where-am-i}.)
+Chapter 6 promised to name a question, and this is the place. The book has been speaking in two pictures without choosing between them: the totality surveyed from outside, and the observer situated inside it with a posterior. Which picture is the \emph{real} one? $M$ does not say, and the question has a shape you have seen before. Choosing which picture is the real one is itself a cut, a carving of the whole into what exists and what is only described, and the postulate privileges no cut. That is why the book holds the question open rather than answering it. The observer was a carving; so is the line between the world that exists and the worlds that are only described. And the two pictures are not rivals of one kind. The inside view is a vantage you have; the outside view is a picture you drew. When you draw the line between what exists and what is only described, you draw it between those, a vantage and a picture, not between two worlds of the same standing; and it is still you who draws it.
 
-\begin{figure}[h]
-\centering
-\begin{tikzpicture}[scale=0.95]
-  % data prefix (left)
-  \foreach \i/\b in {0/1, 1/0, 2/1, 3/1} {
-    \draw[thick, fill=gray!18] (\i*0.42,0.9) rectangle (\i*0.42+0.42,1.35);
-    \node[font=\scriptsize] at (\i*0.42+0.21,1.125) {\b};
-  }
-  \node[font=\scriptsize, anchor=north] at (0.84,0.8) {your data};
-  % candidate worlds (right)
-  \foreach \y/\lbl in {2.5/{embedded observer, long lawful past}, 1.5/{same laws, a different history}, 0.5/{stranger laws, same prefix}, -0.5/{a momentary fluctuation}} {
-    \node[font=\scriptsize, anchor=west, draw=blue!45, rounded corners, inner sep=2.5pt, fill=blue!7, text width=4.1cm] at (3.4,\y) {\lbl};
-    \draw[->, gray!70] (1.9,1.125) to[out=0,in=180] (3.35,\y);
-  }
-\end{tikzpicture}
-\caption{Two underdeterminations. A finite stretch of data (left) is compatible with many candidate programs (right), and $M$ gives a posterior over those programs. If several observer occurrences match the same data, $M$ alone does not distribute probability among them. ``Which program predicts next?'' and ``which occurrence am I?'' are different questions.}
-\label{fig:where-am-i}
-\end{figure}
-
-This is where the missing occurrence measure of Chapter 7 would have to do its work, and the literature offers several rules to supply it. The \emph{Self-Sampling Assumption} (SSA) says to reason as if you are a random sample from a specified reference class. The \emph{Self-Indication Assumption} (SIA) treats your existence as evidence favoring hypotheses with more eligible observers. Xerographic distributions assign first-person weights directly. These proposals disagree about cases such as Sleeping Beauty, the doomsday argument, and Boltzmann observers. None is forced, and each must first say what counts as an occurrence, which is to say where to cut. Appendix~\ref{app:anthropics} surveys them.
-
-The book does not commit to an indexical assumption. So \emph{where am I?}, understood as self-location among occurrences, does not merely have a broad posterior here; it is undefined until extra structure is supplied. That is a limit of the framework, kept visible rather than hidden inside $M$.
-
-There is a deeper underdetermination underneath this one, and Chapter 6 promised to name it. The book has been speaking in two pictures without choosing between them: the totality surveyed from outside, and the observer situated inside it with a posterior. Which picture is the \emph{real} one? $M$ does not say, and the question has a shape you have seen before. Choosing which picture is the real one is itself a cut, a carving of the whole into what exists and what is only described, and the postulate privileges no cut. That is why the book holds the question open rather than answering it. The observer was a carving; so is the line between the world that exists and the worlds that are only described. And the two pictures are not rivals of one kind. The inside view is a vantage you have; the outside view is a picture you drew. When you draw the line between what exists and what is only described, you draw it between those, a vantage and a picture, not between two worlds of the same standing; and it is still you who draws it.
+There is one more thing neither picture contains, and the next chapter is about it: which one in it is you.
