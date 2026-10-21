@@ -467,15 +467,20 @@ labels included, so prose alone runs a few hundred words lower per Part). Target
 about 4,500, whole book (`make wordcount`) about 33,500; content wins over the per-chapter
 targets.
 
-| Section | Target | Actual |
-|---|---|---|
-| Preface | 500 | about 300 |
-| Part I (5 chapters) | ~7,500 | about 10,100 |
-| Part II (5 chapters) | ~8,000 | about 8,450 |
-| Part III (5 chapters) | ~8,000 (aspirational) | about 6,100 |
-| Appendices (A to E) | ~3,000 to 5,000 (under about 20 percent of the body; see `appendices.md`) | about 4,050 |
-| Notes, Resources, and other back matter | as needed | Notes about 1,600 |
-| **Body total (preface and Parts I to III)** | **~24,000** | **about 25,000** |
+| Section | Target | Actual (2026-10-19) | Actual (2026-10-21) |
+|---|---|---|---|
+| Preface | 500 | about 300 | 298 |
+| Part I (5 chapters) | ~7,500 | about 10,100 | 10591 |
+| Part II (5 chapters) | ~8,000 | about 8,450 | 10550 (Ch 8 1703, Ch 9 2771) |
+| Part III (5 chapters) | ~8,000 (aspirational) | about 6,100 | 6379 (Ch 11 1682) |
+| Appendices (A to E) | ~3,000 to 5,000 (under about 20 percent of the body; see `appendices.md`) | about 4,050 | 5017 |
+| Notes, Resources, and other back matter | as needed | Notes about 1,600 | Notes 2227 |
+| **Body total (preface and Parts I to III)** | **~24,000** | **about 25,000** | **27818** |
+| **Whole book (`make wordcount`)** | | 31,724 | **35092** |
+
+The 2026-10-21 figures exceed the spec's "about 33,500" by about 1,600 words; the overrun is
+in Chapter 9 (the infinite-cosmos case stated in full with its reply) and the appendices
+(Chaitin, UDASSA, objection 7). Content was kept, per the spec; trimming is the author's call.
 
 Part III is shorter than Parts I and II by design after the October revision: it refers back to
 caveats stated in their homes instead of restating them. Growing it means new material, not
