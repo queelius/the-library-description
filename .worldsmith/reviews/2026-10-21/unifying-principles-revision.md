@@ -114,9 +114,11 @@ to Appendix E.
   re-defines the two views; Chapter 9's "You may refuse it" sentence was trimmed. Left as is,
   within policy: Chapter 14's "You are here." without a Resources pointer, and Chapter 9's
   second-person "you die here."
-- **Still open for discussion with the author:** the re-pasted postulate box at the end of
-  Chapter 9; Chapters 9 and 10 announcing Chapter 15's care and adequacy doubt; the
-  computability aside in Chapter 9; Chapter 10's last long paragraph; Chapter 13's opening
+- **Decided with the author (evening):** the postulate box recall at the end of Chapter 9 was
+  dropped (the commitment is named in prose, applied to the center); Chapter 10's clause "the
+  last chapter returns to that, and does not close it" was cut; Chapter 9's care sentences stay
+  as the book's refrain.
+- **Still open for discussion with the author:** the computability aside in Chapter 9; Chapter 10's last long paragraph; Chapter 13's opening
   hedges; "the book adopts none" and "asked once, can be refused" as recurring formulas.
 
 ## Rulings made during execution

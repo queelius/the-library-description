@@ -241,8 +241,9 @@ weights"; dark continuation: a supplier, a next-rule, a now-rule, and the quantu
 dispensable here too; versions of you: three additional choices); the speed-prior footnote and
 the calibrated reader-safety paragraph verbatim (the outside view permits these descriptions;
 the framework neither establishes that they exist nor places you in one; step away if the
-material is destabilizing). (5) **Where this leaves you**: the postulate box recalled in the
-stance wording of `foundations.md`; the open questions; the handoff to Chapter 10. "Without
+material is destabilizing). (5) **Where this leaves you**: the one commitment named in prose, applied to the center
+(no box; the recall was dropped 2026-10-21 evening as redundant with Chapter 10's opening);
+the open questions; the handoff to Chapter 10. "Without
 Everett" is gone (Chapter 8's landmark paragraph carries the one-supplier sentence). The
 refusal of the *postulate* is not argued here; it lives in Chapter 7. The chapter does not
 recap the five footings (Ch 10 does that once). Camus is not quoted here; his line belongs to
@@ -278,7 +279,9 @@ doubt is seeded once, in plain terms, in "What remains yours" (what could fail: 
 application to nature, the machine idealization, the postulate; the shape of the doubt is the
 one-way certificate's: a joint someone finds would show itself, and the refusal to crown one
 can be neither refuted by less nor confirmed), and "Where this leaves you"
-points forward to Ch 15 without closing it.
+names the adequacy doubt without pointing at Ch 15 (the pointer "the last chapter returns to
+that, and does not close it" was cut 2026-10-21 evening because it answered Ch 15's "Is it
+enough?" in advance).
 
 This is the analog of Worldlines' "The Block Universe" chapter, one level deeper.
 

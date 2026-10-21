@@ -428,9 +428,11 @@ stated plainly, that the reader may refuse.
 > as view-independently correct. Every carving into worlds, systems, and selves it reads as a
 > cut an observer makes, and none as the structure's own.
 
-This is the boxed wording (2026-10-21), and it is identical wherever the manuscript boxes it
-(Chapter 6, where it enters, and Chapter 9, where it is recalled) and in `README.md`.
-Elsewhere, recap it in prose. "The one reality that exists" is one of the carvings it covers.
+This is the boxed wording (2026-10-21), boxed once in the manuscript (Chapter 6, where it
+enters) and in `README.md`. Chapter 9's closing section no longer re-pastes it (author's
+decision, 2026-10-21 evening: the recall was redundant with Chapter 10's opening and landed on
+the chapter's last beat); it names the commitment in prose, applied to the center. Elsewhere,
+recap it in prose. "The one reality that exists" is one of the carvings it covers.
 The box says what the book declines, not what the structure lacks.
 
 **Register: a stance, and why it is forced.** The author's decision (2026-10-21): the book
